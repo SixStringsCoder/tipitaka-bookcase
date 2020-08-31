@@ -1,12 +1,12 @@
-#The Tipi&#7789;aka
-#####(A Visual Introduction)
+# The Tipi&#7789;aka
+##### (A Visual Introduction)
 ---
-######working title: _The Tipi&#7789;aka (A Visual Introduction)_
-######author: Rebecca & Steve Hanlon
-######date: Aug 1, 2020
+###### working title: _The Tipi&#7789;aka (A Visual Introduction)_
+###### author: Rebecca & Steve Hanlon
+###### date: Aug 1, 2020
 ---
 
-###App Overview
+### App Overview
 This app gives a visual introduction and explanation of the Tipi&#7789;aka's 50 volumes as well as the commentaries and subcommentaries about the Tipi&#7789;aka.  
 
 The volumes and commentaries are layed out on virtual bookshelves with clickable books to get more information about each volume or work.  
