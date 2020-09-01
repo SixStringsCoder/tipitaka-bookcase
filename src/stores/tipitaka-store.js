@@ -1,45 +1,47 @@
+// source for data https://tipitaka.org/eot#2 from the book "Essence of Tipiṭaka"
+
 import { readable } from 'svelte/store';
 
 const TipitakaData = readable({
   information: {
-    name: 'Tipi&#7789;aka',
-    introduction: '<p id="intro-info" class="info"> All that the Buddha taught forms the subject matter and substance of the P&#x101;&#7735;i Canon, which is divided into these three divisions called <span class="emphasis">Pi&#7789;akas</span> — literally baskets. Hence <span class="emphasis">Tipi&#7789;aka</span> means three baskets or three separate divisions of the Buddha\'s Teaching. Here the metaphor \'basket\' signifies not so much the function of \'storing up\' anything put into it as its use as a receptacle in which things are handed on or passed on from one to another like carrying away of earth from an excavation site by a line of workers.</p> <p class="info"><span class="emphasis indent">The Tipi&#7789;aka</span> into which the P&#x101;&#7735;i Canon is systematically divided and handed down from generation to generation together with Commentaries forms the huge collection of literary works which the bhikkhus of the Order have to learn, study and memorize in discharge of their <span class="emphasis">gantha dhura</span>, the duty of studying.</p>'
+    name: 'Tipiṭaka',
+    introduction: '<p id="intro-info" class="info"> All that the Buddha taught forms the subject matter and substance of the Pāḷi Canon, which is divided into these three divisions called <span class="emphasis">Piṭakas</span> — literally baskets. Hence <span class="emphasis">Tipiṭaka</span> means three baskets or three separate divisions of the Buddha\'s Teaching. Here the metaphor \'basket\' signifies not so much the function of \'storing up\' anything put into it as its use as a receptacle in which things are handed on or passed on from one to another like carrying away of earth from an excavation site by a line of workers.</p> <p class="info"><span class="emphasis indent">The Tipiṭaka</span> into which the P&#x101;&#7735;i Canon is systematically divided and handed down from generation to generation together with Commentaries forms the huge collection of literary works which the bhikkhus of the Order have to learn, study and memorize in discharge of their <span class="emphasis">gantha dhura</span>, the duty of studying.</p>'
   },
   baskets: {
     vinaya: {
-      name: "Vinaya Pi&#7789;aka",
-      description: "The great division in which are incorporated injunctions and admonitions of the Buddha on modes of conduct, and restraints on both bodily and verbal actions of bhikkhus and bhikkhun&#299;s, which form rules of discipline for them, is called the Vinaya Pi&#7789;aka.",
+      name: "Vinaya Piṭaka",
+      description: "The Vinaya Piṭaka is made up of rules of discipline laid down for regulating the conduct of the Buddha’s disciples who have been admitted into the order as bhikkhus (monks) and bhikkhunis (nuns). These rules embody authoritative injunctions of the Buddha on modes of conduct and restraints on both physical and verbal actions. They deal with transgressions of discipline, and with various categories of restraints and admonitions in accordance with the nature of the offence.",
       books: [
         {
-          name: "P&#257;r&#257;jika",
-          content: "Book I of the Vinaya Pi&#7789;aka gives an elaborate explanation of the important rules of discipline concerning P&#257;r&#257;jika and Sa&#7749;gh&#257;disesa, as well as Aniyata and Nissaggiya which are minor offences.",
+          name: "Pārājika Pāḷi",
+          content: "Pārājika Pāḷi, which is the first book of the Vinaya Piṭaka, gives an elaborate explanation of the important rules of discipline concerning pārājika and saṅghādisesa, as well as aniyata and nissaggiya which are minor offences.",
           volume: "1",
         },
         {
-          name: "P&#257;cittiya",
-          content: "Book II of the Vinaya Pi&#7789;aka deals with the remaining sets of rules for the bhikkhus, namely, the P&#257;cittiya, the P&#257;&#7789;idesan&#299;ya, Sekhiya, Adhikara&#7751;asamatha and the corresponding disciplinary rules for the bhikkhun&#299;s. Although it is called in P&#257;1i just P&#257;cittiya, it has the distinctive name of 'Suddha P&#257;cittiya', ordinary P&#257;cittiya, to distinguish it from Nissaggiya P&#257;cittiya, described above.",
+          name: "Pācittiya Pāḷi",
+          content: "The Pācittiya Pāḷi, which is the second book of the Vinaya Piṭaka, deals with the remaining sets of rules for the bhikkhus, namely, the pācittiya, the pāṭidesanīya, the sekhiya, the adhikaraṇasamatha and the corresponding disciplinary rules for the bhikkhunis. Although it is called in Pāḷi just pācittiya, it has the distinctive name of suddha pācittiya (ordinary pācittiya), to distinguish it from nissaggiya pācittiya, described above.",
           volume: "2",
         },
         {
-          name: "Mah&#257;vagga",
-          content: "Mah&#257;vagga P&#257;&#7735;i, Book III, made up of ten sections known as Khandhakas, opens with an historical account of how the Buddha attained Supreme Enlightenment at the foot of the Bodhi Tree, how he discovered the famous law of Dependent Origination, how he gave his first sermon to the Group of Five Bhikkhus on the discovery of the Four Noble Truths, namely, the great Discourse on the Turning of the Wheel of Dhamma, Dhammacakkappavattana Sutta. This was followed by another great discourse, the Anattalakkha1⁄4a Sutta. These two suttas may be described as the Compendium of the Teaching of the Buddha.",
+          name: "Mahāvagga Pāḷi",
+          content: 'Mahāvagga Pāḷi, made up of ten sections known as khandhakas, opens with an historical account of how the Buddha attained supreme enlightenment at the foot of the Bodhi tree, how he discovered the famous Law of Dependent Origination and how he gave his first sermon to the group of five bhikkhus on the discovery of the Four Noble Truths (i.e. the great "Discourse on the Turning of the Wheel of Dhamma"-Dhammacakkappavattana Sutta). This was followed by another great discourse, the Anattalakkhaṇa Sutta. These two suttas can be described as a compendium of the teaching of the Buddha.',
           volume: "3",
         },
         {
-          name: "C&#363;&#7735;avagga",
-          content: "C&#363;&#7735;avagga P&#257;&#7735;i which is Book IV of the Vinaya Pi&#7789;aka continues to deal with more rules and procedures for institutional acts or functions known as Sa&#7749;ghakamma. The twelve sections in this book deal with rules for offences such as Sa&#7749;gh&#257;disesa that come before the Sa&#7749;gha; rules for observance of penances such as pariv&#257;sa and m&#257;natta and rules for reinstatement of a bhikkhu. There are also miscellaneous rules concerning bathing, dress, dwellings and furniture and those dealing with treatment of visiting bhikkhus, and duties of tutors and novices.",
+          name: "Cūḷavagga Pāḷi",
+          content: "Cūḷavagga Pāḷi, which is book four of the Vinaya Piṭaka, deals with further rules and procedures for institutional acts or functions known as saṅghakamma. The twelve sections in this book deal with rules for offences such as saṅghādisesa that come before the Sangha; rules for observance of penances such as parivāsa and mānatta and rules for reinstatement of a bhikkhu. There are also miscellaneous rules concerning bathing, dress, dwellings and furniture and those dealing with treatment of visiting bhikkhus, and duties of tutors and novices.",
           volume: "4",
         },
         {
-          name: "Pariv&#257;ra",
-          content: "Pariv&#257;ra P&#257;&#7735;i which is Book V and the last book of the Vinaya Pi&#7789;aka serves as a kind of manual. It is compiled in the form of a catechism, enabling the reader to make an analytical survey of the Vinaya Pi&#7789;aka. All the rules, official acts, and other matters of the Vinaya are classified under separate categories according to subjects dealt with.",
+          name: "Parivāra Pāḷi",
+          content: "Parivāra Pāḷi, which is the fifth and last book of the Vinaya Piṭaka, serves as a kind of manual. It is compiled in the form of a catechism, enabling the reader to make an analytical survey of the Vinaya Piṭaka. All the rules, official acts, and other matters of the Vinaya are classified under separate categories according to the subjects dealt with.",
           volume: "5",
         },
       ]
     },
     suttanta: {
-      name: "Suttanta Pi&#7789;aka",
-      description: "The general discourses and sermons intended for both the bhikkhus and lay disciples, delivered by the Buddha on various occasions (together with a few discourses delivered by some of his distinguished disciples), are collected and classified in a great division known as the Suttanta Pi&#7789;aka.",
+      name: "Suttanta Piṭaka",
+      description: "The general discourses and sermons intended for both the bhikkhus and lay disciples, delivered by the Buddha on various occasions (together with a few discourses delivered by some of his distinguished disciples), are collected and classified in a great division known as the Suttanta Piṭaka.",
       sections: {
         "Digha Nikaya": {
           name: "",
@@ -339,8 +341,8 @@ const TipitakaData = readable({
       ]
     },
     abhidhamma: {
-      name: "Abhidhamma Pi&#7789;aka",
-      description: "The philosophical aspect of the Buddha's Teaching, more profound and abstract than the discourses of the Suttanta Pi&#7789;aka, is classified under the great division known as the Abhidhamma Pi&#7789;aka. Abhidhamma deals with ultimate Truths, expounds ultimate Truths and investigates Mind and Matter and the relationship between them.",
+      name: "Abhidhamma Piṭaka",
+      description: "The philosophical aspect of the Buddha's Teaching, more profound and abstract than the discourses of the Suttanta Piṭaka, is classified under the great division known as the Abhidhamma Piṭaka. Abhidhamma deals with ultimate Truths, expounds ultimate Truths and investigates Mind and Matter and the relationship between them.",
       books: [
         {
           name: "dhammasangani",
