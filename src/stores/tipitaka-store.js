@@ -89,7 +89,7 @@ const TipitakaData = readable({
       },
       books: [
         {
-          name: "Sīlakkhanda Vagga",
+          name: "Sīlakkhanda Vagga Pāḷi",
           translation: "Division Concerning Morality",
           collection: "digha-nikaya",
           descr: "Collection of long discourses of the Buddha",
@@ -99,47 +99,50 @@ const TipitakaData = readable({
           links: {}
         },
         {
-          name: "Maha Vagga",
-          translation: "the Large Division",
+          name: "Mahā Vagga Pāḷi",
+          translation: "The Large Division",
           collection: "digha-nikaya",
           descr: "Collection of long discourses of the Buddha",
-          content: "<p>The ten suttas in this division are some of the most important ones of the Tipitaka, dealing with historical, and biographical aspects as well as the doctrinal aspects of Buddhism.</p><p>The most famous sutta is the Mahāparinibbāna Sutta which gives an account of the last days and the passing away of the Buddha and the distribution of his relics.</p><p>Mahāpadāna Sutta deals with brief accounts of the last seven Buddhas and the life story of the Vipassi Buddha.</p><p>Doctrinally important are the two suttas: the Mahānidāna Sutta which explains the Chain of Cause and Effect (Paticcasamuppada or Wheel of Dependent Origination), and the Mahāsatipaṭṭhāna Sutta dealing with the four Methods of Steadfast Mindfulness and practical aspects of Buddhist meditation.</p>",
+          content: "<p>The ten suttas in this division are some of the most important of the Tipiṭaka, dealing with historical and biographical aspects as well as the doctrinal aspects of Buddhism. The most famous sutta is the Mahāparinibbāna Sutta which gives an account of the last days and the passing away of the Buddha and the distribution of his relics. Mahāpadāna Sutta deals with brief accounts of the last seven Buddhas and the life story of the Vipassī Buddha. Doctrinally important are the two suttas: the Mahānidāna Sutta, which explains the Chain of Cause and Effect, and the Mahāsatipaṭṭhāna Sutta, which deals with the four methods of steadfast mindfulness and practical aspects of Buddhist meditation.</p>",
           suttas: ["Mahāpadāna Sutta", "Mahānidāna Sutta", "Mahāparinibbāna Sutta", "Mahāsudassana Sutta", "Janavasabha Sutta", "Mahāgovinda Sutta", "Mahāsamaya Sutta", "Sakkapañha Sutta", "Mahāsatipaṭṭhāna Sutta", "Pāyāsi Sutta"],
           volume: "7",
           links: {}
         },
         {
-          name: "Pathika Vagga",
-          translation: "the Division beginning with the discourse on Pathika, the Naked Ascetic",
+          name: "Pathika Vagga Pāḷi",
+          translation: "the Division beginning with the discourse on Pāthika, the Naked Ascetic",
           collection: "digha-nikaya",
           descr: "Collection of long discourses of the Buddha",
-          content: "This division is made up of eleven shorter discourses of a miscellaneous nature They deal with the Buddha's rejection of wrong and severe asceticism practised by followers of many sects, they deal also with the periodical evolution and dissolution of the universe, the accounts of Universal Monarch and the thirty-two physiognomic characteristics of a great man There is one discourse, Singala Sutta, addressed to a young Brahmin showing the duties to be performed by members of the human society The last two suttas, Sangiti and Dasuttara, are discourses given by the Venerable Sanputta and they contain lists of doctrinal terms classified according to subject matter and numerical units The style of their composition is different from the other nine suttas of the division.",
-          suttas: ["Pāthika Sutta", "Udumbarika Sutta", "Cakkavatti Sutta", "Aggañña Sutta", "Sampasādaniya Sutta", "Pāsādika Sutta", "Lakkhaṇa Sutta", "Singala Sutta", "Āṭānāṭiya Sutta", "Saṅgāti Sutta", "Dasuttora Sutta"],
+          content: "This division is made up of eleven shorter discourses of a miscellaneous nature. They deal with the Buddha’s rejection of wrong and severe asceticism practised by followers of many sects. They deal also with the periodical evolution and dissolution of the universe, the accounts of universal monarchs and the thirty-two physiognomic characteristics of a great man. There is one discourse, Siṅgāla Sutta, addressed to a young brahmin showing the duties to be performed by members of the human society. The last two suttas, Saṅgīti and Dasuttara, are discourses given by the Venerable Sāriputta and they contain lists of doctrinal terms classified according to subject matter and numerical units. The style of their composition is different from the other nine suttas of the division.",
+          suttas: ["Pāthika Sutta", "Udumbarikā Sutta", "Cakkavatti Sutta", "Aggañña Sutta", "Sampasādanīya Sutta", "Pāsādika Sutta", "Lakkhaṇa Sutta", "Siṅgāla Sutta", "Āṭānāṭiya Sutta", "Saṅgīti Sutta", "Dasuttara Sutta"],
           volume: "8",
           links: {}
         },
         {
-          name: "Mulapannasa",
+          name: "Mūlapaṇṇāsa Pāḷi",
           collection: "majjhima-nikaya",
           descr: "Collection of medium length discourses of the Buddha",
-          content: "",
-          volume: "",
+          content: "The first book, Mūlapaṇṇāsa, deals with the first fifty suttas in five vaggas.",
+          suttas: ["Mūlapariyāya Sutta", "Sabbāsava Sutta", "Dhammadāyāda Sutta", "Bhayabherava Sutta", "Anaṅgana Sutta", "Ākaṅkheyya Sutta", "Vattha Sutta", "Sallekha Sutta", "Sammādiṭṭhi Sutta", "Mahāsatipaṭṭhāna Sutta", "Cūḷasīhanāda Sutta", "Mahāsīhanāda Sutta", "Mahādukkhakkhandha Sutta", "Cūḷadukkhakkhandha Sutta", "Anumāna Sutta", "Cetokhila Sutta", "Vanapattha Sutta", "Madhupiṇḍika Sutta", "Dvedāvitakka Sutta", "Vitakkasaṇṭhāna Sutta", "Kakacūpama Sutta", "Alagaddūpama Sutta", "Vammika Sutta", "Rathavinīta Sutta", "Nivāpa Sutta", "Pāsarāsi Sutta", "Cūḷahatthipadopama Sutta", "Mahāhatthipadopama Sutta", "Mahāsāropama Sutta", "Cūḷasāropama Sutta", "Cūḷagosiṅga Sutta", "Mahāgosiṅga Sutta", "Mahāgopālaka Sutta", "Cūḷagopālaka Sutta", "Cūḷasaccaka Sutta", "Mahāsaccaka Sutta", "Cūḷataṇhāsaṅkhaya Sutta", "Mahātaṇhāsaṅkhaya Sutta", "Massapura Sutta", "Cassapura Sutta", "Sāleyyaka Sutta", "Verañjaka Sutta", "Mahāvedalla Sutta", "Cūḷavedalla Sutta", "Cūḷadhammasamādāna Sutta", "Mahādhammasamādāna Sutta", "Vīmaṃsaka Sutta", "Kosambiya Sutta", "Brahmanimantanika Sutta", "Māratajjanīya Sutta"],
+          volume: "9",
           links: {}
         },
         {
-          name: "Majjhima Pannasa",
+          name: "Majjhima Paṇṇāsa Pāḷi",
           collection: "majjhima-nikaya",
           descr: "Collection of medium length discourses of the Buddha",
-          content: "",
-          volume: "",
+          content: "The second book, Majjhimapaṇṇāsa consists of the second fifty suttas, in five vaggas.",
+          suttas: ["Kandaraka Sutta", "Aṭṭhakanāgara Sutta", "Sekha Sutta", "Potaliya Sutta", "Jīvaka Sutta", "Upāli Sutta", "Kukkuravatika Sutta", "Abhayarājakumāra Sutta", "Bahuvedanīya Sutta", "Apaṇṇaka Sutta", "Ambalaṭṭhikarāhulovāda Sutta", "Mahārāhulovāda Sutta", "Cūḷamālukya Sutta", "Mahāmālukya Sutta", "Bhaddāli Sutta", "Laṭukikopama Sutta", "Cātumā Sutta", "Naḷakapāna Sutta", "Goliyāni Sutta", "Kīṭāgiri Sutta", "Tevijjavaccha Sutta", "Aggivaccha Sutta", "Mahāvaccha Sutta", "Dīghanakha Sutta", "Māgandiya Sutta", "Sandaka Sutta", "Mahāsakuludāyī Sutta", "Samaṇamuṇḍika Sutta", "Cūḷasakuludāyī Sutta", "Vekhanasa Sutta", "Ghaṭīkāra Sutta", "Raṭṭhapāla Sutta", "Maghādeva Sutta", "Madhura Sutta", "Bodhirājakumāra Sutta", "Aṅgulimāla Sutta", "Piyajātika Sutta", "Bāhitika Sutta", "Dhammacetiya Sutta", "Kaṇṇakatthala Sutta", "Brahmāyu Sutta", "Sela Sutta", "Assalāyana Sutta", "Ghoṭamukha Sutta", "Caṅkī Sutta", "Esukārī Sutta", "Dhanañjāni Sutta", "Vāseṭṭha Sutta", "Subha Sutta", "Saṅgārava Sutta"],
+          volume: "10",
           links: {}
         },
         {
           name: "Uparipannasa",
           collection: "majjhima-nikaya",
           descr: "Collection of medium length discourses of the Buddha",
-          content: "",
-          volume: "",
+          content: "The last fifty-two suttas are dealt with in five vaggas of the third book, Uparipaṇṇāsa, which means more than fifty.",
+          suttas: ["Devadaha Sutta", "Pañcattaya Sutta", "Kinti Sutta", "Sāmagāma Sutta", "Sunakkhatta Sutta", "Āneñja-sappāya Sutta", "Gaṇakamoggallāna Sutta", "Gopakamoggallāna Sutta", "Mahāpuṇṇama Sutta", "Cūḷapuṇṇama Sutta", "Ānupada Sutta", "Chabbisodhana Sutta", "Sappurisa Sutta", "Sevitabbāsevitabba Sutta", "Bahudhātuka Sutta", "Isigili Sutta", "Mahācattārīsaka Sutta", "Ānāpānassati Sutta", "Kāyagatāsati Sutta", "Saṅkhārupapatti Sutta", "Cūḷasuññata Sutta", "Mahāsuññata Sutta", "Acchariya-abbhuta Sutta", "Bākula Sutta", "Dantabhūmi Sutta", "Bhūmija Sutta", "Anuruddha Sutta", "Upakkilesa Sutta", "Bālapaṇḍita Sutta", "Devadūta Sutta", "Bhaddekaratta Sutta", "Ānanda-bhaddekaratta Sutta", "Lomasakaṅgiya-bhaddekaratta Sutta", "Bhaddekaratta Sutta", "Cūḷakamma-vibhaṅga Sutta", "Mahākamma-vibhaṅga Sutta", "Saḷāyatana-vibhaṅga Sutta", "Uddesa-vibhaṅga Sutta", "Araṇa-vibhaṅga Sutta", "Dhātu-vibhaṅga Sutta", "Sacca-vibhaṅga Sutta", "Dakkhiṇā-vibhaṅga Sutta", "Anāthapiṇḍikovāda Sutta", "Channovāda Sutta", "Puṇṇovāda Sutta", "Nandakovāda Sutta", "Cūḷarāhulovāda Sutta", "Chachakka Sutta", "Mahāsaḷāyatanika Sutta", "Nagaravindeyya Sutta", "Piṇḍapātapārisuddha Sutta", "Indriyabhāvanā Sutta"],
+          volume: "11",
           links: {}
         },
         {
