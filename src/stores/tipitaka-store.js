@@ -67,7 +67,7 @@ const TipitakaData = readable({
         },
         "samyutta-nikaya": {
           name: "Saṃyutta Nikāya",
-          translation: "Collection of 'Connected Discourses' or 'Kindred Sayings' of the Buddha",
+          translation: "Collection of 'Connected Discourses' or 'Kindred Sayings' of the Buddha consisting of 7762 suttas of varied length, generally short, and arranged in a special order.",
           qty: 7762,
           descr: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga. Each major vagga is divided into fifty-six groups known as saṃyuttas-related subjects grouped together. The saṃyuttas are named after the subjects they deal with, for example, Bojjhaṅga Saṃyutta on the seven factors of enlightenment, or after some principal personalities such as the Venerable Sāriputta, King Pasenadi of Kosala, or Sakka. Kosala Saṃyutta is a group of discourses concerning King Pasenadi of Kosala, and Devatā Saṃyutta deals with devas like Sakka, Indra, Brahmā, etc. Each saṃyutta is further divided into sections which are made up of individual suttas. Thus the well-known Dhammacakkappavattana Sutta is the first discourse (sutta) in the second section of Sacca Saṃyutta which comes under the Mahāvagga division of Saṃyutta Nikāya. In the following excerpts from Saṃyutta Nikāya, only a few suttas representing each major division are given.",
           links: {}
@@ -120,73 +120,95 @@ const TipitakaData = readable({
         },
         {
           name: "Mūlapaṇṇāsa Pāḷi",
+          translation: "",
           collection: "majjhima-nikaya",
           descr: "Collection of medium length discourses of the Buddha",
           content: "The first book, Mūlapaṇṇāsa, deals with the first fifty suttas in five vaggas.",
           suttas: ["Mūlapariyāya Sutta", "Sabbāsava Sutta", "Dhammadāyāda Sutta", "Bhayabherava Sutta", "Anaṅgana Sutta", "Ākaṅkheyya Sutta", "Vattha Sutta", "Sallekha Sutta", "Sammādiṭṭhi Sutta", "Mahāsatipaṭṭhāna Sutta", "Cūḷasīhanāda Sutta", "Mahāsīhanāda Sutta", "Mahādukkhakkhandha Sutta", "Cūḷadukkhakkhandha Sutta", "Anumāna Sutta", "Cetokhila Sutta", "Vanapattha Sutta", "Madhupiṇḍika Sutta", "Dvedāvitakka Sutta", "Vitakkasaṇṭhāna Sutta", "Kakacūpama Sutta", "Alagaddūpama Sutta", "Vammika Sutta", "Rathavinīta Sutta", "Nivāpa Sutta", "Pāsarāsi Sutta", "Cūḷahatthipadopama Sutta", "Mahāhatthipadopama Sutta", "Mahāsāropama Sutta", "Cūḷasāropama Sutta", "Cūḷagosiṅga Sutta", "Mahāgosiṅga Sutta", "Mahāgopālaka Sutta", "Cūḷagopālaka Sutta", "Cūḷasaccaka Sutta", "Mahāsaccaka Sutta", "Cūḷataṇhāsaṅkhaya Sutta", "Mahātaṇhāsaṅkhaya Sutta", "Massapura Sutta", "Cassapura Sutta", "Sāleyyaka Sutta", "Verañjaka Sutta", "Mahāvedalla Sutta", "Cūḷavedalla Sutta", "Cūḷadhammasamādāna Sutta", "Mahādhammasamādāna Sutta", "Vīmaṃsaka Sutta", "Kosambiya Sutta", "Brahmanimantanika Sutta", "Māratajjanīya Sutta"],
+          vaggas: ["Mūlapariyāya Vagga", "Sīhanāda Vagga", "Opamma Vagga", "Mahāyamaka Vagga", "Cūḷayamaka Vagga"],
           volume: "9",
           links: {}
         },
         {
           name: "Majjhima Paṇṇāsa Pāḷi",
+          translation: "",
           collection: "majjhima-nikaya",
           descr: "Collection of medium length discourses of the Buddha",
           content: "The second book, Majjhimapaṇṇāsa consists of the second fifty suttas, in five vaggas.",
           suttas: ["Kandaraka Sutta", "Aṭṭhakanāgara Sutta", "Sekha Sutta", "Potaliya Sutta", "Jīvaka Sutta", "Upāli Sutta", "Kukkuravatika Sutta", "Abhayarājakumāra Sutta", "Bahuvedanīya Sutta", "Apaṇṇaka Sutta", "Ambalaṭṭhikarāhulovāda Sutta", "Mahārāhulovāda Sutta", "Cūḷamālukya Sutta", "Mahāmālukya Sutta", "Bhaddāli Sutta", "Laṭukikopama Sutta", "Cātumā Sutta", "Naḷakapāna Sutta", "Goliyāni Sutta", "Kīṭāgiri Sutta", "Tevijjavaccha Sutta", "Aggivaccha Sutta", "Mahāvaccha Sutta", "Dīghanakha Sutta", "Māgandiya Sutta", "Sandaka Sutta", "Mahāsakuludāyī Sutta", "Samaṇamuṇḍika Sutta", "Cūḷasakuludāyī Sutta", "Vekhanasa Sutta", "Ghaṭīkāra Sutta", "Raṭṭhapāla Sutta", "Maghādeva Sutta", "Madhura Sutta", "Bodhirājakumāra Sutta", "Aṅgulimāla Sutta", "Piyajātika Sutta", "Bāhitika Sutta", "Dhammacetiya Sutta", "Kaṇṇakatthala Sutta", "Brahmāyu Sutta", "Sela Sutta", "Assalāyana Sutta", "Ghoṭamukha Sutta", "Caṅkī Sutta", "Esukārī Sutta", "Dhanañjāni Sutta", "Vāseṭṭha Sutta", "Subha Sutta", "Saṅgārava Sutta"],
+          vaggas: ["Gahapati Vagga", "Bhikkhu Vagga", "Paribbājaka Vagga", "Rāja Vagga", "Brāhmaṇa Vagga"],
           volume: "10",
           links: {}
         },
         {
           name: "Uparipannasa",
+          translation: "",
           collection: "majjhima-nikaya",
           descr: "Collection of medium length discourses of the Buddha",
           content: "The last fifty-two suttas are dealt with in five vaggas of the third book, Uparipaṇṇāsa, which means more than fifty.",
           suttas: ["Devadaha Sutta", "Pañcattaya Sutta", "Kinti Sutta", "Sāmagāma Sutta", "Sunakkhatta Sutta", "Āneñja-sappāya Sutta", "Gaṇakamoggallāna Sutta", "Gopakamoggallāna Sutta", "Mahāpuṇṇama Sutta", "Cūḷapuṇṇama Sutta", "Ānupada Sutta", "Chabbisodhana Sutta", "Sappurisa Sutta", "Sevitabbāsevitabba Sutta", "Bahudhātuka Sutta", "Isigili Sutta", "Mahācattārīsaka Sutta", "Ānāpānassati Sutta", "Kāyagatāsati Sutta", "Saṅkhārupapatti Sutta", "Cūḷasuññata Sutta", "Mahāsuññata Sutta", "Acchariya-abbhuta Sutta", "Bākula Sutta", "Dantabhūmi Sutta", "Bhūmija Sutta", "Anuruddha Sutta", "Upakkilesa Sutta", "Bālapaṇḍita Sutta", "Devadūta Sutta", "Bhaddekaratta Sutta", "Ānanda-bhaddekaratta Sutta", "Lomasakaṅgiya-bhaddekaratta Sutta", "Bhaddekaratta Sutta", "Cūḷakamma-vibhaṅga Sutta", "Mahākamma-vibhaṅga Sutta", "Saḷāyatana-vibhaṅga Sutta", "Uddesa-vibhaṅga Sutta", "Araṇa-vibhaṅga Sutta", "Dhātu-vibhaṅga Sutta", "Sacca-vibhaṅga Sutta", "Dakkhiṇā-vibhaṅga Sutta", "Anāthapiṇḍikovāda Sutta", "Channovāda Sutta", "Puṇṇovāda Sutta", "Nandakovāda Sutta", "Cūḷarāhulovāda Sutta", "Chachakka Sutta", "Mahāsaḷāyatanika Sutta", "Nagaravindeyya Sutta", "Piṇḍapātapārisuddha Sutta", "Indriyabhāvanā Sutta"],
+          vaggas: ["Devadaha Vagga", "Ānupada Vagga", "Suññata Vagga", "Vibhaṅga Vagga", "Saḷāyatana Vagg"],
           volume: "11",
           links: {}
         },
         {
           name: "Sagatha Vagga Saṃyutta",
+          translation: "",
           collection: "Saṃyutta-nikaya",
-          descr: "Collection of 7762 suttas of varied length, generally short, arranged in a special order",
-          content: "",
-          volume: "",
+          descr: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
+          content: "This major division of Sagāthā Vagga Saṃyutta Pāḷi contains eleven saṃyuttas with discourses grouped according to characters appearing in them: the king of devas, the devas, the Brahmā, māra, King of Kosala, bhikkhus and bhikkhunis. The name of the vagga, Sagāthā is derived from the fact that various personalities appearing in the discourses conducted their dialogues or interviews with the Buddha mostly in verse.",
+          suttas: [],
+          samyuttas: ["Devatā-Saṃyutta", "Devaputta-Saṃyutta", "Kosala-Saṃyutta", "Māra-Saṃyutta", "Bhikkhunī-Saṃyutta	", "Brahma-Saṃyutta", "Brāhmaṇa-Saṃyutta", "Vaṅgīsa-Saṃyutta", "Vana-Saṃyutta", "Yakkha-Saṃyutta", "Sakka-Saṃyutta"],
+          volume: "12",
           links: {}
         },
         {
           name: "Nidana Vagga Saṃyutta",
+          translation: "",
           collection: "Saṃyutta-nikaya",
-          descr: "Collection of 7762 suttas of varied length, generally short, arranged in a special order",
-          content: "",
-          volume: "",
+          descr: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
+          content: "This second major division of Nidāna Vagga Saṃyutta Pāḷi contains ten saṃyuttas, all dealing with fundamental aspects of the doctrine. The discourses are chiefly concerned with the principles of conditionality and interdependence, explained in the detailed formula which is called Paṭiccasamuppāda (Conditioned Genesis or Dependent Origination), consisting of twelve factors.Various aspects of Paṭiccasamuppāda, together with expositions on doctrinal matters concerning practice of the holy life form the main theme of the early suttas in these saṃyuttas.",
+          suttas: [],
+          samyuttas: ["Nidāna-Saṃyutta", "Abhisamaya-Saṃyutta", "Dhātu-Saṃyutta", "Anamatagga-Saṃyutta", "Kassapa-Saṃyutta", "Lābha-Sakkāra-Saṃyutta", "Rāhula-Saṃyutta", "Lakkhaṇa-Saṃyutta", "Opamma-Saṃyutta", "Bhikkhu-Saṃyutta"],
+          volume: "13",
           links: {}
         },
         {
           name: "Khandha Vagga Saṃyutta",
+          translation: "",
           collection: "Saṃyutta-nikaya",
-          descr: "Collection of 7762 suttas of varied length, generally short, arranged in a special order",
-          content: "",
-          volume: "",
+          descr: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
+          content: "The main theme of most suttas in this division is, as the name implies, khandhas, the five aggregates that constitute what is regarded as a being. Each of the components of these aggregates, namely, matter, sensation, perception, mental concomitants and consciousness is shown to be a bundle of dukkha (suffering). Made up of thirteen saṃyuttas, Khandha Vagga forms an important collection of doctrinal discussions on such topics such as atta, anattā, eternity and annihilation.",
+          suttas: [],
+          samyuttas: ["Khandha-Saṃyutta", "Rādha-Saṃyutta", "Diṭṭhi-Saṃyutta", "Okkantika-Saṃyutta", "Uppāda-Saṃyutta", "Kilesa-Saṃyutta", "Sāriputta-Saṃyutta", "Nāga-Saṃyutta", "Supaṇṇa-Saṃyutta", "Gandhabbakāya-Saṃyutta", "Valāhaka-Saṃyutta", "Vacchagotta-Saṃyutta", "Jhāna- (or Samādhi-) -Saṃyutta"],
+          volume: "14",
           links: {}
         },
         {
           name: "Salayatana Vagga Saṃyutta",
+          translation: "",
           collection: "Saṃyutta-nikaya",
-          descr: "Collection of 7762 suttas of varied length, generally short, arranged in a special order",
-          content: "",
-          volume: "",
+          descr: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
+          content: "This division is made up of ten saṃyuttas or groups. It deals mainly with the six sense organs or bases of contact named internal sense bases (eye, ear, nose, tongue, body and mind); six corresponding sense objects, known as external sense bases (visible form, sound, odour, taste, tangible things and mind-objects); and consciousness that arises in relation to each pair of these internal and external sense bases. There are expositions on the impermanent nature of these sense bases and how relinquishing of attachment to them results in liberation. The second saṃyutta, known as the Vedanā Saṃyutta, focuses on the sensation arising from the coming together of the sense bases and conciousness. Sensation is shown to be of three kinds: pleasant, unpleasant and indifferent. None of these is permanent and each one of these is the cause of craving which in turn is the root of all suffering. Concise but illuminating expositions on nibbāna are found in many suttas. So also are there practical guides of Vipassana meditation.",
+          suttas: [],
+          samyuttas: ["Saḷāyatana-Saṃyutta", "Vedanā-Saṃyutta", "Mātugāma-Saṃyutta", "Jambhukhādaka-Saṃyutta", "Samaṇdaka-Saṃyutta", "Moggallāna-Saṃyutta", "Citta-Saṃyutta", "Gāmani-Saṃyutta", "Asaṇkhata-Saṃyutta", "Avyākata-Saṃyutta"],
+          volume: "15",
           links: {}
         },
         {
           name: "Maha Vagga Saṃyutta",
+          translation: "",
           collection: "Saṃyutta-nikaya",
-          descr: "Collection of 7762 suttas of varied length, generally short, arranged in a special order",
-          content: "",
-          volume: "",
+          descr: "",
+          content: "The last vagga of Saṃyutta Nikāya is made up of twelve saṃyuttas, the list of which gives a clear indication of the subjects dealt with in this division: Magga Saṃyutta, Bojjhaṅga Saṃyutta, Satipaṭṭhāna Saṃyutta, Indriya Saṃyutta, Sammappadhāna Saṃyutta, Bala Saṃyutta, Iddhipāda Saṃyutta, Anuruddha Saṃyutta, Jhāna Saṃyutta, Ānāpāna Saṃyutta, Sotāpatti Saṃyutta and Sacca Saṃyutta. The main doctrines which from the fundamental basis of the Buddha’s teaching are reviewed in these saṃyuttas, covering both the theoretical and practical aspects. In the concluding suttas of the vagga, the ultimate goal of the holy life: arahatta phala, nibbāna, the end of all suffering, is constantly kept in full view together with a detailed description of the way of achieving it, namely, the Four Noble Truths and the Noble Path of Eight Constituents.",
+          suttas: [],
+          samyuttas: ["Magga-Saṃyutta", "Bojjhaṅga-Saṃyutta", "Satipaṭṭhāna-Saṃyutta", "Indriya-Saṃyutta", "Sammappadhāna-Saṃyutta", "Bala-Saṃyutta", "Iddhipāda-Saṃyutta", "Anuruddha-Saṃyutta", "Jhāna-Saṃyutta", "Ānāpāna-Saṃyutta", "Sotāpatti-Saṃyutta", "Sacca-Saṃyutta"],
+          volume: "16",
           links: {}
         },
         {
           name: "Ekaka Nipata",
+          translation: "",
           collection: "Aṅguttara-nikaya",
           descr: "Collection of 9557  short suttas divided into eleven division known as nipatas",
           content: "",
@@ -195,6 +217,7 @@ const TipitakaData = readable({
         },
         {
           name: "Duka Nipata",
+          translation: "",
           collection: "Aṅguttara-nikaya",
           descr: "Collection of 9557  short suttas divided into eleven division known as nipatas",
           content: "",
@@ -203,6 +226,7 @@ const TipitakaData = readable({
         },
         {
           name: "Tika Nipata",
+          translation: "",
           collection: "Aṅguttara-nikaya",
           descr: "Collection of 9557  short suttas divided into eleven division known as nipatas",
           content: "",
@@ -211,6 +235,7 @@ const TipitakaData = readable({
         },
         {
           name: "Catukka Nipata",
+          translation: "",
           collection: "Aṅguttara-nikaya",
           descr: "Collection of 9557  short suttas divided into eleven division known as nipatas",
           content: "",
@@ -219,6 +244,7 @@ const TipitakaData = readable({
         },
         {
           name: "Pancaka Nipata",
+          translation: "",
           collection: "Aṅguttara-nikaya",
           descr: "Collection of 9557  short suttas divided into eleven division known as nipatas",
           content: "",
@@ -227,6 +253,7 @@ const TipitakaData = readable({
         },
         {
           name: "Chakka Nipata",
+          translation: "",
           collection: "Aṅguttara-nikaya",
           descr: "Collection of 9557  short suttas divided into eleven division known as nipatas",
           content: "",
@@ -235,6 +262,7 @@ const TipitakaData = readable({
         },
         {
           name: "Sattaka Nipata",
+          translation: "",
           collection: "Aṅguttara-nikaya",
           descr: "Collection of 9557  short suttas divided into eleven division known as nipatas",
           content: "",
@@ -243,6 +271,7 @@ const TipitakaData = readable({
         },
         {
           name: "Atthaka Nipata",
+          translation: "",
           collection: "Aṅguttara-nikaya",
           descr: "Collection of 9557  short suttas divided into eleven division known as nipatas",
           content: "",
@@ -251,6 +280,7 @@ const TipitakaData = readable({
         },
         {
           name: "Navaka Nipata",
+          translation: "",
           collection: "Aṅguttara-nikaya",
           descr: "Collection of 9557  short suttas divided into eleven division known as nipatas",
           content: "",
@@ -259,6 +289,7 @@ const TipitakaData = readable({
         },
         {
           name: "Dasaka Nipata",
+          translation: "",
           collection: "Aṅguttara-nikaya",
           descr: "Collection of 9557  short suttas divided into eleven division known as nipatas",
           content: "",
@@ -267,6 +298,7 @@ const TipitakaData = readable({
         },
         {
           name: "Ekadasaka Nipata",
+          translation: "",
           collection: "Aṅguttara-nikaya",
           descr: "Collection of 9557  short suttas divided into eleven division known as nipatas",
           content: "",
@@ -275,6 +307,7 @@ const TipitakaData = readable({
         },
         {
           name: "Khuddakapatha",
+          translation: "",
           collection: "khuddaka-nikaya",
           descr: "Contains the largest number of treatises and the most numerous categories of dhamma",
           content: "",
@@ -283,6 +316,7 @@ const TipitakaData = readable({
         },
         {
           name: "Dhammapada",
+          translation: "",
           collection: "khuddaka-nikaya",
           descr: "Contains the largest number of treatises and the most numerous categories of dhamma",
           content: "",
@@ -291,6 +325,7 @@ const TipitakaData = readable({
         },
         {
           name: "Udana",
+          translation: "",
           collection: "khuddaka-nikaya",
           descr: "Contains the largest number of treatises and the most numerous categories of dhamma",
           content: "",
@@ -299,6 +334,7 @@ const TipitakaData = readable({
         },
         {
           name: "Itivuttaka",
+          translation: "",
           collection: "khuddaka-nikaya",
           descr: "Contains the largest number of treatises and the most numerous categories of dhamma",
           content: "",
@@ -307,6 +343,7 @@ const TipitakaData = readable({
         },
         {
           name: "Suttanipata",
+          translation: "",
           collection: "khuddaka-nikaya",
           descr: "Contains the largest number of treatises and the most numerous categories of dhamma",
           content: "",
@@ -315,6 +352,7 @@ const TipitakaData = readable({
         },
         {
           name: "Vimana Vatthu",
+          translation: "",
           collection: "khuddaka-nikaya",
           descr: "Contains the largest number of treatises and the most numerous categories of dhamma",
           content: "",
@@ -323,6 +361,7 @@ const TipitakaData = readable({
         },
         {
           name: "Peta Vatthu",
+          translation: "",
           collection: "khuddaka-nikaya",
           descr: "Contains the largest number of treatises and the most numerous categories of dhamma",
           content: "",
@@ -331,6 +370,7 @@ const TipitakaData = readable({
         },
         {
           name: "The Thera Gatha",
+          translation: "",
           collection: "khuddaka-nikaya",
           descr: "Contains the largest number of treatises and the most numerous categories of dhamma",
           content: "",
@@ -339,6 +379,7 @@ const TipitakaData = readable({
         },
         {
           name: "The Theri Gatha",
+          translation: "",
           collection: "khuddaka-nikaya",
           descr: "Contains the largest number of treatises and the most numerous categories of dhamma",
           content: "",
@@ -347,6 +388,7 @@ const TipitakaData = readable({
         },
         {
           name: "Jataka",
+          translation: "",
           collection: "khuddaka-nikaya",
           descr: "Contains the largest number of treatises and the most numerous categories of dhamma",
           content: "Birth-stories of the Buddha",
