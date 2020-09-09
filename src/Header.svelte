@@ -12,7 +12,7 @@
   }
 
   header h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin: 0.8rem;
     font-weight: 100;
     /*   letter-spacing: 1px; */

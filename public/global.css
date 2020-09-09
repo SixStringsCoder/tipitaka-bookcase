@@ -17,7 +17,7 @@ body {
   font-family: Times Ext Roman, Gentium, Arial Unicode MS, Tahoma, Verdana, sans-serif;
 }
 
-a {
+/* a {
 	color: rgb(0,100,200);
 	text-decoration: none;
 }
@@ -65,4 +65,4 @@ button:not(:disabled):active {
 
 button:focus {
 	border-color: #666;
-}
+} */
