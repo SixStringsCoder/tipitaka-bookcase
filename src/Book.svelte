@@ -2,7 +2,6 @@
   export let name: string;
   export let basket: string;
   export let collection: string;
-  export let suttas: string;
   export let counter: string;
 </script>
 
@@ -22,8 +21,9 @@
     top: 0;
     left: 0;
     z-index: 1000;
-    width: 47px;
+    width: 50px;
     height: 102%;
+    margin: -3px 0 0 -2px;
     background-color: rgba(0, 0, 0, 0);
     border-bottom: 5px solid #3e2723;
   }
@@ -96,8 +96,7 @@
   class="book"
   id={name}
   data-basket-name={basket}
-  data-collection={collection}
-  data-suttas={suttas}>
+  data-collection={collection}>
 
   <div class="title" title={name}>
     <span class="title-label">{basket}</span>

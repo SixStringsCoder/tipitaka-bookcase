@@ -22,7 +22,7 @@
     justify-content: flex-start;
     position: fixed;
     z-index: 10000;
-    margin-top: 4.2rem;
+    margin-top: 3.9rem;
     padding: 10px;
   }
 
