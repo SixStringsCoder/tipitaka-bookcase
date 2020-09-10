@@ -13,7 +13,7 @@
   let selectedBooks: string = "";
   $: console.log(`selectedBooks: ${selectedBooks}`);
 
-  const selectBooks = (e) => {
+  const selectBooks = (e: any) => {
     selectedBooks = e.target.value;
   };
 </script>
@@ -50,5 +50,5 @@
 
 <!-- Book Case -->
 <main id="library">
-  <Bookcase />
+  <Bookcase {selectedBooks} />
 </main>

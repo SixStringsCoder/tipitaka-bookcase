@@ -5,6 +5,7 @@
   export let counter: string;
 
   export let selected: boolean = false;
+  export let blinking: boolean = false;
 </script>
 
 <style>
@@ -103,7 +104,11 @@
   data-basket-name={basket}
   data-collection={collection}>
 
-  <div class:highlighted={selected} class="title" title={name}>
+  <div
+    class:highlighted={selected}
+    class:blink-hi-liter={blinking}
+    class="title"
+    title={name}>
     <span class="title-label">{basket}</span>
   </div>
 

@@ -10,7 +10,14 @@
   const abhidhamma = tipitakaData.baskets.abhidhamma.books;
 
   let bookcaseCollection: string = tipitakaData.information.name;
+  export let selectedBooks: string = "";
+  $: console.log(selectedBooks);
+
   let selected: boolean = true;
+  let blinking: boolean = true;
+  let searchQuery: string = "";
+
+  const findMenuItem = () => console.log(selectedBooks);
 </script>
 
 <style>
@@ -60,6 +67,7 @@
     <Book
       {name}
       {selected}
+      {blinking}
       basket="Vinaya"
       {collection}
       counter={String(i + 1)} />

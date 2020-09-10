@@ -26,7 +26,9 @@
   <select name="menu" id="menu" bind:value={selectedBooks} on:change>
     <option value="reset" disabled selected>Learn More</option>
     <optgroup label="Tipitaka">
-      <option value="tipitaka">Tipi&#7789;aka</option>
+      <option value="tipitaka" data-bookcase="bookcase">
+        Go to Tipi&#7789;aka
+      </option>
       <option value="vinaya">Vinaya Pi&#7789;aka</option>
       <option value="suttanta">Suttanta Pi&#7789;aka</option>
       <option value="abhidhamma">Abhidhamma Pi&#7789;aka</option>
@@ -34,23 +36,25 @@
       <option value="majjhima-nikaya">
         Medium-length Discourses (Majjhima Nikāya)
       </option>
-      <option value="Saṃyutta-nikaya">
+      <option value="samyutta-nikaya">
         Short Discourses (Samyutta Nikāya)
       </option>
-      <option value="Aṅguttara-nikaya">
+      <option value="anguttara-nikaya">
         Numerical Discourses (Aṅguttara Nikāya)
       </option>
       <option value="khuddaka-nikaya">
         Minor Collection (Khuddaka Nikāya)
       </option>
-      <option value="Dhammapada">Dhammapada</option>
-      <option value="Jataka">Jataka Tales</option>
-      <option value="Patthana">Patthana Matrix</option>
+      <option value="dhammapada">Dhammapada</option>
+      <option value="jataka">Jataka Tales</option>
+      <option value="patthana">Patthana Matrix</option>
       <option value="Mahānidāna Sutta">Wheel of Dependent Origination</option>
       <option value="Mahāsatipaṭṭhāna Sutta">Mahāsatipaṭṭhāna Sutta</option>
     </optgroup>
     <optgroup label="Commentaries (Atthakatha)">
-      <option value="commentaries">Go to Commentaries</option>
+      <option value="commentaries" data-bookcase="bookcase">
+        Go to Commentaries
+      </option>
       <option value="path-of-purification">Visuddhi Magga</option>
       <option value="Samantapasadika">Samantapasadika</option>
       <option value="Kankhavitarani">Kankhavitarani</option>
@@ -61,7 +65,9 @@
       <option value="Paramatthajotika">Paramatthajotika</option>
     </optgroup>
     <optgroup label="Sub-Commentaries (Tika)">
-      <option value="sub-commentaries">Go to Sub-Commentaries</option>
+      <option value="sub-commentaries" data-bookcase="bookcase">
+        Go to Sub-commentaries
+      </option>
       <option value="Paramatthamañjusa">Paramatthamañjusa</option>
       <option value="Vajirabuddhi-tika">Vajirabuddhi-tika</option>
       <option value="Saratthadipani">Saratthadipani</option>

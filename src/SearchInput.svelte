@@ -1,5 +1,7 @@
 <script lang="ts">
+  export let searchQuery: string = "";
 
+  const findQueryItem = () => console.log(searchQuery);
 </script>
 
 <style>
@@ -48,7 +50,12 @@
 
 <div id="search-cont">
   <i class="fas fa-search" />
-  <input id="search" type="text" placeholder="Search..." />
+  <input
+    id="search"
+    type="text"
+    bind:value={searchQuery}
+    placeholder="Search..."
+    on:input={findQueryItem} />
   <ul id="results-list">
     <!-- Search results go here as li tags-->
   </ul>
