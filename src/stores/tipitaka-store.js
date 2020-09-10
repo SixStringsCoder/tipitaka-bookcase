@@ -15,6 +15,7 @@ const TipitakaData = readable({
       links: {},
       books: [
         {
+          id: "parajika",
           name: "Pārājika Pāḷi",
           content: "Pārājika Pāḷi, which is the first book of the Vinaya Piṭaka, gives an elaborate explanation of the important rules of discipline concerning pārājika and saṅghādisesa, as well as aniyata and nissaggiya which are minor offences.",
           volume: "1",
@@ -22,9 +23,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          links: {}
+          commentary: [],
+          subcommentary: [],
+          links: {},
         },
         {
+          id: "pacittiya",
           name: "Pācittiya Pāḷi",
           content: "The Pācittiya Pāḷi, which is the second book of the Vinaya Piṭaka, deals with the remaining sets of rules for the bhikkhus, namely, the pācittiya, the pāṭidesanīya, the sekhiya, the adhikaraṇasamatha and the corresponding disciplinary rules for the bhikkhunis. Although it is called in Pāḷi just pācittiya, it has the distinctive name of suddha pācittiya (ordinary pācittiya), to distinguish it from nissaggiya pācittiya, described above.",
           volume: "2",
@@ -32,9 +36,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          links: {}
+          commentary: [],
+          subcommentary: [],
+          links: {},
         },
         {
+          id: "mahavagga",
           name: "Mahāvagga Pāḷi",
           content: 'Mahāvagga Pāḷi, made up of ten sections known as khandhakas, opens with an historical account of how the Buddha attained supreme enlightenment at the foot of the Bodhi tree, how he discovered the famous Law of Dependent Origination and how he gave his first sermon to the group of five bhikkhus on the discovery of the Four Noble Truths (i.e. the great "Discourse on the Turning of the Wheel of Dhamma"-Dhammacakkappavattana Sutta). This was followed by another great discourse, the Anattalakkhaṇa Sutta. These two suttas can be described as a compendium of the teaching of the Buddha.',
           volume: "3",
@@ -42,9 +49,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          links: {}
+          commentary: [],
+          subcommentary: [],
+          links: {},
         },
         {
+          id: "culavagga",
           name: "Cūḷavagga Pāḷi",
           content: "Cūḷavagga Pāḷi, which is book four of the Vinaya Piṭaka, deals with further rules and procedures for institutional acts or functions known as saṅghakamma. The twelve sections in this book deal with rules for offences such as saṅghādisesa that come before the Sangha; rules for observance of penances such as parivāsa and mānatta and rules for reinstatement of a bhikkhu. There are also miscellaneous rules concerning bathing, dress, dwellings and furniture and those dealing with treatment of visiting bhikkhus, and duties of tutors and novices.",
           volume: "4",
@@ -52,9 +62,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          links: {}
+          commentary: [],
+          subcommentary: [],
+          links: {},
         },
         {
+          id: "parivara",
           name: "Parivāra Pāḷi",
           content: "Parivāra Pāḷi, which is the fifth and last book of the Vinaya Piṭaka, serves as a kind of manual. It is compiled in the form of a catechism, enabling the reader to make an analytical survey of the Vinaya Piṭaka. All the rules, official acts, and other matters of the Vinaya are classified under separate categories according to the subjects dealt with.",
           volume: "5",
@@ -77,6 +90,8 @@ const TipitakaData = readable({
           qty: 34,
           descr: "This collection in the Suttanta Pitaka, named Dīgha Nikāya as it is made up of thirty-four long discourses of the Buddha, is divided into three divisions (a) Sīlakkhanda Vagga, Division Concerning Morality (b) Mahā Vagga, the Large Division (c) Pāthika Vagga, the Division beginning with the discourse on Pathika, the naked ascetic.",
           vaggas: ["Sīlakkhanda Vagga, Division Concerning Morality", "Mahā Vagga, the Large Division", "Pāthika Vagga, the Division beginning with the discourse on Pathika, the naked ascetic."],
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         "majjhima-nikaya": {
@@ -85,6 +100,8 @@ const TipitakaData = readable({
           qty: 152,
           descr: "This collection of medium length discourses is made up of one hundred and fifty-two suttas in three books known as paṇṇāsa. The first book, Mūlapaṇṇāsa, deals with the first fifty suttas in five vaggas; the second book, Majjhimapaṇṇāsa consists of the second fifty suttas, also in five vaggas; and the last fifty-two suttas are dealt with in five vaggas of the third book, Uparipaṇṇāsa, which means more than fifty. The suttas in this nikāya throw much light on the social ideas and institutions of those days, and also provide general information on the economic and political life.",
           pannasa: ["Mūlapaṇṇāsa", "Majjhimapaṇṇāsa", "Uparipaṇṇāsa"],
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         "samyutta-nikaya": {
@@ -93,6 +110,8 @@ const TipitakaData = readable({
           qty: 7762,
           descr: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga. Each major vagga is divided into fifty-six groups known as saṃyuttas-related subjects grouped together. The saṃyuttas are named after the subjects they deal with, for example, Bojjhaṅga Saṃyutta on the seven factors of enlightenment, or after some principal personalities such as the Venerable Sāriputta, King Pasenadi of Kosala, or Sakka. Kosala Saṃyutta is a group of discourses concerning King Pasenadi of Kosala, and Devatā Saṃyutta deals with devas like Sakka, Indra, Brahmā, etc. Each saṃyutta is further divided into sections which are made up of individual suttas. Thus the well-known Dhammacakkappavattana Sutta is the first discourse (sutta) in the second section of Sacca Saṃyutta which comes under the Mahāvagga division of Saṃyutta Nikāya. In the following excerpts from Saṃyutta Nikāya, only a few suttas representing each major division are given.",
           samyuttas: ["Sagāthā Vagga Saṃyutta Pāḷi", "Nidāna Vagga Saṃyutta Pāḷi", "Khandha Vagga Saṃyutta Pāḷi", "Saḷāyatana Vagga Saṃyutta Pāḷi", "Mahā Vagga Saṃyutta Pāḷi"],
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         "anguttara-nikaya": {
@@ -101,6 +120,8 @@ const TipitakaData = readable({
           qty: 9557,
           descr: '<p>This Collection of Discourses, Aṅguttara Nikāya, containing 9557 short suttas is divided into eleven divisions known as nipātas. Each nipāta is divided again into groups called vaggas which usually contain ten suttas. The discourses are arranged in progressive numerical order, each nipāta containing suttas with items of Dhamma, beginning with one item and moving up by units of one until there are eleven items of Dhamma in each sutta of the last nipāta. Hence the name Aṅguttara meaning "increasing by one item". The first nipāta, Ekaka Nipāta, provides in each sutta single items of Dhamma called the Ones; the second nipāta, Duka Nipāta, contains in each sutta two items of Dhamma called the Twos, the last nipāta, Ekādasaka Nipāta, is made up of suttas with eleven items of Dhamma in each, called the Elevens.</p><p>Aṅguttara Nikāya constitutes an important source book on Buddhist psychology and ethics, which provides an enumerated summary of all the essential features concerning the theory and practice of the Dhamma. A unique chapter entitled Etadagga Vagga of Ekaka Nipāta enumerates the names of the foremost disciples amongst the bhikkhus, bhikkhunis, upāsakas, upāsikās, who had achieved pre-eminence in one sphere of attainment or meritorious activity, e.g., the Venerable Sāriputta in intuitive wisdom and knowledge (paññā); the Venerable Mahā Moggallāna in supernormal powers (iddhi); Bhikkhunī Khemā in paññā; Bhikkhuni Uppalavanna in iddhi; the Upāsaka Anāthapiṇḍika and the Upāsikā Visākhā in alms-giving (dāna) and so on.</p>',
           nipatas: ["Ekaka Nipāta Pāḷi", "Duka Nipāta Pāḷi", "Tika Nipāta Pāḷi", "Catukka Nipāta Pāḷi", "Pañcaka Nipāta Pāḷi", "Chakka Nipāta Pāḷi", "Sattaka Nipāta Pāḷi", "Aṭṭhaka Nipāta Pāḷi", "Navaka Nipāta Pāḷi", "Dasaka Nipāta Pāḷi", "Ekādasaka Nīpata Pāḷi"],
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         "khuddaka-nikaya": {
@@ -108,11 +129,14 @@ const TipitakaData = readable({
           translation: "'Minor Collection' of the Buddha. The word khuddaka means ‘small’ in Pali and Nikāya is ‘collection’.",
           qty: null,
           descr: "Of all the five nikāyas Khuddaka Nikāya contains the largest number of treatises (as listed below) and the most numerous categories of Dhamma. Although the word khuddaka literally means minor or small, the actual content of this collection can by no means be regarded as minor, including as it does the two major divisions of the Piṭaka, namely, the Vinaya Piṭaka and the Abhidhamma Piṭaka according to one system of classification. The miscellaneous nature of this collection, containing not only the discourses by the Buddha but compilations of brief doctrinal notes mostly in verse, accounts of personal struggles and achievements by theras and therīs also in verse, the birth stories, the history of the Buddha, etc., may account for its title.",
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
       },
       books: [
         {
+          id: "silakkhanda-vagga",
           name: "Sīlakkhanda Vagga Pāḷi",
           translation: "Division Concerning Morality",
           collection: "digha-nikaya",
@@ -124,9 +148,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "maha-vagga-digha",
           name: "Mahā Vagga Pāḷi",
           translation: "The Large Division",
           collection: "digha-nikaya",
@@ -138,9 +165,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "pathika-vagga",
           name: "Pathika Vagga Pāḷi",
           translation: "the Division beginning with the discourse on Pāthika, the Naked Ascetic",
           collection: "digha-nikaya",
@@ -152,9 +182,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "mulapannasa",
           name: "Mūlapaṇṇāsa Pāḷi",
           translation: "",
           collection: "majjhima-nikaya",
@@ -167,9 +200,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "majjhima-pannasa",
           name: "Majjhima Paṇṇāsa Pāḷi",
           translation: "",
           collection: "majjhima-nikaya",
@@ -182,9 +218,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "uparipannasa",
           name: "Uparipannasa",
           translation: "",
           collection: "majjhima-nikaya",
@@ -197,9 +236,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "sagatha-vagga",
           name: "Sagatha Vagga Saṃyutta",
           translation: "",
           collection: "Saṃyutta-nikaya",
@@ -212,9 +254,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "nidana-vagga",
           name: "Nidana Vagga Saṃyutta",
           translation: "",
           collection: "Saṃyutta-nikaya",
@@ -227,9 +272,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "khandha-vagga",
           name: "Khandha Vagga Saṃyutta",
           translation: "",
           collection: "Saṃyutta-nikaya",
@@ -242,9 +290,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "salayatana-vagga",
           name: "Salayatana Vagga Saṃyutta",
           translation: "",
           collection: "Saṃyutta-nikaya",
@@ -257,9 +308,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "maha-vagga-samyutta",
           name: "Maha Vagga Saṃyutta",
           translation: "",
           collection: "Saṃyutta-nikaya",
@@ -272,9 +326,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "ekaka-nipata",
           name: "Ekaka Nipāta Pāḷi",
           translation: "The Book of Ones",
           collection: "Aṅguttara-nikaya",
@@ -287,9 +344,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "duka-nipata",
           name: "Duka Nipāta Pāḷi",
           translation: "The Book of Twos",
           collection: "Aṅguttara-nikaya",
@@ -302,9 +362,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "tika-nipata",
           name: "Tika Nipāta Pāḷi",
           translation: "The Book of Threes",
           collection: "Aṅguttara-nikaya",
@@ -317,9 +380,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "catukka",
           name: "Catukka Nipāta Pāḷi",
           translation: "The Book of Fours",
           collection: "Aṅguttara-nikaya",
@@ -332,9 +398,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "pancaka",
           name: "Pancaka Nipāta Pāḷi",
           translation: "The Book of Fives",
           collection: "Aṅguttara-nikaya",
@@ -347,9 +416,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "chakka",
           name: "Chakka Nipāta Pāḷi",
           translation: "The Book of Sixes",
           collection: "Aṅguttara-nikaya",
@@ -362,9 +434,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "sattaka",
           name: "Sattaka Nipāta Pāḷi",
           translation: "The Book of Sevens",
           collection: "Aṅguttara-nikaya",
@@ -377,9 +452,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "atthaka",
           name: "Atthaka Nipāta Pāḷi",
           translation: "The Book of Eights",
           collection: "Aṅguttara-nikaya",
@@ -392,9 +470,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "navaka",
           name: "Navaka Nipāta Pāḷi",
           translation: "The Book of Nines",
           collection: "Aṅguttara-nikaya",
@@ -407,9 +488,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "dasaka",
           name: "Dasaka Nipāta Pāḷi",
           translation: "The Book of Tens",
           collection: "Aṅguttara-nikaya",
@@ -422,9 +506,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "ekadasaka",
           name: "Ekadasaka Nipāta Pāḷi",
           translation: "The Book of Elevens",
           collection: "Aṅguttara-nikaya",
@@ -436,9 +523,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "khuddakapatha",
           name: "Khuddakapāṭha Pāḷi",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -450,9 +540,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "dhammapada",
           name: "Dhammapada Pāḷi",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -464,9 +557,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "udana",
           name: "Udāna Pāḷi",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -478,9 +574,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "itivuttaka",
           name: "Itivuttaka Pāḷi",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -492,9 +591,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "suttanipata",
           name: "Suttanipāta Pāḷi",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -506,9 +608,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "vimana-vatthu",
           name: "Vimāna Vatthu Pāḷi",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -520,9 +625,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "peta-vatthu",
           name: "Peta Vatthu Pāḷi",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -534,9 +642,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "thera-gatha",
           name: "The Thera Gāthā Pāḷi",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -548,9 +659,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "theri-gatha",
           name: "The Therī Gāthā Pāḷi",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -562,9 +676,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "jataka",
           name: "Jātaka Pāḷi",
           translation: "Birth-stories of the Buddha",
           collection: "khuddaka-nikaya",
@@ -576,11 +693,14 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
-          translation: "",
+          id: "niddesa",
           name: "Niddesa Pāḷi",
+          translation: "",
           collection: "khuddaka-nikaya",
           descr: "Contains the largest number of treatises and the most numerous categories of dhamma",
           content: "This division of Khuddaka Nikāya consists of two parts: Mahā Niddesa (the major exposition) which is the commentary on the fourth vagga (Aṭṭhaka) of the Sutta Nipāta, and Cūḷa Niddesa (the minor exposition) which is the commentary on the fifth vagga (Pārāyana) and on the Khaggavisāna Sutta in the first vagga. Attributed to the Venerable Sāriputta, these exegetical works contain much material on the Abhidhamma and constitute the earliest forms of commentaries, providing evidence of commentarial tradition many centuries before the Venerable Buddhaghosa appeared on the scene.",
@@ -590,9 +710,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "patisambhida",
           name: "Paṭisambhidā Magga Pāḷi",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -604,9 +727,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "apadana",
           name: "Apadāna Pāḷi",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -618,9 +744,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "buddhavamsa",
           name: "Buddhavaṃsa Pāḷi",
           translation: "History of the Buddhas",
           collection: "khuddaka-nikaya",
@@ -632,9 +761,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "cariya",
           name: "Cariyā Piṭaka",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -646,9 +778,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "netti",
           name: "Netti",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -660,9 +795,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "petakopadesa",
           name: "Peṭakopadesa",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -674,9 +812,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "milindapanha",
           name: "Milindapañha Pāḷi",
           translation: "",
           collection: "khuddaka-nikaya",
@@ -688,6 +829,8 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
 
@@ -699,6 +842,7 @@ const TipitakaData = readable({
       links: {},
       books: [
         {
+          id: "dhammasangani",
           name: "The Dhammasaṅgaṇī Pāḷi",
           translation: "",
           collection: "",
@@ -708,9 +852,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "vibhanga",
           name: "Vibhaṅga Pāḷi",
           translation: "Book of Analysis",
           collection: "",
@@ -720,9 +867,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "dhatukatha",
           name: "Dhātukathā Pāḷi",
           translation: "",
           collection: "",
@@ -732,9 +882,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "puggalapannatti",
           name: "Puggalapaññatti Pāḷi",
           translation: "",
           collection: "",
@@ -744,9 +897,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "kathavatthu",
           name: "Kathāvatthu Pāḷi",
           translation: "",
           collection: "",
@@ -756,9 +912,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "yamaka",
           name: "Yamaka Pāḷi",
           translation: "",
           collection: "",
@@ -768,9 +927,12 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         },
         {
+          id: "patthana",
           name: "Paṭṭhāna Pāḷi",
           translation: "",
           collection: "",
@@ -780,6 +942,8 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
+          commentary: [],
+          subcommentary: [],
           links: {}
         }
       ]
