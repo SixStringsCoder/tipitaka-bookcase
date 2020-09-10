@@ -1,5 +1,6 @@
 <script lang="ts">
   import TipitakaData from "./stores/tipitaka-store.js";
+
   import Header from "./Header.svelte";
   import SearchInput from "./SearchInput.svelte";
   import Menu from "./Menu.svelte";
@@ -7,8 +8,14 @@
 
   let tipitakaData;
   TipitakaData.subscribe((items) => (tipitakaData = items));
-
   $: console.log(tipitakaData);
+
+  let selectedBooks: string = "";
+  $: console.log(`selectedBooks: ${selectedBooks}`);
+
+  const selectBooks = (e) => {
+    selectedBooks = e.target.value;
+  };
 </script>
 
 <style>
@@ -36,7 +43,7 @@
 
 <!-- Learn More Menu -->
 <section id="info-bar">
-  <Menu />
+  <Menu {selectedBooks} on:change={selectBooks} />
   <SearchInput />
 
 </section>

@@ -3,6 +3,8 @@
   export let basket: string;
   export let collection: string;
   export let counter: string;
+
+  export let selected: boolean = false;
 </script>
 
 <style>
@@ -60,8 +62,10 @@
 
   .title-label {
     display: flex;
-    transform: rotate(-90deg) translateX(-55px);
-    font-size: 0.85rem;
+    transform: rotate(90deg) translateX(32px);
+    font-size: 0.75rem;
+    font-weight: 100;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
     padding-left: 25px;
     letter-spacing: 1px;
     /*   justify-content: flex-end; */
@@ -80,8 +84,9 @@
   }
 
   .volume .vol-number {
-    font-weight: bold;
+    font-weight: 100;
     font-size: 1.3rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
   }
 
   .volume span {
@@ -98,7 +103,7 @@
   data-basket-name={basket}
   data-collection={collection}>
 
-  <div class="title" title={name}>
+  <div class:highlighted={selected} class="title" title={name}>
     <span class="title-label">{basket}</span>
   </div>
 

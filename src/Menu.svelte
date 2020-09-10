@@ -1,10 +1,10 @@
 <script lang="ts">
-
+  export let selectedBooks: string;
 </script>
 
 <style>
   #menu-container {
-    width: 90%;
+    width: 91%;
     margin: 0 auto 15px;
     display: flex;
     justify-content: center;
@@ -22,7 +22,8 @@
 </style>
 
 <div id="menu-container">
-  <select name="menu" id="menu">
+  <!-- svelte-ignore a11y-no-onchange -->
+  <select name="menu" id="menu" bind:value={selectedBooks} on:change>
     <option value="reset" disabled selected>Learn More</option>
     <optgroup label="Tipitaka">
       <option value="tipitaka">Tipi&#7789;aka</option>

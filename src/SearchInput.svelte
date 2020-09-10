@@ -4,7 +4,7 @@
 
 <style>
   #search-cont {
-    width: 90%;
+    width: 91%;
     position: relative;
     display: flex;
     justify-content: center;

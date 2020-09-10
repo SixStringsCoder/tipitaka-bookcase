@@ -8,6 +8,9 @@
   const vinaya = tipitakaData.baskets.vinaya.books;
   const suttanta = tipitakaData.baskets.suttanta.books;
   const abhidhamma = tipitakaData.baskets.abhidhamma.books;
+
+  let bookcaseCollection: string = tipitakaData.information.name;
+  let selected: boolean = true;
 </script>
 
 <style>
@@ -18,7 +21,7 @@
     grid-auto-flow: row;
     grid-gap: 20px 0;
     padding: 10px 0 0;
-    margin-top: 12rem;
+    /* margin-top: 12rem; */
     margin-bottom: 1rem;
     padding-bottom: 2px;
     background: #a1887f
@@ -33,57 +36,40 @@
     display: grid;
   }
 
-  /* #tipitaka::after {
-    content: "The Tipitaka";
-    width: 500px;
-    font-size: 3rem;
-    font-weight: 100;
-    margin: 2rem;
-    text-align: center;
+  header {
+    margin-top: 10.5rem;
+    padding: 0 0 0 3px;
   }
 
-  #commentaries::after {
-    content: "The Commentaries";
-    width: 500px;
-    font-size: 3rem;
+  h1.bookshelf-heading {
+    margin-bottom: 0.2rem;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+    font-family: tahoma;
     font-weight: 100;
-    margin: 2rem;
-    text-align: center;
-  }
-
-  #sub-commentaries::after {
-    content: "The Sub-commentaries";
-    width: 500px;
-    font-size: 3rem;
-    font-weight: 100;
-    margin: 2rem;
-    text-align: center;
-  } */
-
-  .shelf {
-    display: flex;
-    width: 687px;
-    height: 162px;
-    border-bottom: 5px solid black;
-    justify-content: flex-start;
-    align-items: flex-end;
-    background-color: #a1887f;
-    box-sizing: content-box;
-    border: 3px solid #3e2723;
-    box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);
+    padding: 5px 0;
   }
 </style>
 
+<header>
+  <h1 class="bookshelf-heading">{bookcaseCollection}</h1>
+</header>
+
 <section class="bookcase show-bookcase" id="tipitaka">
   {#each vinaya as { name, content, volume, collection }, i}
-    <Book {name} basket="vinaya" {collection} counter={String(i + 1)} />
+    <Book
+      {name}
+      {selected}
+      basket="Vinaya"
+      {collection}
+      counter={String(i + 1)} />
   {/each}
 
   {#each suttanta as { name, content, volume, collection }, i}
-    <Book {name} basket="suttanta" {collection} counter={String(i + 5)} />
+    <Book {name} basket="Suttanta" {collection} counter={String(i + 6)} />
   {/each}
 
   {#each abhidhamma as { name, content, volume, collection }, i}
-    <Book {name} basket="abhidhamma" {collection} counter={String(i + 44)} />
+    <Book {name} basket="Abhidhamma" {collection} counter={String(i + 46)} />
   {/each}
 </section>
