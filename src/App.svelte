@@ -11,7 +11,7 @@
   $: console.log(tipitakaData);
 
   let selectedBooks: string = "";
-  $: console.log(`selectedBooks: ${selectedBooks}`);
+  // $: console.log(`selectedBooks: ${selectedBooks}`);
 
   const selectBooks = (e: any) => {
     selectedBooks = e.target.value;

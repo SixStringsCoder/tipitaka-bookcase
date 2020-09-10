@@ -10,6 +10,7 @@ const TipitakaData = readable({
   },
   baskets: {
     vinaya: {
+      id: "vinaya",
       name: "Vinaya Piṭaka",
       description: "The Vinaya Piṭaka is made up of rules of discipline laid down for regulating the conduct of the Buddha’s disciples who have been admitted into the order as bhikkhus (monks) and bhikkhunis (nuns). These rules embody authoritative injunctions of the Buddha on modes of conduct and restraints on both physical and verbal actions. They deal with transgressions of discipline, and with various categories of restraints and admonitions in accordance with the nature of the offence.",
       links: {},
@@ -80,6 +81,7 @@ const TipitakaData = readable({
       ]
     },
     suttanta: {
+      id: "suttanta",
       name: "Suttanta Piṭaka",
       description: "The Suttanta Piṭaka is a collection of all the discourses delivered by the Buddha on various occasions in their entirety. A few discourses delivered by some of the distinguished disciples of the Buddha, such as the Venerable Sāriputta, Mahā Moggallāna, Venerable Ānanda etc., as well as some narratives, are also included in the books of the Suttanta Piṭaka. The discourses of the Buddha collected together in the Suttanta Piṭaka were delivered to suit different occasions and different audiences with different temperaments. Although the discourses were mostly intended for the benefit of bhikkhus and deal with the practice of the pure life and with the explanation of the teaching, there are also several other discourses which deal with the material and moral progress of the lay disciple.",
       links: {},
@@ -244,7 +246,7 @@ const TipitakaData = readable({
           id: "sagatha-vagga",
           name: "Sagatha Vagga Saṃyutta",
           translation: "",
-          collection: "Saṃyutta-nikaya",
+          collection: "samyutta-nikaya",
           descr: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
           content: "This major division of Sagāthā Vagga Saṃyutta Pāḷi contains eleven saṃyuttas with discourses grouped according to characters appearing in them: the king of devas, the devas, the Brahmā, māra, King of Kosala, bhikkhus and bhikkhunis. The name of the vagga, Sagāthā is derived from the fact that various personalities appearing in the discourses conducted their dialogues or interviews with the Buddha mostly in verse.",
           suttas: [],
@@ -262,7 +264,7 @@ const TipitakaData = readable({
           id: "nidana-vagga",
           name: "Nidana Vagga Saṃyutta",
           translation: "",
-          collection: "Saṃyutta-nikaya",
+          collection: "samyutta-nikaya",
           descr: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
           content: "This second major division of Nidāna Vagga Saṃyutta Pāḷi contains ten saṃyuttas, all dealing with fundamental aspects of the doctrine. The discourses are chiefly concerned with the principles of conditionality and interdependence, explained in the detailed formula which is called Paṭiccasamuppāda (Conditioned Genesis or Dependent Origination), consisting of twelve factors.Various aspects of Paṭiccasamuppāda, together with expositions on doctrinal matters concerning practice of the holy life form the main theme of the early suttas in these saṃyuttas.",
           suttas: [],
@@ -280,7 +282,7 @@ const TipitakaData = readable({
           id: "khandha-vagga",
           name: "Khandha Vagga Saṃyutta",
           translation: "",
-          collection: "Saṃyutta-nikaya",
+          collection: "samyutta-nikaya",
           descr: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
           content: "The main theme of most suttas in this division is, as the name implies, khandhas, the five aggregates that constitute what is regarded as a being. Each of the components of these aggregates, namely, matter, sensation, perception, mental concomitants and consciousness is shown to be a bundle of dukkha (suffering). Made up of thirteen saṃyuttas, Khandha Vagga forms an important collection of doctrinal discussions on such topics such as atta, anattā, eternity and annihilation.",
           suttas: [],
@@ -298,7 +300,7 @@ const TipitakaData = readable({
           id: "salayatana-vagga",
           name: "Salayatana Vagga Saṃyutta",
           translation: "",
-          collection: "Saṃyutta-nikaya",
+          collection: "samyutta-nikaya",
           descr: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
           content: "This division is made up of ten saṃyuttas or groups. It deals mainly with the six sense organs or bases of contact named internal sense bases (eye, ear, nose, tongue, body and mind); six corresponding sense objects, known as external sense bases (visible form, sound, odour, taste, tangible things and mind-objects); and consciousness that arises in relation to each pair of these internal and external sense bases. There are expositions on the impermanent nature of these sense bases and how relinquishing of attachment to them results in liberation. The second saṃyutta, known as the Vedanā Saṃyutta, focuses on the sensation arising from the coming together of the sense bases and conciousness. Sensation is shown to be of three kinds: pleasant, unpleasant and indifferent. None of these is permanent and each one of these is the cause of craving which in turn is the root of all suffering. Concise but illuminating expositions on nibbāna are found in many suttas. So also are there practical guides of Vipassana meditation.",
           suttas: [],
@@ -316,7 +318,7 @@ const TipitakaData = readable({
           id: "maha-vagga-samyutta",
           name: "Maha Vagga Saṃyutta",
           translation: "",
-          collection: "Saṃyutta-nikaya",
+          collection: "samyutta-nikaya",
           descr: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
           content: "The last vagga of Saṃyutta Nikāya is made up of twelve saṃyuttas, the list of which gives a clear indication of the subjects dealt with in this division: Magga Saṃyutta, Bojjhaṅga Saṃyutta, Satipaṭṭhāna Saṃyutta, Indriya Saṃyutta, Sammappadhāna Saṃyutta, Bala Saṃyutta, Iddhipāda Saṃyutta, Anuruddha Saṃyutta, Jhāna Saṃyutta, Ānāpāna Saṃyutta, Sotāpatti Saṃyutta and Sacca Saṃyutta. The main doctrines which from the fundamental basis of the Buddha’s teaching are reviewed in these saṃyuttas, covering both the theoretical and practical aspects. In the concluding suttas of the vagga, the ultimate goal of the holy life: arahatta phala, nibbāna, the end of all suffering, is constantly kept in full view together with a detailed description of the way of achieving it, namely, the Four Noble Truths and the Noble Path of Eight Constituents.",
           suttas: [],
@@ -837,6 +839,7 @@ const TipitakaData = readable({
       ]
     },
     abhidhamma: {
+      id: "abhidhamma",
       name: "Abhidhamma Piṭaka",
       description: "Abhidhamma is the third great division of the Piṭaka. It is a huge collection of systematically arranged, tabulated and classified doctrines of the Buddha, representing the quintessence of this teaching. Abhidhamma means higher teaching or special teaching; it is unique in its analytical approach, immensity of scope and support for one’s liberation.",
       links: {},

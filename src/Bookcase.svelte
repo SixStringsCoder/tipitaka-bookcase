@@ -5,9 +5,9 @@
   let tipitakaData;
   TipitakaData.subscribe((items) => (tipitakaData = items));
 
-  const vinaya = tipitakaData.baskets.vinaya.books;
-  const suttanta = tipitakaData.baskets.suttanta.books;
-  const abhidhamma = tipitakaData.baskets.abhidhamma.books;
+  const vinaya = tipitakaData.baskets.vinaya;
+  const suttanta = tipitakaData.baskets.suttanta;
+  const abhidhamma = tipitakaData.baskets.abhidhamma;
 
   let bookcaseCollection: string = tipitakaData.information.name;
   export let selectedBooks: string = "";
@@ -63,21 +63,33 @@
 </header>
 
 <section class="bookcase show-bookcase" id="tipitaka">
-  {#each vinaya as { name, content, volume, collection }, i}
+  {#each vinaya.books as { id, content, volume, collection }, i}
     <Book
-      {name}
-      {selected}
-      {blinking}
-      basket="Vinaya"
+      {id}
+      selected={selectedBooks === vinaya.id}
+      blinking={selectedBooks === vinaya.id}
+      basket={vinaya.id}
       {collection}
       counter={String(i + 1)} />
   {/each}
 
-  {#each suttanta as { name, content, volume, collection }, i}
-    <Book {name} basket="Suttanta" {collection} counter={String(i + 6)} />
+  {#each suttanta.books as { id, content, volume, collection }, i}
+    <Book
+      {id}
+      selected={selectedBooks === suttanta.id || selectedBooks === collection}
+      blinking={selectedBooks === suttanta.id || selectedBooks === collection}
+      basket={suttanta.id}
+      {collection}
+      counter={String(i + 6)} />
   {/each}
 
-  {#each abhidhamma as { name, content, volume, collection }, i}
-    <Book {name} basket="Abhidhamma" {collection} counter={String(i + 46)} />
+  {#each abhidhamma.books as { id, content, volume, collection }, i}
+    <Book
+      {id}
+      selected={selectedBooks === abhidhamma.id}
+      blinking={selectedBooks === abhidhamma.id}
+      basket={abhidhamma.id}
+      {collection}
+      counter={String(i + 46)} />
   {/each}
 </section>
