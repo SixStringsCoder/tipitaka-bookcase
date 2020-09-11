@@ -1,6 +1,7 @@
 <script lang="ts">
   import TipitakaData from "./stores/tipitaka-store.js";
   import Book from "./Book.svelte";
+  import InfoModal from "./InfoModal.svelte";
 
   let tipitakaData;
   TipitakaData.subscribe((items) => (tipitakaData = items));
@@ -19,7 +20,9 @@
 
   const findMenuItem = () => console.log(selectedBooks);
 
-  let modalOpen: boolean = false;
+  let showingModal: boolean = false;
+
+  const toggleModal: () => boolean = () => (showingModal = !showingModal);
 
   const infoModal = () => {
     console.log(bookcaseCollection);
@@ -66,7 +69,7 @@
 </style>
 
 <header>
-  <h1 class="bookshelf-heading" on:click={infoModal}>{bookcaseCollection}</h1>
+  <h1 class="bookshelf-heading" on:click={toggleModal}>{bookcaseCollection}</h1>
 </header>
 
 <section class="bookcase show-bookcase" id="tipitaka">
@@ -100,3 +103,11 @@
       counter={String(i + 46)} />
   {/each}
 </section>
+
+<!-- Info Modal -->
+{#if showingModal}
+  <InfoModal on:click={toggleModal}>
+    <h2 id="volume-title">{bookcaseCollection}</h2>
+    <p id="vol-summary">{selectedBooks}</p>
+  </InfoModal>
+{/if}
