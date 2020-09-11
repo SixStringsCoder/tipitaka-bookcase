@@ -18,6 +18,12 @@
   let searchQuery: string = "";
 
   const findMenuItem = () => console.log(selectedBooks);
+
+  let modalOpen: boolean = false;
+
+  const infoModal = () => {
+    console.log(bookcaseCollection);
+  };
 </script>
 
 <style>
@@ -55,19 +61,20 @@
     font-family: tahoma;
     font-weight: 100;
     padding: 5px 0;
+    cursor: pointer;
   }
 </style>
 
 <header>
-  <h1 class="bookshelf-heading">{bookcaseCollection}</h1>
+  <h1 class="bookshelf-heading" on:click={infoModal}>{bookcaseCollection}</h1>
 </header>
 
 <section class="bookcase show-bookcase" id="tipitaka">
   {#each vinaya.books as { id, content, volume, collection }, i}
     <Book
       {id}
-      selected={selectedBooks === vinaya.id}
-      blinking={selectedBooks === vinaya.id}
+      selected={selectedBooks === vinaya.id || selectedBooks === id}
+      blinking={selectedBooks === vinaya.id || selectedBooks === id}
       basket={vinaya.id}
       {collection}
       counter={String(i + 1)} />
@@ -76,8 +83,8 @@
   {#each suttanta.books as { id, content, volume, collection }, i}
     <Book
       {id}
-      selected={selectedBooks === suttanta.id || selectedBooks === collection}
-      blinking={selectedBooks === suttanta.id || selectedBooks === collection}
+      selected={selectedBooks === suttanta.id || selectedBooks === collection || selectedBooks === id}
+      blinking={selectedBooks === suttanta.id || selectedBooks === collection || selectedBooks === id}
       basket={suttanta.id}
       {collection}
       counter={String(i + 6)} />
@@ -86,8 +93,8 @@
   {#each abhidhamma.books as { id, content, volume, collection }, i}
     <Book
       {id}
-      selected={selectedBooks === abhidhamma.id}
-      blinking={selectedBooks === abhidhamma.id}
+      selected={selectedBooks === abhidhamma.id || selectedBooks === id}
+      blinking={selectedBooks === abhidhamma.id || selectedBooks === id}
       basket={abhidhamma.id}
       {collection}
       counter={String(i + 46)} />

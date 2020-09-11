@@ -6,7 +6,12 @@ const TipitakaData = readable({
   information: {
     name: 'Tipiṭaka',
     introduction: '<p id="intro-info" class="info"> All that the Buddha taught forms the subject matter and substance of the Pāḷi Canon, which is divided into these three divisions called <span class="emphasis">Piṭakas</span> — literally baskets. Hence <span class="emphasis">Tipiṭaka</span> means three baskets or three separate divisions of the Buddha\'s Teaching. Here the metaphor \'basket\' signifies not so much the function of \'storing up\' anything put into it as its use as a receptacle in which things are handed on or passed on from one to another like carrying away of earth from an excavation site by a line of workers.</p> <p class="info"><span class="emphasis indent">The Tipiṭaka</span> into which the P&#x101;&#7735;i Canon is systematically divided and handed down from generation to generation together with Commentaries forms the huge collection of literary works which the bhikkhus of the Order have to learn, study and memorize in discharge of their <span class="emphasis">gantha dhura</span>, the duty of studying.</p>',
-    links: {}
+    links: {
+      info: "",
+      engbookurl: "",
+      palibookurl: "",
+      vriurl: ""
+    }
   },
   baskets: {
     vinaya: {
@@ -44,7 +49,7 @@ const TipitakaData = readable({
         {
           id: "mahavagga",
           name: "Mahāvagga Pāḷi",
-          content: 'Mahāvagga Pāḷi, made up of ten sections known as khandhakas, opens with an historical account of how the Buddha attained supreme enlightenment at the foot of the Bodhi tree, how he discovered the famous Law of Dependent Origination and how he gave his first sermon to the group of five bhikkhus on the discovery of the Four Noble Truths (i.e. the great "Discourse on the Turning of the Wheel of Dhamma"-Dhammacakkappavattana Sutta). This was followed by another great discourse, the Anattalakkhaṇa Sutta. These two suttas can be described as a compendium of the teaching of the Buddha.',
+          content: 'Mahāvagga Pāḷi, made up of ten sections known as khandhakas, opens with an historical account of how the Buddha attained supreme enlightenment at the foot of the Bodhi tree, how he discovered the famous Law of Dependent Origination and how he gave his first sermon to the group of five bhikkhus on the discovery of the Four Noble Truths (i.e. the great "Discourse on the Turning of the Wheel of Dhamma"-Dhammacakkappavattana Sutta). This was followed by another great discourse, the Anattalakkhaṇa Sutta. These two suttas can be described as a compendium of the teaching of the Buddha. Mahāvagga further deals with procedures for an uposatha meeting, the assembly of the Sangha on every full moon day and on the fourteenth or fifteenth waning day of the lunar month when pāṭimokkha, a summary of the Vinaya rules, is recited. Also there are rules to be observed for rains retreat (vassa) during the rainy season as well as those for the formal ceremony of pavāraṇā concluding the rains retreat, in which a bhikkhu invites criticism from his brethren in respect of what has been seen, heard or suspected about his conduct.',
           volume: "3",
           editions: {
             pts: { bookqty: null },
@@ -52,7 +57,9 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {},
+          links: {
+            engbookurl: "https://store.pariyatti.org/Patimokkha_p_2344.html"
+          },
         },
         {
           id: "culavagga",
@@ -169,7 +176,9 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            engbookurl: "https://store.pariyatti.org/Mahasatipatthana-Sutta-eBook-Vipassana"
+          }
         },
         {
           id: "pathika-vagga",
@@ -336,7 +345,7 @@ const TipitakaData = readable({
           id: "ekaka-nipata",
           name: "Ekaka Nipāta Pāḷi",
           translation: "The Book of Ones",
-          collection: "Aṅguttara-nikaya",
+          collection: "anguttara-nikaya",
           descr: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           content: "This group contains single items of Dhamma which form the subject matter of discourses given by the Buddha at Sāvatthi to the numerous bhikkhus residing there. But some of the suttas were given by the Venerable Sāriputta or the Venerable Ānanda.",
           vaggas: [],
@@ -354,7 +363,7 @@ const TipitakaData = readable({
           id: "duka-nipata",
           name: "Duka Nipāta Pāḷi",
           translation: "The Book of Twos",
-          collection: "Aṅguttara-nikaya",
+          collection: "anguttara-nikaya",
           descr: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           content: "This group contains items of Dhamma, grouped in twos, which form the subject matter of discourses given by the Buddha...",
           vaggas: [],
@@ -372,7 +381,7 @@ const TipitakaData = readable({
           id: "tika-nipata",
           name: "Tika Nipāta Pāḷi",
           translation: "The Book of Threes",
-          collection: "Aṅguttara-nikaya",
+          collection: "anguttara-nikaya",
           descr: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           content: "This group contains items of Dhamma, grouped in threes, which form the subject matter of discourses given by the Buddha...",
           vaggas: [],
@@ -390,7 +399,7 @@ const TipitakaData = readable({
           id: "catukka",
           name: "Catukka Nipāta Pāḷi",
           translation: "The Book of Fours",
-          collection: "Aṅguttara-nikaya",
+          collection: "anguttara-nikaya",
           descr: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           content: "This group contains items of Dhamma, grouped in fours, which form the subject matter of discourses given by the Buddha...",
           vaggas: [],
@@ -408,7 +417,7 @@ const TipitakaData = readable({
           id: "pancaka",
           name: "Pancaka Nipāta Pāḷi",
           translation: "The Book of Fives",
-          collection: "Aṅguttara-nikaya",
+          collection: "anguttara-nikaya",
           descr: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           content: "This group contains items of Dhamma, grouped in fives, which form the subject matter of discourses given by the Buddha...",
           vaggas: [],
@@ -426,7 +435,7 @@ const TipitakaData = readable({
           id: "chakka",
           name: "Chakka Nipāta Pāḷi",
           translation: "The Book of Sixes",
-          collection: "Aṅguttara-nikaya",
+          collection: "anguttara-nikaya",
           descr: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           content: "This group contains items of Dhamma, grouped in sixes, which form the subject matter of discourses given by the Buddha...",
           vaggas: [],
@@ -444,7 +453,7 @@ const TipitakaData = readable({
           id: "sattaka",
           name: "Sattaka Nipāta Pāḷi",
           translation: "The Book of Sevens",
-          collection: "Aṅguttara-nikaya",
+          collection: "anguttara-nikaya",
           descr: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           content: "This group contains items of Dhamma, grouped in sevens, which form the subject matter of discourses given by the Buddha...",
           vaggas: [],
@@ -462,7 +471,7 @@ const TipitakaData = readable({
           id: "atthaka",
           name: "Atthaka Nipāta Pāḷi",
           translation: "The Book of Eights",
-          collection: "Aṅguttara-nikaya",
+          collection: "anguttara-nikaya",
           descr: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           content: "This group contains items of Dhamma, grouped in eights, which form the subject matter of discourses given by the Buddha...",
           vaggas: [],
@@ -480,7 +489,7 @@ const TipitakaData = readable({
           id: "navaka",
           name: "Navaka Nipāta Pāḷi",
           translation: "The Book of Nines",
-          collection: "Aṅguttara-nikaya",
+          collection: "anguttara-nikaya",
           descr: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           content: "This group contains items of Dhamma, grouped in nines, which form the subject matter of discourses given by the Buddha...",
           vaggas: [],
@@ -498,7 +507,7 @@ const TipitakaData = readable({
           id: "dasaka",
           name: "Dasaka Nipāta Pāḷi",
           translation: "The Book of Tens",
-          collection: "Aṅguttara-nikaya",
+          collection: "anguttara-nikaya",
           descr: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           content: "This group contains items of Dhamma, grouped in tens, which form the subject matter of discourses given by the Buddha...",
           vaggas: [],
@@ -516,7 +525,7 @@ const TipitakaData = readable({
           id: "ekadasaka",
           name: "Ekadasaka Nipāta Pāḷi",
           translation: "The Book of Elevens",
-          collection: "Aṅguttara-nikaya",
+          collection: "anguttara-nikaya",
           descr: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           content: "This group contains items of Dhamma, grouped in elevens, which form the subject matter of discourses given by the Buddha...",
           suttas: [],
@@ -544,7 +553,10 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            engbookurl: "https://store.pariyatti.org/Khuddakapathapali",
+            mangalabook: "https://store.pariyatti.org/Lifes-Highest-Blessings-Pariyatti-Edition_p_5109.html"
+          }
         },
         {
           id: "dhammapada",
@@ -561,7 +573,9 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            engbookurl: "https://store.pariyatti.org/Dhammapada-Verses-Stories_p_5149.html"
+          }
         },
         {
           id: "udana",

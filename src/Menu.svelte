@@ -48,8 +48,14 @@
       <option value="dhammapada">Dhammapada</option>
       <option value="jataka">Jataka Tales</option>
       <option value="patthana">Patthana Matrix</option>
-      <option value="Mahānidāna Sutta">Wheel of Dependent Origination</option>
-      <option value="Mahāsatipaṭṭhāna Sutta">Mahāsatipaṭṭhāna Sutta</option>
+      <option value="khuddakapatha">Maṅgala Sutta</option>
+      <option value="udana">Udāna</option>
+      <option value="itivuttaka">Itivuttaka</option>
+      <option value="khuddakapatha">Khuddakapāṭha</option>
+      <option value="maha-vagga-digha">Wheel of Dependent Origination</option>
+      <option value="maha-vagga-digha">Mahāsatipaṭṭhāna Sutta (Digha)</option>
+      <option value="mulapannasa">Mahāsatipaṭṭhāna Sutta (Majjhima)</option>
+      <option value="mahavagga">Pāṭimokkha</option>
     </optgroup>
     <optgroup label="Commentaries (Atthakatha)">
       <option value="commentaries" data-bookcase="bookcase">
