@@ -7,10 +7,10 @@ const TipitakaData = readable({
     name: 'Tipiṭaka',
     introduction: '<p id="intro-info" class="info"> All that the Buddha taught forms the subject matter and substance of the Pāḷi Canon, which is divided into these three divisions called <span class="emphasis">Piṭakas</span> — literally baskets. Hence <span class="emphasis">Tipiṭaka</span> means three baskets or three separate divisions of the Buddha\'s Teaching. Here the metaphor \'basket\' signifies not so much the function of \'storing up\' anything put into it as its use as a receptacle in which things are handed on or passed on from one to another like carrying away of earth from an excavation site by a line of workers.</p> <p class="info"><span class="emphasis indent">The Tipiṭaka</span> into which the P&#x101;&#7735;i Canon is systematically divided and handed down from generation to generation together with Commentaries forms the huge collection of literary works which the bhikkhus of the Order have to learn, study and memorize in discharge of their <span class="emphasis">gantha dhura</span>, the duty of studying.</p>',
     links: {
-      info: "",
-      engbookurl: "",
-      palibookurl: "",
-      vriurl: ""
+      info: "https://www.pariyatti.org/P%C4%81li#section7",
+      engbookurl: "https://store.pariyatti.org/Tipitaka-Sets_c_223.html",
+      palibookurl: "https://store.pariyatti.org/Tipitaka-PTS-Pali-Canon-in-Pali-text--55-Books_p_2224.html",
+      vriurl: "https://www.vridhamma.org/Tipitaka-Propject"
     }
   },
   baskets: {
@@ -19,7 +19,7 @@ const TipitakaData = readable({
       name: "Vinaya Piṭaka",
       description: "The Vinaya Piṭaka is made up of rules of discipline laid down for regulating the conduct of the Buddha’s disciples who have been admitted into the order as bhikkhus (monks) and bhikkhunis (nuns). These rules embody authoritative injunctions of the Buddha on modes of conduct and restraints on both physical and verbal actions. They deal with transgressions of discipline, and with various categories of restraints and admonitions in accordance with the nature of the offence.",
       links: {
-        info: "https://en.wikipedia.org/wiki/Vinaya",
+        info: "https://tipitaka.org/eot#2",
         engbookurl: "https://store.pariyatti.org/Book-of-Discipline_p_1907.html",
         palibookurl: "https://store.pariyatti.org/Vinaya-Pitaka_p_2199.html",
         vriurl: "https://www.vridhamma.org/research/Pali-Tipitaka-as-the-Source-of-Vipassana"
@@ -28,6 +28,7 @@ const TipitakaData = readable({
         {
           id: "parajika",
           name: "Pārājika Pāḷi",
+          translation: "",
           content: "Pārājika Pāḷi, which is the first book of the Vinaya Piṭaka, gives an elaborate explanation of the important rules of discipline concerning pārājika and saṅghādisesa, as well as aniyata and nissaggiya which are minor offences.",
           volume: "1",
           editions: {
@@ -43,6 +44,7 @@ const TipitakaData = readable({
         {
           id: "pacittiya",
           name: "Pācittiya Pāḷi",
+          translation: "",
           content: "The Pācittiya Pāḷi, which is the second book of the Vinaya Piṭaka, deals with the remaining sets of rules for the bhikkhus, namely, the pācittiya, the pāṭidesanīya, the sekhiya, the adhikaraṇasamatha and the corresponding disciplinary rules for the bhikkhunis. Although it is called in Pāḷi just pācittiya, it has the distinctive name of suddha pācittiya (ordinary pācittiya), to distinguish it from nissaggiya pācittiya, described above.",
           volume: "2",
           editions: {
@@ -56,6 +58,7 @@ const TipitakaData = readable({
         {
           id: "mahavagga",
           name: "Mahāvagga Pāḷi",
+          translation: "",
           content: 'Mahāvagga Pāḷi, made up of ten sections known as khandhakas, opens with an historical account of how the Buddha attained supreme enlightenment at the foot of the Bodhi tree, how he discovered the famous Law of Dependent Origination and how he gave his first sermon to the group of five bhikkhus on the discovery of the Four Noble Truths (i.e. the great "Discourse on the Turning of the Wheel of Dhamma"-Dhammacakkappavattana Sutta). This was followed by another great discourse, the Anattalakkhaṇa Sutta. These two suttas can be described as a compendium of the teaching of the Buddha. Mahāvagga further deals with procedures for an uposatha meeting, the assembly of the Sangha on every full moon day and on the fourteenth or fifteenth waning day of the lunar month when pāṭimokkha, a summary of the Vinaya rules, is recited. Also there are rules to be observed for rains retreat (vassa) during the rainy season as well as those for the formal ceremony of pavāraṇā concluding the rains retreat, in which a bhikkhu invites criticism from his brethren in respect of what has been seen, heard or suspected about his conduct.',
           volume: "3",
           editions: {
@@ -71,6 +74,7 @@ const TipitakaData = readable({
         {
           id: "culavagga",
           name: "Cūḷavagga Pāḷi",
+          translation: "",
           content: "Cūḷavagga Pāḷi, which is book four of the Vinaya Piṭaka, deals with further rules and procedures for institutional acts or functions known as saṅghakamma. The twelve sections in this book deal with rules for offences such as saṅghādisesa that come before the Sangha; rules for observance of penances such as parivāsa and mānatta and rules for reinstatement of a bhikkhu. There are also miscellaneous rules concerning bathing, dress, dwellings and furniture and those dealing with treatment of visiting bhikkhus, and duties of tutors and novices.",
           volume: "4",
           editions: {
@@ -84,6 +88,7 @@ const TipitakaData = readable({
         {
           id: "parivara",
           name: "Parivāra Pāḷi",
+          translation: "",
           content: "Parivāra Pāḷi, which is the fifth and last book of the Vinaya Piṭaka, serves as a kind of manual. It is compiled in the form of a catechism, enabling the reader to make an analytical survey of the Vinaya Piṭaka. All the rules, official acts, and other matters of the Vinaya are classified under separate categories according to the subjects dealt with.",
           volume: "5",
           editions: {
@@ -98,7 +103,12 @@ const TipitakaData = readable({
       id: "suttanta",
       name: "Suttanta Piṭaka",
       description: "The Suttanta Piṭaka is a collection of all the discourses delivered by the Buddha on various occasions in their entirety. A few discourses delivered by some of the distinguished disciples of the Buddha, such as the Venerable Sāriputta, Mahā Moggallāna, Venerable Ānanda etc., as well as some narratives, are also included in the books of the Suttanta Piṭaka. The discourses of the Buddha collected together in the Suttanta Piṭaka were delivered to suit different occasions and different audiences with different temperaments. Although the discourses were mostly intended for the benefit of bhikkhus and deal with the practice of the pure life and with the explanation of the teaching, there are also several other discourses which deal with the material and moral progress of the lay disciple.",
-      links: {},
+      links: {
+        info: "https://tipitaka.org/eot#9",
+        engbookurl: "https://store.pariyatti.org/The-Basket-of-Discourses_c_185.html",
+        palibookurl: "https://store.pariyatti.org/Sutta-Pitaka_c_194.html",
+        vriurl: "https://www.vridhamma.org/Tipitaka-Propject#tablesaw-8898"
+      },
       collections: {
         "digha-nikaya": {
           name: "Dīgha Nikāya",
@@ -108,7 +118,12 @@ const TipitakaData = readable({
           vaggas: ["Sīlakkhanda Vagga, Division Concerning Morality", "Mahā Vagga, the Large Division", "Pāthika Vagga, the Division beginning with the discourse on Pathika, the naked ascetic."],
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "https://store.pariyatti.org/Long--DN_c_187.html",
+            palibookurl: "https://store.pariyatti.org/Digha-Nikaya_c_196.html",
+            vriurl: ""
+          }
         },
         "majjhima-nikaya": {
           name: "Majjhima Nikāya",
@@ -118,7 +133,12 @@ const TipitakaData = readable({
           pannasa: ["Mūlapaṇṇāsa", "Majjhimapaṇṇāsa", "Uparipaṇṇāsa"],
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "https://store.pariyatti.org/Middle-Length--MN_c_188.html",
+            palibookurl: "https://store.pariyatti.org/Majjhima-Nikaya_c_198.html",
+            vriurl: ""
+          }
         },
         "samyutta-nikaya": {
           name: "Saṃyutta Nikāya",
@@ -128,7 +148,12 @@ const TipitakaData = readable({
           samyuttas: ["Sagāthā Vagga Saṃyutta Pāḷi", "Nidāna Vagga Saṃyutta Pāḷi", "Khandha Vagga Saṃyutta Pāḷi", "Saḷāyatana Vagga Saṃyutta Pāḷi", "Mahā Vagga Saṃyutta Pāḷi"],
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "https://store.pariyatti.org/Connected--SN_c_186.html",
+            palibookurl: "https://store.pariyatti.org/Samyutta-Nikaya_c_199.html",
+            vriurl: ""
+          }
         },
         "anguttara-nikaya": {
           name: "Aṅguttara Nikāya",
@@ -138,7 +163,12 @@ const TipitakaData = readable({
           nipatas: ["Ekaka Nipāta Pāḷi", "Duka Nipāta Pāḷi", "Tika Nipāta Pāḷi", "Catukka Nipāta Pāḷi", "Pañcaka Nipāta Pāḷi", "Chakka Nipāta Pāḷi", "Sattaka Nipāta Pāḷi", "Aṭṭhaka Nipāta Pāḷi", "Navaka Nipāta Pāḷi", "Dasaka Nipāta Pāḷi", "Ekādasaka Nīpata Pāḷi"],
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "https://store.pariyatti.org/Numerical--AN_c_190.html",
+            palibookurl: "https://store.pariyatti.org/Anguttara-Nikaya_c_195.html",
+            vriurl: ""
+          }
         },
         "khuddaka-nikaya": {
           name: "Khuddaka Nikāya",
@@ -147,7 +177,12 @@ const TipitakaData = readable({
           descr: "Of all the five nikāyas Khuddaka Nikāya contains the largest number of treatises (as listed below) and the most numerous categories of Dhamma. Although the word khuddaka literally means minor or small, the actual content of this collection can by no means be regarded as minor, including as it does the two major divisions of the Piṭaka, namely, the Vinaya Piṭaka and the Abhidhamma Piṭaka according to one system of classification. The miscellaneous nature of this collection, containing not only the discourses by the Buddha but compilations of brief doctrinal notes mostly in verse, accounts of personal struggles and achievements by theras and therīs also in verse, the birth stories, the history of the Buddha, etc., may account for its title.",
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "https://store.pariyatti.org/Minor--KN_c_189.html",
+            palibookurl: "https://store.pariyatti.org/Khuddaka-Nikaya_c_197.html",
+            vriurl: ""
+          }
         },
       },
       books: [
@@ -166,7 +201,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "maha-vagga-digha",
@@ -202,7 +242,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "mulapannasa",
@@ -220,7 +265,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "majjhima-pannasa",
@@ -238,7 +288,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "uparipannasa",
@@ -256,7 +311,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "sagatha-vagga",
@@ -274,7 +334,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "nidana-vagga",
@@ -292,7 +357,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "khandha-vagga",
@@ -310,7 +380,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "salayatana-vagga",
@@ -328,7 +403,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "maha-vagga-samyutta",
@@ -346,7 +426,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "ekaka-nipata",
@@ -364,7 +449,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "duka-nipata",
@@ -382,7 +472,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "tika-nipata",
@@ -400,7 +495,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "catukka",
@@ -418,7 +518,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "pancaka",
@@ -436,7 +541,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "chakka",
@@ -454,7 +564,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "sattaka",
@@ -472,7 +587,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "atthaka",
@@ -490,7 +610,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "navaka",
@@ -508,7 +633,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "dasaka",
@@ -526,7 +656,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "ekadasaka",
@@ -543,7 +678,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "khuddakapatha",
@@ -599,7 +739,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "itivuttaka",
@@ -616,7 +761,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "suttanipata",
@@ -633,7 +783,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "vimana-vatthu",
@@ -650,7 +805,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "peta-vatthu",
@@ -667,7 +827,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "thera-gatha",
@@ -684,7 +849,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "theri-gatha",
@@ -701,7 +871,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "jataka",
@@ -718,7 +893,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "niddesa",
@@ -735,7 +915,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "patisambhida",
@@ -752,7 +937,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "apadana",
@@ -769,7 +959,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "buddhavamsa",
@@ -786,7 +981,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "cariya",
@@ -803,7 +1003,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "netti",
@@ -820,7 +1025,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "petakopadesa",
@@ -837,7 +1047,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
         {
           id: "milindapanha",
@@ -854,7 +1069,12 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {}
+          links: {
+            info: "",
+            engbookurl: "",
+            palibookurl: "",
+            vriurl: ""
+          }
         },
 
       ]
@@ -863,7 +1083,12 @@ const TipitakaData = readable({
       id: "abhidhamma",
       name: "Abhidhamma Piṭaka",
       description: "Abhidhamma is the third great division of the Piṭaka. It is a huge collection of systematically arranged, tabulated and classified doctrines of the Buddha, representing the quintessence of this teaching. Abhidhamma means higher teaching or special teaching; it is unique in its analytical approach, immensity of scope and support for one’s liberation.",
-      links: {},
+      links: {
+        info: "https://tipitaka.org/eot#70",
+        engbookurl: "https://store.pariyatti.org/Abhidhamma_c_184.html",
+        palibookurl: "https://store.pariyatti.org/Abhidhamma-Pitaka_c_193.html",
+        vriurl: "https://www.vridhamma.org/Tipitaka-Propject#tablesaw-8898"
+      },
       books: [
         {
           id: "dhammasangani",

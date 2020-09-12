@@ -13,13 +13,13 @@
   let selectedBooks: string = "";
   $: console.log(`selectedBooks: ${selectedBooks}`);
 
-  let modalInfo: object = {};
+  let modalInfoObj: object = {};
 
   const getSelectionObj = (e: any) => {
     selectedBooks = e.target.value;
     // let basket:string = e.target.dataset.basketName;
     // let id: string = e.target.id;
-    modalInfo = tipitakaData.baskets[selectedBooks];
+    modalInfoObj = tipitakaData.baskets[selectedBooks];
   };
 </script>
 
@@ -55,5 +55,5 @@
 
 <!-- Book Case -->
 <main id="library">
-  <Bookcase {selectedBooks} {modalInfo} />
+  <Bookcase {selectedBooks} {modalInfoObj} />
 </main>

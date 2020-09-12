@@ -34,20 +34,36 @@
   interface Info {
     name: string;
     description: string;
-    books: [object];
+    books: [Book];
+    links: Links;
   }
 
-  export let modalInfo: Info;
-  $: console.log(modalInfo);
-  $: heading = modalInfo.name || "";
-  $: description = modalInfo.description;
-  $: links = modalInfo.links;
+  interface Links {
+    info: string;
+    engbookurl: string;
+    palibookurl: string;
+    vriurl: string;
+  }
+
+  interface Book {
+    id: string;
+    name: string;
+    translation: string;
+    content: string;
+  }
+
+  export let modalInfoObj: Info;
+  $: console.log(modalInfoObj);
+  $: heading = modalInfoObj.name || "";
+  $: description = modalInfoObj.description;
+  $: links = modalInfoObj.links;
+  $: sections = modalInfoObj.books;
 
   const infoForModal = (e: any) => {
     // let basket = e.target.dataset.basketName;
     // let id = e.target.id;
     // console.log(tipitakaData.baskets[basket]);
-    // modalInfo = tipitakaData.baskets[basket];
+    // modalInfoObj = tipitakaData.baskets[basket];
     toggleModal();
   };
 </script>
@@ -154,11 +170,19 @@
   <InfoModal on:click={toggleModal}>
     <h2 id="volume-title">{heading}</h2>
     <p id="vol-summary">{description}</p>
+    <!-- Link Buttons -->
     <section class="link-btns-cont">
       <Button btnLabel="Learn More" booklink={links.info} />
-      <Button btnLabel="English Book" booklink={links.engbookurl} />
-      <Button btnLabel="Pali Book" booklink={links.palibookurl} />
+      <Button btnLabel="English Books" booklink={links.engbookurl} />
+      <Button btnLabel="Pali Books" booklink={links.palibookurl} />
       <Button btnLabel="Books at VRI" booklink={links.vriurl} />
     </section>
+    <!-- List of Sections or Vaggas or Suttas-->
+    <p>The {heading} is made up of {sections.length} books:</p>
+    <ol class="list-of-sections">
+      {#each sections as { name, content }}
+        <li title={content}>{name}</li>
+      {/each}
+    </ol>
   </InfoModal>
 {/if}
