@@ -35,6 +35,7 @@
     name: string;
     description: string;
     books: [Book];
+    sections: [string];
     links: Links;
   }
 
@@ -57,7 +58,8 @@
   $: heading = modalInfoObj.name || "";
   $: description = modalInfoObj.description;
   $: links = modalInfoObj.links;
-  $: sections = modalInfoObj.books;
+  $: books = modalInfoObj.books;
+  $: sections = modalInfoObj.sections;
 
   const infoForModal = (e: any) => {
     // let basket = e.target.dataset.basketName;
@@ -120,6 +122,26 @@
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    p,
+    li {
+      font-size: 1.3rem;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+  }
 </style>
 
 <header>
@@ -177,12 +199,18 @@
       <Button btnLabel="Pali Books" booklink={links.palibookurl} />
       <Button btnLabel="Books at VRI" booklink={links.vriurl} />
     </section>
-    <!-- List of Sections or Vaggas or Suttas-->
-    <p>The {heading} is made up of {sections.length} books:</p>
-    <ol class="list-of-sections">
-      {#each sections as { name, content }}
-        <li title={content}>{name}</li>
-      {/each}
+    <!-- List of books or Vaggas or Suttas-->
+    <p>The {heading} consists of:</p>
+    <ol class="list-of-books">
+      {#if books}
+        {#each books as { name, content }}
+          <li title={content}>{name}</li>
+        {/each}
+      {:else}
+        {#each sections as section}
+          <li>{section}</li>
+        {/each}
+      {/if}
     </ol>
   </InfoModal>
 {/if}

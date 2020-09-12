@@ -6,21 +6,35 @@
   import Menu from "./Menu.svelte";
   import Bookcase from "./Bookcase.svelte";
 
+  /* DATA */
   let tipitakaData;
   TipitakaData.subscribe((items) => (tipitakaData = items));
   $: console.log(tipitakaData);
 
+  /* Selected Menu Item */
   let selectedBooks: string = "";
   $: console.log(`selectedBooks: ${selectedBooks}`);
-
+  /* Data Object of Selected Menu Item */
   let modalInfoObj: object = {};
 
   const getSelectionObj = (e: any) => {
     selectedBooks = e.target.value;
-    // let basket:string = e.target.dataset.basketName;
-    // let id: string = e.target.id;
-    modalInfoObj = tipitakaData.baskets[selectedBooks];
+    // console.log(e.target);
+    if (
+      selectedBooks === "vinaya" ||
+      selectedBooks === "suttanta" ||
+      selectedBooks === "abhidhamma"
+    ) {
+      modalInfoObj = tipitakaData.baskets[selectedBooks];
+    } else if (selectedBooks.includes("-nikaya")) {
+      modalInfoObj = tipitakaData.baskets.suttanta.collections[selectedBooks];
+    }
   };
+
+  // const getClickedBookObj = (e: any) => {
+  //   let basket: string = e.target.dataset.basketName;
+  //   let id: string = e.target.id;
+  // };
 </script>
 
 <style>
