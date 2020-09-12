@@ -18,7 +18,12 @@ const TipitakaData = readable({
       id: "vinaya",
       name: "Vinaya Piṭaka",
       description: "The Vinaya Piṭaka is made up of rules of discipline laid down for regulating the conduct of the Buddha’s disciples who have been admitted into the order as bhikkhus (monks) and bhikkhunis (nuns). These rules embody authoritative injunctions of the Buddha on modes of conduct and restraints on both physical and verbal actions. They deal with transgressions of discipline, and with various categories of restraints and admonitions in accordance with the nature of the offence.",
-      links: {},
+      links: {
+        info: "https://en.wikipedia.org/wiki/Vinaya",
+        engbookurl: "https://store.pariyatti.org/Book-of-Discipline_p_1907.html",
+        palibookurl: "https://store.pariyatti.org/Vinaya-Pitaka_p_2199.html",
+        vriurl: "https://www.vridhamma.org/research/Pali-Tipitaka-as-the-Source-of-Vipassana"
+      },
       books: [
         {
           id: "parajika",
@@ -31,7 +36,9 @@ const TipitakaData = readable({
           },
           commentary: [],
           subcommentary: [],
-          links: {},
+          links: {
+
+          },
         },
         {
           id: "pacittiya",

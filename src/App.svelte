@@ -11,10 +11,15 @@
   $: console.log(tipitakaData);
 
   let selectedBooks: string = "";
-  // $: console.log(`selectedBooks: ${selectedBooks}`);
+  $: console.log(`selectedBooks: ${selectedBooks}`);
 
-  const selectBooks = (e: any) => {
+  let modalInfo: object = {};
+
+  const getSelectionObj = (e: any) => {
     selectedBooks = e.target.value;
+    // let basket:string = e.target.dataset.basketName;
+    // let id: string = e.target.id;
+    modalInfo = tipitakaData.baskets[selectedBooks];
   };
 </script>
 
@@ -43,12 +48,12 @@
 
 <!-- Learn More Menu -->
 <section id="info-bar">
-  <Menu {selectedBooks} on:change={selectBooks} />
+  <Menu {selectedBooks} on:change={getSelectionObj} />
   <SearchInput />
 
 </section>
 
 <!-- Book Case -->
 <main id="library">
-  <Bookcase {selectedBooks} />
+  <Bookcase {selectedBooks} {modalInfo} />
 </main>

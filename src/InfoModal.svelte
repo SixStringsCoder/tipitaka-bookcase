@@ -1,5 +1,4 @@
 <script>
-  // let showingModal: boolean = false;
   import { fade } from "svelte/transition";
 </script>
 
@@ -34,7 +33,7 @@
   }
 </style>
 
-<section class="info-cont" transition:fade>
+<section class="info-cont" in:fade={{ duration: 250 }}>
   <div id="closer-info" on:click>&#10006;</div>
   <slot>
     <h3>No information available.</h3>

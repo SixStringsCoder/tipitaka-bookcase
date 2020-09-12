@@ -2,30 +2,53 @@
   import TipitakaData from "./stores/tipitaka-store.js";
   import Book from "./Book.svelte";
   import InfoModal from "./InfoModal.svelte";
+  import Button from "./Button.svelte";
 
+  /* DATA */
   let tipitakaData;
   TipitakaData.subscribe((items) => (tipitakaData = items));
 
+  /* BASKETS OBJECTS */
   const vinaya = tipitakaData.baskets.vinaya;
   const suttanta = tipitakaData.baskets.suttanta;
   const abhidhamma = tipitakaData.baskets.abhidhamma;
 
+  /* BASKET NAME */
   let bookcaseCollection: string = tipitakaData.information.name;
+  /* SELECTION VALUE FROM MENU */
   export let selectedBooks: string = "";
   $: console.log(selectedBooks);
 
+  /* ENABLES CSS HIGHLIGHTING WHEN BOOKS ARE SELECTED FROM MENU */
   let selected: boolean = true;
   let blinking: boolean = true;
-  let searchQuery: string = "";
 
+  /* INPUT SEARCH TERM */
+  let searchQuery: string = "";
   const findMenuItem = () => console.log(selectedBooks);
 
+  /* MODAL */
   let showingModal: boolean = false;
-
   const toggleModal: () => boolean = () => (showingModal = !showingModal);
 
-  const infoModal = () => {
-    console.log(bookcaseCollection);
+  interface Info {
+    name: string;
+    description: string;
+    books: [object];
+  }
+
+  export let modalInfo: Info;
+  $: console.log(modalInfo);
+  $: heading = modalInfo.name || "";
+  $: description = modalInfo.description;
+  $: links = modalInfo.links;
+
+  const infoForModal = (e: any) => {
+    // let basket = e.target.dataset.basketName;
+    // let id = e.target.id;
+    // console.log(tipitakaData.baskets[basket]);
+    // modalInfo = tipitakaData.baskets[basket];
+    toggleModal();
   };
 </script>
 
@@ -55,9 +78,13 @@
   header {
     margin-top: 10.5rem;
     padding: 0 0 0 3px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  h1.bookshelf-heading {
+  h1.bookshelf-heading,
+  h2 {
     margin-bottom: 0.2rem;
     text-transform: uppercase;
     font-size: 1.5rem;
@@ -66,48 +93,72 @@
     padding: 5px 0;
     cursor: pointer;
   }
+
+  .selection-heading {
+    font-size: 1.3rem;
+    text-decoration: underline;
+  }
+
+  .link-btns-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 </style>
 
 <header>
   <h1 class="bookshelf-heading" on:click={toggleModal}>{bookcaseCollection}</h1>
+  <h2 class="selection-heading" on:click={infoForModal}>{heading}</h2>
 </header>
 
 <section class="bookcase show-bookcase" id="tipitaka">
-  {#each vinaya.books as { id, content, volume, collection }, i}
+  {#each vinaya.books as { id, name, content, volume, collection }, i}
     <Book
       {id}
       selected={selectedBooks === vinaya.id || selectedBooks === id}
       blinking={selectedBooks === vinaya.id || selectedBooks === id}
       basket={vinaya.id}
       {collection}
-      counter={String(i + 1)} />
+      {name}
+      counter={String(i + 1)}
+      on:click={infoForModal} />
   {/each}
 
-  {#each suttanta.books as { id, content, volume, collection }, i}
+  {#each suttanta.books as { id, name, content, volume, collection }, i}
     <Book
       {id}
       selected={selectedBooks === suttanta.id || selectedBooks === collection || selectedBooks === id}
       blinking={selectedBooks === suttanta.id || selectedBooks === collection || selectedBooks === id}
       basket={suttanta.id}
       {collection}
-      counter={String(i + 6)} />
+      {name}
+      counter={String(i + 6)}
+      on:click={infoForModal} />
   {/each}
 
-  {#each abhidhamma.books as { id, content, volume, collection }, i}
+  {#each abhidhamma.books as { id, name, content, volume, collection }, i}
     <Book
       {id}
       selected={selectedBooks === abhidhamma.id || selectedBooks === id}
       blinking={selectedBooks === abhidhamma.id || selectedBooks === id}
       basket={abhidhamma.id}
       {collection}
-      counter={String(i + 46)} />
+      {name}
+      counter={String(i + 46)}
+      on:click={infoForModal} />
   {/each}
 </section>
 
 <!-- Info Modal -->
 {#if showingModal}
   <InfoModal on:click={toggleModal}>
-    <h2 id="volume-title">{bookcaseCollection}</h2>
-    <p id="vol-summary">{selectedBooks}</p>
+    <h2 id="volume-title">{heading}</h2>
+    <p id="vol-summary">{description}</p>
+    <section class="link-btns-cont">
+      <Button btnLabel="Learn More" booklink={links.info} />
+      <Button btnLabel="English Book" booklink={links.engbookurl} />
+      <Button btnLabel="Pali Book" booklink={links.palibookurl} />
+      <Button btnLabel="Books at VRI" booklink={links.vriurl} />
+    </section>
   </InfoModal>
 {/if}

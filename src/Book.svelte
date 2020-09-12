@@ -1,5 +1,6 @@
 <script lang="ts">
   export let id: string;
+  export let name: string;
   export let basket: string;
   export let collection: string;
   export let counter: string;
@@ -98,7 +99,11 @@
 </style>
 
 <!-- single book -->
-<div class="book" {id} data-basket-name={basket} data-collection={collection}>
+<div
+  class="book"
+  id="volume-{counter}"
+  data-basket-name={basket}
+  data-collection={collection}>
 
   <div
     class:highlighted={selected}
@@ -120,7 +125,8 @@
     class="bookcover"
     data-basket-name={basket}
     title={name}
-    id="volume-{counter}"
-    data-vol-no={counter} />
+    {id}
+    data-vol-no={counter}
+    on:click />
 
 </div>
