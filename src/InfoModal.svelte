@@ -5,11 +5,12 @@
 <style>
   .info-cont {
     position: absolute;
-    top: 25%;
+    top: 20%;
+    height: 70%;
     width: 80%;
     z-index: 10000;
     background-color: #fff;
-    padding: 25px;
+    padding: 15px 25px;
     box-shadow: 0 0 20px black;
     overflow: scroll;
   }

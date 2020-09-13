@@ -103,7 +103,7 @@
 
   h1.bookshelf-heading,
   h2 {
-    margin-bottom: 0.2rem;
+    margin: 0 0 0.2rem;
     text-transform: uppercase;
     font-size: 1.5rem;
     font-family: tahoma;
@@ -121,6 +121,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 2rem 0;
   }
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -200,7 +201,7 @@
       <Button btnLabel="Books at VRI" booklink={links.vriurl} />
     </section>
     <!-- List of books or Vaggas or Suttas-->
-    <p>The {heading} consists of:</p>
+    <p class="books-summary">The {heading} consists of:</p>
     <ol class="list-of-books">
       {#if books}
         {#each books as { name, content }}
