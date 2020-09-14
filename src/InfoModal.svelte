@@ -16,7 +16,7 @@
   }
 
   #closer-info {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     color: #555;
     height: 1.7rem;
     text-align: right;

@@ -36,14 +36,13 @@
     description: string;
     books: [Book];
     sections: [string];
-    links: Links;
+    links: [Links];
   }
 
   interface Links {
-    info: string;
-    engbookurl: string;
-    palibookurl: string;
-    vriurl: string;
+    id: string;
+    link: string;
+    label: string;
   }
 
   interface Book {
@@ -124,6 +123,20 @@
     margin: 2rem 0;
   }
 
+  p,
+  li {
+    font-size: 1.3rem;
+  }
+
+  li {
+    line-height: 150%;
+  }
+
+  .books-summary {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
   }
@@ -132,7 +145,7 @@
   @media only screen and (min-width: 768px) {
     p,
     li {
-      font-size: 1.3rem;
+      font-size: 1.5rem;
     }
   }
 
@@ -159,7 +172,7 @@
       basket={vinaya.id}
       {collection}
       {name}
-      counter={String(i + 1)}
+      counter={volume}
       on:click={infoForModal} />
   {/each}
 
@@ -171,7 +184,7 @@
       basket={suttanta.id}
       {collection}
       {name}
-      counter={String(i + 6)}
+      counter={volume}
       on:click={infoForModal} />
   {/each}
 
@@ -183,7 +196,7 @@
       basket={abhidhamma.id}
       {collection}
       {name}
-      counter={String(i + 46)}
+      counter={volume}
       on:click={infoForModal} />
   {/each}
 </section>
@@ -195,10 +208,11 @@
     <p id="vol-summary">{description}</p>
     <!-- Link Buttons -->
     <section class="link-btns-cont">
-      <Button btnLabel="Learn More" booklink={links.info} />
-      <Button btnLabel="English Books" booklink={links.engbookurl} />
-      <Button btnLabel="Pali Books" booklink={links.palibookurl} />
-      <Button btnLabel="Books at VRI" booklink={links.vriurl} />
+      {#each links as { id, link, label }}
+        {#if link}
+          <Button btnLabel={label} booklink={link} />
+        {/if}
+      {/each}
     </section>
     <!-- List of books or Vaggas or Suttas-->
     <p class="books-summary">The {heading} consists of:</p>
