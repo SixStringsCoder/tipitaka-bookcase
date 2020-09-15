@@ -45,17 +45,22 @@
       <option value="khuddaka-nikaya">
         Minor Collection (Khuddaka Nikāya)
       </option>
-      <option value="dhammapada">Dhammapada</option>
-      <option value="jataka">Jataka Tales</option>
-      <option value="patthana">Patthana Matrix</option>
-      <option value="khuddakapatha">Maṅgala Sutta</option>
-      <option value="udana">Udāna</option>
-      <option value="itivuttaka">Itivuttaka</option>
+      <option value="dhammapada" data-basket="suttanta">Dhammapada</option>
+      <option value="jataka" data-basket="suttanta">Jataka Tales</option>
+      <option value="patthana" data-basket="abhidhamma">Patthana Matrix</option>
+      <option value="udana" data-basket="suttanta">Udāna</option>
+      <option value="itivuttaka" data-basket="suttanta">Itivuttaka</option>
       <option value="khuddakapatha">Khuddakapāṭha</option>
-      <option value="maha-vagga-digha">Wheel of Dependent Origination</option>
-      <option value="maha-vagga-digha">Mahāsatipaṭṭhāna Sutta (Digha)</option>
-      <option value="mulapannasa">Mahāsatipaṭṭhāna Sutta (Majjhima)</option>
-      <option value="mahavagga">Pāṭimokkha</option>
+      <option value="maha-vagga-digha" data-basket="suttanta">
+        Wheel of Dependent Origination
+      </option>
+      <option value="maha-vagga-digha" data-basket="suttanta">
+        Mahāsatipaṭṭhāna Sutta (Digha)
+      </option>
+      <option value="mulapannasa" data-basket="suttanta">
+        Mahāsatipaṭṭhāna Sutta (Majjhima)
+      </option>
+      <option value="mahavagga" data-basket="vinaya">Pāṭimokkha</option>
     </optgroup>
     <optgroup label="Commentaries (Atthakatha)">
       <option value="commentaries" data-bookcase="bookcase">

@@ -59,6 +59,7 @@
   $: links = modalInfoObj.links;
   $: books = modalInfoObj.books;
   $: sections = modalInfoObj.sections;
+  $: suttas = modalInfoObj.suttas;
 
   const infoForModal = (e: any) => {
     // let basket = e.target.dataset.basketName;
@@ -221,9 +222,13 @@
         {#each books as { name, content }}
           <li title={content}>{name}</li>
         {/each}
-      {:else}
+      {:else if sections}
         {#each sections as section}
           <li>{section}</li>
+        {/each}
+      {:else}
+        {#each suttas as { name, content }}
+          <li title={content}>{name}</li>
         {/each}
       {/if}
     </ol>

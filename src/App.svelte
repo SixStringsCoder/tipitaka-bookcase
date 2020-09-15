@@ -23,16 +23,26 @@
   let modalInfoObj: object = {};
 
   const getSelectionObj = (e: any) => {
+    //let sel = document.getElementById("menu");
+    let selectedBasket = e.target.selectedOptions[0].dataset.basket;
     selectedBooks = e.target.value;
-    // console.log(e.target);
+    console.log(selectedBasket);
+
     if (
       selectedBooks === "vinaya" ||
       selectedBooks === "suttanta" ||
       selectedBooks === "abhidhamma"
     ) {
+      // Baskets
       modalInfoObj = tipitakaData.baskets[selectedBooks];
     } else if (selectedBooks.includes("-nikaya")) {
+      // Collections only in suttanta
       modalInfoObj = tipitakaData.baskets.suttanta.collections[selectedBooks];
+    } else {
+      // Books
+      modalInfoObj = tipitakaData.baskets[selectedBasket].books.find(
+        (book) => book.id === selectedBooks
+      );
     }
   };
 
