@@ -5,15 +5,13 @@ import { readable } from 'svelte/store';
 const CommentaryData = readable({
   information: {
     name: 'Commentary (Aṭṭhakathā)',
-    author: "",
     introduction: "Aṭṭhakathā (Pali for explanation, commentary) refers to Pali-language Theravadin Buddhist commentaries to the canonical Theravadin Tipitaka. These commentaries give the traditional interpretations of the scriptures. The major commentaries were based on earlier ones, now lost, in Prakrit and Sinhala, which were written down at the same time as the Canon, in the last century BCE. Some material in the commentaries is found in canonical texts of other schools of Buddhism, suggesting an early common source. &emdash;wikipedia",
-
-    links: {
-      info: "https://dhammawiki.com/index.php/Theravada_commentaries",
-      engbookurl: "https://store.pariyatti.org/English_c_214.html",
-      palibookurl: "https://store.pariyatti.org/Pali_c_215.html",
-      vriurl: ""
-    }
+    links: [
+      { id: "info", link: "https://dhammawiki.com/index.php/Theravada_commentaries", label: "" },
+      { id: "engbookurl", link: "https://store.pariyatti.org/English_c_214.html", label: "" },
+      { id: "palibookurl", link: "https://store.pariyatti.org/Pali_c_215.html", label: "" },
+      { id: "vri", link: "", label: "" }
+    ],
   },
   books: [
     {
