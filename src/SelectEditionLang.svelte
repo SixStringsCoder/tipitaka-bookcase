@@ -6,57 +6,100 @@
 
 <style>
   section {
-    width: 100%;
+    width: 90%;
     margin: 0 0 10px;
     display: flex;
-    justify-content: space-around;
-    align-items: flex-start;
-  }
-
-  #edition-sel-cont label {
-    width: 200px;
-    display: flex;
     justify-content: space-between;
+    align-items: flex-start;
+    /* background-color: #aaa; */
   }
 
-  #edition-sel-cont label span {
-    margin-bottom: 5px;
-  }
-
-  #edition-sel-cont input {
-    -webkit-appearance: none;
-    background-color: hsla(53, 53%, 37%, 1);
-    box-shadow: inset 0 0 2px black;
-    width: 200px;
-    height: 27px;
-    padding: 0 3px 2px;
-  }
-
-  input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    width: 22px;
-    height: 22px;
-    background: #fff;
-    box-shadow: 0 0 3px -1px black;
-  }
-
-  #lang-toggle-cont {
+  #edition-sel-cont {
+    width: 65%;
     display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  #lang-toggle-cont label {
-    font-size: 0.8rem;
-    margin: 0 0 1px;
+    justify-content: space-evenly;
+    background-color: hsla(53, 53%, 47%, 0.9);
+    padding: 7px 0 8px;
+    border-radius: 2px;
   }
 
-  #lang-toggle-cont span {
-    font-size: 1rem;
-    letter-spacing: 0.5px;
+  /* The container */
+  .radio-container {
+    display: block;
+    position: relative;
+    padding-top: 2px;
+    padding-left: 25px;
+    /* margin-bottom: 12px; */
+    cursor: pointer;
+    font-size: 0.9rem;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  /* Radio Buttons - source: https://www.w3schools.com/howto/howto_css_custom_checkbox.asp */
+  /* Hide the browser's default radio button */
+  .radio-container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+  /* Create a custom radio button */
+  .radioBtn {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border-radius: 0%;
+  }
+
+  /* On mouse-over, add a grey background color */
+  .radio-container:hover input ~ .radioBtn {
+    background-color: #666;
+  }
+
+  /* When the radio button is checked, add a blue background */
+  .radio-container input:checked ~ .radioBtn {
+    background-color: #000;
+  }
+
+  /* Create the indicator (the dot/circle - hidden when not checked) */
+  .radioBtn:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+
+  /* Show the indicator (dot/circle) when checked */
+  .radio-container input:checked ~ .radioBtn:after {
+    display: block;
+  }
+
+  /* Style the indicator (dot/circle) */
+  .radio-container .radioBtn:after {
+    left: 6px;
+    top: 2px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
   }
 
   /* The switch - the box around the slider */
   /* code source: https://www.w3schools.com/howto/howto_css_switch.asp */
+  #lang-toggle-cont {
+    width: 40%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+  }
   .switch {
     position: relative;
     display: inline-block;
@@ -80,7 +123,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #000;
+    background-color: hsla(53, 53%, 47%, 0.9);
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -92,14 +135,13 @@
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color: white;
+    background-color: black;
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
 
   input:checked + .slider {
-    /* background-color: hsla(53, 53%, 33%, 1); */
-    background-color: hsla(53, 53%, 0%, 1);
+    /* background-color: hsla(53, 53%, 0%, 1); */
   }
 
   input:focus + .slider {
@@ -122,25 +164,27 @@
   }
 </style>
 
-<section id="range-toggle-cont">
+<section id="radio-toggle-cont">
   <div id="edition-sel-cont">
-    <label for="edition-selector">
-      <span>PTS</span>
-      <span>Overview</span>
-      <span>VRI</span>
+    <label class="radio-container">
+      PTS
+      <input type="radio" bind:group={edition} value="pts" />
+      <span class="radioBtn" />
     </label>
-
-    <input
-      type="range"
-      name="edition-selector"
-      id="edition-selector"
-      min="0"
-      max="2"
-      bind:value={edition} />
+    <label class="radio-container">
+      Overview
+      <input type="radio" bind:group={edition} value="overview" />
+      <span class="radioBtn" />
+    </label>
+    <label class="radio-container">
+      VRI
+      <input type="radio" bind:group={edition} value="vri" />
+      <span class="radioBtn" />
+    </label>
   </div>
 
   <div id="lang-toggle-cont">
-    <span>Pāli&nbsp; &#8596; &nbsp;Eng</span>
+    <span>Pāli&nbsp;</span>
     <label class="switch">
       <input
         type="checkbox"
@@ -150,5 +194,7 @@
         on:input />
       <span class="slider round" />
     </label>
+    <span>&nbsp;Eng.</span>
   </div>
+
 </section>

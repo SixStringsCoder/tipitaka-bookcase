@@ -13,7 +13,7 @@
   $: console.log(tipitakaData);
 
   /* Which Edition, Language and Bookcase is showing */
-  let edition: string = "1";
+  let edition: string = "overview";
   let langIsEng: boolean = false;
 
   /* Selected Menu Item */
