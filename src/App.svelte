@@ -14,8 +14,7 @@
 
   /* Which Edition, Language and Bookcase is showing */
   let edition: string = "1";
-  let langIsPali: boolean = true;
-  $: console.log(langIsPali, edition);
+  let langIsEng: boolean = false;
 
   /* Selected Menu Item */
   let selectedBooks: string = "";
@@ -72,8 +71,8 @@
 
   <SelectEditionLang
     {edition}
-    {langIsPali}
-    on:input={() => langIsPali === !langIsPali} />
+    {langIsEng}
+    on:input={() => langIsEng === !langIsEng} />
 
   <SearchInput />
 </section>

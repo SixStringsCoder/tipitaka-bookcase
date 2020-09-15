@@ -210,7 +210,7 @@
     <section class="link-btns-cont">
       {#each links as { id, link, label }}
         {#if link}
-          <Button btnLabel={label} booklink={link} />
+          <Button {id} btnLabel={label} booklink={link} />
         {/if}
       {/each}
     </section>

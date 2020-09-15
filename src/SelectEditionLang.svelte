@@ -1,6 +1,7 @@
 <script lang="ts">
   export let edition: string;
-  export let langIsPali: boolean;
+  export let langIsEng: boolean;
+  $: console.log(langIsEng, edition);
 </script>
 
 <style>
@@ -25,16 +26,18 @@
   #edition-sel-cont input {
     -webkit-appearance: none;
     background-color: hsla(53, 53%, 37%, 1);
+    box-shadow: inset 0 0 2px black;
     width: 200px;
-    height: 25px;
+    height: 27px;
     padding: 0 3px 2px;
   }
 
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    width: 20px;
-    height: 20px;
+    width: 22px;
+    height: 22px;
     background: #fff;
+    box-shadow: 0 0 3px -1px black;
   }
 
   #lang-toggle-cont {
@@ -53,6 +56,7 @@
   }
 
   /* The switch - the box around the slider */
+  /* code source: https://www.w3schools.com/howto/howto_css_switch.asp */
   .switch {
     position: relative;
     display: inline-block;
@@ -94,11 +98,12 @@
   }
 
   input:checked + .slider {
-    background-color: hsla(53, 53%, 33%, 1);
+    /* background-color: hsla(53, 53%, 33%, 1); */
+    background-color: hsla(53, 53%, 0%, 1);
   }
 
   input:focus + .slider {
-    box-shadow: 0 0 1px hsla(53, 53%, 37%, 1);
+    box-shadow: 0 0 1px hsla(53, 53%, 0%, 1);
   }
 
   input:checked + .slider:before {
@@ -135,13 +140,13 @@
   </div>
 
   <div id="lang-toggle-cont">
-    <span>Eng&nbsp; &#8596; &nbsp;Pāli</span>
+    <span>Pāli&nbsp; &#8596; &nbsp;Eng</span>
     <label class="switch">
       <input
         type="checkbox"
         name="lang-toggle"
         id="lang-toggle"
-        bind:checked={langIsPali}
+        bind:checked={langIsEng}
         on:input />
       <span class="slider round" />
     </label>

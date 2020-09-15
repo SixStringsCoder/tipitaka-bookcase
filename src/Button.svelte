@@ -1,6 +1,7 @@
 <script lang="ts">
   export let btnLabel: string;
   export let booklink: string;
+  export let id: string;
 </script>
 
 <style>
@@ -38,5 +39,5 @@
 </style>
 
 <a href={booklink} target="_blank">
-  <button type="button" class="btn link-btn">{btnLabel}</button>
+  <button {id} type="button" class="btn link-btn">{btnLabel}</button>
 </a>
