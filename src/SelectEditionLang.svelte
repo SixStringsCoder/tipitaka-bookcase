@@ -11,15 +11,18 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
+    border: 1px solid black;
+    padding: 0 3px 0 0;
     /* background-color: #aaa; */
   }
 
   #edition-sel-cont {
-    width: 65%;
+    width: 60%;
     display: flex;
-    justify-content: space-evenly;
-    background-color: hsla(53, 53%, 47%, 0.9);
-    padding: 7px 0 8px;
+    justify-content: space-around;
+    background-color: hsla(53, 3%, 67%, 0.9);
+    padding: 10px;
+    /* border: 1px solid rgba(0, 0, 0, 0.3); */
     border-radius: 2px;
   }
 
@@ -99,7 +102,9 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding: 3px 0 2px;
   }
+
   .switch {
     position: relative;
     display: inline-block;
@@ -123,7 +128,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: hsla(53, 53%, 47%, 0.9);
+    background-color: hsla(53, 25%, 50%, 1);
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
@@ -157,23 +162,53 @@
   /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
+    box-shadow: inset 0 0 2px black;
   }
 
   .slider.round:before {
     border-radius: 50%;
+  }
+
+  /* Small devices (portrait tablets and large phones, 600px and up) */
+  @media only screen and (min-width: 600px) {
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    #lang-toggle-cont {
+      justify-content: center;
+      padding: 6px 0 2px;
+    }
+
+    .radio-container,
+    #lang-toggle-cont span {
+      font-size: 1.1rem;
+    }
+
+    #edition-sel-cont {
+      padding: 12px 0 10px;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
   }
 </style>
 
 <section id="radio-toggle-cont">
   <div id="edition-sel-cont">
     <label class="radio-container">
-      PTS
-      <input type="radio" bind:group={edition} value="pts" />
+      Overview
+      <input type="radio" bind:group={edition} value="overview" />
       <span class="radioBtn" />
     </label>
     <label class="radio-container">
-      Overview
-      <input type="radio" bind:group={edition} value="overview" />
+      PTS
+      <input type="radio" bind:group={edition} value="pts" />
       <span class="radioBtn" />
     </label>
     <label class="radio-container">
