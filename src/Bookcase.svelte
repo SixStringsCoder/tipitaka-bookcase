@@ -165,7 +165,7 @@
 </header>
 
 <section class="bookcase show-bookcase" id="tipitaka">
-  {#each vinaya.books as { id, name, content, volume, collection }, i}
+  {#each vinaya.books as { id, name, description, volume, collection }, i}
     <Book
       {id}
       selected={selectedBooks === vinaya.id || selectedBooks === id}
@@ -177,7 +177,7 @@
       on:click={infoForModal} />
   {/each}
 
-  {#each suttanta.books as { id, name, content, volume, collection }, i}
+  {#each suttanta.books as { id, name, description, volume, collection }, i}
     <Book
       {id}
       selected={selectedBooks === suttanta.id || selectedBooks === collection || selectedBooks === id}
@@ -189,7 +189,7 @@
       on:click={infoForModal} />
   {/each}
 
-  {#each abhidhamma.books as { id, name, content, volume, collection }, i}
+  {#each abhidhamma.books as { id, name, description, volume, collection }, i}
     <Book
       {id}
       selected={selectedBooks === abhidhamma.id || selectedBooks === id}

@@ -11,7 +11,7 @@
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.6);
     padding: 0 3px 0 0;
     /* background-color: #aaa; */
   }
@@ -20,9 +20,9 @@
     width: 60%;
     display: flex;
     justify-content: space-around;
-    background-color: hsla(53, 3%, 67%, 0.9);
+    border-right: 1px solid black;
+    /* background-color: hsla(53, 3%, 67%, 0.9); */
     padding: 10px;
-    /* border: 1px solid rgba(0, 0, 0, 0.3); */
     border-radius: 2px;
   }
 
@@ -57,6 +57,7 @@
     height: 20px;
     width: 20px;
     background-color: #eee;
+    border: 1px solid rgba(0, 0, 0, 0.6);
     border-radius: 0%;
   }
 

@@ -40,9 +40,9 @@
       modalInfoObj = tipitakaData.baskets.suttanta.collections[selectedBooks];
     } else {
       // Books
-      modalInfoObj = tipitakaData.baskets[selectedBasket].books.find(
-        (book) => book.id === selectedBooks
-      );
+      modalInfoObj = tipitakaData.baskets[selectedBasket].books.find((book) => {
+        return book.id === selectedBooks;
+      });
     }
   };
 

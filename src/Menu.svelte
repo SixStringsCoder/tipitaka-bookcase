@@ -27,22 +27,24 @@
     <option value="reset" disabled selected>Learn More</option>
     <optgroup label="Tipitaka">
       <option value="tipitaka" data-bookcase="bookcase">
-        Go to Tipi&#7789;aka
+        Tipi&#7789;aka bookcase
       </option>
       <option value="vinaya">Vinaya Pi&#7789;aka</option>
       <option value="suttanta">Suttanta Pi&#7789;aka</option>
       <option value="abhidhamma">Abhidhamma Pi&#7789;aka</option>
-      <option value="digha-nikaya">Long Discourses (Digha Nikāya)</option>
-      <option value="majjhima-nikaya">
+      <option value="digha-nikaya" data-basket="suttanta">
+        Long Discourses (Digha Nikāya)
+      </option>
+      <option value="majjhima-nikaya" data-basket="suttanta">
         Medium-length Discourses (Majjhima Nikāya)
       </option>
-      <option value="samyutta-nikaya">
+      <option value="samyutta-nikaya" data-basket="suttanta">
         Short Discourses (Samyutta Nikāya)
       </option>
-      <option value="anguttara-nikaya">
+      <option value="anguttara-nikaya" data-basket="suttanta">
         Numerical Discourses (Aṅguttara Nikāya)
       </option>
-      <option value="khuddaka-nikaya">
+      <option value="khuddaka-nikaya" data-basket="suttanta">
         Minor Collection (Khuddaka Nikāya)
       </option>
       <option value="dhammapada" data-basket="suttanta">Dhammapada</option>
@@ -50,7 +52,9 @@
       <option value="patthana" data-basket="abhidhamma">Patthana Matrix</option>
       <option value="udana" data-basket="suttanta">Udāna</option>
       <option value="itivuttaka" data-basket="suttanta">Itivuttaka</option>
-      <option value="khuddakapatha">Khuddakapāṭha</option>
+      <option value="khuddakapatha" data-basket="suttanta">
+        Khuddakapāṭha
+      </option>
       <option value="maha-vagga-digha" data-basket="suttanta">
         Wheel of Dependent Origination
       </option>
@@ -62,9 +66,9 @@
       </option>
       <option value="mahavagga" data-basket="vinaya">Pāṭimokkha</option>
     </optgroup>
-    <optgroup label="Commentaries (Atthakatha)">
+    <optgroup label="Commentaries">
       <option value="commentaries" data-bookcase="bookcase">
-        Go to Commentaries
+        Aṭṭhakathā (Commentaries) bookcase
       </option>
       <option value="path-of-purification">Visuddhi Magga</option>
       <option value="Samantapasadika">Samantapasadika</option>
@@ -75,9 +79,9 @@
       <option value="Manorathapurani">Manorathapurani</option>
       <option value="Paramatthajotika">Paramatthajotika</option>
     </optgroup>
-    <optgroup label="Sub-Commentaries (Tika)">
+    <optgroup label="Sub-Commentaries">
       <option value="sub-commentaries" data-bookcase="bookcase">
-        Go to Sub-commentaries
+        Tika (Sub-commentaries) bookcase
       </option>
       <option value="Paramatthamañjusa">Paramatthamañjusa</option>
       <option value="Vajirabuddhi-tika">Vajirabuddhi-tika</option>

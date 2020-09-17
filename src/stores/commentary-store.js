@@ -288,7 +288,7 @@ const CommentaryData = readable({
 
 });
 
-
+export default CommentaryData;
 
 /* NOTES
 - Commentaries by Dhammapala on seven books of the Khuddaka Nikaya.

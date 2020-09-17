@@ -11,8 +11,11 @@ const SubCommData = readable({
       { id: "vri", link: "", label: "Books at VRI" }
     ]
   },
-  tika: {},
-  "anu-tika": {},
-  "madhu-tika": {}
+  books: [
+    { tika: [] },
+    { "anu-tika": [] },
+    { "madhu-tika": [] }
+  ]
 });
 
+export default SubCommData;
