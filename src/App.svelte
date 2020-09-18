@@ -5,28 +5,26 @@
   import SearchInput from "./SearchInput.svelte";
   import SelectEditionLang from "./SelectEditionLang.svelte";
   import Menu from "./Menu.svelte";
-  import Bookcase from "./Bookcase.svelte";
+  import BookcasePitaka from "./BookcasePitaka.svelte";
 
-  /* DATA */
+  /* DATA STORE */
   let tipitakaData;
   TipitakaData.subscribe((items) => (tipitakaData = items));
-  $: console.log(tipitakaData);
+  $: console.log(modalInfoObj);
 
-  /* Which Edition, Language and Bookcase is showing */
+  /* Which Edition and Language is showing */
   let edition: string = "overview";
   let langIsEng: boolean = false;
 
   /* Selected Menu Item */
-  let selectedBooks: string = "";
+  let selectedBooks: string;
   $: console.log(`selectedBooks: ${selectedBooks}`);
   /* Data Object of Selected Menu Item */
   let modalInfoObj: object = {};
-
+  $: console.log(modalInfoObj);
   const getSelectionObj = (e: any) => {
     //let sel = document.getElementById("menu");
-    let selectedBasket = e.target.selectedOptions[0].dataset.basket;
     selectedBooks = e.target.value;
-    console.log(selectedBasket);
 
     if (
       selectedBooks === "vinaya" ||
@@ -39,6 +37,7 @@
       // Collections only in suttanta
       modalInfoObj = tipitakaData.baskets.suttanta.collections[selectedBooks];
     } else {
+      let selectedBasket = e.target.selectedOptions[0].dataset.basket;
       // Books
       modalInfoObj = tipitakaData.baskets[selectedBasket].books.find((book) => {
         return book.id === selectedBooks;
@@ -89,5 +88,5 @@
 
 <!-- Book Case -->
 <main id="library">
-  <Bookcase {selectedBooks} {modalInfoObj} />
+  <BookcasePitaka {selectedBooks} {modalInfoObj} {tipitakaData} />
 </main>

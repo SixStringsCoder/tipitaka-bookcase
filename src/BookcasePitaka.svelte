@@ -1,12 +1,9 @@
 <script lang="ts">
-  import TipitakaData from "./stores/tipitaka-store.js";
   import Book from "./Book.svelte";
   import InfoModal from "./InfoModal.svelte";
   import Button from "./Button.svelte";
 
-  /* DATA */
-  let tipitakaData;
-  TipitakaData.subscribe((items) => (tipitakaData = items));
+  export let tipitakaData;
 
   /* BASKETS OBJECTS */
   const vinaya = tipitakaData.baskets.vinaya;
@@ -14,7 +11,7 @@
   const abhidhamma = tipitakaData.baskets.abhidhamma;
 
   /* BASKET NAME */
-  let bookcaseCollection: string = tipitakaData.information.name;
+  let bookcaseName: string = tipitakaData.information.name;
   /* SELECTION VALUE FROM MENU */
   export let selectedBooks: string = "";
   $: console.log(selectedBooks);
@@ -30,6 +27,7 @@
   /* MODAL */
   let showingModal: boolean = false;
   const toggleModal: () => boolean = () => (showingModal = !showingModal);
+  $: console.log(showingModal);
 
   interface Info {
     name: string;
@@ -61,11 +59,23 @@
   $: sections = modalInfoObj.sections;
   $: suttas = modalInfoObj.suttas;
 
+  const bookInfoModal = (e: any) => {
+    let basket = e.target.dataset.basketName;
+    let id = e.target.id;
+    let book = tipitakaData.baskets[basket].books.find(
+      (book) => book.id === id
+    );
+    modalInfoObj = book;
+    //console.log(book);
+    toggleModal();
+  };
+
+  const bookcaseInfoModal = () => {
+    modalInfoObj = tipitakaData.information;
+    toggleModal();
+  };
+
   const infoForModal = (e: any) => {
-    // let basket = e.target.dataset.basketName;
-    // let id = e.target.id;
-    // console.log(tipitakaData.baskets[basket]);
-    // modalInfoObj = tipitakaData.baskets[basket];
     toggleModal();
   };
 </script>
@@ -159,11 +169,13 @@
   }
 </style>
 
+<!-- BOOKCASE HEADING -->
 <header>
-  <h1 class="bookshelf-heading" on:click={toggleModal}>{bookcaseCollection}</h1>
+  <h1 class="bookshelf-heading" on:click={bookcaseInfoModal}>{bookcaseName}</h1>
   <h2 class="selection-heading" on:click={infoForModal}>{heading}</h2>
 </header>
 
+<!-- BOOKCASE -->
 <section class="bookcase show-bookcase" id="tipitaka">
   {#each vinaya.books as { id, name, description, volume, collection }, i}
     <Book
@@ -174,7 +186,7 @@
       {collection}
       {name}
       counter={volume}
-      on:click={infoForModal} />
+      on:click={bookInfoModal} />
   {/each}
 
   {#each suttanta.books as { id, name, description, volume, collection }, i}
@@ -186,7 +198,7 @@
       {collection}
       {name}
       counter={volume}
-      on:click={infoForModal} />
+      on:click={bookInfoModal} />
   {/each}
 
   {#each abhidhamma.books as { id, name, description, volume, collection }, i}
@@ -198,15 +210,17 @@
       {collection}
       {name}
       counter={volume}
-      on:click={infoForModal} />
+      on:click={bookInfoModal} />
   {/each}
 </section>
 
-<!-- Info Modal -->
+<!-- INFO MODAL when heading or book is clicked-->
 {#if showingModal}
   <InfoModal on:click={toggleModal}>
     <h2 id="volume-title">{heading}</h2>
-    <p id="vol-summary">{description}</p>
+    <p id="vol-summary">
+      {@html description}
+    </p>
     <!-- Link Buttons -->
     <section class="link-btns-cont">
       {#each links as { id, link, label }}

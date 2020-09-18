@@ -5,7 +5,7 @@ import { readable } from 'svelte/store';
 const CommentaryData = readable({
   information: {
     name: 'Commentary (Aṭṭhakathā)',
-    introduction: "Aṭṭhakathā (Pali for explanation, commentary) refers to Pali-language Theravadin Buddhist commentaries to the canonical Theravadin Tipitaka. These commentaries give the traditional interpretations of the scriptures. The major commentaries were based on earlier ones, now lost, in Prakrit and Sinhala, which were written down at the same time as the Canon, in the last century BCE. Some material in the commentaries is found in canonical texts of other schools of Buddhism, suggesting an early common source. &emdash;wikipedia",
+    description: "Aṭṭhakathā (Pali for explanation, commentary) refers to Pali-language Theravadin Buddhist commentaries to the canonical Theravadin Tipitaka. These commentaries give the traditional interpretations of the scriptures. The major commentaries were based on earlier ones, now lost, in Prakrit and Sinhala, which were written down at the same time as the Canon, in the last century BCE. Some material in the commentaries is found in canonical texts of other schools of Buddhism, suggesting an early common source. &emdash;wikipedia",
     links: [
       { id: "info", link: "https://dhammawiki.com/index.php/Theravada_commentaries", label: "" },
       { id: "engbookurl", link: "https://store.pariyatti.org/English_c_214.html", label: "" },
@@ -19,270 +19,270 @@ const CommentaryData = readable({
       name: "Vimuttimagga",
       author: "",
       translation: "The Path of Freedom",
-      content: "",
+      description: "",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "visuddhimagga",
       name: "Visuddhimagga",
       author: "Buddhaghosa",
       translation: "The Path of Purification",
-      content: "",
+      description: "",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "samantapasadika",
       name: "Samantapasadika",
       author: "Buddhaghosa",
       translation: "'samanta' indicates 'all' or 'entire', and 'pāsādika' means 'lovely' or 'pleasing'",
-      content: "Commentary on the Vinaya-piṭaka by Buddhaghosa to which is prefixed an introduction, the Bāhiranidāna. The Bāhiranidāna  is an introduction to the Vinaya-piṭaka Commentary relating the history of Buddhism up to the establishment of the Vinaya-piṭaka in Sri Lanka.",
+      description: "Commentary on the Vinaya-piṭaka by Buddhaghosa to which is prefixed an introduction, the Bāhiranidāna. The Bāhiranidāna  is an introduction to the Vinaya-piṭaka Commentary relating the history of Buddhism up to the establishment of the Vinaya-piṭaka in Sri Lanka.",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "https://en.wikipedia.org/wiki/Samantapasadika",
-        engbookurl: "https://store.pariyatti.org/Inception-of-Discipline_p_2151.html",
-        palibookurl: "https://store.pariyatti.org/Samantapasadika-Vol-1_p_2142.html",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "https://en.wikipedia.org/wiki/Samantapasadika", label: "Learn More" },
+        { id: "engbookurl", link: "https://store.pariyatti.org/Inception-of-Discipline_p_2151.html", label: "English Books" },
+        { id: "palibookurl", link: "https://store.pariyatti.org/Samantapasadika-Vol-1_p_2142.html", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "kankhavitarani",
       name: "Kankhavitarani",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the Vinaya's Patimokkha by Buddhaghosa",
+      description: "Commentary on the Vinaya's Patimokkha by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "https://store.pariyatti.org/Overcoming-Doubts-Kankhavitarani-Vol-I_p_5145.html",
-        palibookurl: "https://store.pariyatti.org/Kankhavitarani-New-Edition_p_2387.html",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "https://store.pariyatti.org/Overcoming-Doubts-Kankhavitarani-Vol-I_p_5145.html", label: "English Books" },
+        { id: "palibookurl", link: "https://store.pariyatti.org/Kankhavitarani-New-Edition_p_2387.html", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "sumangalavilasini",
       name: "Sumangalavilasini",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the Suttanta's Digha Nikaya by Buddhaghosa",
+      description: "Commentary on the Suttanta's Digha Nikaya by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "papancasudani",
       name: "Papañcasudani",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the Suttanta's Majjhima Nikaya by Buddhaghosa",
+      description: "Commentary on the Suttanta's Majjhima Nikaya by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "saratthappakasini",
       name: "Saratthappakasini",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the Suttanta's Samyutta Nikaya by Buddhaghosa",
+      description: "Commentary on the Suttanta's Samyutta Nikaya by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "manorathapurani",
       name: "Manorathapurani",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the Suttanta's Anguttara Nikaya by Buddhaghosa",
+      description: "Commentary on the Suttanta's Anguttara Nikaya by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "paramatthajotika1",
       name: "Paramatthajotika I",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the (Suttanta Khuddaka Nikaya) Khuddakapatha by Buddhaghosa",
+      description: "Commentary on the (Suttanta Khuddaka Nikaya) Khuddakapatha by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "https://store.pariyatti.org/The-Khuddakapatha-with-its-commentary-Paramatthajotika-I_p_2054.html",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "https://store.pariyatti.org/The-Khuddakapatha-with-its-commentary-Paramatthajotika-I_p_2054.html", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "paramatthajotika2",
       name: "Paramatthajotika II",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the (Suttanta Khuddaka Nikaya) Sutta Nipata by Buddhaghosa",
+      description: "Commentary on the (Suttanta Khuddaka Nikaya) Sutta Nipata by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "dhammapada-atthakatha",
       name: "Dhammapada-atthakatha",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the (Suttanta Khuddaka Nikaya) Dhammapada-atthakatha by Buddhaghosa",
+      description: "Commentary on the (Suttanta Khuddaka Nikaya) Dhammapada-atthakatha by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "suttanipata-atthakatha",
       name: "Suttanipata-atthakatha",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the (Suttanta Khuddaka Nikaya) Suttanipata-atthakatha by Buddhaghosa",
+      description: "Commentary on the (Suttanta Khuddaka Nikaya) Suttanipata-atthakatha by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "jatakatthavannana",
       name: "Jatakatthavannana",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the (Suttanta Khuddaka Nikaya) Jātaka by Buddhaghosa",
+      description: "Commentary on the (Suttanta Khuddaka Nikaya) Jātaka by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "jataka-atthakatha",
       name: "Jātaka-atthakatha",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the (Suttanta Khuddaka Nikaya) Jātaka by Buddhaghosa",
+      description: "Commentary on the (Suttanta Khuddaka Nikaya) Jātaka by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "atthasalini",
       name: "Atthasālinī",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the Abhidhamma's Dhammasangani by Buddhaghosa",
+      description: "Commentary on the Abhidhamma's Dhammasangani by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "Sammohavinodani",
       name: "Sammohavinodani",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentary on the Abhidhamma's Vibhanga by Buddhaghosa",
+      description: "Commentary on the Abhidhamma's Vibhanga by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "pancappakaranatthakatha",
       name: "Pañcappakaranatthakatha",
       author: "Buddhaghosa",
       translation: "",
-      content: "Commentaries on the Abhidhamma's Dhatukatha, Puggalapaññatti, Kathavatthu, Yamaka, and Patthana by Buddhaghosa",
+      description: "Commentaries on the Abhidhamma's Dhatukatha, Puggalapaññatti, Kathavatthu, Yamaka, and Patthana by Buddhaghosa",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
     {
       id: "",
       name: "",
       author: "",
       translation: "",
-      content: "",
+      description: "",
       volume: "",
       subcommentary: [],
-      links: {
-        info: "",
-        engbookurl: "",
-        palibookurl: "",
-        vriurl: ""
-      },
+      links: [
+        { id: "info", link: "", label: "Learn More" },
+        { id: "engbookurl", link: "", label: "English Books" },
+        { id: "palibookurl", link: "", label: "Pali Books" },
+        { id: "vri", link: "", label: "Books at VRI" }
+      ]
     },
   ]
 

@@ -24,9 +24,9 @@
 <div id="menu-container">
   <!-- svelte-ignore a11y-no-onchange -->
   <select name="menu" id="menu" bind:value={selectedBooks} on:change>
-    <option value="reset" disabled selected>Learn More</option>
+    <option value="reset" disabled>Learn More</option>
     <optgroup label="Tipitaka">
-      <option value="tipitaka" data-bookcase="bookcase">
+      <option value="tipitaka" data-bookcase="bookcase" selected>
         Tipi&#7789;aka bookcase
       </option>
       <option value="vinaya">Vinaya Pi&#7789;aka</option>
