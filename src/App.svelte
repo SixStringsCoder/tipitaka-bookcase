@@ -21,7 +21,32 @@
   $: console.log(`selectedBooks: ${selectedBooks}`);
 
   /* Data Object of Selected MENU Item */
-  let modalInfoObj: object = {};
+  interface Info {
+    name: string;
+    basket: string;
+    division: string;
+    collection: string;
+    description: string;
+    books: [Book];
+    sections: [string];
+    suttas: [string];
+    links: [Links];
+  }
+
+  interface Links {
+    id: string;
+    link: string;
+    label: string;
+  }
+
+  interface Book {
+    id: string;
+    name: string;
+    translation: string;
+    content: string;
+  }
+
+  let modalInfoObj: Partial<Info> = {};
   $: console.log(modalInfoObj);
 
   const getSelectionObj = (e: any) => {
@@ -46,11 +71,6 @@
       });
     }
   };
-
-  // const getClickedBookObj = (e: any) => {
-  //   let basket: string = e.target.dataset.basketName;
-  //   let id: string = e.target.id;
-  // };
 </script>
 
 <style>

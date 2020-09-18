@@ -181,23 +181,22 @@
 
 <!-- BOOKCASE -->
 <section class="bookcase show-bookcase" id="tipitaka">
-  {#each vinaya.books as { id, name, description, volume, collection }, i}
+  {#each vinaya.books as { id, name, volume }, i}
     <Book
       {id}
       selected={selectedBooks === vinaya.id || selectedBooks === id}
       blinking={selectedBooks === vinaya.id || selectedBooks === id}
       basket={vinaya.id}
-      {collection}
       {name}
       counter={volume}
       on:click={bookInfoModal} />
   {/each}
 
-  {#each suttanta.books as { id, name, description, volume, collection }, i}
+  {#each suttanta.books as { id, name, volume, collection, collid }, i}
     <Book
       {id}
-      selected={selectedBooks === suttanta.id || selectedBooks === collection || selectedBooks === id}
-      blinking={selectedBooks === suttanta.id || selectedBooks === collection || selectedBooks === id}
+      selected={selectedBooks === suttanta.id || selectedBooks === collid || selectedBooks === id}
+      blinking={selectedBooks === suttanta.id || selectedBooks === collid || selectedBooks === id}
       basket={suttanta.id}
       {collection}
       {name}
@@ -205,13 +204,12 @@
       on:click={bookInfoModal} />
   {/each}
 
-  {#each abhidhamma.books as { id, name, description, volume, collection }, i}
+  {#each abhidhamma.books as { id, name, volume }, i}
     <Book
       {id}
       selected={selectedBooks === abhidhamma.id || selectedBooks === id}
       blinking={selectedBooks === abhidhamma.id || selectedBooks === id}
       basket={abhidhamma.id}
-      {collection}
       {name}
       counter={volume}
       on:click={bookInfoModal} />
@@ -222,12 +220,21 @@
 {#if showingModal}
   <InfoModal on:click={toggleModal}>
     <h2 id="volume-title">{heading}</h2>
-    <h5 class="breadcrumbs">
-      {modalInfoObj.basket}&nbsp;>>&nbsp;{modalInfoObj.division || modalInfoObj.collection}&nbsp;>>&nbsp;{modalInfoObj.name}
-    </h5>
+
+    {#if modalInfoObj.basket}
+      <h5 class="breadcrumbs">
+        {modalInfoObj.basket}&nbsp;&gt;&gt;&nbsp;
+        {#if modalInfoObj.division || modalInfoObj.collection}
+          {modalInfoObj.division || modalInfoObj.collection}&nbsp;&gt;&gt;&nbsp;
+        {/if}
+        {modalInfoObj.name}
+      </h5>
+    {/if}
+
     <p id="vol-summary">
       {@html description}
     </p>
+
     <!-- Link Buttons -->
     <section class="link-btns-cont">
       {#each links as { id, link, label }}
@@ -236,6 +243,7 @@
         {/if}
       {/each}
     </section>
+
     <!-- List of books or Vaggas or Suttas-->
     <p class="books-summary">The {heading} consists of:</p>
     <ol class="list-of-books">

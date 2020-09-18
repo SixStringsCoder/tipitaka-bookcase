@@ -229,7 +229,8 @@ const TipitakaData = readable({
         {
           id: "silakkhanda-vagga",
           basket: "Suttanta Piṭaka",
-          collection: "digha-nikaya",
+          collection: "Dīgha Nikāya",
+          collid: "digha-nikaya",
           colltransl: "Collection of long discourses of the Buddha",
           name: "Sīlakkhanda Vagga Pāḷi",
           translation: "Division Concerning Morality",
@@ -252,7 +253,8 @@ const TipitakaData = readable({
         {
           id: "maha-vagga-digha",
           basket: "Suttanta Piṭaka",
-          collection: "digha-nikaya",
+          collection: "Dīgha Nikāya",
+          collid: "digha-nikaya",
           colltransl: "Collection of long discourses of the Buddha",
           name: "Mahā Vagga Pāḷi",
           translation: "The Large Division",
@@ -275,7 +277,8 @@ const TipitakaData = readable({
         {
           id: "pathika-vagga",
           basket: "Suttanta Piṭaka",
-          collection: "digha-nikaya",
+          collection: "Dīgha Nikāya",
+          collid: "digha-nikaya",
           colltransl: "Collection of long discourses of the Buddha",
           name: "Pathika Vagga Pāḷi",
           translation: "the Division beginning with the discourse on Pāthika, the Naked Ascetic",
@@ -298,7 +301,8 @@ const TipitakaData = readable({
         {
           id: "mulapannasa",
           basket: "Suttanta Piṭaka",
-          collection: "majjhima-nikaya",
+          collection: "Majjhima Nikāya",
+          collid: "majjhima-nikaya",
           colltransl: "Collection of medium length discourses of the Buddha",
           name: "Mūlapaṇṇāsa Pāḷi",
           translation: "",
@@ -322,7 +326,8 @@ const TipitakaData = readable({
         {
           id: "majjhima-pannasa",
           basket: "Suttanta Piṭaka",
-          collection: "majjhima-nikaya",
+          collection: "Majjhima Nikāya",
+          collid: "majjhima-nikaya",
           colltransl: "Collection of medium length discourses of the Buddha",
           name: "Majjhima Paṇṇāsa Pāḷi",
           translation: "",
@@ -346,7 +351,8 @@ const TipitakaData = readable({
         {
           id: "uparipannasa",
           basket: "Suttanta Piṭaka",
-          collection: "majjhima-nikaya",
+          collection: "Majjhima Nikāya",
+          collid: "majjhima-nikaya",
           colltransl: "Collection of medium length discourses of the Buddha",
           name: "Uparipannasa",
           translation: "",
@@ -370,7 +376,8 @@ const TipitakaData = readable({
         {
           id: "sagatha-vagga",
           basket: "Suttanta Piṭaka",
-          collection: "samyutta-nikaya",
+          collection: "Saṃyutta Nikāya",
+          collid: "samyutta-nikaya",
           colltransl: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
           name: "Sagatha Vagga Saṃyutta",
           translation: "",
@@ -394,7 +401,8 @@ const TipitakaData = readable({
         {
           id: "nidana-vagga",
           basket: "Suttanta Piṭaka",
-          collection: "samyutta-nikaya",
+          collection: "Saṃyutta Nikāya",
+          collid: "samyutta-nikaya",
           colltransl: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
           name: "Nidana Vagga Saṃyutta",
           translation: "",
@@ -418,7 +426,8 @@ const TipitakaData = readable({
         {
           id: "khandha-vagga",
           basket: "Suttanta Piṭaka",
-          collection: "samyutta-nikaya",
+          collection: "Saṃyutta Nikāya",
+          collid: "samyutta-nikaya",
           colltransl: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
           name: "Khandha Vagga Saṃyutta",
           translation: "",
@@ -442,7 +451,8 @@ const TipitakaData = readable({
         {
           id: "salayatana-vagga",
           basket: "Suttanta Piṭaka",
-          collection: "samyutta-nikaya",
+          collection: "Saṃyutta Nikāya",
+          collid: "samyutta-nikaya",
           colltransl: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
           name: "Salayatana Vagga Saṃyutta",
           translation: "",
@@ -466,7 +476,8 @@ const TipitakaData = readable({
         {
           id: "maha-vagga-samyutta",
           basket: "Suttanta Piṭaka",
-          collection: "samyutta-nikaya",
+          collection: "Saṃyutta Nikāya",
+          collid: "samyutta-nikaya",
           colltransl: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
           name: "Maha Vagga Saṃyutta",
           translation: "",
@@ -490,7 +501,8 @@ const TipitakaData = readable({
         {
           id: "ekaka-nipata",
           basket: "Suttanta Piṭaka",
-          collection: "anguttara-nikaya",
+          collection: "Aṅguttara Nikāya",
+          collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           name: "Ekaka Nipāta Pāḷi",
           translation: "The Book of Ones",
@@ -514,7 +526,8 @@ const TipitakaData = readable({
         {
           id: "duka-nipata",
           basket: "Suttanta Piṭaka",
-          collection: "anguttara-nikaya",
+          collection: "Aṅguttara Nikāya",
+          collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           name: "Duka Nipāta Pāḷi",
           translation: "The Book of Twos",
@@ -538,7 +551,8 @@ const TipitakaData = readable({
         {
           id: "tika-nipata",
           basket: "Suttanta Piṭaka",
-          collection: "anguttara-nikaya",
+          collection: "Aṅguttara Nikāya",
+          collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           name: "Tika Nipāta Pāḷi",
           translation: "The Book of Threes",
@@ -562,7 +576,8 @@ const TipitakaData = readable({
         {
           id: "catukka",
           basket: "Suttanta Piṭaka",
-          collection: "anguttara-nikaya",
+          collection: "Aṅguttara Nikāya",
+          collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           name: "Catukka Nipāta Pāḷi",
           translation: "The Book of Fours",
@@ -586,7 +601,8 @@ const TipitakaData = readable({
         {
           id: "pancaka",
           basket: "Suttanta Piṭaka",
-          collection: "anguttara-nikaya",
+          collection: "Aṅguttara Nikāya",
+          collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           name: "Pancaka Nipāta Pāḷi",
           translation: "The Book of Fives",
@@ -610,7 +626,8 @@ const TipitakaData = readable({
         {
           id: "chakka",
           basket: "Suttanta Piṭaka",
-          collection: "anguttara-nikaya",
+          collection: "Aṅguttara Nikāya",
+          collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           name: "Chakka Nipāta Pāḷi",
           translation: "The Book of Sixes",
@@ -634,7 +651,8 @@ const TipitakaData = readable({
         {
           id: "sattaka",
           basket: "Suttanta Piṭaka",
-          collection: "anguttara-nikaya",
+          collection: "Aṅguttara Nikāya",
+          collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           name: "Sattaka Nipāta Pāḷi",
           translation: "The Book of Sevens",
@@ -658,7 +676,8 @@ const TipitakaData = readable({
         {
           id: "atthaka",
           basket: "Suttanta Piṭaka",
-          collection: "anguttara-nikaya",
+          collection: "Aṅguttara Nikāya",
+          collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           name: "Atthaka Nipāta Pāḷi",
           translation: "The Book of Eights",
@@ -682,7 +701,8 @@ const TipitakaData = readable({
         {
           id: "navaka",
           basket: "Suttanta Piṭaka",
-          collection: "anguttara-nikaya",
+          collection: "Aṅguttara Nikāya",
+          collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           name: "Navaka Nipāta Pāḷi",
           translation: "The Book of Nines",
@@ -706,7 +726,8 @@ const TipitakaData = readable({
         {
           id: "dasaka",
           basket: "Suttanta Piṭaka",
-          collection: "anguttara-nikaya",
+          collection: "Aṅguttara Nikāya",
+          collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           name: "Dasaka Nipāta Pāḷi",
           translation: "The Book of Tens",
@@ -730,7 +751,8 @@ const TipitakaData = readable({
         {
           id: "ekadasaka",
           basket: "Suttanta Piṭaka",
-          collection: "anguttara-nikaya",
+          collection: "Aṅguttara Nikāya",
+          collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
           name: "Ekadasaka Nipāta Pāḷi",
           translation: "The Book of Elevens",
@@ -753,7 +775,8 @@ const TipitakaData = readable({
         {
           id: "khuddakapatha",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Khuddakapāṭha Pāḷi",
           translation: "",
@@ -777,7 +800,8 @@ const TipitakaData = readable({
         {
           id: "dhammapada",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Dhammapada Pāḷi",
           translation: "",
@@ -800,7 +824,8 @@ const TipitakaData = readable({
         {
           id: "udana",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Udāna Pāḷi",
           translation: "",
@@ -823,7 +848,8 @@ const TipitakaData = readable({
         {
           id: "itivuttaka",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Itivuttaka Pāḷi",
           translation: "",
@@ -846,7 +872,8 @@ const TipitakaData = readable({
         {
           id: "suttanipata",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Suttanipāta Pāḷi",
           translation: "",
@@ -869,7 +896,8 @@ const TipitakaData = readable({
         {
           id: "vimana-vatthu",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Vimāna Vatthu Pāḷi",
           translation: "",
@@ -892,7 +920,8 @@ const TipitakaData = readable({
         {
           id: "peta-vatthu",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Peta Vatthu Pāḷi",
           translation: "",
@@ -915,7 +944,8 @@ const TipitakaData = readable({
         {
           id: "thera-gatha",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "The Thera Gāthā Pāḷi",
           translation: "",
@@ -938,7 +968,8 @@ const TipitakaData = readable({
         {
           id: "theri-gatha",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "The Therī Gāthā Pāḷi",
           translation: "",
@@ -961,7 +992,8 @@ const TipitakaData = readable({
         {
           id: "jataka",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Jātaka Pāḷi",
           translation: "Birth-stories of the Buddha",
@@ -984,7 +1016,8 @@ const TipitakaData = readable({
         {
           id: "niddesa",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Niddesa Pāḷi",
           translation: "",
@@ -1007,7 +1040,8 @@ const TipitakaData = readable({
         {
           id: "patisambhida",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Paṭisambhidā Magga Pāḷi",
           translation: "",
@@ -1030,7 +1064,8 @@ const TipitakaData = readable({
         {
           id: "apadana",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Apadāna Pāḷi",
           translation: "",
@@ -1053,7 +1088,8 @@ const TipitakaData = readable({
         {
           id: "buddhavamsa",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Buddhavaṃsa Pāḷi",
           translation: "History of the Buddhas",
@@ -1076,7 +1112,8 @@ const TipitakaData = readable({
         {
           id: "cariya",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Cariyā Piṭaka",
           translation: "",
@@ -1099,7 +1136,8 @@ const TipitakaData = readable({
         {
           id: "netti",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Netti",
           translation: "",
@@ -1122,7 +1160,8 @@ const TipitakaData = readable({
         {
           id: "petakopadesa",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Peṭakopadesa",
           translation: "",
@@ -1145,7 +1184,8 @@ const TipitakaData = readable({
         {
           id: "milindapanha",
           basket: "Suttanta Piṭaka",
-          collection: "khuddaka-nikaya",
+          collection: "Khuddaka Nikāya",
+          collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Milindapañha Pāḷi",
           translation: "",
@@ -1183,7 +1223,6 @@ const TipitakaData = readable({
           basket: "Abhidhamma Piṭaka",
           name: "The Dhammasaṅgaṇī Pāḷi",
           translation: "",
-          collection: "",
           description: "The Dhammasaṅgiṇī, the first book of the Abhidhamma, and the Paṭṭhāna, the last book, are the most important of the seven treatises of Abhidhamma, providing as they do the quintessence of the entire Abhidhamma. The Dhammasaṅgaṇī enumerates all the dhammas (phenomena) i.e., all categories of nāma, namely, consciousness and mental concomitants; and rūpa, (corporeality). Having enumerated the phenomena, they are arranged into various categories to bring out their exact nature, function and mutual relationship both internally (in our own being) and with the outside world.",
           volume: "46",
           editions: {
@@ -1202,9 +1241,9 @@ const TipitakaData = readable({
         },
         {
           id: "vibhanga",
+          basket: "Abhidhamma Piṭaka",
           name: "Vibhaṅga Pāḷi",
           translation: "Book of Analysis",
-          collection: "",
           description: "The second book of the Abhidhamma Piṭaka, Vibhaṅga, together with the first book of the Dhammasaṅgaṇī and the third book of the Dhātukathā, forms a closely related foundation for the proper and deep understanding of the Buddha’s Dhamma. Whereas Dhammasaṅgaṇī provides a bird’s eye view of the whole Tika and Duka groups with further systematic arrangements under classified heads, Vibhaṅga and Dhātukathā give a closer view of selected portions of those groups bringing out minute details.",
           volume: "47",
           editions: {
@@ -1226,7 +1265,6 @@ const TipitakaData = readable({
           basket: "Abhidhamma Piṭaka",
           name: "Dhātukathā Pāḷi",
           translation: "",
-          collection: "",
           description: "Although this third book of Abhidhamma Piṭaka is a small treatise, it ranks with the first two books forming an important trilogy, which must be completely digested for the complete understanding of the Abhidhamma. Vibhaṅga, the second book, has one complete chapter devoted to the analysis of dhātus, but the subject matter of dhātu is so important that this treatise is devoted to it for a thorough consideration. The method of analysis here is different from that employed in the Vibhaṅga.",
           volume: "48",
           editions: {
@@ -1248,7 +1286,6 @@ const TipitakaData = readable({
           basket: "Abhidhamma Piṭaka",
           name: "Puggalapaññatti Pāḷi",
           translation: "",
-          collection: "",
           description: "Abhidhamma is mainly concerned with the study of abstract truths in absolute terms. But in describing the dhammas in their various aspects, it is not possible to keep to absolute terms only. Inevitably, conventional terms of every day language have to be employed in order to keep the lines of communication open at all. Abhidhamma states that there are two main types of conventional usage; the first type is concerned with terms which describe things that actually exist in reality and the second type describes things which have no existence in reality.",
           volume: "49",
           editions: {
@@ -1270,7 +1307,6 @@ const TipitakaData = readable({
           basket: "Abhidhamma Piṭaka",
           name: "Kathāvatthu Pāḷi",
           translation: "",
-          collection: "",
           description: 'Kathāvatthu, like Puggalapaññatti, falls outside the regular system of the Abhidhamma. It does not directly deal with the complex nature of the Dhamma. It is mainly concerned with wrong views such as "person exists; self exists; jīva exists" which were prevalent even in the Buddha’s time; or wrong views such as "arahat falls away from arahatship" which arose after the parinibbāna of the Buddha.',
           volume: "50",
           editions: {
@@ -1292,7 +1328,6 @@ const TipitakaData = readable({
           basket: "Abhidhamma Piṭaka",
           name: "Yamaka Pāḷi",
           translation: "",
-          collection: "",
           description: "Yamaka sets out to define and analyse the interrelationship of dhammas and puggalas as they exist in these three worlds. This is accomplished in the form of pairs of questions, which gives it the title of Yamaka. The logical processes of conversion (anuloma) and complete inversion (paṭiloma) are applied to determine the full implications and limitations of a term in its relationship with the others. Any equivocal elements of a term (saṃsaya) are avoided by showing, through such arrangement of questions, how other meanings of the term do not fit in a particular context.",
           volume: "51",
           editions: {
@@ -1314,7 +1349,6 @@ const TipitakaData = readable({
           basket: "Abhidhamma Piṭaka",
           name: "Paṭṭhāna Pāḷi",
           translation: "",
-          collection: "",
           description: 'Paṭṭhāna Pāḷi, the seventh and last book of the Abhidhamma, is called the Mahā Pakāraṇa, the "Great Book" announcing the supreme position it occupies and the height of excellence it has reached in its investigations into the ultimate nature of all the dhammas in the universe.',
           volume: "52",
           editions: {
