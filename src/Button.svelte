@@ -6,7 +6,7 @@
 
 <style>
   .btn {
-    width: 130px;
+    /* width: 130px; */
     border: none;
     box-shadow: 0 0 3px black;
     background: #ba5626;

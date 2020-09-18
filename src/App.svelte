@@ -10,18 +10,20 @@
   /* DATA STORE */
   let tipitakaData;
   TipitakaData.subscribe((items) => (tipitakaData = items));
-  $: console.log(modalInfoObj);
+  $: console.log(tipitakaData);
 
   /* Which Edition and Language is showing */
   let edition: string = "overview";
   let langIsEng: boolean = false;
 
-  /* Selected Menu Item */
+  /* Selected MENU Item */
   let selectedBooks: string;
   $: console.log(`selectedBooks: ${selectedBooks}`);
-  /* Data Object of Selected Menu Item */
+
+  /* Data Object of Selected MENU Item */
   let modalInfoObj: object = {};
   $: console.log(modalInfoObj);
+
   const getSelectionObj = (e: any) => {
     //let sel = document.getElementById("menu");
     selectedBooks = e.target.value;

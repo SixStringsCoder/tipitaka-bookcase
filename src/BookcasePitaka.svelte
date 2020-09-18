@@ -10,8 +10,6 @@
   const suttanta = tipitakaData.baskets.suttanta;
   const abhidhamma = tipitakaData.baskets.abhidhamma;
 
-  /* BASKET NAME */
-  let bookcaseName: string = tipitakaData.information.name;
   /* SELECTION VALUE FROM MENU */
   export let selectedBooks: string = "";
   $: console.log(selectedBooks);
@@ -31,9 +29,13 @@
 
   interface Info {
     name: string;
+    basket: string;
+    division: string;
+    collection: string;
     description: string;
     books: [Book];
     sections: [string];
+    suttas: [string];
     links: [Links];
   }
 
@@ -70,12 +72,8 @@
     toggleModal();
   };
 
-  const bookcaseInfoModal = () => {
+  const tipitakaInfoModal = () => {
     modalInfoObj = tipitakaData.information;
-    toggleModal();
-  };
-
-  const infoForModal = (e: any) => {
     toggleModal();
   };
 </script>
@@ -114,7 +112,7 @@
   h1.bookshelf-heading,
   h2 {
     margin: 0 0 0.2rem;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     font-size: 1.5rem;
     font-family: tahoma;
     font-weight: 100;
@@ -132,6 +130,10 @@
     flex-wrap: wrap;
     justify-content: center;
     margin: 2rem 0;
+  }
+
+  .breadcrumbs {
+    font-size: 0.7rem;
   }
 
   p,
@@ -171,8 +173,10 @@
 
 <!-- BOOKCASE HEADING -->
 <header>
-  <h1 class="bookshelf-heading" on:click={bookcaseInfoModal}>{bookcaseName}</h1>
-  <h2 class="selection-heading" on:click={infoForModal}>{heading}</h2>
+  <h1 class="bookshelf-heading" on:click={tipitakaInfoModal}>
+    {tipitakaData.information.name}
+  </h1>
+  <h2 class="selection-heading" on:click={toggleModal}>{heading}</h2>
 </header>
 
 <!-- BOOKCASE -->
@@ -218,6 +222,9 @@
 {#if showingModal}
   <InfoModal on:click={toggleModal}>
     <h2 id="volume-title">{heading}</h2>
+    <h5 class="breadcrumbs">
+      {modalInfoObj.basket}&nbsp;>>&nbsp;{modalInfoObj.division || modalInfoObj.collection}&nbsp;>>&nbsp;{modalInfoObj.name}
+    </h5>
     <p id="vol-summary">
       {@html description}
     </p>
@@ -241,8 +248,8 @@
           <li>{section}</li>
         {/each}
       {:else}
-        {#each suttas as { name, content }}
-          <li title={content}>{name}</li>
+        {#each suttas as sutta}
+          <li title={sutta}>{sutta}</li>
         {/each}
       {/if}
     </ol>

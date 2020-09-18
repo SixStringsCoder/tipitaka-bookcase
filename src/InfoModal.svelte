@@ -21,7 +21,7 @@
     height: 1.7rem;
     text-align: right;
     transition: 0.2s;
-    margin-top: 5px;
+    margin-bottom: 5px;
     cursor: pointer;
   }
 
