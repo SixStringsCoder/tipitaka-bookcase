@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { onDestroy } from "svelte";
   import TipitakaData from "./stores/tipitaka-store.js";
 
   import Header from "./Header.svelte";
@@ -9,8 +10,12 @@
 
   /* DATA STORE */
   let tipitakaData;
-  TipitakaData.subscribe((items) => (tipitakaData = items));
+  const unsubscribe = TipitakaData.subscribe((items) => (tipitakaData = items));
   $: console.log(tipitakaData);
+
+  onDestroy(() => {
+    if (unsubscribe) unsubscribe();
+  });
 
   /* Which Edition and Language is showing */
   let edition: string = "overview";

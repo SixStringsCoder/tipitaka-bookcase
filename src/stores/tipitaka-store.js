@@ -32,13 +32,13 @@ const TipitakaData = readable({
           division: "Sutta Vibhaṅga",
           name: "Pārājika Pāḷi",
           translation: "",
-          description: "Pārājika Pāḷi, which is the first book of the Vinaya Piṭaka, gives an elaborate explanation of the important rules of discipline concerning pārājika and saṅghādisesa, as well as aniyata and nissaggiya which are minor offences.",
+          description: "Pārājika Pāḷi, which is the first book of the Vinaya Piṭaka and part of the Sutta Vibhaṅga division, gives an elaborate explanation of the important rules of discipline concerning pārājika and saṅghādisesa, as well as aniyata and nissaggiya which are minor offences. (The Sutta Vibhaṅga concludes with bhikkuni vinaya rules.)",
           volume: "1",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: [],
+          sections: ["pārājikā (expulsion)", "saṅghadisesā (meetings of the Sangha)", "aniyatā (indeterminate)", "nissagiyā pācittiyā (expiation with forfeiture)"],
           commentary: [],
           subcommentary: [],
           links: [
@@ -54,13 +54,13 @@ const TipitakaData = readable({
           division: "Sutta Vibhaṅga",
           name: "Pācittiya Pāḷi",
           translation: "",
-          description: "The Pācittiya Pāḷi, which is the second book of the Vinaya Piṭaka, deals with the remaining sets of rules for the bhikkhus, namely, the pācittiya, the pāṭidesanīya, the sekhiya, the adhikaraṇasamatha and the corresponding disciplinary rules for the bhikkhunis. Although it is called in Pāḷi just pācittiya, it has the distinctive name of suddha pācittiya (ordinary pācittiya), to distinguish it from nissaggiya pācittiya, described above.",
+          description: "The Pācittiya Pāḷi, which is the second book of the Vinaya Piṭaka and part of the Sutta Vibhaṅga division, deals with the remaining sets of rules for the bhikkhus, namely, the pācittiya, the pāṭidesanīya, the sekhiya, the adhikaraṇasamatha and the corresponding disciplinary rules for the bhikkhunis. Although it is called in Pāḷi just pācittiya, it has the distinctive name of suddha pācittiya (ordinary pācittiya), to distinguish it from nissaggiya pācittiya, described above. (The Sutta Vibhaṅga concludes with bhikkuni vinaya rules.)",
           volume: "2",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: [],
+          sections: ["suddha pācittiyā (ordinary expiation)", "pātidesaniyā (confession re: alms food)", "sekhiya (concerning etiquette & decorum) ", "adhikaraṇasamathā (legal process)"],
           commentary: [],
           subcommentary: [],
           links: [
@@ -82,7 +82,7 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: [],
+          sections: ["mahākhandhako: The Great Khandhaka (Rules for admission to the Order)", "uposathakkhandhako: The Uposatha Khandhaka (The Uposatha meeting and recital of the Pātimokkha or code of rules)", "vassūpanāyikakkhandhako: The Entering-for-the-Rains Khandhaka (Residence during the rainy season or vassa)", "pavāraṇākkhandhako: The Invitation Khandhaka (The ceremony concluding the retreat or pavāraṇa)", "cammakkhandhako: The Leather Khandhaka (Rules for articles of dress and furniture)", "bhesajjakkhandhako: The Medicine Khandhaka (Medicine and food)", "kaṭhinakkhandhako: The Kaṭhina Khandhaka (The annual distribution of robes or kaṭhina)", "cīvarakkhandhako: The Robe-cloth Khandhaka (Rules for sick Bhikkhus, sleeping, and robe-material)", "campeyyakkhandhako: The Campā Khandhaka (The mode of executing proceedings by the Order)", "kosambakakkhandhako: The Kosambī Khandhaka (Proceedings in cases of schism)"],
           commentary: [],
           subcommentary: [],
           links: [
@@ -104,7 +104,7 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: [],
+          sections: ["rules for dealing with offences that come before the Sangha (saṅghādisesa)", "procedures for putting a bhikkhu on probation", "procedures for dealing with accumulation of offences by a bhikkhu", "rules for settling legal procedures in the Sangha", "misrules for bathing, dress, etc.", "dwellings, furniture, lodging, etc.", "schisms", "classes of bhikkhus and duties of teachers & novices", "exclusion from the pātimokkha", "the ordination and instruction of bhikkhunis", "account of the 1st council at Rājagaha", "account of the 2nd council at Vesāli"],
           commentary: [],
           subcommentary: [],
           links: [
@@ -120,13 +120,13 @@ const TipitakaData = readable({
           division: "Parivāra-pāḷi",
           name: "Parivāra Pāḷi",
           translation: "",
-          description: "Parivāra Pāḷi, which is the fifth and last book of the Vinaya Piṭaka, serves as a kind of manual. It is compiled in the form of a catechism, enabling the reader to make an analytical survey of the Vinaya Piṭaka. All the rules, official acts, and other matters of the Vinaya are classified under separate categories according to the subjects dealt with.",
+          description: "Parivāra Pāḷi, which is the last book of the Vinaya Piṭaka, serves as a kind of manual. It is compiled in the form of a catechism, enabling the reader to make an analytical survey of the Vinaya Piṭaka. All the rules, official acts, and other matters of the Vinaya are classified under separate categories according to the subjects dealt with.",
           volume: "5",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: [],
+          sections: ["catechisms on the rules of the monks'", "similar on the nuns' rules", "verse summary of origins; an action can be originated by body and/or speech, in each of the three cases with or without intention, making six origins in all; this chapter goes through all the Patimokkha rules for monks and nuns, saying which of these six are possible", "in two parts: a. repetitions on types of legal case involved in offences; b. which rules for settling disputes are to be applied to legal cases", "questions on Khandhaka", "lists arranged numerically (cf. Anguttara Nikaya)", "in two parts: a. beginning the recitation of the Patimokkha; b. exposition of reasons for rules", "collection of stanzas", "on legal cases", "additional collection of stanzas (mainly on reproving)", "on reproving", "lesser collection on disputes", "greater collection on disputes", "kathina: the process of making up robes", "Upali asks the Buddha questions, the answers being lists of five", "another chapter on origins", "second (sic) collection of stanzas", "'sweat-inducing stanzas': a collection of riddles (answers not given here); perhaps intended as exam questions", "in five parts: a. formal acts of the sangha; b. reasons for rules; c. laying down of rules; d. what was laid down; e. nine classifications (⁠—source: https://en.wikipedia.org/wiki/Parivāra)"],
           commentary: [],
           subcommentary: [],
           links: [
