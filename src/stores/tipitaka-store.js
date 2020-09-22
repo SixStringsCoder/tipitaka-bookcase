@@ -1222,20 +1222,25 @@ const TipitakaData = readable({
           id: "dhammasangani",
           basket: "Abhidhamma Piṭaka",
           name: "The Dhammasaṅgaṇī Pāḷi",
-          translation: "",
+          translation: "Buddhist Psychological Ethics",
           description: "The Dhammasaṅgiṇī, the first book of the Abhidhamma, and the Paṭṭhāna, the last book, are the most important of the seven treatises of Abhidhamma, providing as they do the quintessence of the entire Abhidhamma. The Dhammasaṅgaṇī enumerates all the dhammas (phenomena) i.e., all categories of nāma, namely, consciousness and mental concomitants; and rūpa, (corporeality). Having enumerated the phenomena, they are arranged into various categories to bring out their exact nature, function and mutual relationship both internally (in our own being) and with the outside world.",
           volume: "46",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: [],
+          sections: ["The Mātikā (serves as a classified table of mental constituents relevant not only to the Dhammasaṅgaṇī but also to the entire system of the Abhidhamma.)",
+            "Cittuppāda Kaṇḍa (division on the arising of consciousness and mental concomitants).",
+            "Rūpa Kaṇḍa (division concerning corporeality).",
+            "Nikkhepa Kaṇḍa (division that avoids elaboration).",
+            "Aṭṭhakathā Kaṇḍa (supplementary digest)."
+          ],
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#72", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Buddhist-Manual-of-Psychological-Ethics_p_6266.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Dhammasangani_p_1966.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1250,13 +1255,13 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: [],
+          sections: ["Khandha", "Āyatana", "Dhātu", "Sacca", "Indriya", "Paṭiccasamuppāda", "Satipaṭṭhāna", "Sammappadhāna", "Iddhipāda", "Bojjhaṅga", "Magga", "Jhāna", "Appammaññā", "Sikkhāpada", "Paṭisambhidā", "ñāṇa", "Khuddhaka vatthu", "Dhammadhaya"],
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#73", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Analysis_p_1905.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Vibhanga_p_2194.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1264,20 +1269,20 @@ const TipitakaData = readable({
           id: "dhatukatha",
           basket: "Abhidhamma Piṭaka",
           name: "Dhātukathā Pāḷi",
-          translation: "",
+          translation: "Discourse on Elements",
           description: "Although this third book of Abhidhamma Piṭaka is a small treatise, it ranks with the first two books forming an important trilogy, which must be completely digested for the complete understanding of the Abhidhamma. Vibhaṅga, the second book, has one complete chapter devoted to the analysis of dhātus, but the subject matter of dhātu is so important that this treatise is devoted to it for a thorough consideration. The method of analysis here is different from that employed in the Vibhaṅga.",
           volume: "48",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: [],
+          sections: ["Paṭhamanayo", "Dutiyanayo", "Tatiyanayo", "Catutthanayo", "Pañcamanayo", "Chaṭṭhanayo", "Sattamanayo", "Aṭṭhamanayo", "Navamanayo", "Dasamanayo", "Ekādasamanayo", "Dvādasamanayo", "Terasamanayo", "Cuddasamanayo"],
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#74", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Discourse-on-Elements_p_1984.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Dhatukatha-with-Commentary_p_1968.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1285,20 +1290,20 @@ const TipitakaData = readable({
           id: "puggalapannatti",
           basket: "Abhidhamma Piṭaka",
           name: "Puggalapaññatti Pāḷi",
-          translation: "",
+          translation: "A Designation of Human Types",
           description: "Abhidhamma is mainly concerned with the study of abstract truths in absolute terms. But in describing the dhammas in their various aspects, it is not possible to keep to absolute terms only. Inevitably, conventional terms of every day language have to be employed in order to keep the lines of communication open at all. Abhidhamma states that there are two main types of conventional usage; the first type is concerned with terms which describe things that actually exist in reality and the second type describes things which have no existence in reality.",
           volume: "49",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: [],
+          sections: ["List Of All The Human Types In The Book", "Chapter 1 - Division Of Human Types By One", "Chapter 2 - Division Of Human Types By Two", "Chapter 3 - Division Of Human Types By Three", "Chapter 4 - Division Of Human Types By Four", "Chapter 5 - Division Of Human Types By Five", "Chapter 6 - Division Of Human Types By Six", "Chapter 7 - Division Of Human Types By Seven", "Chapter 8 - Division Of Human Types By Eight", "Chapter 9 - Division Of Human Types By Nine", "Chapter 10 - Division Of Human Types By Ten"],
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#75", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Designation-of-Human-Types_p_1958.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Puggalapannatti-With-Commentary_p_2139.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1306,20 +1311,20 @@ const TipitakaData = readable({
           id: "kathavatthu",
           basket: "Abhidhamma Piṭaka",
           name: "Kathāvatthu Pāḷi",
-          translation: "",
+          translation: "Points of Controversy",
           description: 'Kathāvatthu, like Puggalapaññatti, falls outside the regular system of the Abhidhamma. It does not directly deal with the complex nature of the Dhamma. It is mainly concerned with wrong views such as "person exists; self exists; jīva exists" which were prevalent even in the Buddha’s time; or wrong views such as "arahat falls away from arahatship" which arose after the parinibbāna of the Buddha.',
           volume: "50",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: [],
+          sections: ["Puggalakathā (Of the Existence of a Personal Entity)", "Parihānikathā (Of Falling Away)", "Brahmacariyakathā (Of the Higher Life)", "Jahatikathā (Of Renouncing Evil)", "Sabbamatthītikathā (Of Everything as persistently existing)", "Atītakkhandhādikathā (Of what does my “Past” Consist?)", "Ekaccaṃatthītikathā (Of Some of the Past and Future as still Existing)", "Satipaṭṭhānakathā (Of Applications in Mindfulness)", "Hevatthikathā (Of Existence in Immutable Modes)", "Dutiyavaggo", "Tatiyavaggo", "Catutthavaggo", "Pañcamavaggo", "Chaṭṭhavaggo", "Sattamavaggo", "Aṭṭhamavaggo", "Navamavaggo", "Dasamavaggo", "Ekādasamavaggo", "Dvādasamavaggo", "Terasamavaggo", "Cuddasamavaggo", "Pannarasamavaggo", "Soḷasamavaggo", "Sattarasamavaggo", "Aṭṭhārasamavaggo", "Ekūnavīsatimavaggo", "Vīsatimavaggo", "Ekavīsatimavaggo", "Bāvīsatimavaggo", "Tevīsatimavaggo"],
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#76", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Points-of-Controversy_p_2137.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Kathavatthu_p_2050.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1334,13 +1339,13 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: [],
+          sections: ["Mūla Yamaka (Pairs on Roots)", "Khandha Yamaka (Pairs on Aggregates)", "Āyatana Yamaka (Pairs on Bases)", "Dhātu Yamaka (Pairs on Elements)", "Sacca Yamaka (Pairs on Truths)", "Saṅkhāra Yamaka (Pairs on Conditioned Things)", "Anusaya Yamaka (Pairs on Latent Dispositions)", "Citta Yamaka (Pairs on Consciousness)", "Dhamma Yamaka (Pairs on Phenomena)", "Indriya Yamaka (Pairs on Controlling Faculties)"],
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#77", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Yamaka-2-Volume-Set_p_2208.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1348,20 +1353,23 @@ const TipitakaData = readable({
           id: "patthana",
           basket: "Abhidhamma Piṭaka",
           name: "Paṭṭhāna Pāḷi",
-          translation: "",
+          translation: "Conditional Relations",
           description: 'Paṭṭhāna Pāḷi, the seventh and last book of the Abhidhamma, is called the Mahā Pakāraṇa, the "Great Book" announcing the supreme position it occupies and the height of excellence it has reached in its investigations into the ultimate nature of all the dhammas in the universe.',
           volume: "52",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: [],
+          sections: ["Anuloma Paṭṭhāna which studies the instance in which the Paccanīya relations do exist between the dhammas;",
+            "Paccanīya Paṭṭhāna which studies the instances in which Paccanīya relations do not exist between the dhammasPaccanīya;",
+            "Anuloma Paccanīya Paṭṭhāna which studies the instances in which some of the Paccanīya relations exist between the dhammasPaccanīya while the others do not;",
+            "Paccanīya Anuloma Paṭṭhāna which studies the instances in which some of the Paccanīya relations do not exist between the dhammasPaccanīya, while the others do exist."],
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#78", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Guide-to-Conditional-Relations_p_1997.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Tikapatthana-and-Commentary-3-volumes-as-1_p_2186.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         }
