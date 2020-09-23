@@ -183,7 +183,8 @@
 
     .radio-container,
     #lang-toggle-cont span {
-      font-size: 1.1rem;
+      font-size: 1.3rem;
+      padding-top: 0px;
     }
 
     #edition-sel-cont {
@@ -193,6 +194,18 @@
 
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
+    section {
+      width: 59%;
+    }
+
+    .radio-container,
+    #lang-toggle-cont span {
+      font-size: 1.4rem;
+    }
+
+    #lang-toggle-cont {
+      padding: 8px 0 2px;
+    }
   }
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */

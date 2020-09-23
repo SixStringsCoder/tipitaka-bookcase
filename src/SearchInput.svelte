@@ -46,6 +46,25 @@
     margin: 10px 0;
     cursor: pointer;
   }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    input#search {
+      width: 63%;
+      height: 50px;
+      font-size: 1.5rem;
+    }
+
+    .fa-search {
+      top: 15px;
+      right: 185px;
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+  }
 </style>
 
 <div id="search-cont">

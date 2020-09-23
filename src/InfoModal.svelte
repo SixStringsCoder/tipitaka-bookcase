@@ -32,6 +32,17 @@
   #closer-info:active {
     font-size: 1.6rem;
   }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    .info-cont {
+      position: absolute;
+      top: 20%;
+      left: 8%;
+      height: 70%;
+      width: 80%;
+    }
+  }
 </style>
 
 <section class="info-cont" in:fade={{ duration: 250 }}>

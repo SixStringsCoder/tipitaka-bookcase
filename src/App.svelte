@@ -97,6 +97,13 @@
     flex: 1;
     margin-top: 5rem;
   }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    #info-bar {
+      height: 190px;
+    }
+  }
 </style>
 
 <Header />

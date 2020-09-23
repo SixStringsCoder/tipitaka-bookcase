@@ -19,6 +19,14 @@
     font-weight: 100;
     cursor: pointer;
   }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    select#menu {
+      width: 65%;
+      height: 55px;
+    }
+  }
 </style>
 
 <div id="menu-container">
