@@ -1,7 +1,8 @@
 <script lang="ts">
+  import { createEventDispatcher } from "svelte";
   import Book from "./Book.svelte";
-  import InfoModal from "./InfoModal.svelte";
-  import Button from "./Button.svelte";
+
+  const dispatch = createEventDispatcher();
 
   export let tipitakaData;
 
@@ -21,11 +22,6 @@
   /* INPUT SEARCH TERM */
   let searchQuery: string = "";
   const findMenuItem = () => console.log(selectedBooks);
-
-  /* MODAL */
-  let showingModal: boolean = false;
-  const toggleModal: () => boolean = () => (showingModal = !showingModal);
-  $: console.log(showingModal);
 
   interface Info {
     name: string;
@@ -52,30 +48,8 @@
     content: string;
   }
 
-  export let modalInfoObj: Info;
-  $: console.log(modalInfoObj);
-  $: heading = modalInfoObj.name || "";
-  $: description = modalInfoObj.description;
-  $: links = modalInfoObj.links;
-  $: books = modalInfoObj.books;
-  $: sections = modalInfoObj.sections;
-  $: suttas = modalInfoObj.suttas;
-
-  const bookInfoModal = (e: any) => {
-    let basket = e.target.dataset.basketName;
-    let id = e.target.id;
-    let book = tipitakaData.baskets[basket].books.find(
-      (book) => book.id === id
-    );
-    modalInfoObj = book;
-    //console.log(book);
-    toggleModal();
-  };
-
-  const tipitakaInfoModal = () => {
-    modalInfoObj = tipitakaData.information;
-    toggleModal();
-  };
+  export let bookshelfHeading;
+  export let selectionHeading;
 </script>
 
 <style>
@@ -125,41 +99,12 @@
     text-decoration: underline;
   }
 
-  .link-btns-cont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 2rem 0;
-  }
-
-  .breadcrumbs {
-    font-size: 0.7rem;
-  }
-
-  p,
-  li {
-    font-size: 1.3rem;
-  }
-
-  li {
-    line-height: 150%;
-  }
-
-  .books-summary {
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-
   /* Small devices (portrait tablets and large phones, 600px and up) */
   @media only screen and (min-width: 600px) {
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    p,
-    li {
-      font-size: 1.5rem;
-    }
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
@@ -180,10 +125,12 @@
 
 <!-- BOOKCASE HEADING -->
 <header>
-  <h1 class="bookshelf-heading" on:click={tipitakaInfoModal}>
-    {tipitakaData.information.name}
+  <h1 class="bookshelf-heading" on:click={() => dispatch('showShelfInfo')}>
+    {bookshelfHeading}
   </h1>
-  <h2 class="selection-heading" on:click={toggleModal}>{heading}</h2>
+  <h2 class="selection-heading" on:click={() => dispatch('toggle')}>
+    {selectionHeading}
+  </h2>
 </header>
 
 <!-- BOOKCASE -->
@@ -196,7 +143,7 @@
       basket={vinaya.id}
       {name}
       counter={volume}
-      on:click={bookInfoModal} />
+      on:click={(e) => dispatch('showBookInfo', e)} />
   {/each}
 
   {#each suttanta.books as { id, name, volume, collection, collid }, i}
@@ -208,7 +155,7 @@
       {collection}
       {name}
       counter={volume}
-      on:click={bookInfoModal} />
+      on:click={(e) => dispatch('showBookInfo', e)} />
   {/each}
 
   {#each abhidhamma.books as { id, name, volume }, i}
@@ -219,54 +166,6 @@
       basket={abhidhamma.id}
       {name}
       counter={volume}
-      on:click={bookInfoModal} />
+      on:click={(e) => dispatch('showBookInfo', e)} />
   {/each}
 </section>
-
-<!-- INFO MODAL when heading or book is clicked-->
-{#if showingModal}
-  <InfoModal on:click={toggleModal}>
-    <h2 id="volume-title">{heading}</h2>
-
-    {#if modalInfoObj.basket}
-      <h5 class="breadcrumbs">
-        {modalInfoObj.basket}&nbsp;&gt;&gt;&nbsp;
-        {#if modalInfoObj.division || modalInfoObj.collection}
-          {modalInfoObj.division || modalInfoObj.collection}&nbsp;&gt;&gt;&nbsp;
-        {/if}
-        {modalInfoObj.name}
-      </h5>
-    {/if}
-
-    <p id="vol-summary">
-      {@html description}
-    </p>
-
-    <!-- Link Buttons -->
-    <section class="link-btns-cont">
-      {#each links as { id, link, label }}
-        {#if link}
-          <Button {id} btnLabel={label} booklink={link} />
-        {/if}
-      {/each}
-    </section>
-
-    <!-- List of books or Vaggas or Suttas-->
-    <p class="books-summary">The {heading} consists of:</p>
-    <ol class="list-of-books">
-      {#if books}
-        {#each books as { name, content }}
-          <li title={content}>{name}</li>
-        {/each}
-      {:else if sections}
-        {#each sections as section}
-          <li>{section}</li>
-        {/each}
-      {:else}
-        {#each suttas as sutta}
-          <li title={sutta}>{sutta}</li>
-        {/each}
-      {/if}
-    </ol>
-  </InfoModal>
-{/if}

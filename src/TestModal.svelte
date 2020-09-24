@@ -6,7 +6,7 @@
   .info-cont {
     position: absolute;
     top: 20%;
-    height: 70vh;
+    height: 700px;
     width: 80%;
     z-index: 10000;
     background-color: #fff;
