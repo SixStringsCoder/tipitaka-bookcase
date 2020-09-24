@@ -96,15 +96,15 @@
   $: suttas = modalInfoObj.suttas;
 
   const bookInfoModal = (e: any) => {
-    console.log(`Testing: ${e}`);
-    // let basket = e.target.dataset.basketName;
-    // let id = e.target.id;
-    // let book = tipitakaData.baskets[basket].books.find(
-    //   (book) => book.id === id
-    // );
-    // modalInfoObj = book;
+    console.dir(e);
+    let basket = e.detail.target.dataset.basketName;
+    let id = e.detail.target.id;
+    let book = tipitakaData.baskets[basket].books.find(
+      (book) => book.id === id
+    );
+    modalInfoObj = book;
 
-    // toggleModal();
+    toggleModal();
   };
 
   const tipitakaInfoModal = () => {
