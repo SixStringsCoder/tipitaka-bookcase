@@ -50,14 +50,14 @@
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     input#search {
-      width: 63%;
+      width: 64%;
       height: 50px;
       font-size: 1.5rem;
     }
 
     .fa-search {
       top: 15px;
-      right: 185px;
+      right: 20%;
       font-size: 1.5rem;
     }
   }

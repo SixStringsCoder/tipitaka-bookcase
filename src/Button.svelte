@@ -33,8 +33,9 @@
 
   a {
     width: 130px;
-    margin: 0.5rem 0.5rem 0;
+    margin: 0.5rem;
     text-decoration: none;
+    text-align: center;
   }
 </style>
 

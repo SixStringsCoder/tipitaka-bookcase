@@ -158,7 +158,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#10", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Long--DN_c_187.html", label: "English Books" },
             { id: "palibookurl", link: "https://store.pariyatti.org/Digha-Nikaya_c_196.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -173,7 +173,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#14", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Middle-Length--MN_c_188.html", label: "English Books" },
             { id: "palibookurl", link: "https://store.pariyatti.org/Majjhima-Nikaya_c_198.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -188,7 +188,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#33", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Connected--SN_c_186.html", label: "English Books" },
             { id: "palibookurl", link: "https://store.pariyatti.org/Samyutta-Nikaya_c_199.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -203,7 +203,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#39", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Numerical--AN_c_190.html", label: "English Books" },
             { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_c_195.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -218,7 +218,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#51", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Minor--KN_c_189.html", label: "English Books" },
             { id: "palibookurl", link: "https://store.pariyatti.org/Khuddaka-Nikaya_c_197.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -307,8 +307,8 @@ const TipitakaData = readable({
           name: "Mūlapaṇṇāsa Pāḷi",
           translation: "",
           description: "The first book, Mūlapaṇṇāsa, deals with the first fifty suttas in five vaggas.",
-          suttas: ["Mūlapariyāya Sutta", "Sabbāsava Sutta", "Dhammadāyāda Sutta", "Bhayabherava Sutta", "Anaṅgana Sutta", "Ākaṅkheyya Sutta", "Vattha Sutta", "Sallekha Sutta", "Sammādiṭṭhi Sutta", "Mahāsatipaṭṭhāna Sutta", "Cūḷasīhanāda Sutta", "Mahāsīhanāda Sutta", "Mahādukkhakkhandha Sutta", "Cūḷadukkhakkhandha Sutta", "Anumāna Sutta", "Cetokhila Sutta", "Vanapattha Sutta", "Madhupiṇḍika Sutta", "Dvedāvitakka Sutta", "Vitakkasaṇṭhāna Sutta", "Kakacūpama Sutta", "Alagaddūpama Sutta", "Vammika Sutta", "Rathavinīta Sutta", "Nivāpa Sutta", "Pāsarāsi Sutta", "Cūḷahatthipadopama Sutta", "Mahāhatthipadopama Sutta", "Mahāsāropama Sutta", "Cūḷasāropama Sutta", "Cūḷagosiṅga Sutta", "Mahāgosiṅga Sutta", "Mahāgopālaka Sutta", "Cūḷagopālaka Sutta", "Cūḷasaccaka Sutta", "Mahāsaccaka Sutta", "Cūḷataṇhāsaṅkhaya Sutta", "Mahātaṇhāsaṅkhaya Sutta", "Massapura Sutta", "Cassapura Sutta", "Sāleyyaka Sutta", "Verañjaka Sutta", "Mahāvedalla Sutta", "Cūḷavedalla Sutta", "Cūḷadhammasamādāna Sutta", "Mahādhammasamādāna Sutta", "Vīmaṃsaka Sutta", "Kosambiya Sutta", "Brahmanimantanika Sutta", "Māratajjanīya Sutta"],
           vaggas: ["Mūlapariyāya Vagga", "Sīhanāda Vagga", "Opamma Vagga", "Mahāyamaka Vagga", "Cūḷayamaka Vagga"],
+          suttas: ["Mūlapariyāya Sutta", "Sabbāsava Sutta", "Dhammadāyāda Sutta", "Bhayabherava Sutta", "Anaṅgana Sutta", "Ākaṅkheyya Sutta", "Vattha Sutta", "Sallekha Sutta", "Sammādiṭṭhi Sutta", "Mahāsatipaṭṭhāna Sutta", "Cūḷasīhanāda Sutta", "Mahāsīhanāda Sutta", "Mahādukkhakkhandha Sutta", "Cūḷadukkhakkhandha Sutta", "Anumāna Sutta", "Cetokhila Sutta", "Vanapattha Sutta", "Madhupiṇḍika Sutta", "Dvedāvitakka Sutta", "Vitakkasaṇṭhāna Sutta", "Kakacūpama Sutta", "Alagaddūpama Sutta", "Vammika Sutta", "Rathavinīta Sutta", "Nivāpa Sutta", "Pāsarāsi Sutta", "Cūḷahatthipadopama Sutta", "Mahāhatthipadopama Sutta", "Mahāsāropama Sutta", "Cūḷasāropama Sutta", "Cūḷagosiṅga Sutta", "Mahāgosiṅga Sutta", "Mahāgopālaka Sutta", "Cūḷagopālaka Sutta", "Cūḷasaccaka Sutta", "Mahāsaccaka Sutta", "Cūḷataṇhāsaṅkhaya Sutta", "Mahātaṇhāsaṅkhaya Sutta", "Massapura Sutta", "Cassapura Sutta", "Sāleyyaka Sutta", "Verañjaka Sutta", "Mahāvedalla Sutta", "Cūḷavedalla Sutta", "Cūḷadhammasamādāna Sutta", "Mahādhammasamādāna Sutta", "Vīmaṃsaka Sutta", "Kosambiya Sutta", "Brahmanimantanika Sutta", "Māratajjanīya Sutta"],
           volume: "9",
           editions: {
             pts: { bookqty: null },
@@ -332,8 +332,8 @@ const TipitakaData = readable({
           name: "Majjhima Paṇṇāsa Pāḷi",
           translation: "",
           description: "The second book, Majjhimapaṇṇāsa consists of the second fifty suttas, in five vaggas.",
-          suttas: ["Kandaraka Sutta", "Aṭṭhakanāgara Sutta", "Sekha Sutta", "Potaliya Sutta", "Jīvaka Sutta", "Upāli Sutta", "Kukkuravatika Sutta", "Abhayarājakumāra Sutta", "Bahuvedanīya Sutta", "Apaṇṇaka Sutta", "Ambalaṭṭhikarāhulovāda Sutta", "Mahārāhulovāda Sutta", "Cūḷamālukya Sutta", "Mahāmālukya Sutta", "Bhaddāli Sutta", "Laṭukikopama Sutta", "Cātumā Sutta", "Naḷakapāna Sutta", "Goliyāni Sutta", "Kīṭāgiri Sutta", "Tevijjavaccha Sutta", "Aggivaccha Sutta", "Mahāvaccha Sutta", "Dīghanakha Sutta", "Māgandiya Sutta", "Sandaka Sutta", "Mahāsakuludāyī Sutta", "Samaṇamuṇḍika Sutta", "Cūḷasakuludāyī Sutta", "Vekhanasa Sutta", "Ghaṭīkāra Sutta", "Raṭṭhapāla Sutta", "Maghādeva Sutta", "Madhura Sutta", "Bodhirājakumāra Sutta", "Aṅgulimāla Sutta", "Piyajātika Sutta", "Bāhitika Sutta", "Dhammacetiya Sutta", "Kaṇṇakatthala Sutta", "Brahmāyu Sutta", "Sela Sutta", "Assalāyana Sutta", "Ghoṭamukha Sutta", "Caṅkī Sutta", "Esukārī Sutta", "Dhanañjāni Sutta", "Vāseṭṭha Sutta", "Subha Sutta", "Saṅgārava Sutta"],
           vaggas: ["Gahapati Vagga", "Bhikkhu Vagga", "Paribbājaka Vagga", "Rāja Vagga", "Brāhmaṇa Vagga"],
+          suttas: ["Kandaraka Sutta", "Aṭṭhakanāgara Sutta", "Sekha Sutta", "Potaliya Sutta", "Jīvaka Sutta", "Upāli Sutta", "Kukkuravatika Sutta", "Abhayarājakumāra Sutta", "Bahuvedanīya Sutta", "Apaṇṇaka Sutta", "Ambalaṭṭhikarāhulovāda Sutta", "Mahārāhulovāda Sutta", "Cūḷamālukya Sutta", "Mahāmālukya Sutta", "Bhaddāli Sutta", "Laṭukikopama Sutta", "Cātumā Sutta", "Naḷakapāna Sutta", "Goliyāni Sutta", "Kīṭāgiri Sutta", "Tevijjavaccha Sutta", "Aggivaccha Sutta", "Mahāvaccha Sutta", "Dīghanakha Sutta", "Māgandiya Sutta", "Sandaka Sutta", "Mahāsakuludāyī Sutta", "Samaṇamuṇḍika Sutta", "Cūḷasakuludāyī Sutta", "Vekhanasa Sutta", "Ghaṭīkāra Sutta", "Raṭṭhapāla Sutta", "Maghādeva Sutta", "Madhura Sutta", "Bodhirājakumāra Sutta", "Aṅgulimāla Sutta", "Piyajātika Sutta", "Bāhitika Sutta", "Dhammacetiya Sutta", "Kaṇṇakatthala Sutta", "Brahmāyu Sutta", "Sela Sutta", "Assalāyana Sutta", "Ghoṭamukha Sutta", "Caṅkī Sutta", "Esukārī Sutta", "Dhanañjāni Sutta", "Vāseṭṭha Sutta", "Subha Sutta", "Saṅgārava Sutta"],
           volume: "10",
           editions: {
             pts: { bookqty: null },
@@ -357,8 +357,8 @@ const TipitakaData = readable({
           name: "Uparipannasa",
           translation: "",
           description: "The last fifty-two suttas are dealt with in five vaggas of the third book, Uparipaṇṇāsa, which means more than fifty.",
-          suttas: ["Devadaha Sutta", "Pañcattaya Sutta", "Kinti Sutta", "Sāmagāma Sutta", "Sunakkhatta Sutta", "Āneñja-sappāya Sutta", "Gaṇakamoggallāna Sutta", "Gopakamoggallāna Sutta", "Mahāpuṇṇama Sutta", "Cūḷapuṇṇama Sutta", "Ānupada Sutta", "Chabbisodhana Sutta", "Sappurisa Sutta", "Sevitabbāsevitabba Sutta", "Bahudhātuka Sutta", "Isigili Sutta", "Mahācattārīsaka Sutta", "Ānāpānassati Sutta", "Kāyagatāsati Sutta", "Saṅkhārupapatti Sutta", "Cūḷasuññata Sutta", "Mahāsuññata Sutta", "Acchariya-abbhuta Sutta", "Bākula Sutta", "Dantabhūmi Sutta", "Bhūmija Sutta", "Anuruddha Sutta", "Upakkilesa Sutta", "Bālapaṇḍita Sutta", "Devadūta Sutta", "Bhaddekaratta Sutta", "Ānanda-bhaddekaratta Sutta", "Lomasakaṅgiya-bhaddekaratta Sutta", "Bhaddekaratta Sutta", "Cūḷakamma-vibhaṅga Sutta", "Mahākamma-vibhaṅga Sutta", "Saḷāyatana-vibhaṅga Sutta", "Uddesa-vibhaṅga Sutta", "Araṇa-vibhaṅga Sutta", "Dhātu-vibhaṅga Sutta", "Sacca-vibhaṅga Sutta", "Dakkhiṇā-vibhaṅga Sutta", "Anāthapiṇḍikovāda Sutta", "Channovāda Sutta", "Puṇṇovāda Sutta", "Nandakovāda Sutta", "Cūḷarāhulovāda Sutta", "Chachakka Sutta", "Mahāsaḷāyatanika Sutta", "Nagaravindeyya Sutta", "Piṇḍapātapārisuddha Sutta", "Indriyabhāvanā Sutta"],
           vaggas: ["Devadaha Vagga", "Ānupada Vagga", "Suññata Vagga", "Vibhaṅga Vagga", "Saḷāyatana Vagg"],
+          suttas: ["Devadaha Sutta", "Pañcattaya Sutta", "Kinti Sutta", "Sāmagāma Sutta", "Sunakkhatta Sutta", "Āneñja-sappāya Sutta", "Gaṇakamoggallāna Sutta", "Gopakamoggallāna Sutta", "Mahāpuṇṇama Sutta", "Cūḷapuṇṇama Sutta", "Ānupada Sutta", "Chabbisodhana Sutta", "Sappurisa Sutta", "Sevitabbāsevitabba Sutta", "Bahudhātuka Sutta", "Isigili Sutta", "Mahācattārīsaka Sutta", "Ānāpānassati Sutta", "Kāyagatāsati Sutta", "Saṅkhārupapatti Sutta", "Cūḷasuññata Sutta", "Mahāsuññata Sutta", "Acchariya-abbhuta Sutta", "Bākula Sutta", "Dantabhūmi Sutta", "Bhūmija Sutta", "Anuruddha Sutta", "Upakkilesa Sutta", "Bālapaṇḍita Sutta", "Devadūta Sutta", "Bhaddekaratta Sutta", "Ānanda-bhaddekaratta Sutta", "Lomasakaṅgiya-bhaddekaratta Sutta", "Bhaddekaratta Sutta", "Cūḷakamma-vibhaṅga Sutta", "Mahākamma-vibhaṅga Sutta", "Saḷāyatana-vibhaṅga Sutta", "Uddesa-vibhaṅga Sutta", "Araṇa-vibhaṅga Sutta", "Dhātu-vibhaṅga Sutta", "Sacca-vibhaṅga Sutta", "Dakkhiṇā-vibhaṅga Sutta", "Anāthapiṇḍikovāda Sutta", "Channovāda Sutta", "Puṇṇovāda Sutta", "Nandakovāda Sutta", "Cūḷarāhulovāda Sutta", "Chachakka Sutta", "Mahāsaḷāyatanika Sutta", "Nagaravindeyya Sutta", "Piṇḍapātapārisuddha Sutta", "Indriyabhāvanā Sutta"],
           volume: "11",
           editions: {
             pts: { bookqty: null },
@@ -382,8 +382,8 @@ const TipitakaData = readable({
           name: "Sagatha Vagga Saṃyutta",
           translation: "",
           description: "This major division of Sagāthā Vagga Saṃyutta Pāḷi contains eleven saṃyuttas with discourses grouped according to characters appearing in them: the king of devas, the devas, the Brahmā, māra, King of Kosala, bhikkhus and bhikkhunis. The name of the vagga, Sagāthā is derived from the fact that various personalities appearing in the discourses conducted their dialogues or interviews with the Buddha mostly in verse.",
+          sections: ["Devatā-Saṃyutta", "Devaputta-Saṃyutta", "Kosala-Saṃyutta", "Māra-Saṃyutta", "Bhikkhūnī-Saṃyutta	", "Brahma-Saṃyutta", "Brāhmaṇa-Saṃyutta", "Vaṅgīsa-Saṃyutta", "Vana-Saṃyutta", "Yakkha-Saṃyutta", "Sakka-Saṃyutta"],
           suttas: [],
-          samyuttas: ["Devatā-Saṃyutta", "Devaputta-Saṃyutta", "Kosala-Saṃyutta", "Māra-Saṃyutta", "Bhikkhūnī-Saṃyutta	", "Brahma-Saṃyutta", "Brāhmaṇa-Saṃyutta", "Vaṅgīsa-Saṃyutta", "Vana-Saṃyutta", "Yakkha-Saṃyutta", "Sakka-Saṃyutta"],
           volume: "12",
           editions: {
             pts: { bookqty: null },
@@ -407,8 +407,8 @@ const TipitakaData = readable({
           name: "Nidana Vagga Saṃyutta",
           translation: "",
           description: "This second major division of Nidāna Vagga Saṃyutta Pāḷi contains ten saṃyuttas, all dealing with fundamental aspects of the doctrine. The discourses are chiefly concerned with the principles of conditionality and interdependence, explained in the detailed formula which is called Paṭiccasamuppāda (Conditioned Genesis or Dependent Origination), consisting of twelve factors.Various aspects of Paṭiccasamuppāda, together with expositions on doctrinal matters concerning practice of the holy life form the main theme of the early suttas in these saṃyuttas.",
+          sections: ["Nidāna-Saṃyutta", "Abhisamaya-Saṃyutta", "Dhātu-Saṃyutta", "Anamatagga-Saṃyutta", "Kassapa-Saṃyutta", "Lābha-Sakkāra-Saṃyutta", "Rāhula-Saṃyutta", "Lakkhaṇa-Saṃyutta", "Opamma-Saṃyutta", "Bhikkhu-Saṃyutta"],
           suttas: [],
-          samyuttas: ["Nidāna-Saṃyutta", "Abhisamaya-Saṃyutta", "Dhātu-Saṃyutta", "Anamatagga-Saṃyutta", "Kassapa-Saṃyutta", "Lābha-Sakkāra-Saṃyutta", "Rāhula-Saṃyutta", "Lakkhaṇa-Saṃyutta", "Opamma-Saṃyutta", "Bhikkhu-Saṃyutta"],
           volume: "13",
           editions: {
             pts: { bookqty: null },
@@ -432,8 +432,8 @@ const TipitakaData = readable({
           name: "Khandha Vagga Saṃyutta",
           translation: "",
           description: "The main theme of most suttas in this division is, as the name implies, khandhas, the five aggregates that constitute what is regarded as a being. Each of the components of these aggregates, namely, matter, sensation, perception, mental concomitants and consciousness is shown to be a bundle of dukkha (suffering). Made up of thirteen saṃyuttas, Khandha Vagga forms an important collection of doctrinal discussions on such topics such as atta, anattā, eternity and annihilation.",
+          sections: ["Khandha-Saṃyutta", "Rādha-Saṃyutta", "Diṭṭhi-Saṃyutta", "Okkantika-Saṃyutta", "Uppāda-Saṃyutta", "Kilesa-Saṃyutta", "Sāriputta-Saṃyutta", "Nāga-Saṃyutta", "Supaṇṇa-Saṃyutta", "Gandhabbakāya-Saṃyutta", "Valāhaka-Saṃyutta", "Vacchagotta-Saṃyutta", "Jhāna- (or Samādhi-) -Saṃyutta"],
           suttas: [],
-          samyuttas: ["Khandha-Saṃyutta", "Rādha-Saṃyutta", "Diṭṭhi-Saṃyutta", "Okkantika-Saṃyutta", "Uppāda-Saṃyutta", "Kilesa-Saṃyutta", "Sāriputta-Saṃyutta", "Nāga-Saṃyutta", "Supaṇṇa-Saṃyutta", "Gandhabbakāya-Saṃyutta", "Valāhaka-Saṃyutta", "Vacchagotta-Saṃyutta", "Jhāna- (or Samādhi-) -Saṃyutta"],
           volume: "14",
           editions: {
             pts: { bookqty: null },
@@ -457,8 +457,8 @@ const TipitakaData = readable({
           name: "Salayatana Vagga Saṃyutta",
           translation: "",
           description: "This division is made up of ten saṃyuttas or groups. It deals mainly with the six sense organs or bases of contact named internal sense bases (eye, ear, nose, tongue, body and mind); six corresponding sense objects, known as external sense bases (visible form, sound, odour, taste, tangible things and mind-objects); and consciousness that arises in relation to each pair of these internal and external sense bases. There are expositions on the impermanent nature of these sense bases and how relinquishing of attachment to them results in liberation. The second saṃyutta, known as the Vedanā Saṃyutta, focuses on the sensation arising from the coming together of the sense bases and conciousness. Sensation is shown to be of three kinds: pleasant, unpleasant and indifferent. None of these is permanent and each one of these is the cause of craving which in turn is the root of all suffering. Concise but illuminating expositions on nibbāna are found in many suttas. So also are there practical guides of Vipassana meditation.",
+          sections: ["Saḷāyatana-Saṃyutta", "Vedanā-Saṃyutta", "Mātugāma-Saṃyutta", "Jambhukhādaka-Saṃyutta", "Samaṇdaka-Saṃyutta", "Moggallāna-Saṃyutta", "Citta-Saṃyutta", "Gāmani-Saṃyutta", "Asaṇkhata-Saṃyutta", "Avyākata-Saṃyutta"],
           suttas: [],
-          samyuttas: ["Saḷāyatana-Saṃyutta", "Vedanā-Saṃyutta", "Mātugāma-Saṃyutta", "Jambhukhādaka-Saṃyutta", "Samaṇdaka-Saṃyutta", "Moggallāna-Saṃyutta", "Citta-Saṃyutta", "Gāmani-Saṃyutta", "Asaṇkhata-Saṃyutta", "Avyākata-Saṃyutta"],
           volume: "15",
           editions: {
             pts: { bookqty: null },
@@ -482,8 +482,8 @@ const TipitakaData = readable({
           name: "Maha Vagga Saṃyutta",
           translation: "",
           description: "The last vagga of Saṃyutta Nikāya is made up of twelve saṃyuttas, the list of which gives a clear indication of the subjects dealt with in this division: Magga Saṃyutta, Bojjhaṅga Saṃyutta, Satipaṭṭhāna Saṃyutta, Indriya Saṃyutta, Sammappadhāna Saṃyutta, Bala Saṃyutta, Iddhipāda Saṃyutta, Anuruddha Saṃyutta, Jhāna Saṃyutta, Ānāpāna Saṃyutta, Sotāpatti Saṃyutta and Sacca Saṃyutta. The main doctrines which from the fundamental basis of the Buddha’s teaching are reviewed in these saṃyuttas, covering both the theoretical and practical aspects. In the concluding suttas of the vagga, the ultimate goal of the holy life: arahatta phala, nibbāna, the end of all suffering, is constantly kept in full view together with a detailed description of the way of achieving it, namely, the Four Noble Truths and the Noble Path of Eight Constituents.",
+          sections: ["Magga-Saṃyutta", "Bojjhaṅga-Saṃyutta", "Satipaṭṭhāna-Saṃyutta", "Indriya-Saṃyutta", "Sammappadhāna-Saṃyutta", "Bala-Saṃyutta", "Iddhipāda-Saṃyutta", "Anuruddha-Saṃyutta", "Jhāna-Saṃyutta", "Ānāpāna-Saṃyutta", "Sotāpatti-Saṃyutta", "Sacca-Saṃyutta"],
           suttas: [],
-          samyuttas: ["Magga-Saṃyutta", "Bojjhaṅga-Saṃyutta", "Satipaṭṭhāna-Saṃyutta", "Indriya-Saṃyutta", "Sammappadhāna-Saṃyutta", "Bala-Saṃyutta", "Iddhipāda-Saṃyutta", "Anuruddha-Saṃyutta", "Jhāna-Saṃyutta", "Ānāpāna-Saṃyutta", "Sotāpatti-Saṃyutta", "Sacca-Saṃyutta"],
           volume: "16",
           editions: {
             pts: { bookqty: null },
@@ -507,7 +507,8 @@ const TipitakaData = readable({
           name: "Ekaka Nipāta Pāḷi",
           translation: "The Book of Ones",
           description: "This group contains single items of Dhamma which form the subject matter of discourses given by the Buddha at Sāvatthi to the numerous bhikkhus residing there. But some of the suttas were given by the Venerable Sāriputta or the Venerable Ānanda.",
-          vaggas: [],
+          // source: http://www.buddha-vacana.org/sutta/upa/AN/AN1.html#1
+          sections: ["Rūpādivaggo (Starting with form)", "Nīvaraṇappahānavaggo (Expelling obstacles)", "Akammaniyavaggo (Not manageable)", "Adantavaggo (Not Tamed)", "Paṇihitācchavaggo (If controlled pure)", "Accharāsaṅghātavaggo (For the fraction of a second)", "Vīriyārambhādivaggo (Arousing Effort)", "Kalyāṇamittādivaggo (Starting with good companionship)", "Pamādādivaggo (Starting with Negligence)", "Dutiyapamādādivaggo (Second starting with Negligence)", "Adhammavaggo (Interpreting the Teaching incorrectly)", "Anāpattivaggo (Not offences)", "Ekapuggalavaggo (A Certain person)", "Etadaggavaggo (These are the foremost)", "Aṭṭhānapāḷi (The Impossibilities)", "Ekadhammapāḷi (One thing)", "Pasādakaradhammavaggo (Things that make one bright)", "Aparāccharāsaṅghātavaggo (Another on the fraction of a second)", "Kāyagatāsativaggo (Mindfulness of the body)", "Amatavaggo (Deathless)"],
           suttas: [],
           volume: "17",
           editions: {
@@ -532,7 +533,8 @@ const TipitakaData = readable({
           name: "Duka Nipāta Pāḷi",
           translation: "The Book of Twos",
           description: "This group contains items of Dhamma, grouped in twos, which form the subject matter of discourses given by the Buddha...",
-          vaggas: [],
+          sections: [
+            "kammakaraṇavaggo", "adhikaraṇavaggo", "bālavaggo", "samacittavaggo", "parisavaggo", "puggalavaggo", "sukhavaggo", "sanimittavaggo", "dhammavaggo", "bālavaggo", "āsāduppajahavaggo", "āyācanavaggo", "dānavaggo", "santhāravaggo", "samāpattivaggo", "kodhapeyyālaṃ", "akusalapeyyālaṃ", "vinayapeyyālaṃ", "rāgapeyyāla"],
           suttas: [],
           volume: "18",
           editions: {

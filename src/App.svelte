@@ -137,7 +137,7 @@
   .link-btns-cont {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-evenly;
     margin: 2rem 0;
   }
 
@@ -217,7 +217,7 @@
       </section>
 
       <!-- List of books or Vaggas or Suttas-->
-      <p class="books-summary">The {selectHeading} consists of:</p>
+      <p class="books-summary">The {selectionHeading} consists of:</p>
       <ol class="list-of-books">
         {#if books}
           {#each books as { name, content }}

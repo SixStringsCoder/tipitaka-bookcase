@@ -43,6 +43,13 @@
       width: 80%;
     }
   }
+
+  /* Extra large devices (large laptops and desktops, 1200px and up) */
+  @media only screen and (min-width: 1200px) {
+    .info-cont {
+      height: 80vh;
+    }
+  }
 </style>
 
 <section class="info-cont" in:fade={{ duration: 250 }}>
