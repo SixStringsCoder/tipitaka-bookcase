@@ -608,7 +608,7 @@ const TipitakaData = readable({
           name: "Pancaka Nipāta Pāḷi",
           translation: "The Book of the Fives",
           description: "This group contains items of Dhamma, grouped in fives, which form the subject matter of discourses given by the Buddha...",
-          vaggas: [],
+          sections: ["Sekhabala Vagga (The Learner's Power)", "Bala Vagga (The Powers)", "Pañc'aṅgika Vagga (The Fivefold)", "Sumanā Vagga (Sumanā)", "Muṇḍarāja Vagga (Rājah Muṇḍa)", "Nīvaraṇa Vagga (The Hindrances)", "Saññā Vagga (Thoughts)", "Yodhājīva Vagga (The Warrior)", "Thera Vagga (The Elder)", "Kakudha Vagga (Kakudha)", "Phāsu-Vihāra Vagga (The Abodes of Comfort)", "Andhakavinda Vagga (Andhakavinda Hare)", "Gilāna Vagga (The Sick)", "Rāja Vagga (The Rajah)", "Tikaṇḍaki Vagga (Three-Thorn Grove)", "Saddhamma Vagga (Saddhamma)", "Āghāta Vagga (Malice)", "Upāsaka Vagga (The Lay-Disciple)", "Arañña Vagga (The Forest)", "Brāhmaṇa Vagga or Soṇa Vagga (The Brahman)", "Kimbila Vagga (Kimbila)", "Akkosaka Vagga (The Abuser)", "Dīgha-Cārika Vagga (Wandering Afield)", "Āvāsika Vagga (In Residence)", "Duc-carita Vagga (Walking in Evil )", "Upasampadā Vagga (Acceptance)", "Sammuti Peyyālaṃ (The Food-Steward)", "Sikkhapada Peyyalaṃ (The Fivefold)", "Rāgā Peyyālaṃ (Passion)"],
           suttas: [],
           volume: "21",
           editions: {

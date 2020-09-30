@@ -38,9 +38,8 @@
     .info-cont {
       position: absolute;
       top: 20%;
-      left: 8%;
-      height: 70%;
-      width: 80%;
+      left: 17%;
+      width: 60%;
     }
   }
 

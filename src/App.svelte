@@ -142,7 +142,7 @@
   }
 
   .breadcrumbs {
-    font-size: 0.7rem;
+    font-size: 0.9rem;
   }
 
   p,
