@@ -1,6 +1,24 @@
 <script lang="ts">
   export let searchQuery: string = "";
-  export let searchResults: object[] = [];
+  export let searchResults: ResultObj[] = [];
+
+  // interface Book {
+  //   name: string;
+  //   basket: string;
+  //   volume: string;
+  // }
+  // interface Collection {
+  //   name: string;
+  //   basket: string;
+  //   volume: string;
+  // }
+
+  interface ResultObj {
+    id: string;
+    name: string;
+    basket: string;
+    volume: string;
+  }
 </script>
 
 <style>
@@ -33,7 +51,7 @@
   dl#results-list {
     background-color: hsla(41, 30%, 85%, 1);
     box-shadow: 0 0 5px black;
-    width: 40%;
+    width: 90%;
     padding: 3%;
     list-style: none;
     position: absolute;
@@ -46,10 +64,17 @@
   }
 
   #results-list dd {
-    font-size: 1.3rem;
+    font-size: 1.08rem;
     border-bottom: 1px solid black;
     margin: 10px 0;
     cursor: pointer;
+  }
+
+  /* Large devices (laptops/desktops, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    #results-list dd {
+      font-size: 1.3rem;
+    }
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
@@ -64,6 +89,10 @@
       top: 15px;
       right: 20%;
       font-size: 1.5rem;
+    }
+
+    dl#results-list {
+      width: 40%;
     }
   }
 
@@ -87,7 +116,13 @@
 
       <!-- Search results go here as li tags-->
       {#each searchResults as searchResult}
-        <dd>{searchResult.name}</dd>
+        <dd>
+          {#if !searchResult.id}
+            {searchResult.name} (Suttanta Piṭaka)
+          {:else}
+            {searchResult.name} ({searchResult.basket} - Vol.{searchResult.volume})
+          {/if}
+        </dd>
       {/each}
     </dl>
   {/if}
