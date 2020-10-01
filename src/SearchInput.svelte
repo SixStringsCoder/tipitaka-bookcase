@@ -1,7 +1,6 @@
 <script lang="ts">
   export let searchQuery: string = "";
-
-  const findQueryItem = () => console.log(searchQuery);
+  export let searchResults: object[] = [];
 </script>
 
 <style>
@@ -31,16 +30,22 @@
     height: 10px;
   }
 
-  #results-list {
-    background-color: tan;
-    width: 400px;
-    padding: 0 10px;
+  dl#results-list {
+    background-color: hsla(41, 30%, 85%, 1);
+    box-shadow: 0 0 5px black;
+    width: 40%;
+    padding: 3%;
     list-style: none;
     position: absolute;
-    top: 20px;
+    top: 65%;
   }
 
-  #results-list li {
+  dt {
+    font-size: 1.3rem;
+    font-weight: bold;
+  }
+
+  #results-list dd {
     font-size: 1.3rem;
     border-bottom: 1px solid black;
     margin: 10px 0;
@@ -74,8 +79,16 @@
     type="text"
     bind:value={searchQuery}
     placeholder="Search..."
-    on:input={findQueryItem} />
-  <ul id="results-list">
-    <!-- Search results go here as li tags-->
-  </ul>
+    on:input />
+  {#if searchResults.length > 0}
+    <dl id="results-list">
+
+      <dt>RESULTS:</dt>
+
+      <!-- Search results go here as li tags-->
+      {#each searchResults as searchResult}
+        <dd>{searchResult.name}</dd>
+      {/each}
+    </dl>
+  {/if}
 </div>

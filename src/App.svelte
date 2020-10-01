@@ -20,7 +20,7 @@
   });
 
   let bookshelfHeading = tipitakaData.information.name;
-  let selectHeading;
+  // let selectHeading;
 
   /* Which Edition and Language is showing */
   let edition: string = "overview";
@@ -111,6 +111,64 @@
     modalInfoObj = tipitakaData.information;
     toggleModal();
   };
+
+  // SEARCH INPUT
+  let searchQuery: string;
+  let searchResults: object[] = [];
+  $: console.log(searchResults);
+
+  const findQueryItem = () => {
+    console.log(searchQuery);
+    if (searchQuery.length >= 3) {
+      searchObject(searchQuery, tipitakaData.baskets);
+      searchObject(searchQuery, tipitakaData.baskets.suttanta.collections);
+      searchArr(searchQuery, tipitakaData.baskets.vinaya.books);
+      searchArr(searchQuery, tipitakaData.baskets.suttanta.books);
+      searchArr(searchQuery, tipitakaData.baskets.abhidhamma.books);
+    }
+  };
+
+  // Search 'baskets' Object keys
+  // Search 'baskets.suttanta.collections' Object keys
+  const searchObject = (query: string, obj: object) => {
+    let queryLower = query.toLowerCase();
+    for (let key in obj) {
+      if (key.includes(queryLower)) {
+        let result = obj[key];
+        if (searchResults.includes(result) === false) {
+          searchResults = [result, ...searchResults];
+        } else {
+          continue;
+        }
+      }
+    }
+  };
+
+  interface Title {
+    id: string;
+    name: string;
+  }
+  // Search 'baskets.vinaya.books' array - id property
+  // Search 'baskets.suttanta.books' array - id property
+  // Search 'baskets.abhidhamma.books' array - id property
+  const searchArr = (query: string, arr: Title[]) => {
+    let queryLower = query.toLowerCase();
+    arr.forEach((book) => {
+      if (book.id.includes(queryLower)) {
+        if (searchResults.includes(book) === false) {
+          searchResults = [book, ...searchResults];
+        } else {
+          return;
+        }
+      }
+    });
+  };
+
+  const clearSearch = () => {
+    searchQuery = "";
+    searchResults = [];
+  };
+  $: if (searchQuery === "") clearSearch();
 </script>
 
 <style>
@@ -175,9 +233,10 @@
   }
 </style>
 
+<!-- The Tipitaka Shelves -->
 <Header />
 
-<!-- Learn More Menu -->
+<!-- Learn More Select Menu -->
 <section id="info-bar">
   <Menu {selectedBooks} on:change={getSelectionObj} />
 
@@ -186,7 +245,7 @@
     {langIsEng}
     on:input={() => langIsEng === !langIsEng} />
 
-  <SearchInput />
+  <SearchInput bind:searchQuery {searchResults} on:input={findQueryItem} />
 
   <!-- INFO MODAL when heading or book is clicked-->
   {#if showingModal}
