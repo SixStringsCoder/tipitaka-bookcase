@@ -114,17 +114,35 @@
 
   // SEARCH INPUT
   let searchQuery: string;
-  let searchResults: object[] = [];
+
+  interface ResultObj {
+    id: string;
+    name: string;
+    basket: string;
+    volume: string;
+    sections: string[];
+  }
+
+  let searchResults: ResultObj[] = [];
   $: console.log(searchResults);
 
   const findQueryItem = () => {
-    console.log(searchQuery);
+    // console.log(searchQuery);
     if (searchQuery.length >= 3) {
       searchObject(searchQuery, tipitakaData.baskets);
       searchObject(searchQuery, tipitakaData.baskets.suttanta.collections);
       searchArr(searchQuery, tipitakaData.baskets.vinaya.books);
       searchArr(searchQuery, tipitakaData.baskets.suttanta.books);
       searchArr(searchQuery, tipitakaData.baskets.abhidhamma.books);
+      searchSubArr(searchQuery, tipitakaData.baskets.suttanta.books, "suttas");
+      // Add "sections" to replace "vaggas" in all Suttanta books
+      // searchSubArr(searchQuery, tipitakaData.baskets.suttanta.books, "vaggas");
+      searchSubArr(searchQuery, tipitakaData.baskets.vinaya.books, "sections");
+      searchSubArr(
+        searchQuery,
+        tipitakaData.baskets.abhidhamma.books,
+        "sections"
+      );
     }
   };
 
@@ -144,16 +162,19 @@
     }
   };
 
-  interface Title {
-    id: string;
-    name: string;
-  }
+  // interface Title {
+  //   id: string;
+  //   name: string;
+  //   sections: string[];
+  // }
 
   // Search 'baskets.vinaya.books' array - id property
   // Search 'baskets.suttanta.books' array - id property
   // Search 'baskets.abhidhamma.books' array - id property
-  const searchArr = (query: string, arr: Title[]) => {
+  // Search 'baskets.abhidhamma.books.sections' array of strings
+  const searchArr = (query: string, arr: ResultObj[]) => {
     let queryLower = query.toLowerCase();
+    // search book ID for a match
     arr.forEach((book) => {
       if (book.id.includes(queryLower)) {
         if (searchResults.includes(book) === false) {
@@ -163,6 +184,21 @@
         }
       }
     });
+  };
+
+  const searchSubArr = (query: string, arr: ResultObj[], subArrkey: string) => {
+    let queryLower = query.toLowerCase();
+    for (let i = 0; i < arr.length; i++) {
+      let subArray = arr[i][subArrkey];
+      for (let j = 0; j < subArray.length; j++) {
+        let subArrLower = subArray[j].toLowerCase();
+        if (searchResults.includes(arr[i]) === false) {
+          if (subArrLower.includes(queryLower)) {
+            searchResults = [arr[i], ...searchResults];
+          }
+        }
+      }
+    }
   };
 
   const clearSearch = () => {

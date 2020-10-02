@@ -2,22 +2,12 @@
   export let searchQuery: string = "";
   export let searchResults: ResultObj[] = [];
 
-  // interface Book {
-  //   name: string;
-  //   basket: string;
-  //   volume: string;
-  // }
-  // interface Collection {
-  //   name: string;
-  //   basket: string;
-  //   volume: string;
-  // }
-
   interface ResultObj {
     id: string;
     name: string;
     basket: string;
     volume: string;
+    sections: string[];
   }
 </script>
 
@@ -92,7 +82,7 @@
     }
 
     dl#results-list {
-      width: 40%;
+      width: 50%;
     }
   }
 
@@ -120,7 +110,7 @@
           {#if !searchResult.id}
             {searchResult.name} (Suttanta Piṭaka)
           {:else}
-            {searchResult.name} ({searchResult.basket} - Vol.{searchResult.volume})
+            {searchResult.name} ({searchResult.basket} - Vol. {searchResult.volume})
           {/if}
         </dd>
       {/each}
