@@ -1,4 +1,7 @@
 <script lang="ts">
+  import { createEventDispatcher } from "svelte";
+  const dispatch = createEventDispatcher();
+
   export let searchQuery: string = "";
   export let searchResults: ResultObj[] = [];
 
@@ -106,7 +109,11 @@
 
       <!-- Search results go here as li tags-->
       {#each searchResults as searchResult}
-        <dd>
+        <dd
+          data-vol={searchResult.volume}
+          data-id={searchResult.id}
+          data-basket={searchResult.basket}
+          on:click={(e) => dispatch('searchResultClick', e)}>
           {#if !searchResult.id}
             {searchResult.name} (Suttanta Piṭaka)
           {:else}

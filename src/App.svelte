@@ -63,12 +63,12 @@
     //let sel = document.getElementById("menu");
     selectedBooks = e.target.value;
 
+    // Baskets
     if (
       selectedBooks === "vinaya" ||
       selectedBooks === "suttanta" ||
       selectedBooks === "abhidhamma"
     ) {
-      // Baskets
       modalInfoObj = tipitakaData.baskets[selectedBooks];
     } else if (selectedBooks.includes("-nikaya")) {
       // Collections only in suttanta
@@ -204,8 +204,15 @@
   const clearSearch = () => {
     searchQuery = "";
     searchResults = [];
+    selectedBooks = "";
   };
   $: if (searchQuery === "") clearSearch();
+
+  const findSearchedVol = (e) => {
+    console.log(e.detail.target.dataset.id);
+    selectedBooks =
+      e.detail.target.dataset.id || e.detail.target.dataset.basket;
+  };
 </script>
 
 <style>
@@ -282,7 +289,11 @@
     {langIsEng}
     on:input={() => langIsEng === !langIsEng} />
 
-  <SearchInput bind:searchQuery {searchResults} on:input={findQueryItem} />
+  <SearchInput
+    bind:searchQuery
+    {searchResults}
+    on:input={findQueryItem}
+    on:searchResultClick={(e) => findSearchedVol(e)} />
 
   <!-- INFO MODAL when heading or book is clicked-->
   {#if showingModal}
@@ -332,6 +343,7 @@
     </InfoModal>
   {/if}
 </section>
+<!-- end of "info-bar" -->
 
 <!-- Book Case -->
 <main id="library">
