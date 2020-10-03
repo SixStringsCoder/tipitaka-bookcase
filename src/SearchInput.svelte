@@ -4,6 +4,7 @@
 
   export let searchQuery: string = "";
   export let searchResults: ResultObj[] = [];
+  export let resultsHidden: boolean;
 
   interface ResultObj {
     id: string;
@@ -63,6 +64,31 @@
     cursor: pointer;
   }
 
+  /* Style the caret/arrow */
+  .caret {
+    cursor: pointer;
+    user-select: none; /* Prevent text selection */
+  }
+
+  /* Create the caret/arrow with a unicode, and style it */
+  .caret::before {
+    content: "\25B6";
+    color: black;
+    display: inline-block;
+    margin-right: 6px;
+    transform: rotate(90deg);
+  }
+
+  /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
+  .caret-up::before {
+    transform: rotate(0deg);
+  }
+
+  .hide {
+    height: 0px;
+    overflow: hidden;
+  }
+
   /* Large devices (laptops/desktops, 768px and up) */
   @media only screen and (min-width: 768px) {
     #results-list dd {
@@ -102,10 +128,18 @@
     bind:value={searchQuery}
     placeholder="Search..."
     on:input />
-  {#if searchResults.length > 0}
-    <dl id="results-list">
 
-      <dt>RESULTS:</dt>
+  {#if searchResults.length > 0}
+    <dl id="results-list" class:hide={resultsHidden}>
+
+      <dt>
+        <span
+          class:caret-up={resultsHidden}
+          class="caret"
+          on:click={() => dispatch('hideResultsList')}>
+          RESULTS:
+        </span>
+      </dt>
 
       <!-- Search results go here as li tags-->
       {#each searchResults as searchResult}

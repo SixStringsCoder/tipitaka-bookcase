@@ -112,7 +112,9 @@
     toggleModal();
   };
 
-  // SEARCH INPUT
+  /***************
+    SEARCH INPUT
+  ***************/
   let searchQuery: string;
 
   interface ResultObj {
@@ -125,6 +127,8 @@
 
   let searchResults: ResultObj[] = [];
   $: console.log(searchResults);
+  let resultsHidden: boolean = false;
+  $: console.log("results: " + resultsHidden);
 
   const findQueryItem = () => {
     // console.log(searchQuery);
@@ -136,7 +140,6 @@
       searchArr(searchQuery, tipitakaData.baskets.abhidhamma.books);
       searchSubArr(searchQuery, tipitakaData.baskets.suttanta.books, "suttas");
       // Add "sections" to replace "vaggas" in all Suttanta books
-      // searchSubArr(searchQuery, tipitakaData.baskets.suttanta.books, "vaggas");
       searchSubArr(searchQuery, tipitakaData.baskets.vinaya.books, "sections");
       searchSubArr(
         searchQuery,
@@ -161,12 +164,6 @@
       }
     }
   };
-
-  // interface Title {
-  //   id: string;
-  //   name: string;
-  //   sections: string[];
-  // }
 
   // Search 'baskets.vinaya.books' array - id property
   // Search 'baskets.suttanta.books' array - id property
@@ -205,6 +202,7 @@
     searchQuery = "";
     searchResults = [];
     selectedBooks = "";
+    resultsHidden = false;
   };
   $: if (searchQuery === "") clearSearch();
 
@@ -212,6 +210,8 @@
     console.log(e.detail.target.dataset.id);
     selectedBooks =
       e.detail.target.dataset.id || e.detail.target.dataset.basket;
+    modalInfoObj = searchResults.find((book) => book.id === selectedBooks);
+    toggleModal();
   };
 </script>
 
@@ -293,7 +293,9 @@
     bind:searchQuery
     {searchResults}
     on:input={findQueryItem}
-    on:searchResultClick={(e) => findSearchedVol(e)} />
+    on:searchResultClick={(e) => findSearchedVol(e)}
+    bind:resultsHidden
+    on:hideResultsList={() => (resultsHidden = !resultsHidden)} />
 
   <!-- INFO MODAL when heading or book is clicked-->
   {#if showingModal}
