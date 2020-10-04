@@ -633,7 +633,7 @@ const TipitakaData = readable({
           name: "Chakka Nipāta Pāḷi",
           translation: "The Book of the Sixes",
           description: "This group contains items of Dhamma, grouped in sixes, which form the subject matter of discourses given by the Buddha...",
-          vaggas: [],
+          sections: ["Āhuneyya Vagga (The Worthy)", "Sārāṇīya Vagga (Be Considerate)", "Anuttariya Vagga (Above all)", "Devatā Vagga (The Devas)", "Dhammika Vagga (Dhammika)", "Mahā Vagga (The Great Chapter)", "Devatā Vagga (The Devas)", "Arahatta Vagga (Arahantship)", "Sīti Vagga (The Cool)", "Ānisaṃsa Vagga (Advantages)", "Tika Vagga, (The Threes)", "Sāmañña Vagga —a.k.a. Vaggāsaṅgahitā Suttantā— (The Recital)"],
           suttas: [],
           volume: "22",
           editions: {
@@ -658,7 +658,7 @@ const TipitakaData = readable({
           name: "Sattaka Nipāta Pāḷi",
           translation: "The Book of the Sevens",
           description: "This group contains items of Dhamma, grouped in sevens, which form the subject matter of discourses given by the Buddha...",
-          vaggas: [],
+          sections: ["Dhana-Vagga (Treasures)", "Anusaya-Vagga (Leanings)", "Vajjī-Vagga (The Vajjians)", "Devatā-Vagga (Devas)", "Mahāyañña-Vagga (The Great Sacrifice)", "Avyākata-Vagga (The Unexplained)", "Mahā-Vagga (The Great Chapter)", "Vinaya-Vagga (The Discipline)", "Samaṇa Vaggo (The Recital)", "Āhuneyya Vaggo", "Rāga peyyālaṃ (The understanding of passion)"],
           suttas: [],
           volume: "23",
           editions: {
