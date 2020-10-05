@@ -658,7 +658,7 @@ const TipitakaData = readable({
           name: "Sattaka Nipāta Pāḷi",
           translation: "The Book of the Sevens",
           description: "This group contains items of Dhamma, grouped in sevens, which form the subject matter of discourses given by the Buddha...",
-          sections: ["Dhana-Vagga (Treasures)", "Anusaya-Vagga (Leanings)", "Vajjī-Vagga (The Vajjians)", "Devatā-Vagga (Devas)", "Mahāyañña-Vagga (The Great Sacrifice)", "Avyākata-Vagga (The Unexplained)", "Mahā-Vagga (The Great Chapter)", "Vinaya-Vagga (The Discipline)", "Samaṇa Vaggo (The Recital)", "Āhuneyya Vaggo", "Rāga peyyālaṃ (The understanding of passion)"],
+          sections: ["Dhana-Vagga (Treasures)", "Anusaya-Vagga (Leanings)", "Vajjī-Vagga (The Vajjians)", "Devatā-Vagga (Devas)", "Mahāyañña-Vagga (The Great Sacrifice)", "Avyākata-Vagga (The Unexplained)", "Mahā-Vagga (The Great Chapter)", "Vinaya-Vagga (The Discipline)", "Samaṇa Vaggo (The Recital)", "Āhuneyya Vaggo", "Rāga Peyyālaṃ (The Understanding of Passion)"],
           suttas: [],
           volume: "23",
           editions: {
@@ -683,7 +683,7 @@ const TipitakaData = readable({
           name: "Atthaka Nipāta Pāḷi",
           translation: "The Book of the Eights",
           description: "This group contains items of Dhamma, grouped in eights, which form the subject matter of discourses given by the Buddha...",
-          vaggas: [],
+          sections: ["Mettā Vagga (On Amity)", "Mahā Vagga (The Great Chapter)", "Gahapati-Vagga (On Householders)", "Dāna Vagga (On Giving)", "Uposatha-Vagga (The Observance Day)", "Gotamī Vagga aka Sa-ādhāna-Vagga (The Gotamid)", "Bhūmi-Cāla-Vagga (On Earthquakes)", "Yamaka-Vagga (The Pairs)", "Sati Vagga (Mindfulness)", "Rāgādi Peyyālaṃ (Passion)"],
           suttas: [],
           volume: "24",
           editions: {
@@ -708,7 +708,7 @@ const TipitakaData = readable({
           name: "Navaka Nipāta Pāḷi",
           translation: "The Book of the Nines",
           description: "This group contains items of Dhamma, grouped in nines, which form the subject matter of discourses given by the Buddha...",
-          vaggas: [],
+          sections: ["Sambodha-Vagga (The awakening)", "Sīhanāda-Vagga (The Lion Roar)", "Sattāvāsa-Vagga (Spheres of Beings)", "Mahā-Vagga (The Great Chapter)", "Pañcāla-Vagga aka: Sāmañña Vagga (The Pañcāla Chapter)", "Khema-Vagga (The Security)", "Satipaṭṭhāna-Vagga (The Arisings of Mindfulness)", "Sammappadhāna Vagga (Right Effort)", "Iddhipāda Vagga (Psychic Power)", "Rāgādi Peyyālaṃ Vaggo (Passion)"],
           suttas: [],
           volume: "25",
           editions: {
@@ -733,7 +733,7 @@ const TipitakaData = readable({
           name: "Dasaka Nipāta Pāḷi",
           translation: "The Book of the Tens",
           description: "This group contains items of Dhamma, grouped in tens, which form the subject matter of discourses given by the Buddha...",
-          vaggas: [],
+          sections: ["Ānisaṃsa-Vagga (Profit)", "Nātha-Vagga (Things Making for Warding)", "Mahā-Vagga (The Great Chapter)", "Upāli-Vagga (Upali and Ananda)", "Akkosa-Vagga (Reviling)", "Sacitta-Vagga (One's Own Thoughts)", "Yamaka-Vagga (The Pairs)", "Ākaŋkha-Vagga (On Wishes)", "Thera-Vagga (The Elders)", "Upāsaka-Vagga (The Lay-Followers)", "Samaṇasaññā-Vagga (Ideas of a Recluse)", "Paccorohaṇi-Vagga (The Descent)", "Parisuddha-Vagga (Perfect Purity)", "Sādhu-Vagga (The Seemly)", "Ariyamagga-Vagga (The Ariyan Way)", "Puggala-Vagga (Persons)", "Jāṇussoṇi-Vagga (Janussoni)", "Sādhu-Vagga (The Seemly)", "Ariyamagga-Vagga (The Aryan Way)", "Puggala / Aparapuggala - Vagga (Persons)", "Kara-Ja-Kāya-Vagga (The Body Born of Deeds)", "Sāmañña-Vaggo (Characteristics)"],
           suttas: [],
           volume: "26",
           editions: {
@@ -758,6 +758,7 @@ const TipitakaData = readable({
           name: "Ekadasaka Nipāta Pāḷi",
           translation: "The Book of the Elevens",
           description: "This group contains items of Dhamma, grouped in elevens, which form the subject matter of discourses given by the Buddha...",
+          sections: ["Nissaya-Vagga (Dependence)", "Anussati-Vagga (Recollection)", "no title (Recapitulation)"],
           suttas: [],
           volume: "27",
           editions: {
