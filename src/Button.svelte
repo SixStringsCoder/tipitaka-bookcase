@@ -6,7 +6,7 @@
 
 <style>
   .btn {
-    /* width: 130px; */
+    width: 150px;
     border: none;
     box-shadow: 0 0 3px black;
     background: #ba5626;
@@ -15,7 +15,7 @@
     color: #f3f1ea;
     text-transform: uppercase;
     cursor: pointer;
-
+    margin: 0 5%;
     padding: 9px 14px;
     -webkit-appearance: none;
     border-radius: 0;

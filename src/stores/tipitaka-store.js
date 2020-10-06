@@ -965,6 +965,7 @@ const TipitakaData = readable({
           name: "The Thera Gāthā Pāḷi",
           translation: "",
           description: "The Thera Gāthā Pāḷi and The Therī Gāthā Pāḷi treatises form a compilation of delightful verses uttered by some two hundred and sixty-four theras and seventy-three therīs through sheer exultation and joy that arose out of their religious devotion and inspiration. These inspiring verses gush forth from the hearts of bhikkhus and bhikkhunis after their attainment of arahatship as an announcement of their achievement and also as statement of the effort which has led to their final enlightenment.",
+          sections: ["Ekaka Nipāta (Canto I. Single Verses)", "Duka Nipāta (Canto II. Psalms of Two Verses)", "Tika Nipāta (Canto III. Psalms of Three Verses)", "Catukka Nipāta (Canto VI. Psalms of Four Verses)", "Pañcaka Nipāta (Canto V. Psalms of Five Verses)", "Chakka Nipāta (Canto VI. Psalms of Six Verses)", "Sattaka Nipāta (Canto VII. Psalms of Seven Verses)", "Aṭṭhaka Nipāta (Canto VIII. Psalms of Eight Verses)", "Navaka Nipāta (Canto IX. Psalms of Nine Verses)", "Dasaka Nipāta (Canto X. Psalms of Ten Verses)", "Ekādasaka Nīpata (Canto XI. Psalms of Eleven Verses)", "Dvādasaka Nipāta (Canto XII. Psalms of Twelve Verses)", "Terasa Nipāta (Canto XIII. Psalms of Thirteen Verses)", "Cuddasaka Nipāta (Canto XIV. Psalm of Fourteen Verses)", "Soḷasaka Nipāta (Canto XV. Psalms of Sixteen Verses)", "Vīsati Nipāta (Canto XVI. Psalms of Twenty Verses)", "Tiṃsa Nipāta (Canto XVII. Psalms of Thirty Verses)", "Cattālīsa Nipāta (Canto XVIII. Psalms of Forty Verses)", "Paññāsa Nipāta (Canto XIX. Psalms of Fifty Verses)", "Saṭṭhi Nipāta (Canto XX. Psalms of Sixty Verses)", "Mahā Nipāta (Canto XXI. Poem of Seventy-One Verses: Called also 'The Great Nipāta')"],
           suttas: [],
           volume: "35",
           editions: {
@@ -974,8 +975,9 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
+            { id: "info", link: "https://tipitaka.org/eot#59", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Elders-Verses-Vol-1--2_p_1990.html", label: "English Books" },
+            { id: "engbookurl2", link: "https://store.pariyatti.org/Poems-of-Early-Buddhist-Monks-Nuns_p_2135.html", label: "Poems" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
@@ -989,6 +991,7 @@ const TipitakaData = readable({
           name: "The Therī Gāthā Pāḷi",
           translation: "",
           description: "The Thera Gāthā Pāḷi and The Therī Gāthā Pāḷi treatises form a compilation of delightful verses uttered by some two hundred and sixty-four theras and seventy-three therīs through sheer exultation and joy that arose out of their religious devotion and inspiration. These inspiring verses gush forth from the hearts of bhikkhus and bhikkhunis after their attainment of arahatship as an announcement of their achievement and also as statement of the effort which has led to their final enlightenment.",
+          sections: ["Ekaka Nipāta (Canto I. Single Verses)", "Duka Nipāta (Canto II. Psalms of Two Verses)", "Tika Nipāta (Canto III. Psalms of Three Verses)", "Catukka Nipāta (Canto VI. Psalms of Four Verses)", "Pañcaka Nipāta (Canto V. Psalms of Five Verses)", "Chakka Nipāta (Canto VI. Psalms of Six Verses)", "Sattaka Nipāta (Canto VII. Psalms of Seven Verses)", "Aṭṭhaka Nipāta (Canto VIII. Psalms of Eight Verses)", "Navaka Nipāta (Canto IX. Psalms of Nine Verses)", "Ekādasaka Nīpata (Canto X. Psalms of Eleven Verses)", "Dvādasaka Nipāta (Canto XI. Psalms of Twelve Verses)", "Soḷasaka Nipāta (Canto XII. Psalms of Sixteen Verses)", "Vīsati Nipāta (Canto XIII. Psalms of about Twenty Verses)", "Tiṃsa Nipāta (Canto XIV. Psalms of about Thirty Verses)", "Cattālīsa Nipāta (Canto XV. Psalms of over Forty Verses)", "Mahā Nipāta (Canto XVI. 'The Great Canto')"],
           suttas: [],
           volume: "36",
           editions: {
@@ -998,9 +1001,13 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#59", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Poems-of-Early-Buddhist-Nuns_p_6321.html", label: "English Books" },
+            { id: "ebookurl", link: "https://store.pariyatti.org/Therigathapali--Book-of-Verses-of-Elder-Bhikkhunis_p_5078.html", label: "Therigathapali" },
+            { id: "engbookurl2", link: "https://store.pariyatti.org/Poems-of-Early-Buddhist-Monks-Nuns_p_2135.html", label: "Poems" },
+            { id: "frenchbookurl", link: "https://store.pariyatti.org/Stances-des-Theri_p_2446.html", label: "French" },
+            { id: "commbookurl", link: "https://store.pariyatti.org/Commentary-on-the-Verses-of-the-Theris_p_1948.html", label: "Commentary" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Therigatha-Commentary_p_2184.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
