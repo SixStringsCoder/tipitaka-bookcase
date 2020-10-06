@@ -63,9 +63,14 @@
     /* margin-top: 12rem; */
     margin-bottom: 1rem;
     padding-bottom: 2px;
-    background: #a1887f
+    background-image: repeating-linear-gradient(
+      #d8c9b6,
+      #a78d72 40%,
+      #8c6754 60%
+    );
+    /* background: #a1887f
       url(https://images.unsplash.com/photo-1585348697655-652a03ee7cc4?ixlib=rb-1.2.1&q=85&fm=jpg&crop=entropy&cs=srgb&ixid=eyJhcHBfaWQiOjE0NTg5fQ)
-      center center;
+      center center; */
     background-size: contain;
     border: 5px solid #3e2723;
     box-shadow: inset 0 0 15px rgba(0, 0, 0, 0.5);

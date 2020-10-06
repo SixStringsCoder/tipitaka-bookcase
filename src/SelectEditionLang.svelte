@@ -129,7 +129,7 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: hsla(53, 25%, 50%, 1);
+    background-color: hsl(65, 26%, 52%, 1);
     -webkit-transition: 0.4s;
     transition: 0.4s;
   }
