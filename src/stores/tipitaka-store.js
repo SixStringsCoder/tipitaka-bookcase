@@ -1020,6 +1020,7 @@ const TipitakaData = readable({
           name: "Jātaka Pāḷi",
           translation: "Birth-stories of the Buddha",
           description: "These are the stories of the previous existences of Gotama Buddha, while he was as yet only a bodhisatta. The Jātaka is an extensive work in verses containing five hundred and forty-seven stories or previous existences as recounted by the Buddha (usually referred to in Burma as 550 stories). The treatise is divided into nipātas according to the number of verses concerning each story. The one verse stories are classified as Ekaka Nipāta, the two verse stories come under Duka Nipāta etc. It is the commentary to the verses which gives the complete birth-stories. In these birth-stories are embedded moral principles and practices which the bodhisatta had observed for self-development and perfection to attain Buddhahood.",
+          sections: ["Ekanipāta (Apaṇṇakavagga, Sīlavagga, Kuruñgavagga, Kulāvakavagga, Atthakā,avagga, Āsiṃsavagga, Itthivagga, Varaṇavagga, Apāyimhavagga, Littavagga, Parosattavagga, Haṃsivagga, Kusanāḷivagga, Asampadānavagga, Kakaṇṭakavagga)", "Dukanipāta (Daḷhavagga, Santhavagga, Kalyāṇadhammavagga, Asadisavagga, Ruhakavagga, Nataṃdaḷhavagga, Bīraṇatthambhakavagga, Kāsāvavagga, Upāhanavagga, Sigālavagga)", "Tikanipāta (Saṃkappavagga, Kosiyavagga, Araññavagga, Abbhantaravagga, Kumbhavagga) ", "Catukknipāta (Vivaravagga, Pucimandavagga, Kuṭidūsakavagga, Kokilavagga, Cullakuṇāvagga) ", "Pañcanipāta (Maṇikuṇḍalavagga, Vaṇṇārohaavagga, Aḍḍhavagga)", "Chanipāta (Avāriyavagga, Senakavagga)", "Sattanipāta (Kukkuvagga, Gamdjāravagga)", "Aṭṭhanipāta (Kaccānivagga)", "Navanipāta", "Dasanipāta", "Ekadasanipāta", "Dvādasanipāta", "Terasanipāta", "Pakiṇṇakanipāta", "Vīsatinipāta", "Tiṃsanipāta", "Cattālīsanipāta", "Paṇṇāsanipāta", "Chaṭṭhinipāta", "Sattatinipāta", "Asītinipāta", "Mahānipāta"],
           suttas: [],
           volume: "37",
           editions: {
@@ -1029,9 +1030,10 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#61", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Jataka-English-Vol-1--3_p_2007.html", label: "PTS 3-Vol. English" },
+            { id: "engbookurl2", link: "https://store.pariyatti.org/Jataka-Tales-of-the-Buddha--An-Anthology-Vol-I--III-Pariyatti-Edition_p_5105.html", label: "Kawasaki 3-Vol. English" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Jataka-with-Commentary-Vol-1--7_p_2012.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
