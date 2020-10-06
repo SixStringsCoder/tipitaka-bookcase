@@ -912,8 +912,9 @@ const TipitakaData = readable({
           collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Vimāna Vatthu Pāḷi",
-          translation: "",
+          translation: "Stories of the Vimana (usually translated as 'heavenly abodes' or 'divine mansions)",
           description: "Vimāna means mansion. Here it refers to celestial mansions gained by beings who have done acts of merit. In this text are eighty-five verses grouped in seven vaggas. In the first four vaggas, celestial females give an account of the acts of merit they have performed in previous existences as human beings and of their rebirth in deva realms where magnificent mansions await their appearance. In the last three vaggas the celestial males tell their stories.",
+          sections: ["Pīṭha Vagga", "Cittalatā Vagga", "Pāricchattaka Vagga", "Mañjiṭṭhaka Vagga", "Mahāratha Vagga", "Pāyāsi Vagga", "Sunikkhitta Vagga"],
           suttas: [],
           volume: "33",
           editions: {
@@ -923,9 +924,9 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#57", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Vimana-Stories_p_6283.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Vimanavatthu-and-Petavatthu_p_2197.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -936,8 +937,9 @@ const TipitakaData = readable({
           collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Peta Vatthu Pāḷi",
-          translation: "",
+          translation: "Ghost Stories or Stories of the Hungry Ghosts",
           description: "The stories of petas are graphic accounts of the miserable beings who have been reborn in unhappy existences as a consequence of their evil deeds. There are fifty-one stories divided into four vaggas, describing the life of misery of the evil doers, in direct contrast to the magnificent life of the devas.",
+          sections: ["Uraga Vagga", "Ubbari Vagga", "Cūḷa Vagga", "Mahā Vagga"],
           suttas: [],
           volume: "34",
           editions: {
@@ -947,9 +949,10 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#58", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Pitaka-Disclosure_p_2134.html", label: "English Books" },
+            { id: "engbookurl2", link: "https://store.pariyatti.org/Peta-Stories_p_2132.html", label: "Peta Stories" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Vimanavatthu-and-Petavatthu_p_2197.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
