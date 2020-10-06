@@ -783,6 +783,7 @@ const TipitakaData = readable({
           name: "Khuddakapāṭha Pāḷi",
           translation: "",
           description: "First of the treatises in this nikāya, Khuddakapāṭha contains 'readings of minor passages' most of which are also found in other parts of the Tipiṭaka. It is a collection of nine short formulae and the suttas used as a manual for novices under training, namely: (a) The Three Refuges; (b) The ten precepts; (c) The thirty-two parts of the body; (d) simple Dhamma for novices in the form of a catechism; (e) Maṅgala Sutta; (f) Ratana Sutta; (g) Tirokuṭṭa Sutta; (h) Nidhikaṇḍa Sutta; (i) Mettā Sutta.",
+          sections: ["Saraṇattayaṃ (The Three Refuges)", "Dasasikkhāpadaṃ (The Ten Training Precepts)", "Dvattiṃsākāraṃ (The Thirty-Two-Fold Aspect)", "Kumārapañhaṃ (The Boy's Questions)", "Maŋgalasuttaṃ (The Good Omen Discourse)", "Ratanasuttaṃ (The Jewel Discourse)", "Tirokuḍasuttaṃ (The Without-the-Walls Discourse)", "Nidhikaṇḍasuttam (The Treasure-Store Discourse)", "Mettasuttaṃ (The Lovingkindness Discourse)"],
           suttas: [],
           volume: "28",
           editions: {
@@ -808,6 +809,7 @@ const TipitakaData = readable({
           name: "Dhammapada Pāḷi",
           translation: "",
           description: "It is a book of the Tipiṭaka which is popular and well-known not only in the Buddhist countries but also elsewhere. The Dhammapada is a collection of the Buddha’s words or basic and essential principles of the Buddha’s teaching. It consists of 423 verses arranged according to the topics in twenty-six vaggas or chapters.",
+          sections: ["Yamaka Vagga (The Pairs)", "Appamāda Vagga (Heedfulness)", "Citta Vagga (The Mind)", "Puppha Vagga (Flowers)", "Bāla Vagga (The Fool)", "Paṇḍita Vagga (The Wise)", "Arahanta Vagga (The Arahant)", "Sahassa Vagga (The Thousands)", "Pāpa Vagga (Evil)", "Daṇḍa Vagga (Violence)", "Jarā Vagga (Old Age)", "Atta Vagga (The Self)", "Loka Vagga (The World)", "Buddha Vagga (The Buddha)", "Sukha Vagga (Happiness)", "Piya Vagga (Affection)", "Kodha Vagga (Anger)", "Mala Vagga (Impurity)", "Dhammaṭṭha Vagga (The Just)", "Magga Vagga (The Path)", "Pakiṇṇaka Vagga (Miscellaneous)", "Niraya Vagga (Hell)", "Nāga Vagga (Elephants)", "Taṇhā Vagga (Craving)", "Bhikkhu Vagga (Monks)", "Brāhmaṇa Vagg (The Brahman)"],
           suttas: [],
           volume: "29",
           editions: {
@@ -819,7 +821,8 @@ const TipitakaData = readable({
           links: [
             { id: "info", link: "", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Dhammapada-Verses-Stories_p_5149.html", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Dhammapada-Pali_p_1959.html", label: "Pali Books" },
+            { id: "spanish", link: "https://store.pariyatti.org/Dhammapada--Spanish-PDF-eBook_p_4671.html", label: "Spanish" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -832,6 +835,7 @@ const TipitakaData = readable({
           name: "Udāna Pāḷi",
           translation: "",
           description: "An udāna is an utterance mostly in verse form inspired by a particularly intense emotion. This treatise is a collection of eighty joyful utterances made by the Buddha on unique occasions of sheer bliss; each udāna in verse is accompanied by an account in prose of the circumstances that led to its being uttered.",
+          sections: ["Buddhi Vagga (Enlightenment)", "Mucalinda Vagga (About Mucalindavaggo)", "Nanda Vagga (About Nanda)", "Meghiya Vagga (About Meghiya)", "Sonatherassa Vagga (About Sona)", "Jaccandha Vagga (Blind from Birth)", "Cūla Vagga (The Minor Chapter)", "Pāṭaligāmiya Vagga (About Patali Village)"],
           suttas: [],
           volume: "30",
           editions: {
@@ -841,9 +845,10 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#54", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/The-Udana-The-Itivuttaka-Pariyatti-Edition_p_5110.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Udana-Pali_p_2188.html", label: "Pali Books" },
+            { id: "commbookurl", link: "https://store.pariyatti.org/Udana-Commentary-Vol-1--2-English_p_2191.html", label: "Commentary" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -856,6 +861,7 @@ const TipitakaData = readable({
           name: "Itivuttaka Pāḷi",
           translation: "",
           description: 'The fourth treatise contains 112 suttas divided into four nipātas with verses and prose mixed, one supplementing the other. Although the collections contain the inspired sayings of the Buddha as in udāna, each passage is preceded by the phrase, "iti vuttaṃ bhagavata" ("thus was said by the Buddha"), and reads like a personal notebook in which are recorded short pithy sayings of the Buddha.',
+          sections: ["Eka Nipāto (The Section Dealing with Single Items)", "Duka Nipāto (The Section Dealing with Double Items)", "Tika Nipāto (The Section Dealing with Triple Items)", "Catukka Nipāto (The Section Dealing with Quadruple Items)"],
           suttas: [],
           volume: "31",
           editions: {
@@ -865,9 +871,11 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#55", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/The-Udana-The-Itivuttaka-Pariyatti-Edition_p_5110.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Itivuttaka-Pali_p_2002.html", label: "Pali Books" },
+            { id: "commbookurl", link: "https://store.pariyatti.org/Itivuttaka-Commentary-Vol-1--3_p_2005.html", label: "Commentary" },
+            { id: "ebookurl", link: "https://store.pariyatti.org/Itivuttakapali_p_5137.html", label: "eBooks" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -879,7 +887,8 @@ const TipitakaData = readable({
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Suttanipāta Pāḷi",
           translation: "",
-          description: "As well-known as Dhammapada, Sutta Nipāta is also a work in verse with occasional introduction in prose. It is divided into five vaggas: (i) Uraga Vagga of twelve suttas; (ii) Cūḷa Vagga of fourteen suttas; (iii) Mahā Vagga of twelve suttas; (iv) Aṭṭhaka Vagga of sixteen suttas; (v) Pārāyana Vagga of sixteen questions.",
+          description: "<p>As well-known as Dhammapada, Sutta Nipāta is also a work in verse with occasional introduction in prose. It is divided into five vaggas: (i) Uraga Vagga of twelve suttas; (ii) Cūḷa Vagga of fourteen suttas; (iii) Mahā Vagga of twelve suttas; (iv) Aṭṭhaka Vagga of sixteen suttas; (v) Pārāyana Vagga of sixteen questions.</p> <p>In the twelve suttas of the Uraga Vagga are found some important teachings of the Buddha which may be practised in the course of one’s daily life: <blockquote>\"True friends are rare to come by these days; a show of friendship very often hides some private ends. Man’s mind is defiled by self-interest, so, becoming disillusioned, he roams alone like a rhinoceros.\"(Khaggavisāna Sutta)</blockquote></p> <p>Pārāyana Vagga deals with sixteen questions asked by sixteen brahmin youths while the Buddha is staying at Pāsānaka shrine in the country of Magadha. The Buddha gives his answers to each of the questions asked by the youths. Knowing the meaning of each question and that of the answer given by the Buddha, if one practises the Dhamma as instructed in this sutta, one can surely reach the other shore, which is free from ageing and death. The Dhamma in this sutta is known as <em>pārāyana</em>.</p>",
+          sections: ["Uraga Vagga (The Snake Chapter)", "Cūla Vagga (The Small Chapter", "Mahā Vagga (The Great Chapter", "Aṭṭhaka Vagga (The Chapter of Eights)"],
           suttas: [],
           volume: "32",
           editions: {
@@ -889,8 +898,9 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
+            { id: "info", link: "https://tipitaka.org/eot#56", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Suttanipata_p_5051.html", label: "English Books" },
+            { id: "commbookurl", link: "https://store.pariyatti.org/Suttanipata-Commentary-II-being-Paramatthajotika--3-Volume-Set_p_2174.html", label: "Commentary" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
