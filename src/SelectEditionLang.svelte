@@ -1,7 +1,7 @@
 <script lang="ts">
   export let edition: string;
-  export let langIsEng: boolean;
-  $: console.log(langIsEng, edition);
+  // export let langIsEng: boolean;
+  $: console.log(`Edition: ${edition}`);
 </script>
 
 <style>
@@ -17,12 +17,12 @@
   }
 
   #edition-sel-cont {
-    width: 60%;
+    width: 100%;
     display: flex;
     justify-content: space-around;
-    border-right: 1px solid black;
+    /* border-right: 1px solid black; */
     /* background-color: hsla(53, 3%, 67%, 0.9); */
-    padding: 10px;
+    padding: 10px 5px;
     border-radius: 2px;
   }
 
@@ -30,11 +30,12 @@
   .radio-container {
     display: block;
     position: relative;
-    padding-top: 2px;
+    padding: 4px 0 4px 25px;
+    padding-top: 4px;
     padding-left: 25px;
     /* margin-bottom: 12px; */
     cursor: pointer;
-    font-size: 0.9rem;
+    font-size: 0.7rem;
     -webkit-user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;
@@ -98,7 +99,7 @@
 
   /* The switch - the box around the slider */
   /* code source: https://www.w3schools.com/howto/howto_css_switch.asp */
-  #lang-toggle-cont {
+  /* #lang-toggle-cont {
     width: 40%;
     display: flex;
     align-items: center;
@@ -111,18 +112,17 @@
     display: inline-block;
     width: 60px;
     height: 33px;
-    /* margin-top: 6px; */
-  }
+  } */
 
   /* Hide default HTML checkbox */
-  .switch input {
+  /* .switch input {
     opacity: 0;
     width: 0;
     height: 0;
-  }
+  } */
 
   /* The slider */
-  .slider {
+  /* .slider {
     position: absolute;
     cursor: pointer;
     top: 0;
@@ -147,7 +147,7 @@
   }
 
   input:checked + .slider {
-    /* background-color: hsla(53, 53%, 0%, 1); */
+    /* background-color: hsla(53, 53%, 0%, 1);
   }
 
   input:focus + .slider {
@@ -160,7 +160,6 @@
     transform: translateX(26px);
   }
 
-  /* Rounded sliders */
   .slider.round {
     border-radius: 34px;
     box-shadow: inset 0 0 2px black;
@@ -169,20 +168,29 @@
   .slider.round:before {
     border-radius: 50%;
   }
+  */
 
   /* Small devices (portrait tablets and large phones, 600px and up) */
-  @media only screen and (min-width: 600px) {
+  @media only screen and (min-width: 400px) {
+    .radio-container {
+      font-size: 0.8rem;
+    }
   }
 
   /* Medium devices (landscape tablets, 768px and up) */
   @media only screen and (min-width: 768px) {
-    #lang-toggle-cont {
+    /* #lang-toggle-cont {
       justify-content: center;
       padding: 6px 0 2px;
-    }
+    } */
 
-    .radio-container,
+    /* .radio-container,
     #lang-toggle-cont span {
+      font-size: 1.3rem;
+      padding-top: 0px;
+    } */
+
+    .radio-container {
       font-size: 1.3rem;
       padding-top: 0px;
     }
@@ -221,18 +229,23 @@
       <span class="radioBtn" />
     </label>
     <label class="radio-container">
-      PTS
-      <input type="radio" bind:group={edition} value="pts" />
+      PTS (Pali)
+      <input type="radio" bind:group={edition} value="pts-pali" />
       <span class="radioBtn" />
     </label>
     <label class="radio-container">
-      VRI
+      PTS (English)
+      <input type="radio" bind:group={edition} value="pts-eng" />
+      <span class="radioBtn" />
+    </label>
+    <label class="radio-container">
+      VRI (Pali)
       <input type="radio" bind:group={edition} value="vri" />
       <span class="radioBtn" />
     </label>
   </div>
 
-  <div id="lang-toggle-cont">
+  <!-- <div id="lang-toggle-cont">
     <span>Pāli&nbsp;</span>
     <label class="switch">
       <input
@@ -244,6 +257,6 @@
       <span class="slider round" />
     </label>
     <span>&nbsp;Eng.</span>
-  </div>
+  </div> -->
 
 </section>

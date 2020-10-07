@@ -24,7 +24,6 @@
 
   /* Which Edition and Language is showing */
   let edition: string = "overview";
-  let langIsEng: boolean = false;
 
   /* Selected MENU Item */
   let selectedBooks: string;
@@ -239,7 +238,7 @@
   .link-btns-cont {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-evenly;
+    justify-content: center;
     margin: 2rem 0;
   }
 
@@ -284,10 +283,7 @@
 <section id="info-bar">
   <Menu {selectedBooks} on:change={getSelectionObj} />
 
-  <SelectEditionLang
-    {edition}
-    {langIsEng}
-    on:input={() => langIsEng === !langIsEng} />
+  <SelectEditionLang {edition} />
 
   <SearchInput
     bind:searchQuery

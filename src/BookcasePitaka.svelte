@@ -54,7 +54,7 @@
 
 <style>
   .bookcase {
-    width: 90vw;
+    width: 88vw;
     display: none;
     grid-template-columns: repeat(auto-fill, minmax(43px, 1fr));
     grid-auto-flow: row;
@@ -115,7 +115,7 @@
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     .bookcase {
-      width: 58vw;
+      width: 59vw;
     }
 
     header {

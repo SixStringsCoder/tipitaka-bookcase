@@ -6,7 +6,7 @@
 
 <style>
   .btn {
-    width: 150px;
+    width: 175px;
     border: none;
     box-shadow: 0 0 3px black;
     background: #ba5626;
@@ -32,7 +32,7 @@
   }
 
   a {
-    width: 130px;
+    width: 175px;
     margin: 0.5rem;
     text-decoration: none;
     text-align: center;
