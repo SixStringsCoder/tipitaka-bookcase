@@ -244,7 +244,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#11", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -268,8 +268,11 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#12", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Mahasatipatthana-Sutta-eBook-Vipassana", label: "Mahasatipatthana" },
+            { id: "engbookurl2", link: "https://store.pariyatti.org/Buddhas-Last-Days-The_p_2377.html", label: "Buddha's Last Days" },
+            { id: "engbookurl3", link: "https://store.pariyatti.org/Last-Days-of-the-Buddha_p_1469.html", label: "Last Days of the Buddha" },
+            { id: "engbookurl4", link: "https://store.pariyatti.org/Sakkas-Quest_p_1807.html", label: "Sakka's Quest" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
@@ -292,7 +295,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#13", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -317,8 +320,8 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
+            { id: "info", link: "https://tipitaka.org/eot#15", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Mahasatipatthana-Sutta-eBook-Vipassana", label: "Mahasatipatthana" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
@@ -342,7 +345,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#21", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -367,7 +370,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#27", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -392,7 +395,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#34", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -406,7 +409,7 @@ const TipitakaData = readable({
           colltransl: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
           name: "Nidana Vagga Saṃyutta",
           translation: "",
-          description: "This second major division of Nidāna Vagga Saṃyutta Pāḷi contains ten saṃyuttas, all dealing with fundamental aspects of the doctrine. The discourses are chiefly concerned with the principles of conditionality and interdependence, explained in the detailed formula which is called Paṭiccasamuppāda (Conditioned Genesis or Dependent Origination), consisting of twelve factors.Various aspects of Paṭiccasamuppāda, together with expositions on doctrinal matters concerning practice of the holy life form the main theme of the early suttas in these saṃyuttas.",
+          description: "This second major division of Nidāna Vagga Saṃyutta Pāḷi contains ten saṃyuttas, all dealing with fundamental aspects of the doctrine. The discourses are chiefly concerned with the principles of conditionality and interdependence, explained in the detailed formula which is called Paṭiccasamuppāda (Conditioned Genesis or Dependent Origination), consisting of twelve factors. Various aspects of Paṭiccasamuppāda, together with expositions on doctrinal matters concerning practice of the holy life form the main theme of the early suttas in these saṃyuttas.",
           sections: ["Nidāna-Saṃyutta", "Abhisamaya-Saṃyutta", "Dhātu-Saṃyutta", "Anamatagga-Saṃyutta", "Kassapa-Saṃyutta", "Lābha-Sakkāra-Saṃyutta", "Rāhula-Saṃyutta", "Lakkhaṇa-Saṃyutta", "Opamma-Saṃyutta", "Bhikkhu-Saṃyutta"],
           suttas: [],
           volume: "13",
@@ -417,8 +420,9 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
+            { id: "info", link: "https://tipitaka.org/eot#35", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Great-Discourse-On-Causation-The-_p_1480.html", label: "Discourse on Causation" },
+            { id: "engbookurl2", link: "https://store.pariyatti.org/Dependent-Origination_p_1638.html", label: "Dependent Origination" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
@@ -442,7 +446,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#36", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -467,7 +471,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#37", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -492,7 +496,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#38", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -518,7 +522,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#40", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -543,7 +547,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#41", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -568,7 +572,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#42", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -593,7 +597,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#43", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -618,7 +622,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#44", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -643,7 +647,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#45", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -668,7 +672,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#46", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -693,7 +697,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#47", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -718,7 +722,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#48", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -743,7 +747,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#49", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -768,7 +772,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#50", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -793,7 +797,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#52", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Khuddakapathapali", label: "Khuddakapathapali" },
             { id: "engbookurl2", link: "https://store.pariyatti.org/Lifes-Highest-Blessings-Pariyatti-Edition_p_5109.html", label: "Life's Highest Blessings" },
             { id: "palibookurl", link: "", label: "Pali Books" },
@@ -819,7 +823,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#53", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Dhammapada-Verses-Stories_p_5149.html", label: "English Books" },
             { id: "palibookurl", link: "https://store.pariyatti.org/Dhammapada-Pali_p_1959.html", label: "Pali Books" },
             { id: "spanish", link: "https://store.pariyatti.org/Dhammapada--Spanish-PDF-eBook_p_4671.html", label: "Spanish" },
@@ -1001,7 +1005,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "https://tipitaka.org/eot#59", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#60", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Poems-of-Early-Buddhist-Nuns_p_6321.html", label: "English Books" },
             { id: "ebookurl", link: "https://store.pariyatti.org/Therigathapali--Book-of-Verses-of-Elder-Bhikkhunis_p_5078.html", label: "Therigathapali" },
             { id: "engbookurl2", link: "https://store.pariyatti.org/Poems-of-Early-Buddhist-Monks-Nuns_p_2135.html", label: "Poems" },
@@ -1176,6 +1180,7 @@ const TipitakaData = readable({
           name: "Netti",
           translation: "",
           description: "The two small works, Netti, made up of seven chapters, and Peṭakopadesa, made up of eight chapters, are different from the other books of the Tipiṭaka because they are exegetical and methodological in nature.",
+          sections: ["Saṅgahavāro (a short section consisting of only five verses that identifies its author as 'Mahakaccāna')", "Vibhāgavāra (Explanations', which is divided into three sub-sections: Uddesavāro - 'Specification Section', Niddesavāro - 'Demonstrative Section', Paṭiniddesavāro - 'Counter-demonstrative Section')"],
           suttas: [],
           volume: "43",
           editions: {
@@ -1186,8 +1191,8 @@ const TipitakaData = readable({
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#67", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Guide-The_p_1996.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Nettipakarana_p_2093.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1200,6 +1205,7 @@ const TipitakaData = readable({
           name: "Peṭakopadesa",
           translation: "",
           description: "The two small works, Netti, made up of seven chapters, and Peṭakopadesa, made up of eight chapters, are different from the other books of the Tipiṭaka because they are exegetical and methodological in nature.",
+          sections: ["Ariyasacca Pakāsana (display of the Noble Truths)", "Sāsana Paṭṭhāna (pattern of the dispensation)", "Suttādhiṭṭhāna (terms of expression in the thread)", "Suttavicayaca (investigation of threads)", "Hãravibhanga (modes of conveying in separate treatment)", "Suttatthasamuccaya (compendium of the thread's meaning)", "Hārasampāta (modes of conveying in combined treatment)", "Sutta Vibhaṅgiya (Analyses of Suttas)"],
           suttas: [],
           volume: "44",
           editions: {
@@ -1209,9 +1215,9 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "https://tipitaka.org/eot#67", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#68", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Pitaka-Disclosure_p_2134.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Petakopadesa_p_2133.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1224,6 +1230,7 @@ const TipitakaData = readable({
           name: "Milindapañha Pāḷi",
           translation: "",
           description: "Milindapañha Pāḷi is the last of the books which constitute Khuddaka Nikāya. It records the questions asked by King Milinda and the answers given by the Venerable Nāgasena some five hundred years after the parinibbāna of the Buddha. King Milinda was Yonaka (Graeco-Bactrian) ruler of Sāgala. He was very learned and highly skilled in the art of debating. The Venerable Nāgasena, a fully accomplished arahat, was on a visit to Sāgala, at the request of the Sangha.",
+          sections: ["Milindapañhapāḷi", "Milindapañho", "Meṇḍakapañho", "Anumānapañho", "Opammakathāpañho"],
           suttas: [],
           volume: "45",
           editions: {
@@ -1233,7 +1240,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "https://tipitaka.org/eot#68", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#69", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Milindas-Questions-Vol-1--2_p_2084.html", label: "English Books" },
             { id: "engbookurl2", link: "https://store.pariyatti.org/Questions-of-King-Milinda-The_p_1466.html", label: "Questions of King Milinda" },
             { id: "palibookurl", link: "", label: "Pali Books" },
