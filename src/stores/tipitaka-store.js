@@ -1046,6 +1046,7 @@ const TipitakaData = readable({
           name: "Niddesa Pāḷi",
           translation: "",
           description: "This division of Khuddaka Nikāya consists of two parts: Mahā Niddesa (the major exposition) which is the commentary on the fourth vagga (Aṭṭhaka) of the Sutta Nipāta, and Cūḷa Niddesa (the minor exposition) which is the commentary on the fifth vagga (Pārāyana) and on the Khaggavisāna Sutta in the first vagga. Attributed to the Venerable Sāriputta, these exegetical works contain much material on the Abhidhamma and constitute the earliest forms of commentaries, providing evidence of commentarial tradition many centuries before the Venerable Buddhaghosa appeared on the scene.",
+          sections: ["Mahā Niddesa (Kāmasutta Niddesa, Guhaṭṭhakasutta Niddesa, Duṭṭhaṭṭhakasutta Niddesa, Suddhaṭṭhakasutta Niddesa, Paramaṭṭhakasutta Niddesa, Jarāsutta Niddesa, Tissametteyyasutta Niddesa, Pasūrasutta Niddesa, Māgaṇḍiyasutta Niddesa, Purābhedasutta Niddesa, Kalahavivādasutta Niddesa, Cūḷaviyūhasutta Niddesa, Mahāviyūhasutta Niddesa, Tuvaṭṭakasutta Niddesa, Attadaṇḍasutta Niddesa, Sāriputtasutta Niddesa)", "Cūḷa Niddesa (Pārāyana Vagga, Pārāyana Vagga Niddesa, Khaggavisāṇa Sutta)"],
           suttas: [],
           volume: "38",
           editions: {
@@ -1055,9 +1056,9 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#62", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/search.asp?keyword=Niddesa", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1068,8 +1069,9 @@ const TipitakaData = readable({
           collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Paṭisambhidā Magga Pāḷi",
-          translation: "",
+          translation: "The Path of Analysis",
           description: "This treatise, entitled the Path of Analysis, is attributed to the Venerable Sāriputta. It deals with the most important teachings of the Buddha analytically in the style of the Abhidhamma. It is divided into three main vaggas, namely, Mahā Vagga, Yuganaddha Vagga and Paññā Vagga. Each vagga consists of ten sub-groups, named kathās, such as ñāṇa Kathā, Diṭṭhi Kathā etc. The treatment of each subject is very detailed and provides a theoretical foundation for the practice of the path.",
+          sections: ["Mahā Vagga (Great Division - enumeration, or mātikā, of 73 types of knowledge, or ñāṇa, which are then elaborated upon in detail)", "Yuganaddha Vagga (Coupling Division - poses a series of questions)", "Paññā Vagga (Wisdom Division - answers the prior division's questions)"],
           suttas: [],
           volume: "39",
           editions: {
@@ -1079,9 +1081,10 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#63", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Patisambhidamagga-2-Vols-as-1_p_2128.html", label: "Pali Books" },
+            { id: "commbookurl", link: "https://store.pariyatti.org/Saddhammappakasini-commentary-on-the-Patisambhidamagga-Vol-1--3_p_2130.html", label: "Commentary" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1093,7 +1096,8 @@ const TipitakaData = readable({
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Apadāna Pāḷi",
           translation: "",
-          description: "This is a biographical work containing the life stories (past and present) of the Buddha and his arahat disciples. It is divided into two divisions: the Therāpadāna, giving the life stories of the Buddha, of forty-one paccekabuddhas and of five hundred and fifty-nine arahats from the Venerable Sāriputta to the Venerable Raṭṭhapāla; and Therīpadāna, with the life stories of forty therī arahats from Sumedhā Therī to Pesalā Therī.",
+          description: "This is a biographical work containing the life stories (past and present) of the Buddha and his arahat disciples. It is divided into two divisions: the <em>Therāpadāna</em>, giving the life stories of the Buddha, of forty-one paccekabuddhas and of five hundred and fifty-nine arahats from the Venerable Sāriputta to the Venerable Raṭṭhapāla; and <em>Therīpadāna</em>, with the life stories of forty therī arahats from Sumedhā Therī to Pesalā Therī.",
+          sections: ["Therāpadāna (life stories—past and present—of the Buddha's monk arahat disciples)", "Therīpadāna (life stories—past and present—of the Buddha's nun arahat disciples)"],
           suttas: [],
           volume: "40",
           editions: {
@@ -1103,9 +1107,10 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#64", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Apadana-The-two-volumes-as-one_p_2300.html", label: "Pali Books" },
+            { id: "commbookurl", link: "https://store.pariyatti.org/Apadana-Commentary-Visuddhajanavilasani_p_1899.html", label: "Commentary" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1118,6 +1123,7 @@ const TipitakaData = readable({
           name: "Buddhavaṃsa Pāḷi",
           translation: "History of the Buddhas",
           description: "Buddhavaṃsa Pāḷi gives a short historical account of Gotama Buddha and of the twenty-four Buddhas who had prophesied his attainment of Buddhahood. It consists of twenty-nine sections in verse.",
+          sections: ["Ratanacaṅkamanakaṇḍaṃ", "Sumedhapatthanākathā", "Dīpaṅkarabuddhavaṃso (Buddha Dipankara)", "Koṇḍaññabuddhavaṃso (Buddha Kondanna)", "Maṅgalabuddhavaṃso (Buddha Mangala)", "Sumanabuddhavaṃso (Buddha Sumana)", "Revatabuddhavaṃso (Buddha Revata)", "Sobhitabuddhavaṃso (Buddha Sobhita)", "Anomadassībuddhavaṃso (Buddha Anomadassi)", "Padumabuddhavaṃso (Buddha Paduma)", "Nāradabuddhavaṃso (Buddha Narada)", "Padumuttarabuddhavaṃso (Buddha Padumuttara)", "Sumedhabuddhavaṃso (Buddha Sumedha)", "Sujātabuddhavaṃso (Buddha Sujata)", "Piyadassībuddhavaṃso (Buddha Piyadassi)", "Atthadassībuddhavaṃso (Buddha Atthadassi)", "Dhammadassībuddhavaṃso (Buddha Dhammadassi)", "Siddhatthabuddhavaṃso (Buddha Siddhattha)", "Tissabuddhavaṃso (BuddhaTissa)", "Phussabuddhavaṃso (Buddha Phussa)", "Vipassībuddhavaṃso (Buddha Vipassi)", "Sikhībuddhavaṃso (Buddha Sikhi)", "Vessabhūbuddhavaṃso (Buddha Vessabhu)", "Kakusandhabuddhavaṃso (Buddha Kakusandha)", "Koṇāgamanabuddhavaṃso (Buddha Konagamana)", "Kassapabuddhavaṃso (Buddha Kassapa)", "Gotamabuddhavaṃso (Buddha Gotama)", "Buddhapakiṇṇakakaṇḍaṃ", "Dhātubhājanīyakathā"],
           suttas: [],
           volume: "41",
           editions: {
@@ -1127,9 +1133,10 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#65", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Minor-Anthologies-Vol-2--4_p_2087.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Buddhavamsa-and-Cariyapitaka_p_1929.html", label: "Pali Books" },
+            { id: "commbookurl", link: "https://store.pariyatti.org/Buddhavamsa-Commentary_p_1930.html", label: "Commentary" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1140,8 +1147,9 @@ const TipitakaData = readable({
           collid: "khuddaka-nikaya",
           colltransl: "Contains the largest number of treatises and the most numerous categories of dhamma",
           name: "Cariyā Piṭaka",
-          translation: "",
+          translation: "basket of proper conduct",
           description: "This treatise contains thirty-five stories of the Buddha’s previous lives retold at the request of the Venerable Sāriputta. Whereas the Jātaka is concerned with the Buddha’s previous existences from the time of Sumedha, the hermit, till he became Gotama Buddha, Cariyā Piṭaka deals only with thirty-five of the existences of the bodhisatta in this last world cycle. The Venerable Sāriputta’s object in making the request is to highlight the indomitable will, the supreme effort, the peerless sacrifice with which the bodhisatta conducts himself in fulfillment of the ten pāramīs (virtues towards perfection).",
+          sections: ["Akitti Vagga  (10 stories for the perfection of offering or dāna)", "Hatthināga Vagga (10 stories for the perfection of conduct or sīla)", "Yudhañjaya Vagga (15 stories distributed among five other perfections: renunciation or nekkhamma,resolute determination or adhiṭṭhāna, truth or sacca, loving-kindness or mettā, equanimity or upekkhā)"],
           suttas: [],
           volume: "42",
           editions: {
@@ -1151,9 +1159,11 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#66", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Minor-Anthologies-Vol-2--4_p_2087.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Buddhavamsa-and-Cariyapitaka_p_1929.html", label: "Pali Books" },
+            { id: "commbookurl", link: "https://store.pariyatti.org/Cariyapitika-Commentary-Indexes_p_1935.html", label: "Commentary" },
+            { id: "engcommbookurl", link: "https://store.pariyatti.org/Clarifier-of-the-Sweet-Meaning_p_1941.html", label: "English Comm." },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -1175,7 +1185,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#67", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -1199,7 +1209,7 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#67", label: "Learn More" },
             { id: "engbookurl", link: "", label: "English Books" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -1223,8 +1233,9 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
+            { id: "info", link: "https://tipitaka.org/eot#68", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Milindas-Questions-Vol-1--2_p_2084.html", label: "English Books" },
+            { id: "engbookurl2", link: "https://store.pariyatti.org/Questions-of-King-Milinda-The_p_1466.html", label: "Questions of King Milinda" },
             { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
