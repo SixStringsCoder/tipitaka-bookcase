@@ -22,6 +22,8 @@ const TipitakaData = readable({
       links: [
         { id: "info", link: "https://tipitaka.org/eot#2", label: "Learn More" },
         { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Discipline_p_1907.html", label: "English Books" },
+        { id: "engbookurl2", link: "https://store.pariyatti.org/Patimokkha_p_2344.html", label: "Patimokkha" },
+        { id: "engbookurl3", link: "https://store.pariyatti.org/Analysis-of-the-Bhikkhu-Patimokkha_p_4834.html", label: "Analysis of Patimokkha" },
         { id: "palibookurl", link: "https://store.pariyatti.org/Vinaya-Pitaka_p_2199.html", label: "Pali Books" },
         { id: "vri", link: "https://www.vridhamma.org/research/Pali-Tipitaka-as-the-Source-of-Vipassana", label: "Books at VRI" }
       ],
@@ -38,11 +40,11 @@ const TipitakaData = readable({
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: ["pārājikā (expulsion)", "saṅghadisesā (meetings of the Sangha)", "aniyatā (indeterminate)", "nissagiyā pācittiyā (expiation with forfeiture)"],
+          sections: ["Pārājikā (expulsion)", "Saṅghadisesā (meetings of the Sangha)", "Aniyatā (indeterminate)", "Nissagiyā pācittiyā (expiation with forfeiture)"],
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "https://tipitaka.org/eot#2", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#4", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Discipline_p_1907.html", label: "English Books" },
             { id: "palibookurl", link: "https://store.pariyatti.org/Vinaya-Pitaka_p_2199.html", label: "Pali Books" },
             { id: "vri", link: "https://www.vridhamma.org/research/Pali-Tipitaka-as-the-Source-of-Vipassana", label: "Books at VRI" }
@@ -64,9 +66,9 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#5", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Discipline_p_1907.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Vinaya-Pitaka_p_2199.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -86,9 +88,9 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "https://store.pariyatti.org/Patimokkha_p_2344.html", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#6", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Discipline_p_1907.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Vinaya-Pitaka_p_2199.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -108,9 +110,9 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#7", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Discipline_p_1907.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Vinaya-Pitaka_p_2199.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
@@ -130,13 +132,17 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#8", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Discipline_p_1907.html", label: "English Books" },
+            { id: "engbookurl2", link: "https://store.pariyatti.org/Patimokkha_p_2344.html", label: "Patimokkha" },
+            { id: "engbookurl3", link: "https://store.pariyatti.org/Analysis-of-the-Bhikkhu-Patimokkha_p_4834.html", label: "Analysis of Patimokkha" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Vinaya-Pitaka_p_2199.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
-      ]
+      ],
+      commentary: ["Samantapasadika", "Kankhavitarani"],
+      subcommentary: [],
     },
     suttanta: {
       id: "suttanta",
@@ -155,7 +161,7 @@ const TipitakaData = readable({
           qty: 34,
           description: "This collection in the Suttanta Pitaka, named Dīgha Nikāya as it is made up of thirty-four long discourses of the Buddha, is divided into three divisions (a) Sīlakkhanda Vagga, Division Concerning Morality (b) Mahā Vagga, the Large Division (c) Pāthika Vagga, the Division beginning with the discourse on Pathika, the naked ascetic.",
           sections: ["Sīlakkhanda Vagga, Division Concerning Morality", "Mahā Vagga, the Large Division", "Pāthika Vagga, the Division beginning with the discourse on Pathika, the naked ascetic."],
-          commentary: [],
+          commentary: ["Sumangalavilasini"],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#10", label: "Learn More" },
@@ -170,7 +176,7 @@ const TipitakaData = readable({
           qty: 152,
           description: "This collection of medium length discourses is made up of one hundred and fifty-two suttas in three books known as paṇṇāsa. The first book, Mūlapaṇṇāsa, deals with the first fifty suttas in five vaggas; the second book, Majjhimapaṇṇāsa consists of the second fifty suttas, also in five vaggas; and the last fifty-two suttas are dealt with in five vaggas of the third book, Uparipaṇṇāsa, which means more than fifty. The suttas in this nikāya throw much light on the social ideas and institutions of those days, and also provide general information on the economic and political life.",
           sections: ["Mūlapaṇṇāsa", "Majjhimapaṇṇāsa", "Uparipaṇṇāsa"],
-          commentary: [],
+          commentary: ["Papañcasudani"],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#14", label: "Learn More" },
@@ -185,7 +191,7 @@ const TipitakaData = readable({
           qty: 7762,
           description: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga. Each major vagga is divided into fifty-six groups known as saṃyuttas-related subjects grouped together. The saṃyuttas are named after the subjects they deal with, for example, Bojjhaṅga Saṃyutta on the seven factors of enlightenment, or after some principal personalities such as the Venerable Sāriputta, King Pasenadi of Kosala, or Sakka. Kosala Saṃyutta is a group of discourses concerning King Pasenadi of Kosala, and Devatā Saṃyutta deals with devas like Sakka, Indra, Brahmā, etc. Each saṃyutta is further divided into sections which are made up of individual suttas. Thus the well-known Dhammacakkappavattana Sutta is the first discourse (sutta) in the second section of Sacca Saṃyutta which comes under the Mahāvagga division of Saṃyutta Nikāya. In the following excerpts from Saṃyutta Nikāya, only a few suttas representing each major division are given.",
           sections: ["Sagāthā Vagga Saṃyutta Pāḷi", "Nidāna Vagga Saṃyutta Pāḷi", "Khandha Vagga Saṃyutta Pāḷi", "Saḷāyatana Vagga Saṃyutta Pāḷi", "Mahā Vagga Saṃyutta Pāḷi"],
-          commentary: [],
+          commentary: ["Saratthappakasini"],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#33", label: "Learn More" },
@@ -200,7 +206,7 @@ const TipitakaData = readable({
           qty: 9557,
           description: '<p>This Collection of Discourses, Aṅguttara Nikāya, containing 9557 short suttas is divided into eleven divisions known as nipātas. Each nipāta is divided again into groups called vaggas which usually contain ten suttas. The discourses are arranged in progressive numerical order, each nipāta containing suttas with items of Dhamma, beginning with one item and moving up by units of one until there are eleven items of Dhamma in each sutta of the last nipāta. Hence the name Aṅguttara meaning "increasing by one item". The first nipāta, Ekaka Nipāta, provides in each sutta single items of Dhamma called the Ones; the second nipāta, Duka Nipāta, contains in each sutta two items of Dhamma called the Twos, the last nipāta, Ekādasaka Nipāta, is made up of suttas with eleven items of Dhamma in each, called the Elevens.</p><p>Aṅguttara Nikāya constitutes an important source book on Buddhist psychology and ethics, which provides an enumerated summary of all the essential features concerning the theory and practice of the Dhamma. A unique chapter entitled Etadagga Vagga of Ekaka Nipāta enumerates the names of the foremost disciples amongst the bhikkhus, bhikkhunis, upāsakas, upāsikās, who had achieved pre-eminence in one sphere of attainment or meritorious activity, e.g., the Venerable Sāriputta in intuitive wisdom and knowledge (paññā); the Venerable Mahā Moggallāna in supernormal powers (iddhi); Bhikkhunī Khemā in paññā; Bhikkhuni Uppalavanna in iddhi; the Upāsaka Anāthapiṇḍika and the Upāsikā Visākhā in alms-giving (dāna) and so on.</p>',
           sections: ["Ekaka Nipāta Pāḷi", "Duka Nipāta Pāḷi", "Tika Nipāta Pāḷi", "Catukka Nipāta Pāḷi", "Pañcaka Nipāta Pāḷi", "Chakka Nipāta Pāḷi", "Sattaka Nipāta Pāḷi", "Aṭṭhaka Nipāta Pāḷi", "Navaka Nipāta Pāḷi", "Dasaka Nipāta Pāḷi", "Ekādasaka Nīpata Pāḷi"],
-          commentary: [],
+          commentary: ["Manorathapurani"],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#39", label: "Learn More" },
@@ -215,7 +221,7 @@ const TipitakaData = readable({
           qty: null,
           description: "Of all the five nikāyas Khuddaka Nikāya contains the largest number of treatises (as listed below) and the most numerous categories of Dhamma. Although the word khuddaka literally means minor or small, the actual content of this collection can by no means be regarded as minor, including as it does the two major divisions of the Piṭaka, namely, the Vinaya Piṭaka and the Abhidhamma Piṭaka according to one system of classification. The miscellaneous nature of this collection, containing not only the discourses by the Buddha but compilations of brief doctrinal notes mostly in verse, accounts of personal struggles and achievements by theras and therīs also in verse, the birth stories, the history of the Buddha, etc., may account for its title.",
           sections: ["Khuddakapāṭha Pāḷi", "The Dhammapada Pāḷi", "Udāna Pāḷi", "Itivuttaka Pāḷi", "Suttanipāta Pāḷi", "Vimāna Vatthu Pāḷi", "Peta Vatthu Pāḷi", "The Thera Gāthā Pāḷi", "The Therī Gāthā Pāḷi", "Jātaka Pāḷi", "Niddesa Pāḷi", "Paṭisambhidā Magga Pāḷi", "Apadāna Pāḷi", "Buddhavaṃsa Pāḷi", "Cariyā Piṭaka", "Netti", "Peṭakopadesa", "Milindapañha Pāḷi"],
-          commentary: [],
+          commentary: ["Paramatthajotika I", "Paramatthajotika II", "Dhammapada-atthakatha", "Suttanipata-atthakatha", "Jatakatthavannana", "Jātaka-atthakatha"],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#51", label: "Learn More" },
@@ -1247,7 +1253,9 @@ const TipitakaData = readable({
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         }
-      ]
+      ],
+      commentary: ["Vimuttimagga", "Visuddhimagga", "Sumangalavilasini", "Papañcasudani", "Saratthappakasini", "Manorathapurani", "Paramatthajotika I", "Paramatthajotika II", "Dhammapada-atthakatha", "Suttanipata-atthakatha", "Jatakatthavannana", "Jātaka-atthakatha"],
+      subcommentary: [],
     },
     abhidhamma: {
       id: "abhidhamma",
@@ -1277,7 +1285,7 @@ const TipitakaData = readable({
             "Nikkhepa Kaṇḍa (division that avoids elaboration).",
             "Aṭṭhakathā Kaṇḍa (supplementary digest)."
           ],
-          commentary: [],
+          commentary: ["Atthasālinī"],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#72", label: "Learn More" },
@@ -1298,7 +1306,7 @@ const TipitakaData = readable({
             vri: { bookqty: null }
           },
           sections: ["Khandha", "Āyatana", "Dhātu", "Sacca", "Indriya", "Paṭiccasamuppāda", "Satipaṭṭhāna", "Sammappadhāna", "Iddhipāda", "Bojjhaṅga", "Magga", "Jhāna", "Appammaññā", "Sikkhāpada", "Paṭisambhidā", "ñāṇa", "Khuddhaka vatthu", "Dhammadhaya"],
-          commentary: [],
+          commentary: ["Sammohavinodani"],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#73", label: "Learn More" },
@@ -1319,7 +1327,7 @@ const TipitakaData = readable({
             vri: { bookqty: null }
           },
           sections: ["Paṭhamanayo", "Dutiyanayo", "Tatiyanayo", "Catutthanayo", "Pañcamanayo", "Chaṭṭhanayo", "Sattamanayo", "Aṭṭhamanayo", "Navamanayo", "Dasamanayo", "Ekādasamanayo", "Dvādasamanayo", "Terasamanayo", "Cuddasamanayo"],
-          commentary: [],
+          commentary: ["Pañcappakaranatthakatha"],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#74", label: "Learn More" },
@@ -1340,7 +1348,7 @@ const TipitakaData = readable({
             vri: { bookqty: null }
           },
           sections: ["List Of All The Human Types In The Book", "Chapter 1 - Division Of Human Types By One", "Chapter 2 - Division Of Human Types By Two", "Chapter 3 - Division Of Human Types By Three", "Chapter 4 - Division Of Human Types By Four", "Chapter 5 - Division Of Human Types By Five", "Chapter 6 - Division Of Human Types By Six", "Chapter 7 - Division Of Human Types By Seven", "Chapter 8 - Division Of Human Types By Eight", "Chapter 9 - Division Of Human Types By Nine", "Chapter 10 - Division Of Human Types By Ten"],
-          commentary: [],
+          commentary: ["Pañcappakaranatthakatha"],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#75", label: "Learn More" },
@@ -1361,7 +1369,7 @@ const TipitakaData = readable({
             vri: { bookqty: null }
           },
           sections: ["Puggalakathā (Of the Existence of a Personal Entity)", "Parihānikathā (Of Falling Away)", "Brahmacariyakathā (Of the Higher Life)", "Jahatikathā (Of Renouncing Evil)", "Sabbamatthītikathā (Of Everything as persistently existing)", "Atītakkhandhādikathā (Of what does my “Past” Consist?)", "Ekaccaṃatthītikathā (Of Some of the Past and Future as still Existing)", "Satipaṭṭhānakathā (Of Applications in Mindfulness)", "Hevatthikathā (Of Existence in Immutable Modes)", "Dutiyavaggo", "Tatiyavaggo", "Catutthavaggo", "Pañcamavaggo", "Chaṭṭhavaggo", "Sattamavaggo", "Aṭṭhamavaggo", "Navamavaggo", "Dasamavaggo", "Ekādasamavaggo", "Dvādasamavaggo", "Terasamavaggo", "Cuddasamavaggo", "Pannarasamavaggo", "Soḷasamavaggo", "Sattarasamavaggo", "Aṭṭhārasamavaggo", "Ekūnavīsatimavaggo", "Vīsatimavaggo", "Ekavīsatimavaggo", "Bāvīsatimavaggo", "Tevīsatimavaggo"],
-          commentary: [],
+          commentary: ["Pañcappakaranatthakatha"],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#76", label: "Learn More" },
@@ -1382,7 +1390,7 @@ const TipitakaData = readable({
             vri: { bookqty: null }
           },
           sections: ["Mūla Yamaka (Pairs on Roots)", "Khandha Yamaka (Pairs on Aggregates)", "Āyatana Yamaka (Pairs on Bases)", "Dhātu Yamaka (Pairs on Elements)", "Sacca Yamaka (Pairs on Truths)", "Saṅkhāra Yamaka (Pairs on Conditioned Things)", "Anusaya Yamaka (Pairs on Latent Dispositions)", "Citta Yamaka (Pairs on Consciousness)", "Dhamma Yamaka (Pairs on Phenomena)", "Indriya Yamaka (Pairs on Controlling Faculties)"],
-          commentary: [],
+          commentary: ["Pañcappakaranatthakatha"],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#77", label: "Learn More" },
@@ -1406,7 +1414,7 @@ const TipitakaData = readable({
             "Paccanīya Paṭṭhāna which studies the instances in which Paccanīya relations do not exist between the dhammasPaccanīya;",
             "Anuloma Paccanīya Paṭṭhāna which studies the instances in which some of the Paccanīya relations exist between the dhammasPaccanīya while the others do not;",
             "Paccanīya Anuloma Paṭṭhāna which studies the instances in which some of the Paccanīya relations do not exist between the dhammasPaccanīya, while the others do exist."],
-          commentary: [],
+          commentary: ["Pañcappakaranatthakatha"],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#78", label: "Learn More" },
@@ -1415,7 +1423,9 @@ const TipitakaData = readable({
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         }
-      ]
+      ],
+      commentary: ["Atthasālinī", "Sammohavinodani"],
+      subcommentary: [],
     }
   }
 });
