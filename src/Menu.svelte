@@ -50,7 +50,7 @@
         Short Discourses (Samyutta Nikāya)
       </option>
       <option value="anguttara-nikaya" data-basket="suttanta">
-        Numerical Discourses (Aṅguttara Nikāya)
+        Numerical Discourses or Gradual Sayings (Aṅguttara Nikāya)
       </option>
       <option value="khuddaka-nikaya" data-basket="suttanta">
         Minor Collection (Khuddaka Nikāya)

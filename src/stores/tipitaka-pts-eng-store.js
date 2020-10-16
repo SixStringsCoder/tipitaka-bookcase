@@ -29,11 +29,12 @@ const TipitakaData = readable({
       ],
       books: [
         {
-          id: "parajika",
+          id: "patimokkha-1",
           basket: "Vinaya Piṭaka",
           division: "Sutta Vibhaṅga",
-          name: "Pārājika Pāḷi",
+          name: "Suttavibhaṅga (Patimokkha, part I)",
           translation: "",
+          translator: "I.B. Horner",
           description: "Pārājika Pāḷi, which is the first book of the Vinaya Piṭaka and part of the Sutta Vibhaṅga division, gives an elaborate explanation of the important rules of discipline concerning pārājika and saṅghādisesa, as well as aniyata and nissaggiya which are minor offences. (The Sutta Vibhaṅga concludes with bhikkuni vinaya rules.)",
           volume: "1",
           editions: {
@@ -51,35 +52,60 @@ const TipitakaData = readable({
           ]
         },
         {
-          id: "pacittiya",
+          id: "patimokkha-2",
           basket: "Vinaya Piṭaka",
           division: "Sutta Vibhaṅga",
-          name: "Pācittiya Pāḷi",
+          name: "Suttavibhaṅga (Patimokkha, part II)",
           translation: "",
-          description: "The Pācittiya Pāḷi, which is the second book of the Vinaya Piṭaka and part of the Sutta Vibhaṅga division, deals with the remaining sets of rules for the bhikkhus, namely, the pācittiya, the pāṭidesanīya, the sekhiya, the adhikaraṇasamatha and the corresponding disciplinary rules for the bhikkhunis. Although it is called in Pāḷi just pācittiya, it has the distinctive name of suddha pācittiya (ordinary pācittiya), to distinguish it from nissaggiya pācittiya, described above. (The Sutta Vibhaṅga concludes with bhikkuni vinaya rules.)",
+          translator: "I.B. Horner",
+          description: "Pārājika Pāḷi, which is the first book of the Vinaya Piṭaka and part of the Sutta Vibhaṅga division, gives an elaborate explanation of the important rules of discipline concerning pārājika and saṅghādisesa, as well as aniyata and nissaggiya which are minor offences. (The Sutta Vibhaṅga concludes with bhikkuni vinaya rules.)",
           volume: "2",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
           },
-          sections: ["suddha pācittiyā (ordinary expiation)", "pātidesaniyā (confession re: alms food)", "sekhiya (concerning etiquette & decorum) ", "adhikaraṇasamathā (legal process)"],
+          sections: ["Pārājikā (expulsion)", "Saṅghadisesā (meetings of the Sangha)", "Aniyatā (indeterminate)", "Nissagiyā pācittiyā (expiation with forfeiture)"],
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "https://tipitaka.org/eot#5", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#4", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Discipline_p_1907.html", label: "English Books" },
             { id: "palibookurl", link: "https://store.pariyatti.org/Vinaya-Pitaka_p_2199.html", label: "Pali Books" },
-            { id: "vri", link: "", label: "Books at VRI" }
+            { id: "vri", link: "https://www.vridhamma.org/research/Pali-Tipitaka-as-the-Source-of-Vipassana", label: "Books at VRI" }
+          ]
+        },
+        {
+          id: "patimokkha-3",
+          basket: "Vinaya Piṭaka",
+          division: "Sutta Vibhaṅga",
+          name: "Suttavibhaṅga (Patimokkha, part III)",
+          translation: "",
+          translator: "I.B. Horner",
+          description: "Pārājika Pāḷi, which is the first book of the Vinaya Piṭaka and part of the Sutta Vibhaṅga division, gives an elaborate explanation of the important rules of discipline concerning pārājika and saṅghādisesa, as well as aniyata and nissaggiya which are minor offences. (The Sutta Vibhaṅga concludes with bhikkuni vinaya rules.)",
+          volume: "3",
+          editions: {
+            pts: { bookqty: null },
+            vri: { bookqty: null }
+          },
+          sections: ["Pārājikā (expulsion)", "Saṅghadisesā (meetings of the Sangha)", "Aniyatā (indeterminate)", "Nissagiyā pācittiyā (expiation with forfeiture)"],
+          commentary: [],
+          subcommentary: [],
+          links: [
+            { id: "info", link: "https://tipitaka.org/eot#4", label: "Learn More" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Discipline_p_1907.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Vinaya-Pitaka_p_2199.html", label: "Pali Books" },
+            { id: "vri", link: "https://www.vridhamma.org/research/Pali-Tipitaka-as-the-Source-of-Vipassana", label: "Books at VRI" }
           ]
         },
         {
           id: "mahavagga",
           basket: "Vinaya Piṭaka",
           division: "Khandaka",
-          name: "Mahāvagga Pāḷi",
+          name: "Mahāvagga",
           translation: "",
+          translator: "",
           description: 'Mahāvagga Pāḷi, made up of ten sections known as khandhakas, opens with an historical account of how the Buddha attained supreme enlightenment at the foot of the Bodhi tree, how he discovered the famous Law of Dependent Origination and how he gave his first sermon to the group of five bhikkhus on the discovery of the Four Noble Truths (i.e. the great "Discourse on the Turning of the Wheel of Dhamma"-Dhammacakkappavattana Sutta). This was followed by another great discourse, the Anattalakkhaṇa Sutta. These two suttas can be described as a compendium of the teaching of the Buddha. Mahāvagga further deals with procedures for an uposatha meeting, the assembly of the Sangha on every full moon day and on the fourteenth or fifteenth waning day of the lunar month when pāṭimokkha, a summary of the Vinaya rules, is recited. Also there are rules to be observed for rains retreat (vassa) during the rainy season as well as those for the formal ceremony of pavāraṇā concluding the rains retreat, in which a bhikkhu invites criticism from his brethren in respect of what has been seen, heard or suspected about his conduct.',
-          volume: "3",
+          volume: "4",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -98,10 +124,11 @@ const TipitakaData = readable({
           id: "culavagga",
           basket: "Vinaya Piṭaka",
           division: "Khandaka",
-          name: "Cūḷavagga Pāḷi",
+          name: "Cūlavagga",
           translation: "",
+          translator: "",
           description: "Cūḷavagga Pāḷi, which is book four of the Vinaya Piṭaka, deals with further rules and procedures for institutional acts or functions known as saṅghakamma. The twelve sections in this book deal with rules for offences such as saṅghādisesa that come before the Sangha; rules for observance of penances such as parivāsa and mānatta and rules for reinstatement of a bhikkhu. There are also miscellaneous rules concerning bathing, dress, dwellings and furniture and those dealing with treatment of visiting bhikkhus, and duties of tutors and novices.",
-          volume: "4",
+          volume: "5",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -119,11 +146,12 @@ const TipitakaData = readable({
         {
           id: "parivara",
           basket: "Vinaya Piṭaka",
-          division: "Parivāra-pāḷi",
-          name: "Parivāra Pāḷi",
+          division: "Parivāra",
+          name: "Parivāra",
           translation: "",
+          translator: "",
           description: "Parivāra Pāḷi, which is the last book of the Vinaya Piṭaka, serves as a kind of manual. It is compiled in the form of a catechism, enabling the reader to make an analytical survey of the Vinaya Piṭaka. All the rules, official acts, and other matters of the Vinaya are classified under separate categories according to the subjects dealt with.",
-          volume: "5",
+          volume: "6",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -238,11 +266,12 @@ const TipitakaData = readable({
           collection: "Dīgha Nikāya",
           collid: "digha-nikaya",
           colltransl: "Collection of long discourses of the Buddha",
-          name: "Sīlakkhanda Vagga Pāḷi",
+          name: "Dialogues of the Buddha, Vol. I (Sīlakkhanda Vagga)",
           translation: "Division Concerning Morality",
+          translator: "T.W. Rhys Davids",
           description: "<p>This division contains thirteen suttas which deal extensively with various types of morality, namely, Minor Morality, basic morality applicable to all; Middle Morality and Major Morality which are mostly practised by Samaṇas and Brāhmaṇas.</p> <p>It also discusses the wrong views then prevalent as well as brāhmin views of sacrifice and caste, and various religious practices such as extreme self-mortification.</p>",
           suttas: ["Brahmajāla Sutta, Discourse on the Net of Perfect Wisdom", "Sāmaññaphala Sutta, Discourse on the Fruits of the Life of a Samaṇa", "Ambaṭṭha Sutta", "Soṇadaṇḍa Sutta", "Kūṭadanta Sutta", "Mahāli Sutta", "Jāliya Sutta", "Mahāsīhanāda Sutta", "Poṭṭhapāda Sutta", "Subha Sutta", "Kevaṭṭa Sutta", "Lohicca Sutta", "Tevijja Sutta"],
-          volume: "6",
+          volume: "1",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -262,11 +291,12 @@ const TipitakaData = readable({
           collection: "Dīgha Nikāya",
           collid: "digha-nikaya",
           colltransl: "Collection of long discourses of the Buddha",
-          name: "Mahā Vagga Pāḷi",
+          name: "Dialogues of the Buddha, Vol. II (Mahā Vagga)",
           translation: "The Large Division",
+          translator: "T.W. and Mrs. C.A.F. Rhys Davids",
           description: "The ten suttas in this division are some of the most important of the Tipiṭaka, dealing with historical and biographical aspects as well as the doctrinal aspects of Buddhism. The most famous sutta is the Mahāparinibbāna Sutta which gives an account of the last days and the passing away of the Buddha and the distribution of his relics. Mahāpadāna Sutta deals with brief accounts of the last seven Buddhas and the life story of the Vipassī Buddha. Doctrinally important are the two suttas: the Mahānidāna Sutta, which explains the Chain of Cause and Effect, and the Mahāsatipaṭṭhāna Sutta, which deals with the four methods of steadfast mindfulness and practical aspects of Buddhist meditation.",
           suttas: ["Mahāpadāna Sutta", "Mahānidāna Sutta", "Mahāparinibbāna Sutta", "Mahāsudassana Sutta", "Janavasabha Sutta", "Mahāgovinda Sutta", "Mahāsamaya Sutta", "Sakkapañha Sutta", "Mahāsatipaṭṭhāna Sutta", "Pāyāsi Sutta"],
-          volume: "7",
+          volume: "2",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -289,11 +319,12 @@ const TipitakaData = readable({
           collection: "Dīgha Nikāya",
           collid: "digha-nikaya",
           colltransl: "Collection of long discourses of the Buddha",
-          name: "Pathika Vagga Pāḷi",
+          name: "Dialogues of the Buddha, Vol. III (Pathika Vagga)",
           translation: "the Division beginning with the discourse on Pāthika, the Naked Ascetic",
+          translator: "C.A.F. Rhys Davids",
           description: "This division is made up of eleven shorter discourses of a miscellaneous nature. They deal with the Buddha’s rejection of wrong and severe asceticism practised by followers of many sects. They deal also with the periodical evolution and dissolution of the universe, the accounts of universal monarchs and the thirty-two physiognomic characteristics of a great man. There is one discourse, Siṅgāla Sutta, addressed to a young brahmin showing the duties to be performed by members of the human society. The last two suttas, Saṅgīti and Dasuttara, are discourses given by the Venerable Sāriputta and they contain lists of doctrinal terms classified according to subject matter and numerical units. The style of their composition is different from the other nine suttas of the division.",
           suttas: ["Pāthika Sutta", "Udumbarikā Sutta", "Cakkavatti Sutta", "Aggañña Sutta", "Sampasādanīya Sutta", "Pāsādika Sutta", "Lakkhaṇa Sutta", "Siṅgāla Sutta", "Āṭānāṭiya Sutta", "Saṅgīti Sutta", "Dasuttara Sutta"],
-          volume: "8",
+          volume: "3",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -313,12 +344,13 @@ const TipitakaData = readable({
           collection: "Majjhima Nikāya",
           collid: "majjhima-nikaya",
           colltransl: "Collection of medium length discourses of the Buddha",
-          name: "Mūlapaṇṇāsa Pāḷi",
+          name: "Mūlapaṇṇāsa",
           translation: "",
+          translator: "I.B. Horner",
           description: "The first book, Mūlapaṇṇāsa, deals with the first fifty suttas in five vaggas.",
           vaggas: ["Mūlapariyāya Vagga", "Sīhanāda Vagga", "Opamma Vagga", "Mahāyamaka Vagga", "Cūḷayamaka Vagga"],
           suttas: ["Mūlapariyāya Sutta", "Sabbāsava Sutta", "Dhammadāyāda Sutta", "Bhayabherava Sutta", "Anaṅgana Sutta", "Ākaṅkheyya Sutta", "Vattha Sutta", "Sallekha Sutta", "Sammādiṭṭhi Sutta", "Mahāsatipaṭṭhāna Sutta", "Cūḷasīhanāda Sutta", "Mahāsīhanāda Sutta", "Mahādukkhakkhandha Sutta", "Cūḷadukkhakkhandha Sutta", "Anumāna Sutta", "Cetokhila Sutta", "Vanapattha Sutta", "Madhupiṇḍika Sutta", "Dvedāvitakka Sutta", "Vitakkasaṇṭhāna Sutta", "Kakacūpama Sutta", "Alagaddūpama Sutta", "Vammika Sutta", "Rathavinīta Sutta", "Nivāpa Sutta", "Pāsarāsi Sutta", "Cūḷahatthipadopama Sutta", "Mahāhatthipadopama Sutta", "Mahāsāropama Sutta", "Cūḷasāropama Sutta", "Cūḷagosiṅga Sutta", "Mahāgosiṅga Sutta", "Mahāgopālaka Sutta", "Cūḷagopālaka Sutta", "Cūḷasaccaka Sutta", "Mahāsaccaka Sutta", "Cūḷataṇhāsaṅkhaya Sutta", "Mahātaṇhāsaṅkhaya Sutta", "Massapura Sutta", "Cassapura Sutta", "Sāleyyaka Sutta", "Verañjaka Sutta", "Mahāvedalla Sutta", "Cūḷavedalla Sutta", "Cūḷadhammasamādāna Sutta", "Mahādhammasamādāna Sutta", "Vīmaṃsaka Sutta", "Kosambiya Sutta", "Brahmanimantanika Sutta", "Māratajjanīya Sutta"],
-          volume: "9",
+          volume: "1",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -339,12 +371,13 @@ const TipitakaData = readable({
           collection: "Majjhima Nikāya",
           collid: "majjhima-nikaya",
           colltransl: "Collection of medium length discourses of the Buddha",
-          name: "Majjhima Paṇṇāsa Pāḷi",
+          name: "Majjhimapaṇṇasa",
+          translator: "I.B. Horner",
           translation: "",
           description: "The second book, Majjhimapaṇṇāsa consists of the second fifty suttas, in five vaggas.",
           vaggas: ["Gahapati Vagga", "Bhikkhu Vagga", "Paribbājaka Vagga", "Rāja Vagga", "Brāhmaṇa Vagga"],
           suttas: ["Kandaraka Sutta", "Aṭṭhakanāgara Sutta", "Sekha Sutta", "Potaliya Sutta", "Jīvaka Sutta", "Upāli Sutta", "Kukkuravatika Sutta", "Abhayarājakumāra Sutta", "Bahuvedanīya Sutta", "Apaṇṇaka Sutta", "Ambalaṭṭhikarāhulovāda Sutta", "Mahārāhulovāda Sutta", "Cūḷamālukya Sutta", "Mahāmālukya Sutta", "Bhaddāli Sutta", "Laṭukikopama Sutta", "Cātumā Sutta", "Naḷakapāna Sutta", "Goliyāni Sutta", "Kīṭāgiri Sutta", "Tevijjavaccha Sutta", "Aggivaccha Sutta", "Mahāvaccha Sutta", "Dīghanakha Sutta", "Māgandiya Sutta", "Sandaka Sutta", "Mahāsakuludāyī Sutta", "Samaṇamuṇḍika Sutta", "Cūḷasakuludāyī Sutta", "Vekhanasa Sutta", "Ghaṭīkāra Sutta", "Raṭṭhapāla Sutta", "Maghādeva Sutta", "Madhura Sutta", "Bodhirājakumāra Sutta", "Aṅgulimāla Sutta", "Piyajātika Sutta", "Bāhitika Sutta", "Dhammacetiya Sutta", "Kaṇṇakatthala Sutta", "Brahmāyu Sutta", "Sela Sutta", "Assalāyana Sutta", "Ghoṭamukha Sutta", "Caṅkī Sutta", "Esukārī Sutta", "Dhanañjāni Sutta", "Vāseṭṭha Sutta", "Subha Sutta", "Saṅgārava Sutta"],
-          volume: "10",
+          volume: "2",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -364,12 +397,13 @@ const TipitakaData = readable({
           collection: "Majjhima Nikāya",
           collid: "majjhima-nikaya",
           colltransl: "Collection of medium length discourses of the Buddha",
-          name: "Uparipannasa",
+          name: "Uparipaṇṇasa",
           translation: "",
+          translator: "I.B. Horner",
           description: "The last fifty-two suttas are dealt with in five vaggas of the third book, Uparipaṇṇāsa, which means more than fifty.",
           vaggas: ["Devadaha Vagga", "Ānupada Vagga", "Suññata Vagga", "Vibhaṅga Vagga", "Saḷāyatana Vagg"],
           suttas: ["Devadaha Sutta", "Pañcattaya Sutta", "Kinti Sutta", "Sāmagāma Sutta", "Sunakkhatta Sutta", "Āneñja-sappāya Sutta", "Gaṇakamoggallāna Sutta", "Gopakamoggallāna Sutta", "Mahāpuṇṇama Sutta", "Cūḷapuṇṇama Sutta", "Ānupada Sutta", "Chabbisodhana Sutta", "Sappurisa Sutta", "Sevitabbāsevitabba Sutta", "Bahudhātuka Sutta", "Isigili Sutta", "Mahācattārīsaka Sutta", "Ānāpānassati Sutta", "Kāyagatāsati Sutta", "Saṅkhārupapatti Sutta", "Cūḷasuññata Sutta", "Mahāsuññata Sutta", "Acchariya-abbhuta Sutta", "Bākula Sutta", "Dantabhūmi Sutta", "Bhūmija Sutta", "Anuruddha Sutta", "Upakkilesa Sutta", "Bālapaṇḍita Sutta", "Devadūta Sutta", "Bhaddekaratta Sutta", "Ānanda-bhaddekaratta Sutta", "Lomasakaṅgiya-bhaddekaratta Sutta", "Bhaddekaratta Sutta", "Cūḷakamma-vibhaṅga Sutta", "Mahākamma-vibhaṅga Sutta", "Saḷāyatana-vibhaṅga Sutta", "Uddesa-vibhaṅga Sutta", "Araṇa-vibhaṅga Sutta", "Dhātu-vibhaṅga Sutta", "Sacca-vibhaṅga Sutta", "Dakkhiṇā-vibhaṅga Sutta", "Anāthapiṇḍikovāda Sutta", "Channovāda Sutta", "Puṇṇovāda Sutta", "Nandakovāda Sutta", "Cūḷarāhulovāda Sutta", "Chachakka Sutta", "Mahāsaḷāyatanika Sutta", "Nagaravindeyya Sutta", "Piṇḍapātapārisuddha Sutta", "Indriyabhāvanā Sutta"],
-          volume: "11",
+          volume: "3",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -390,12 +424,13 @@ const TipitakaData = readable({
           collection: "Saṃyutta Nikāya",
           collid: "samyutta-nikaya",
           colltransl: "This collection of discourses (Connected Discourses or Kindred Sayings) in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
-          name: "Sagatha Vagga Saṃyutta",
+          name: "Volume I (Sagatha Vagga Saṃyutta)",
           translation: "",
+          translator: "",
           description: "This major division of Sagāthā Vagga Saṃyutta Pāḷi contains eleven saṃyuttas with discourses grouped according to characters appearing in them: the king of devas, the devas, the Brahmā, māra, King of Kosala, bhikkhus and bhikkhunis. The name of the vagga, Sagāthā is derived from the fact that various personalities appearing in the discourses conducted their dialogues or interviews with the Buddha mostly in verse.",
           sections: ["Devatā-Saṃyutta", "Devaputta-Saṃyutta", "Kosala-Saṃyutta", "Māra-Saṃyutta", "Bhikkhūnī-Saṃyutta	", "Brahma-Saṃyutta", "Brāhmaṇa-Saṃyutta", "Vaṅgīsa-Saṃyutta", "Vana-Saṃyutta", "Yakkha-Saṃyutta", "Sakka-Saṃyutta"],
           suttas: [],
-          volume: "12",
+          volume: "1",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -415,12 +450,13 @@ const TipitakaData = readable({
           collection: "Saṃyutta Nikāya",
           collid: "samyutta-nikaya",
           colltransl: "This collection of discourses (Connected Discourses or Kindred Sayings) in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
-          name: "Nidana Vagga Saṃyutta",
+          name: "Volume II (Nidana Vagga Saṃyutta)",
           translation: "",
+          translator: "C.A.F. Rhys Davids",
           description: "This second major division of Nidāna Vagga Saṃyutta Pāḷi contains ten saṃyuttas, all dealing with fundamental aspects of the doctrine. The discourses are chiefly concerned with the principles of conditionality and interdependence, explained in the detailed formula which is called Paṭiccasamuppāda (Conditioned Genesis or Dependent Origination), consisting of twelve factors. Various aspects of Paṭiccasamuppāda, together with expositions on doctrinal matters concerning practice of the holy life form the main theme of the early suttas in these saṃyuttas.",
           sections: ["Nidāna-Saṃyutta", "Abhisamaya-Saṃyutta", "Dhātu-Saṃyutta", "Anamatagga-Saṃyutta", "Kassapa-Saṃyutta", "Lābha-Sakkāra-Saṃyutta", "Rāhula-Saṃyutta", "Lakkhaṇa-Saṃyutta", "Opamma-Saṃyutta", "Bhikkhu-Saṃyutta"],
           suttas: [],
-          volume: "13",
+          volume: "2",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -441,12 +477,13 @@ const TipitakaData = readable({
           collection: "Saṃyutta Nikāya",
           collid: "samyutta-nikaya",
           colltransl: "This collection of discourses (Connected Discourses or Kindred Sayings) in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
-          name: "Khandha Vagga Saṃyutta",
+          name: "Volume III (Khandha Vagga Saṃyutta)",
           translation: "",
+          translator: "",
           description: "The main theme of most suttas in this division is, as the name implies, khandhas, the five aggregates that constitute what is regarded as a being. Each of the components of these aggregates, namely, matter, sensation, perception, mental concomitants and consciousness is shown to be a bundle of dukkha (suffering). Made up of thirteen saṃyuttas, Khandha Vagga forms an important collection of doctrinal discussions on such topics such as atta, anattā, eternity and annihilation.",
           sections: ["Khandha-Saṃyutta", "Rādha-Saṃyutta", "Diṭṭhi-Saṃyutta", "Okkantika-Saṃyutta", "Uppāda-Saṃyutta", "Kilesa-Saṃyutta", "Sāriputta-Saṃyutta", "Nāga-Saṃyutta", "Supaṇṇa-Saṃyutta", "Gandhabbakāya-Saṃyutta", "Valāhaka-Saṃyutta", "Vacchagotta-Saṃyutta", "Jhāna- (or Samādhi-) -Saṃyutta"],
           suttas: [],
-          volume: "14",
+          volume: "3",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -466,12 +503,13 @@ const TipitakaData = readable({
           collection: "Saṃyutta Nikāya",
           collid: "samyutta-nikaya",
           colltransl: "This collection of discourses (Connected Discourses or Kindred Sayings) in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
-          name: "Saḷāyatana Vagga Saṃyutta",
+          name: "Volume IV (Saḷāyatana Vagga Saṃyutta)",
           translation: "",
+          translator: "",
           description: "This division is made up of ten saṃyuttas or groups. It deals mainly with the six sense organs or bases of contact named internal sense bases (eye, ear, nose, tongue, body and mind); six corresponding sense objects, known as external sense bases (visible form, sound, odour, taste, tangible things and mind-objects); and consciousness that arises in relation to each pair of these internal and external sense bases. There are expositions on the impermanent nature of these sense bases and how relinquishing of attachment to them results in liberation. The second saṃyutta, known as the Vedanā Saṃyutta, focuses on the sensation arising from the coming together of the sense bases and conciousness. Sensation is shown to be of three kinds: pleasant, unpleasant and indifferent. None of these is permanent and each one of these is the cause of craving which in turn is the root of all suffering. Concise but illuminating expositions on nibbāna are found in many suttas. So also are there practical guides of Vipassana meditation.",
           sections: ["Saḷāyatana-Saṃyutta", "Vedanā-Saṃyutta", "Mātugāma-Saṃyutta", "Jambhukhādaka-Saṃyutta", "Samaṇdaka-Saṃyutta", "Moggallāna-Saṃyutta", "Citta-Saṃyutta", "Gāmani-Saṃyutta", "Asaṇkhata-Saṃyutta", "Avyākata-Saṃyutta"],
           suttas: [],
-          volume: "15",
+          volume: "4",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -491,12 +529,13 @@ const TipitakaData = readable({
           collection: "Saṃyutta Nikāya",
           collid: "samyutta-nikaya",
           colltransl: "This collection of discourses (Connected Discourses or Kindred Sayings) in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga.",
-          name: "Mahā Vagga Saṃyutta",
+          name: "Volume V (Mahā Vagga Saṃyutta)",
           translation: "",
+          translator: "F.L. Woodward",
           description: "The last vagga of Saṃyutta Nikāya is made up of twelve saṃyuttas, the list of which gives a clear indication of the subjects dealt with in this division: Magga Saṃyutta, Bojjhaṅga Saṃyutta, Satipaṭṭhāna Saṃyutta, Indriya Saṃyutta, Sammappadhāna Saṃyutta, Bala Saṃyutta, Iddhipāda Saṃyutta, Anuruddha Saṃyutta, Jhāna Saṃyutta, Ānāpāna Saṃyutta, Sotāpatti Saṃyutta and Sacca Saṃyutta. The main doctrines which from the fundamental basis of the Buddha’s teaching are reviewed in these saṃyuttas, covering both the theoretical and practical aspects. In the concluding suttas of the vagga, the ultimate goal of the holy life: arahatta phala, nibbāna, the end of all suffering, is constantly kept in full view together with a detailed description of the way of achieving it, namely, the Four Noble Truths and the Noble Path of Eight Constituents.",
           sections: ["Magga-Saṃyutta", "Bojjhaṅga-Saṃyutta", "Satipaṭṭhāna-Saṃyutta", "Indriya-Saṃyutta", "Sammappadhāna-Saṃyutta", "Bala-Saṃyutta", "Iddhipāda-Saṃyutta", "Anuruddha-Saṃyutta", "Jhāna-Saṃyutta", "Ānāpāna-Saṃyutta", "Sotāpatti-Saṃyutta", "Sacca-Saṃyutta"],
           suttas: [],
-          volume: "16",
+          volume: "5",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -515,14 +554,17 @@ const TipitakaData = readable({
           basket: "Suttanta Piṭaka",
           collection: "Aṅguttara Nikāya",
           collid: "anguttara-nikaya",
-          colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
-          name: "Ekaka Nipāta Pāḷi",
-          translation: "The Book of the Ones",
-          description: "This group contains single items of Dhamma which form the subject matter of discourses given by the Buddha at Sāvatthi to the numerous bhikkhus residing there. But some of the suttas were given by the Venerable Sāriputta or the Venerable Ānanda.",
+          colltransl: "Collection of 9557 short suttas  (known as the 'Gradual Collection' or 'Numerical Discourses') divided into eleven division known as nipatas",
+          name: "Volume I (Ekaka, Duka, and Tika Nipātas)",
+          translation: "The Book of the Ones, Twos, and Threes",
+          translator: "F.L. Woodward",
+          description: "This book contains items of Dhamma, grouped in ones, twos, and threes which form the subject matter of discourses given by the Buddha at Sāvatthi to the numerous bhikkhus residing there.",
           // source: http://www.buddha-vacana.org/sutta/upa/AN/AN1.html#1
           sections: ["Rūpā Vagga ( Form and the Rest)", "Nīvaraṇa Vagga (Abandoning the Hindrances)", "Akammanīya Vagga (The Intractable)", "Adanta Vagga (The Untamed)", "Paṇihitā Vagga (The Mind Directed and Pellucid)", "Accharāsaṅghāta Vagga (The Finger-Snap)", "Vīriyārambhā Vagga (Energetic Effort)", "Kalyāṇamittā Vagga (Friendship with the Lovely)", "Pamādā Vagga (Earnestness, Etc.)", "Adhamma Vagga (In a Fourfold Way and Not Dhamma)", "Anāpatti Vagga (Unpardonable Offences)", "Eka-Puggala Vagga (The One Person)", "Etad-Agga Vagga ( Pre-Eminent Ones)", "Aṭṭhāna (The Impossibe)", "Eka-Dhamma Vagga (The One thing)", "Bīja Vagga (The Seed)", "Makkhali Vagga (Makkhali)", "Appamattaka Vagga (Trifling)", "Jhāna Vagga (Jhana Suttas, On Musing Suttas, Burning Suttas)"],
+          sections2: ["Kammakaraṇa Vagga (Punishments)", "Adhikaraṇa Vagga (Disputes)", "Bāla Vagga (The Fool)", "Samacitta Vagga (Of Tranquil Mind)", "Parisā Vagga (On Companies)", "Puggala Vagga (On Persons)", "Sukha Vagga (On Pleasures)", "Nimitta Vagga (On Characteristics)", "Dhamma Vagga (On Conditions)", "Dutiya Bāla Vagga (On Fools)", "Āsā Vagga (On Longings)", "Āyācana Vagga (On Aspiration)", "Dāna Vagga (On Gifts)", "Santhāra Vagga (On Greetings, Etc.)", "Samapatti Vagga Pannarasamo (On Conditions, Etc.)", "Kodha Vagga (Conditions, etc.)", "Sattarasamo Vagga (On Results)"],
+          sections3: ["Bāla Vagga (The Fool)", "Rathakāra Vagga (The Wheelwright)", "Puggala Vagga (On Persons)", "Devadūta Vagga (Messengers of the Devas)", "Cūḷa Vagga (The Minor Section)", "Brāhmaṇa Vagga (The Brahmins)", "Mahā Vagga (The Great Chapter)", "Ānanda Vagga (About Ananda)", "Samaṇa Vagga (The Recluse)", "Loṇakapalla Vagga (A Grain of Salt)", "Sambodhi Vagga (Enlightenment)", "Āpāyika Vagga (The Downfall)", "Kusināra Vagga (At Kusinara)", "Yodhājīva Vagga (The Fighting-Man)", "Maṅgala Vagga (Good Auspices)", "Acelaka Vagga (The Unclothed)", "Kammapathapeyyālaṃ", "Rāgapeyyālaṃ"],
           suttas: [],
-          volume: "17",
+          volume: "1",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -530,57 +572,9 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "https://tipitaka.org/eot#40", label: "Learn More" },
-            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
-            { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
-            { id: "vri", link: "", label: "Books at VRI" }
-          ]
-        },
-        {
-          id: "duka-nipata",
-          basket: "Suttanta Piṭaka",
-          collection: "Aṅguttara Nikāya",
-          collid: "anguttara-nikaya",
-          colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
-          name: "Duka Nipāta Pāḷi",
-          translation: "The Book of the Twos",
-          description: "This group contains items of Dhamma, grouped in twos, which form the subject matter of discourses given by the Buddha...",
-          sections: ["Kammakaraṇa Vagga (Punishments)", "Adhikaraṇa Vagga (Disputes)", "Bāla Vagga (The Fool)", "Samacitta Vagga (Of Tranquil Mind)", "Parisā Vagga (On Companies)", "Puggala Vagga (On Persons)", "Sukha Vagga (On Pleasures)", "Nimitta Vagga (On Characteristics)", "Dhamma Vagga (On Conditions)", "Dutiya Bāla Vagga (On Fools)", "Āsā Vagga (On Longings)", "Āyācana Vagga (On Aspiration)", "Dāna Vagga (On Gifts)", "Santhāra Vagga (On Greetings, Etc.)", "Samapatti Vagga Pannarasamo (On Conditions, Etc.)", "Kodha Vagga (Conditions, etc.)", "Sattarasamo Vagga (On Results)"],
-          suttas: [],
-          volume: "18",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
-          commentary: [],
-          subcommentary: [],
-          links: [
-            { id: "info", link: "https://tipitaka.org/eot#41", label: "Learn More" },
-            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
-            { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
-            { id: "vri", link: "", label: "Books at VRI" }
-          ]
-        },
-        {
-          id: "tika-nipata",
-          basket: "Suttanta Piṭaka",
-          collection: "Aṅguttara Nikāya",
-          collid: "anguttara-nikaya",
-          colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
-          name: "Tika Nipāta Pāḷi",
-          translation: "The Book of the Threes",
-          description: "This group contains items of Dhamma, grouped in threes, which form the subject matter of discourses given by the Buddha...",
-          sections: ["Bāla Vagga (The Fool)", "Rathakāra Vagga (The Wheelwright)", "Puggala Vagga (On Persons)", "Devadūta Vagga (Messengers of the Devas)", "Cūḷa Vagga (The Minor Section)", "Brāhmaṇa Vagga (The Brahmins)", "Mahā Vagga (The Great Chapter)", "Ānanda Vagga (About Ananda)", "Samaṇa Vagga (The Recluse)", "Loṇakapalla Vagga (A Grain of Salt)", "Sambodhi Vagga (Enlightenment)", "Āpāyika Vagga (The Downfall)", "Kusināra Vagga (At Kusinara)", "Yodhājīva Vagga (The Fighting-Man)", "Maṅgala Vagga (Good Auspices)", "Acelaka Vagga (The Unclothed)", "Kammapathapeyyālaṃ", "Rāgapeyyālaṃ"],
-          suttas: [],
-          volume: "19",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
-          commentary: [],
-          subcommentary: [],
-          links: [
-            { id: "info", link: "https://tipitaka.org/eot#42", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#40", label: "Book of Ones" },
+            { id: "info", link: "https://tipitaka.org/eot#41", label: "Book of Twos" },
+            { id: "info", link: "https://tipitaka.org/eot#42", label: "Book of Threes" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
             { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -591,13 +585,14 @@ const TipitakaData = readable({
           basket: "Suttanta Piṭaka",
           collection: "Aṅguttara Nikāya",
           collid: "anguttara-nikaya",
-          colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
-          name: "Catukka Nipāta Pāḷi",
+          colltransl: "Collection of 9557 short suttas  divided into eleven division known as nipatas",
+          name: "Volume II (Catukka Nipāta)",
           translation: "The Book of the Fours",
-          description: "This group contains items of Dhamma, grouped in fours, which form the subject matter of discourses given by the Buddha...",
+          translator: "F.L. Woodward",
+          description: "This PTS English translation contains items of Dhamma, grouped in fours, which form the subject matter of discourses given by the Buddha...",
           sections: ["Bhanṭagāma Vagga (At Bhandagama)", "Cara Vagga (Deportment)", "Uruvela Vagga (Uruvelā)", "Cakka Vagga (The Wheel)", "Rohitassa Vagga (Rohitassa)", "Puññābhisanda Vagga (Flood of Merit)", "Pattakamma Vagga (Deeds of Merit)", "Apaṇṇaka Vagga (The Sure)", "Macala Vagga (Unshaken)", "Asura Vagga (Asuras)", "Valāhaka Vagga (Rain-Cloud)", "Kesi Vagga (Kesi)", "Bhaya Vagga (Fears)", "Puggala Vagga (On Persons)", "Ābhā Vagga (Splendour)", "Indriya Vagga (Controlling Powers)", "Paṭipada Vagga (Modes of Progress)", "Sañcetanika Vagga (Intentional)", "Yodhājīva Vagga (Fighting-Man)", "Mahā Vagga (The Great Chapter)", "Sappurīsa Vagga (The Worthy Man)", "Sobhaṇa Vagga (Corrupting)", "Sucarita Vagga (Good Conduct)", "Kamma Vagga (The Deed)", "Āpatti Vagga (Fear of Offence)", "Abhiññā Vagga (Higher Knowledge)", "Kammapatha Vaggo (Path of Action)", "Rāgādi Peyyālaṅ (Passion (and the rest))"],
           suttas: [],
-          volume: "20",
+          volume: "2",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -616,13 +611,15 @@ const TipitakaData = readable({
           basket: "Suttanta Piṭaka",
           collection: "Aṅguttara Nikāya",
           collid: "anguttara-nikaya",
-          colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
-          name: "Pancaka Nipāta Pāḷi",
-          translation: "The Book of the Fives",
-          description: "This group contains items of Dhamma, grouped in fives, which form the subject matter of discourses given by the Buddha...",
+          colltransl: "Collection of 9557 short suttas  divided into eleven division known as nipatas",
+          name: "Volume III (Pancaka and Chakka Nipātas)",
+          translator: "E.M. Hare",
+          translation: "The Book of the Fives and Sixes",
+          description: "This PTS English translation contains items of Dhamma, grouped in fives and sixes, which form the subject matter of discourses given by the Buddha...",
           sections: ["Sekhabala Vagga (The Learner's Power)", "Bala Vagga (The Powers)", "Pañc'aṅgika Vagga (The Fivefold)", "Sumanā Vagga (Sumanā)", "Muṇḍarāja Vagga (Rājah Muṇḍa)", "Nīvaraṇa Vagga (The Hindrances)", "Saññā Vagga (Thoughts)", "Yodhājīva Vagga (The Warrior)", "Thera Vagga (The Elder)", "Kakudha Vagga (Kakudha)", "Phāsu-Vihāra Vagga (The Abodes of Comfort)", "Andhakavinda Vagga (Andhakavinda Hare)", "Gilāna Vagga (The Sick)", "Rāja Vagga (The Rajah)", "Tikaṇḍaki Vagga (Three-Thorn Grove)", "Saddhamma Vagga (Saddhamma)", "Āghāta Vagga (Malice)", "Upāsaka Vagga (The Lay-Disciple)", "Arañña Vagga (The Forest)", "Brāhmaṇa Vagga or Soṇa Vagga (The Brahman)", "Kimbila Vagga (Kimbila)", "Akkosaka Vagga (The Abuser)", "Dīgha-Cārika Vagga (Wandering Afield)", "Āvāsika Vagga (In Residence)", "Duc-carita Vagga (Walking in Evil )", "Upasampadā Vagga (Acceptance)", "Sammuti Peyyālaṃ (The Food-Steward)", "Sikkhapada Peyyalaṃ (The Fivefold)", "Rāgā Peyyālaṃ (Passion)"],
+          sections2: ["Āhuneyya Vagga (The Worthy)", "Sārāṇīya Vagga (Be Considerate)", "Anuttariya Vagga (Above all)", "Devatā Vagga (The Devas)", "Dhammika Vagga (Dhammika)", "Mahā Vagga (The Great Chapter)", "Devatā Vagga (The Devas)", "Arahatta Vagga (Arahantship)", "Sīti Vagga (The Cool)", "Ānisaṃsa Vagga (Advantages)", "Tika Vagga, (The Threes)", "Sāmañña Vagga —a.k.a. Vaggāsaṅgahitā Suttantā— (The Recital)"],
           suttas: [],
-          volume: "21",
+          volume: "3",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -630,32 +627,8 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "https://tipitaka.org/eot#44", label: "Learn More" },
-            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
-            { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
-            { id: "vri", link: "", label: "Books at VRI" }
-          ]
-        },
-        {
-          id: "chakka",
-          basket: "Suttanta Piṭaka",
-          collection: "Aṅguttara Nikāya",
-          collid: "anguttara-nikaya",
-          colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
-          name: "Chakka Nipāta Pāḷi",
-          translation: "The Book of the Sixes",
-          description: "This group contains items of Dhamma, grouped in sixes, which form the subject matter of discourses given by the Buddha...",
-          sections: ["Āhuneyya Vagga (The Worthy)", "Sārāṇīya Vagga (Be Considerate)", "Anuttariya Vagga (Above all)", "Devatā Vagga (The Devas)", "Dhammika Vagga (Dhammika)", "Mahā Vagga (The Great Chapter)", "Devatā Vagga (The Devas)", "Arahatta Vagga (Arahantship)", "Sīti Vagga (The Cool)", "Ānisaṃsa Vagga (Advantages)", "Tika Vagga, (The Threes)", "Sāmañña Vagga —a.k.a. Vaggāsaṅgahitā Suttantā— (The Recital)"],
-          suttas: [],
-          volume: "22",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
-          commentary: [],
-          subcommentary: [],
-          links: [
-            { id: "info", link: "https://tipitaka.org/eot#45", label: "Learn More" },
+            { id: "info", link: "https://tipitaka.org/eot#44", label: "Book of Fives" },
+            { id: "info", link: "https://tipitaka.org/eot#45", label: "Book of Sixes" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
             { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
@@ -667,12 +640,15 @@ const TipitakaData = readable({
           collection: "Aṅguttara Nikāya",
           collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
-          name: "Sattaka Nipāta Pāḷi",
-          translation: "The Book of the Sevens",
-          description: "This group contains items of Dhamma, grouped in sevens, which form the subject matter of discourses given by the Buddha...",
+          name: "Volume IV (Sattaka, Atthaka, and Navaka Nipātas)",
+          translation: "The Book of the Sevens, Eights, and Nines",
+          translator: "E.M. Hare",
+          description: "This PTS English translation contains items of Dhamma, grouped in sevens, eights, and nines which form the subject matter of discourses given by the Buddha...",
           sections: ["Dhana-Vagga (Treasures)", "Anusaya-Vagga (Leanings)", "Vajjī-Vagga (The Vajjians)", "Devatā-Vagga (Devas)", "Mahāyañña-Vagga (The Great Sacrifice)", "Avyākata-Vagga (The Unexplained)", "Mahā-Vagga (The Great Chapter)", "Vinaya-Vagga (The Discipline)", "Samaṇa Vaggo (The Recital)", "Āhuneyya Vaggo", "Rāga Peyyālaṃ (The Understanding of Passion)"],
+          sections2: ["Mettā Vagga (On Amity)", "Mahā Vagga (The Great Chapter)", "Gahapati-Vagga (On Householders)", "Dāna Vagga (On Giving)", "Uposatha-Vagga (The Observance Day)", "Gotamī Vagga aka Sa-ādhāna-Vagga (The Gotamid)", "Bhūmi-Cāla-Vagga (On Earthquakes)", "Yamaka-Vagga (The Pairs)", "Sati Vagga (Mindfulness)", "Rāgādi Peyyālaṃ (Passion)"],
+          sections3: ["Sambodha-Vagga (The awakening)", "Sīhanāda-Vagga (The Lion Roar)", "Sattāvāsa-Vagga (Spheres of Beings)", "Mahā-Vagga (The Great Chapter)", "Pañcāla-Vagga aka: Sāmañña Vagga (The Pañcāla Chapter)", "Khema-Vagga (The Security)", "Satipaṭṭhāna-Vagga (The Arisings of Mindfulness)", "Sammappadhāna Vagga (Right Effort)", "Iddhipāda Vagga (Psychic Power)", "Rāgādi Peyyālaṃ Vaggo (Passion)"],
           suttas: [],
-          volume: "23",
+          volume: "4",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -680,74 +656,28 @@ const TipitakaData = readable({
           commentary: [],
           subcommentary: [],
           links: [
-            { id: "info", link: "https://tipitaka.org/eot#46", label: "Learn More" },
-            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
-            { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
+            { id: "info", link: "https://tipitaka.org/eot#46", label: "Book of Sevens" },
+            { id: "info", link: "https://tipitaka.org/eot#47", label: "Book of Eights" },
+            { id: "info", link: "https://tipitaka.org/eot#48", label: "Book of Nines" },
+            { id: "engbookurl", link: "", label: "English Books" },
+            { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
-        },
-        {
-          id: "atthaka",
-          basket: "Suttanta Piṭaka",
-          collection: "Aṅguttara Nikāya",
-          collid: "anguttara-nikaya",
-          colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
-          name: "Atthaka Nipāta Pāḷi",
-          translation: "The Book of the Eights",
-          description: "This group contains items of Dhamma, grouped in eights, which form the subject matter of discourses given by the Buddha...",
-          sections: ["Mettā Vagga (On Amity)", "Mahā Vagga (The Great Chapter)", "Gahapati-Vagga (On Householders)", "Dāna Vagga (On Giving)", "Uposatha-Vagga (The Observance Day)", "Gotamī Vagga aka Sa-ādhāna-Vagga (The Gotamid)", "Bhūmi-Cāla-Vagga (On Earthquakes)", "Yamaka-Vagga (The Pairs)", "Sati Vagga (Mindfulness)", "Rāgādi Peyyālaṃ (Passion)"],
-          suttas: [],
-          volume: "24",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
-          commentary: [],
-          subcommentary: [],
-          links: [
-            { id: "info", link: "https://tipitaka.org/eot#47", label: "Learn More" },
-            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
-            { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
-            { id: "vri", link: "", label: "Books at VRI" }
-          ]
-        },
-        {
-          id: "navaka",
-          basket: "Suttanta Piṭaka",
-          collection: "Aṅguttara Nikāya",
-          collid: "anguttara-nikaya",
-          colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
-          name: "Navaka Nipāta Pāḷi",
-          translation: "The Book of the Nines",
-          description: "This group contains items of Dhamma, grouped in nines, which form the subject matter of discourses given by the Buddha...",
-          sections: ["Sambodha-Vagga (The awakening)", "Sīhanāda-Vagga (The Lion Roar)", "Sattāvāsa-Vagga (Spheres of Beings)", "Mahā-Vagga (The Great Chapter)", "Pañcāla-Vagga aka: Sāmañña Vagga (The Pañcāla Chapter)", "Khema-Vagga (The Security)", "Satipaṭṭhāna-Vagga (The Arisings of Mindfulness)", "Sammappadhāna Vagga (Right Effort)", "Iddhipāda Vagga (Psychic Power)", "Rāgādi Peyyālaṃ Vaggo (Passion)"],
-          suttas: [],
-          volume: "25",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
-          commentary: [],
-          subcommentary: [],
-          links: [
-            { id: "info", link: "https://tipitaka.org/eot#48", label: "Learn More" },
-            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
-            { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
-            { id: "vri", link: "", label: "Books at VRI" }
-          ]
-        },
+        },       
         {
           id: "dasaka",
           basket: "Suttanta Piṭaka",
           collection: "Aṅguttara Nikāya",
           collid: "anguttara-nikaya",
           colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
-          name: "Dasaka Nipāta Pāḷi",
-          translation: "The Book of the Tens",
-          description: "This group contains items of Dhamma, grouped in tens, which form the subject matter of discourses given by the Buddha...",
+          name: "Volume V (Dasaka and Ekadasaka Nipātas)",
+          translation: "The Book of the Tens and Elevens",
+          translator: "F.L. Woodward",
+          description: "This group contains items of Dhamma, grouped in tens and elevens, which form the subject matter of discourses given by the Buddha...",
           sections: ["Ānisaṃsa-Vagga (Profit)", "Nātha-Vagga (Things Making for Warding)", "Mahā-Vagga (The Great Chapter)", "Upāli-Vagga (Upali and Ananda)", "Akkosa-Vagga (Reviling)", "Sacitta-Vagga (One's Own Thoughts)", "Yamaka-Vagga (The Pairs)", "Ākaŋkha-Vagga (On Wishes)", "Thera-Vagga (The Elders)", "Upāsaka-Vagga (The Lay-Followers)", "Samaṇasaññā-Vagga (Ideas of a Recluse)", "Paccorohaṇi-Vagga (The Descent)", "Parisuddha-Vagga (Perfect Purity)", "Sādhu-Vagga (The Seemly)", "Ariyamagga-Vagga (The Ariyan Way)", "Puggala-Vagga (Persons)", "Jāṇussoṇi-Vagga (Janussoni)", "Sādhu-Vagga (The Seemly)", "Ariyamagga-Vagga (The Aryan Way)", "Puggala / Aparapuggala - Vagga (Persons)", "Kara-Ja-Kāya-Vagga (The Body Born of Deeds)", "Sāmañña-Vaggo (Characteristics)"],
+          sections2: ["Nissaya-Vagga (Dependence)", "Anussati-Vagga (Recollection)", "no title (Recapitulation)"],
           suttas: [],
-          volume: "26",
+          volume: "5",
           editions: {
             pts: { bookqty: null },
             vri: { bookqty: null }
@@ -756,36 +686,13 @@ const TipitakaData = readable({
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#49", label: "Learn More" },
-            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
-            { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
-            { id: "vri", link: "", label: "Books at VRI" }
-          ]
-        },
-        {
-          id: "ekadasaka",
-          basket: "Suttanta Piṭaka",
-          collection: "Aṅguttara Nikāya",
-          collid: "anguttara-nikaya",
-          colltransl: "Collection of 9557 short suttas divided into eleven division known as nipatas",
-          name: "Ekadasaka Nipāta Pāḷi",
-          translation: "The Book of the Elevens",
-          description: "This group contains items of Dhamma, grouped in elevens, which form the subject matter of discourses given by the Buddha...",
-          sections: ["Nissaya-Vagga (Dependence)", "Anussati-Vagga (Recollection)", "no title (Recapitulation)"],
-          suttas: [],
-          volume: "27",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
-          commentary: [],
-          subcommentary: [],
-          links: [
             { id: "info", link: "https://tipitaka.org/eot#50", label: "Learn More" },
-            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
-            { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
+            { id: "engbookurl", link: "", label: "English Books" },
+            { id: "palibookurl", link: "", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
+
         {
           id: "khuddakapatha",
           basket: "Suttanta Piṭaka",
