@@ -659,8 +659,8 @@ const TipitakaData = readable({
             { id: "info", link: "https://tipitaka.org/eot#46", label: "Book of Sevens" },
             { id: "info", link: "https://tipitaka.org/eot#47", label: "Book of Eights" },
             { id: "info", link: "https://tipitaka.org/eot#48", label: "Book of Nines" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },       
@@ -687,8 +687,8 @@ const TipitakaData = readable({
           links: [
             { id: "info", link: "https://tipitaka.org/eot#49", label: "Learn More" },
             { id: "info", link: "https://tipitaka.org/eot#50", label: "Learn More" },
-            { id: "engbookurl", link: "", label: "English Books" },
-            { id: "palibookurl", link: "", label: "Pali Books" },
+            { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
+            { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
         },
