@@ -36,10 +36,6 @@ const TipitakaData = readable({
           translation: "",
           description: "Pārājika Pāḷi, which is the first book of the Vinaya Piṭaka and part of the Sutta Vibhaṅga division, gives an elaborate explanation of the important rules of discipline concerning pārājika and saṅghādisesa, as well as aniyata and nissaggiya which are minor offences. (The Sutta Vibhaṅga concludes with bhikkuni vinaya rules.)",
           volume: "1",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           sections: ["Pārājikā (expulsion)", "Saṅghadisesā (meetings of the Sangha)", "Aniyatā (indeterminate)", "Nissagiyā pācittiyā (expiation with forfeiture)"],
           commentary: [],
           subcommentary: [],
@@ -58,10 +54,6 @@ const TipitakaData = readable({
           translation: "",
           description: "The Pācittiya Pāḷi, which is the second book of the Vinaya Piṭaka and part of the Sutta Vibhaṅga division, deals with the remaining sets of rules for the bhikkhus, namely, the pācittiya, the pāṭidesanīya, the sekhiya, the adhikaraṇasamatha and the corresponding disciplinary rules for the bhikkhunis. Although it is called in Pāḷi just pācittiya, it has the distinctive name of suddha pācittiya (ordinary pācittiya), to distinguish it from nissaggiya pācittiya, described above. (The Sutta Vibhaṅga concludes with bhikkuni vinaya rules.)",
           volume: "2",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           sections: ["suddha pācittiyā (ordinary expiation)", "pātidesaniyā (confession re: alms food)", "sekhiya (concerning etiquette & decorum) ", "adhikaraṇasamathā (legal process)"],
           commentary: [],
           subcommentary: [],
@@ -80,10 +72,6 @@ const TipitakaData = readable({
           translation: "",
           description: 'Mahāvagga Pāḷi, made up of ten sections known as khandhakas, opens with an historical account of how the Buddha attained supreme enlightenment at the foot of the Bodhi tree, how he discovered the famous Law of Dependent Origination and how he gave his first sermon to the group of five bhikkhus on the discovery of the Four Noble Truths (i.e. the great "Discourse on the Turning of the Wheel of Dhamma"-Dhammacakkappavattana Sutta). This was followed by another great discourse, the Anattalakkhaṇa Sutta. These two suttas can be described as a compendium of the teaching of the Buddha. Mahāvagga further deals with procedures for an uposatha meeting, the assembly of the Sangha on every full moon day and on the fourteenth or fifteenth waning day of the lunar month when pāṭimokkha, a summary of the Vinaya rules, is recited. Also there are rules to be observed for rains retreat (vassa) during the rainy season as well as those for the formal ceremony of pavāraṇā concluding the rains retreat, in which a bhikkhu invites criticism from his brethren in respect of what has been seen, heard or suspected about his conduct.',
           volume: "3",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           sections: ["mahākhandhako: The Great Khandhaka (Rules for admission to the Order)", "uposathakkhandhako: The Uposatha Khandhaka (The Uposatha meeting and recital of the Pātimokkha or code of rules)", "vassūpanāyikakkhandhako: The Entering-for-the-Rains Khandhaka (Residence during the rainy season or vassa)", "pavāraṇākkhandhako: The Invitation Khandhaka (The ceremony concluding the retreat or pavāraṇa)", "cammakkhandhako: The Leather Khandhaka (Rules for articles of dress and furniture)", "bhesajjakkhandhako: The Medicine Khandhaka (Medicine and food)", "kaṭhinakkhandhako: The Kaṭhina Khandhaka (The annual distribution of robes or kaṭhina)", "cīvarakkhandhako: The Robe-cloth Khandhaka (Rules for sick Bhikkhus, sleeping, and robe-material)", "campeyyakkhandhako: The Campā Khandhaka (The mode of executing proceedings by the Order)", "kosambakakkhandhako: The Kosambī Khandhaka (Proceedings in cases of schism)"],
           commentary: [],
           subcommentary: [],
@@ -102,10 +90,6 @@ const TipitakaData = readable({
           translation: "",
           description: "Cūḷavagga Pāḷi, which is book four of the Vinaya Piṭaka, deals with further rules and procedures for institutional acts or functions known as saṅghakamma. The twelve sections in this book deal with rules for offences such as saṅghādisesa that come before the Sangha; rules for observance of penances such as parivāsa and mānatta and rules for reinstatement of a bhikkhu. There are also miscellaneous rules concerning bathing, dress, dwellings and furniture and those dealing with treatment of visiting bhikkhus, and duties of tutors and novices.",
           volume: "4",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           sections: ["rules for dealing with offences that come before the Sangha (saṅghādisesa)", "procedures for putting a bhikkhu on probation", "procedures for dealing with accumulation of offences by a bhikkhu", "rules for settling legal procedures in the Sangha", "misrules for bathing, dress, etc.", "dwellings, furniture, lodging, etc.", "schisms", "classes of bhikkhus and duties of teachers & novices", "exclusion from the pātimokkha", "the ordination and instruction of bhikkhunis", "account of the 1st council at Rājagaha", "account of the 2nd council at Vesāli"],
           commentary: [],
           subcommentary: [],
@@ -124,10 +108,6 @@ const TipitakaData = readable({
           translation: "",
           description: "Parivāra Pāḷi, which is the last book of the Vinaya Piṭaka, serves as a kind of manual. It is compiled in the form of a catechism, enabling the reader to make an analytical survey of the Vinaya Piṭaka. All the rules, official acts, and other matters of the Vinaya are classified under separate categories according to the subjects dealt with.",
           volume: "5",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           sections: ["catechisms on the rules of the monks'", "similar on the nuns' rules", "verse summary of origins; an action can be originated by body and/or speech, in each of the three cases with or without intention, making six origins in all; this chapter goes through all the Patimokkha rules for monks and nuns, saying which of these six are possible", "in two parts: a. repetitions on types of legal case involved in offences; b. which rules for settling disputes are to be applied to legal cases", "questions on Khandhaka", "lists arranged numerically (cf. Anguttara Nikaya)", "in two parts: a. beginning the recitation of the Patimokkha; b. exposition of reasons for rules", "collection of stanzas", "on legal cases", "additional collection of stanzas (mainly on reproving)", "on reproving", "lesser collection on disputes", "greater collection on disputes", "kathina: the process of making up robes", "Upali asks the Buddha questions, the answers being lists of five", "another chapter on origins", "second (sic) collection of stanzas", "'sweat-inducing stanzas': a collection of riddles (answers not given here); perhaps intended as exam questions", "in five parts: a. formal acts of the sangha; b. reasons for rules; c. laying down of rules; d. what was laid down; e. nine classifications (⁠—source: https://en.wikipedia.org/wiki/Parivāra)"],
           commentary: [],
           subcommentary: [],
@@ -243,10 +223,6 @@ const TipitakaData = readable({
           description: "<p>This division contains thirteen suttas which deal extensively with various types of morality, namely, Minor Morality, basic morality applicable to all; Middle Morality and Major Morality which are mostly practised by Samaṇas and Brāhmaṇas.</p> <p>It also discusses the wrong views then prevalent as well as brāhmin views of sacrifice and caste, and various religious practices such as extreme self-mortification.</p>",
           suttas: ["Brahmajāla Sutta, Discourse on the Net of Perfect Wisdom", "Sāmaññaphala Sutta, Discourse on the Fruits of the Life of a Samaṇa", "Ambaṭṭha Sutta", "Soṇadaṇḍa Sutta", "Kūṭadanta Sutta", "Mahāli Sutta", "Jāliya Sutta", "Mahāsīhanāda Sutta", "Poṭṭhapāda Sutta", "Subha Sutta", "Kevaṭṭa Sutta", "Lohicca Sutta", "Tevijja Sutta"],
           volume: "6",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -267,10 +243,6 @@ const TipitakaData = readable({
           description: "The ten suttas in this division are some of the most important of the Tipiṭaka, dealing with historical and biographical aspects as well as the doctrinal aspects of Buddhism. The most famous sutta is the Mahāparinibbāna Sutta which gives an account of the last days and the passing away of the Buddha and the distribution of his relics. Mahāpadāna Sutta deals with brief accounts of the last seven Buddhas and the life story of the Vipassī Buddha. Doctrinally important are the two suttas: the Mahānidāna Sutta, which explains the Chain of Cause and Effect, and the Mahāsatipaṭṭhāna Sutta, which deals with the four methods of steadfast mindfulness and practical aspects of Buddhist meditation.",
           suttas: ["Mahāpadāna Sutta", "Mahānidāna Sutta", "Mahāparinibbāna Sutta", "Mahāsudassana Sutta", "Janavasabha Sutta", "Mahāgovinda Sutta", "Mahāsamaya Sutta", "Sakkapañha Sutta", "Mahāsatipaṭṭhāna Sutta", "Pāyāsi Sutta"],
           volume: "7",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -294,10 +266,6 @@ const TipitakaData = readable({
           description: "This division is made up of eleven shorter discourses of a miscellaneous nature. They deal with the Buddha’s rejection of wrong and severe asceticism practised by followers of many sects. They deal also with the periodical evolution and dissolution of the universe, the accounts of universal monarchs and the thirty-two physiognomic characteristics of a great man. There is one discourse, Siṅgāla Sutta, addressed to a young brahmin showing the duties to be performed by members of the human society. The last two suttas, Saṅgīti and Dasuttara, are discourses given by the Venerable Sāriputta and they contain lists of doctrinal terms classified according to subject matter and numerical units. The style of their composition is different from the other nine suttas of the division.",
           suttas: ["Pāthika Sutta", "Udumbarikā Sutta", "Cakkavatti Sutta", "Aggañña Sutta", "Sampasādanīya Sutta", "Pāsādika Sutta", "Lakkhaṇa Sutta", "Siṅgāla Sutta", "Āṭānāṭiya Sutta", "Saṅgīti Sutta", "Dasuttara Sutta"],
           volume: "8",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -319,10 +287,6 @@ const TipitakaData = readable({
           vaggas: ["Mūlapariyāya Vagga", "Sīhanāda Vagga", "Opamma Vagga", "Mahāyamaka Vagga", "Cūḷayamaka Vagga"],
           suttas: ["Mūlapariyāya Sutta", "Sabbāsava Sutta", "Dhammadāyāda Sutta", "Bhayabherava Sutta", "Anaṅgana Sutta", "Ākaṅkheyya Sutta", "Vattha Sutta", "Sallekha Sutta", "Sammādiṭṭhi Sutta", "Mahāsatipaṭṭhāna Sutta", "Cūḷasīhanāda Sutta", "Mahāsīhanāda Sutta", "Mahādukkhakkhandha Sutta", "Cūḷadukkhakkhandha Sutta", "Anumāna Sutta", "Cetokhila Sutta", "Vanapattha Sutta", "Madhupiṇḍika Sutta", "Dvedāvitakka Sutta", "Vitakkasaṇṭhāna Sutta", "Kakacūpama Sutta", "Alagaddūpama Sutta", "Vammika Sutta", "Rathavinīta Sutta", "Nivāpa Sutta", "Pāsarāsi Sutta", "Cūḷahatthipadopama Sutta", "Mahāhatthipadopama Sutta", "Mahāsāropama Sutta", "Cūḷasāropama Sutta", "Cūḷagosiṅga Sutta", "Mahāgosiṅga Sutta", "Mahāgopālaka Sutta", "Cūḷagopālaka Sutta", "Cūḷasaccaka Sutta", "Mahāsaccaka Sutta", "Cūḷataṇhāsaṅkhaya Sutta", "Mahātaṇhāsaṅkhaya Sutta", "Massapura Sutta", "Cassapura Sutta", "Sāleyyaka Sutta", "Verañjaka Sutta", "Mahāvedalla Sutta", "Cūḷavedalla Sutta", "Cūḷadhammasamādāna Sutta", "Mahādhammasamādāna Sutta", "Vīmaṃsaka Sutta", "Kosambiya Sutta", "Brahmanimantanika Sutta", "Māratajjanīya Sutta"],
           volume: "9",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -345,10 +309,6 @@ const TipitakaData = readable({
           vaggas: ["Gahapati Vagga", "Bhikkhu Vagga", "Paribbājaka Vagga", "Rāja Vagga", "Brāhmaṇa Vagga"],
           suttas: ["Kandaraka Sutta", "Aṭṭhakanāgara Sutta", "Sekha Sutta", "Potaliya Sutta", "Jīvaka Sutta", "Upāli Sutta", "Kukkuravatika Sutta", "Abhayarājakumāra Sutta", "Bahuvedanīya Sutta", "Apaṇṇaka Sutta", "Ambalaṭṭhikarāhulovāda Sutta", "Mahārāhulovāda Sutta", "Cūḷamālukya Sutta", "Mahāmālukya Sutta", "Bhaddāli Sutta", "Laṭukikopama Sutta", "Cātumā Sutta", "Naḷakapāna Sutta", "Goliyāni Sutta", "Kīṭāgiri Sutta", "Tevijjavaccha Sutta", "Aggivaccha Sutta", "Mahāvaccha Sutta", "Dīghanakha Sutta", "Māgandiya Sutta", "Sandaka Sutta", "Mahāsakuludāyī Sutta", "Samaṇamuṇḍika Sutta", "Cūḷasakuludāyī Sutta", "Vekhanasa Sutta", "Ghaṭīkāra Sutta", "Raṭṭhapāla Sutta", "Maghādeva Sutta", "Madhura Sutta", "Bodhirājakumāra Sutta", "Aṅgulimāla Sutta", "Piyajātika Sutta", "Bāhitika Sutta", "Dhammacetiya Sutta", "Kaṇṇakatthala Sutta", "Brahmāyu Sutta", "Sela Sutta", "Assalāyana Sutta", "Ghoṭamukha Sutta", "Caṅkī Sutta", "Esukārī Sutta", "Dhanañjāni Sutta", "Vāseṭṭha Sutta", "Subha Sutta", "Saṅgārava Sutta"],
           volume: "10",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -370,10 +330,6 @@ const TipitakaData = readable({
           vaggas: ["Devadaha Vagga", "Ānupada Vagga", "Suññata Vagga", "Vibhaṅga Vagga", "Saḷāyatana Vagg"],
           suttas: ["Devadaha Sutta", "Pañcattaya Sutta", "Kinti Sutta", "Sāmagāma Sutta", "Sunakkhatta Sutta", "Āneñja-sappāya Sutta", "Gaṇakamoggallāna Sutta", "Gopakamoggallāna Sutta", "Mahāpuṇṇama Sutta", "Cūḷapuṇṇama Sutta", "Ānupada Sutta", "Chabbisodhana Sutta", "Sappurisa Sutta", "Sevitabbāsevitabba Sutta", "Bahudhātuka Sutta", "Isigili Sutta", "Mahācattārīsaka Sutta", "Ānāpānassati Sutta", "Kāyagatāsati Sutta", "Saṅkhārupapatti Sutta", "Cūḷasuññata Sutta", "Mahāsuññata Sutta", "Acchariya-abbhuta Sutta", "Bākula Sutta", "Dantabhūmi Sutta", "Bhūmija Sutta", "Anuruddha Sutta", "Upakkilesa Sutta", "Bālapaṇḍita Sutta", "Devadūta Sutta", "Bhaddekaratta Sutta", "Ānanda-bhaddekaratta Sutta", "Lomasakaṅgiya-bhaddekaratta Sutta", "Bhaddekaratta Sutta", "Cūḷakamma-vibhaṅga Sutta", "Mahākamma-vibhaṅga Sutta", "Saḷāyatana-vibhaṅga Sutta", "Uddesa-vibhaṅga Sutta", "Araṇa-vibhaṅga Sutta", "Dhātu-vibhaṅga Sutta", "Sacca-vibhaṅga Sutta", "Dakkhiṇā-vibhaṅga Sutta", "Anāthapiṇḍikovāda Sutta", "Channovāda Sutta", "Puṇṇovāda Sutta", "Nandakovāda Sutta", "Cūḷarāhulovāda Sutta", "Chachakka Sutta", "Mahāsaḷāyatanika Sutta", "Nagaravindeyya Sutta", "Piṇḍapātapārisuddha Sutta", "Indriyabhāvanā Sutta"],
           volume: "11",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -396,10 +352,6 @@ const TipitakaData = readable({
           sections: ["Devatā-Saṃyutta", "Devaputta-Saṃyutta", "Kosala-Saṃyutta", "Māra-Saṃyutta", "Bhikkhūnī-Saṃyutta	", "Brahma-Saṃyutta", "Brāhmaṇa-Saṃyutta", "Vaṅgīsa-Saṃyutta", "Vana-Saṃyutta", "Yakkha-Saṃyutta", "Sakka-Saṃyutta"],
           suttas: [],
           volume: "12",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -421,10 +373,6 @@ const TipitakaData = readable({
           sections: ["Nidāna-Saṃyutta", "Abhisamaya-Saṃyutta", "Dhātu-Saṃyutta", "Anamatagga-Saṃyutta", "Kassapa-Saṃyutta", "Lābha-Sakkāra-Saṃyutta", "Rāhula-Saṃyutta", "Lakkhaṇa-Saṃyutta", "Opamma-Saṃyutta", "Bhikkhu-Saṃyutta"],
           suttas: [],
           volume: "13",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -447,10 +395,6 @@ const TipitakaData = readable({
           sections: ["Khandha-Saṃyutta", "Rādha-Saṃyutta", "Diṭṭhi-Saṃyutta", "Okkantika-Saṃyutta", "Uppāda-Saṃyutta", "Kilesa-Saṃyutta", "Sāriputta-Saṃyutta", "Nāga-Saṃyutta", "Supaṇṇa-Saṃyutta", "Gandhabbakāya-Saṃyutta", "Valāhaka-Saṃyutta", "Vacchagotta-Saṃyutta", "Jhāna- (or Samādhi-) -Saṃyutta"],
           suttas: [],
           volume: "14",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -472,10 +416,6 @@ const TipitakaData = readable({
           sections: ["Saḷāyatana-Saṃyutta", "Vedanā-Saṃyutta", "Mātugāma-Saṃyutta", "Jambhukhādaka-Saṃyutta", "Samaṇdaka-Saṃyutta", "Moggallāna-Saṃyutta", "Citta-Saṃyutta", "Gāmani-Saṃyutta", "Asaṇkhata-Saṃyutta", "Avyākata-Saṃyutta"],
           suttas: [],
           volume: "15",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -497,10 +437,6 @@ const TipitakaData = readable({
           sections: ["Magga-Saṃyutta", "Bojjhaṅga-Saṃyutta", "Satipaṭṭhāna-Saṃyutta", "Indriya-Saṃyutta", "Sammappadhāna-Saṃyutta", "Bala-Saṃyutta", "Iddhipāda-Saṃyutta", "Anuruddha-Saṃyutta", "Jhāna-Saṃyutta", "Ānāpāna-Saṃyutta", "Sotāpatti-Saṃyutta", "Sacca-Saṃyutta"],
           suttas: [],
           volume: "16",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -523,15 +459,12 @@ const TipitakaData = readable({
           sections: ["Rūpā Vagga ( Form and the Rest)", "Nīvaraṇa Vagga (Abandoning the Hindrances)", "Akammanīya Vagga (The Intractable)", "Adanta Vagga (The Untamed)", "Paṇihitā Vagga (The Mind Directed and Pellucid)", "Accharāsaṅghāta Vagga (The Finger-Snap)", "Vīriyārambhā Vagga (Energetic Effort)", "Kalyāṇamittā Vagga (Friendship with the Lovely)", "Pamādā Vagga (Earnestness, Etc.)", "Adhamma Vagga (In a Fourfold Way and Not Dhamma)", "Anāpatti Vagga (Unpardonable Offences)", "Eka-Puggala Vagga (The One Person)", "Etad-Agga Vagga ( Pre-Eminent Ones)", "Aṭṭhāna (The Impossibe)", "Eka-Dhamma Vagga (The One thing)", "Bīja Vagga (The Seed)", "Makkhali Vagga (Makkhali)", "Appamattaka Vagga (Trifling)", "Jhāna Vagga (Jhana Suttas, On Musing Suttas, Burning Suttas)"],
           suttas: [],
           volume: "17",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#40", label: "Learn More" },
             { id: "engbookurl", link: "https://store.pariyatti.org/Book-of-Gradual-Sayings_p_1914.html", label: "English Books" },
+            { id: "engbookurl2", link: "https://store.pariyatti.org/Numerical-Discourses-of-the-Buddha_p_4240.html", label: "Trans. by Bhikkhu Bodhi" },
             { id: "palibookurl", link: "https://store.pariyatti.org/Anguttara-Nikaya_p_1889.html", label: "Pali Books" },
             { id: "vri", link: "", label: "Books at VRI" }
           ]
@@ -548,10 +481,6 @@ const TipitakaData = readable({
           sections: ["Kammakaraṇa Vagga (Punishments)", "Adhikaraṇa Vagga (Disputes)", "Bāla Vagga (The Fool)", "Samacitta Vagga (Of Tranquil Mind)", "Parisā Vagga (On Companies)", "Puggala Vagga (On Persons)", "Sukha Vagga (On Pleasures)", "Nimitta Vagga (On Characteristics)", "Dhamma Vagga (On Conditions)", "Dutiya Bāla Vagga (On Fools)", "Āsā Vagga (On Longings)", "Āyācana Vagga (On Aspiration)", "Dāna Vagga (On Gifts)", "Santhāra Vagga (On Greetings, Etc.)", "Samapatti Vagga Pannarasamo (On Conditions, Etc.)", "Kodha Vagga (Conditions, etc.)", "Sattarasamo Vagga (On Results)"],
           suttas: [],
           volume: "18",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -573,10 +502,6 @@ const TipitakaData = readable({
           sections: ["Bāla Vagga (The Fool)", "Rathakāra Vagga (The Wheelwright)", "Puggala Vagga (On Persons)", "Devadūta Vagga (Messengers of the Devas)", "Cūḷa Vagga (The Minor Section)", "Brāhmaṇa Vagga (The Brahmins)", "Mahā Vagga (The Great Chapter)", "Ānanda Vagga (About Ananda)", "Samaṇa Vagga (The Recluse)", "Loṇakapalla Vagga (A Grain of Salt)", "Sambodhi Vagga (Enlightenment)", "Āpāyika Vagga (The Downfall)", "Kusināra Vagga (At Kusinara)", "Yodhājīva Vagga (The Fighting-Man)", "Maṅgala Vagga (Good Auspices)", "Acelaka Vagga (The Unclothed)", "Kammapathapeyyālaṃ", "Rāgapeyyālaṃ"],
           suttas: [],
           volume: "19",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -598,10 +523,6 @@ const TipitakaData = readable({
           sections: ["Bhanṭagāma Vagga (At Bhandagama)", "Cara Vagga (Deportment)", "Uruvela Vagga (Uruvelā)", "Cakka Vagga (The Wheel)", "Rohitassa Vagga (Rohitassa)", "Puññābhisanda Vagga (Flood of Merit)", "Pattakamma Vagga (Deeds of Merit)", "Apaṇṇaka Vagga (The Sure)", "Macala Vagga (Unshaken)", "Asura Vagga (Asuras)", "Valāhaka Vagga (Rain-Cloud)", "Kesi Vagga (Kesi)", "Bhaya Vagga (Fears)", "Puggala Vagga (On Persons)", "Ābhā Vagga (Splendour)", "Indriya Vagga (Controlling Powers)", "Paṭipada Vagga (Modes of Progress)", "Sañcetanika Vagga (Intentional)", "Yodhājīva Vagga (Fighting-Man)", "Mahā Vagga (The Great Chapter)", "Sappurīsa Vagga (The Worthy Man)", "Sobhaṇa Vagga (Corrupting)", "Sucarita Vagga (Good Conduct)", "Kamma Vagga (The Deed)", "Āpatti Vagga (Fear of Offence)", "Abhiññā Vagga (Higher Knowledge)", "Kammapatha Vaggo (Path of Action)", "Rāgādi Peyyālaṅ (Passion (and the rest))"],
           suttas: [],
           volume: "20",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -623,10 +544,6 @@ const TipitakaData = readable({
           sections: ["Sekhabala Vagga (The Learner's Power)", "Bala Vagga (The Powers)", "Pañc'aṅgika Vagga (The Fivefold)", "Sumanā Vagga (Sumanā)", "Muṇḍarāja Vagga (Rājah Muṇḍa)", "Nīvaraṇa Vagga (The Hindrances)", "Saññā Vagga (Thoughts)", "Yodhājīva Vagga (The Warrior)", "Thera Vagga (The Elder)", "Kakudha Vagga (Kakudha)", "Phāsu-Vihāra Vagga (The Abodes of Comfort)", "Andhakavinda Vagga (Andhakavinda Hare)", "Gilāna Vagga (The Sick)", "Rāja Vagga (The Rajah)", "Tikaṇḍaki Vagga (Three-Thorn Grove)", "Saddhamma Vagga (Saddhamma)", "Āghāta Vagga (Malice)", "Upāsaka Vagga (The Lay-Disciple)", "Arañña Vagga (The Forest)", "Brāhmaṇa Vagga or Soṇa Vagga (The Brahman)", "Kimbila Vagga (Kimbila)", "Akkosaka Vagga (The Abuser)", "Dīgha-Cārika Vagga (Wandering Afield)", "Āvāsika Vagga (In Residence)", "Duc-carita Vagga (Walking in Evil )", "Upasampadā Vagga (Acceptance)", "Sammuti Peyyālaṃ (The Food-Steward)", "Sikkhapada Peyyalaṃ (The Fivefold)", "Rāgā Peyyālaṃ (Passion)"],
           suttas: [],
           volume: "21",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -648,10 +565,6 @@ const TipitakaData = readable({
           sections: ["Āhuneyya Vagga (The Worthy)", "Sārāṇīya Vagga (Be Considerate)", "Anuttariya Vagga (Above all)", "Devatā Vagga (The Devas)", "Dhammika Vagga (Dhammika)", "Mahā Vagga (The Great Chapter)", "Devatā Vagga (The Devas)", "Arahatta Vagga (Arahantship)", "Sīti Vagga (The Cool)", "Ānisaṃsa Vagga (Advantages)", "Tika Vagga, (The Threes)", "Sāmañña Vagga —a.k.a. Vaggāsaṅgahitā Suttantā— (The Recital)"],
           suttas: [],
           volume: "22",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -673,10 +586,6 @@ const TipitakaData = readable({
           sections: ["Dhana-Vagga (Treasures)", "Anusaya-Vagga (Leanings)", "Vajjī-Vagga (The Vajjians)", "Devatā-Vagga (Devas)", "Mahāyañña-Vagga (The Great Sacrifice)", "Avyākata-Vagga (The Unexplained)", "Mahā-Vagga (The Great Chapter)", "Vinaya-Vagga (The Discipline)", "Samaṇa Vaggo (The Recital)", "Āhuneyya Vaggo", "Rāga Peyyālaṃ (The Understanding of Passion)"],
           suttas: [],
           volume: "23",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -698,10 +607,6 @@ const TipitakaData = readable({
           sections: ["Mettā Vagga (On Amity)", "Mahā Vagga (The Great Chapter)", "Gahapati-Vagga (On Householders)", "Dāna Vagga (On Giving)", "Uposatha-Vagga (The Observance Day)", "Gotamī Vagga aka Sa-ādhāna-Vagga (The Gotamid)", "Bhūmi-Cāla-Vagga (On Earthquakes)", "Yamaka-Vagga (The Pairs)", "Sati Vagga (Mindfulness)", "Rāgādi Peyyālaṃ (Passion)"],
           suttas: [],
           volume: "24",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -723,10 +628,6 @@ const TipitakaData = readable({
           sections: ["Sambodha-Vagga (The awakening)", "Sīhanāda-Vagga (The Lion Roar)", "Sattāvāsa-Vagga (Spheres of Beings)", "Mahā-Vagga (The Great Chapter)", "Pañcāla-Vagga aka: Sāmañña Vagga (The Pañcāla Chapter)", "Khema-Vagga (The Security)", "Satipaṭṭhāna-Vagga (The Arisings of Mindfulness)", "Sammappadhāna Vagga (Right Effort)", "Iddhipāda Vagga (Psychic Power)", "Rāgādi Peyyālaṃ Vaggo (Passion)"],
           suttas: [],
           volume: "25",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -748,10 +649,6 @@ const TipitakaData = readable({
           sections: ["Ānisaṃsa-Vagga (Profit)", "Nātha-Vagga (Things Making for Warding)", "Mahā-Vagga (The Great Chapter)", "Upāli-Vagga (Upali and Ananda)", "Akkosa-Vagga (Reviling)", "Sacitta-Vagga (One's Own Thoughts)", "Yamaka-Vagga (The Pairs)", "Ākaŋkha-Vagga (On Wishes)", "Thera-Vagga (The Elders)", "Upāsaka-Vagga (The Lay-Followers)", "Samaṇasaññā-Vagga (Ideas of a Recluse)", "Paccorohaṇi-Vagga (The Descent)", "Parisuddha-Vagga (Perfect Purity)", "Sādhu-Vagga (The Seemly)", "Ariyamagga-Vagga (The Ariyan Way)", "Puggala-Vagga (Persons)", "Jāṇussoṇi-Vagga (Janussoni)", "Sādhu-Vagga (The Seemly)", "Ariyamagga-Vagga (The Aryan Way)", "Puggala / Aparapuggala - Vagga (Persons)", "Kara-Ja-Kāya-Vagga (The Body Born of Deeds)", "Sāmañña-Vaggo (Characteristics)"],
           suttas: [],
           volume: "26",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -773,10 +670,6 @@ const TipitakaData = readable({
           sections: ["Nissaya-Vagga (Dependence)", "Anussati-Vagga (Recollection)", "no title (Recapitulation)"],
           suttas: [],
           volume: "27",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -798,10 +691,6 @@ const TipitakaData = readable({
           sections: ["Saraṇattayaṃ (The Three Refuges)", "Dasasikkhāpadaṃ (The Ten Training Precepts)", "Dvattiṃsākāraṃ (The Thirty-Two-Fold Aspect)", "Kumārapañhaṃ (The Boy's Questions)", "Maŋgalasuttaṃ (The Good Omen Discourse)", "Ratanasuttaṃ (The Jewel Discourse)", "Tirokuḍasuttaṃ (The Without-the-Walls Discourse)", "Nidhikaṇḍasuttam (The Treasure-Store Discourse)", "Mettasuttaṃ (The Lovingkindness Discourse)"],
           suttas: [],
           volume: "28",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -824,10 +713,6 @@ const TipitakaData = readable({
           sections: ["Yamaka Vagga (The Pairs)", "Appamāda Vagga (Heedfulness)", "Citta Vagga (The Mind)", "Puppha Vagga (Flowers)", "Bāla Vagga (The Fool)", "Paṇḍita Vagga (The Wise)", "Arahanta Vagga (The Arahant)", "Sahassa Vagga (The Thousands)", "Pāpa Vagga (Evil)", "Daṇḍa Vagga (Violence)", "Jarā Vagga (Old Age)", "Atta Vagga (The Self)", "Loka Vagga (The World)", "Buddha Vagga (The Buddha)", "Sukha Vagga (Happiness)", "Piya Vagga (Affection)", "Kodha Vagga (Anger)", "Mala Vagga (Impurity)", "Dhammaṭṭha Vagga (The Just)", "Magga Vagga (The Path)", "Pakiṇṇaka Vagga (Miscellaneous)", "Niraya Vagga (Hell)", "Nāga Vagga (Elephants)", "Taṇhā Vagga (Craving)", "Bhikkhu Vagga (Monks)", "Brāhmaṇa Vagg (The Brahman)"],
           suttas: [],
           volume: "29",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -850,10 +735,6 @@ const TipitakaData = readable({
           sections: ["Buddhi Vagga (Enlightenment)", "Mucalinda Vagga (About Mucalindavaggo)", "Nanda Vagga (About Nanda)", "Meghiya Vagga (About Meghiya)", "Sonatherassa Vagga (About Sona)", "Jaccandha Vagga (Blind from Birth)", "Cūla Vagga (The Minor Chapter)", "Pāṭaligāmiya Vagga (About Patali Village)"],
           suttas: [],
           volume: "30",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -876,10 +757,6 @@ const TipitakaData = readable({
           sections: ["Eka Nipāto (The Section Dealing with Single Items)", "Duka Nipāto (The Section Dealing with Double Items)", "Tika Nipāto (The Section Dealing with Triple Items)", "Catukka Nipāto (The Section Dealing with Quadruple Items)"],
           suttas: [],
           volume: "31",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -903,10 +780,6 @@ const TipitakaData = readable({
           sections: ["Uraga Vagga (The Snake Chapter)", "Cūla Vagga (The Small Chapter", "Mahā Vagga (The Great Chapter", "Aṭṭhaka Vagga (The Chapter of Eights), Pārāyana Vagga (Going to the Far Shore)"],
           suttas: [],
           volume: "32",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -929,10 +802,6 @@ const TipitakaData = readable({
           sections: ["Pīṭha Vagga", "Cittalatā Vagga", "Pāricchattaka Vagga", "Mañjiṭṭhaka Vagga", "Mahāratha Vagga", "Pāyāsi Vagga", "Sunikkhitta Vagga"],
           suttas: [],
           volume: "33",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -954,10 +823,6 @@ const TipitakaData = readable({
           sections: ["Uraga Vagga", "Ubbari Vagga", "Cūḷa Vagga", "Mahā Vagga"],
           suttas: [],
           volume: "34",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -980,10 +845,6 @@ const TipitakaData = readable({
           sections: ["Ekaka Nipāta (Canto I. Single Verses)", "Duka Nipāta (Canto II. Psalms of Two Verses)", "Tika Nipāta (Canto III. Psalms of Three Verses)", "Catukka Nipāta (Canto VI. Psalms of Four Verses)", "Pañcaka Nipāta (Canto V. Psalms of Five Verses)", "Chakka Nipāta (Canto VI. Psalms of Six Verses)", "Sattaka Nipāta (Canto VII. Psalms of Seven Verses)", "Aṭṭhaka Nipāta (Canto VIII. Psalms of Eight Verses)", "Navaka Nipāta (Canto IX. Psalms of Nine Verses)", "Dasaka Nipāta (Canto X. Psalms of Ten Verses)", "Ekādasaka Nīpata (Canto XI. Psalms of Eleven Verses)", "Dvādasaka Nipāta (Canto XII. Psalms of Twelve Verses)", "Terasa Nipāta (Canto XIII. Psalms of Thirteen Verses)", "Cuddasaka Nipāta (Canto XIV. Psalm of Fourteen Verses)", "Soḷasaka Nipāta (Canto XV. Psalms of Sixteen Verses)", "Vīsati Nipāta (Canto XVI. Psalms of Twenty Verses)", "Tiṃsa Nipāta (Canto XVII. Psalms of Thirty Verses)", "Cattālīsa Nipāta (Canto XVIII. Psalms of Forty Verses)", "Paññāsa Nipāta (Canto XIX. Psalms of Fifty Verses)", "Saṭṭhi Nipāta (Canto XX. Psalms of Sixty Verses)", "Mahā Nipāta (Canto XXI. Poem of Seventy-One Verses: Called also 'The Great Nipāta')"],
           suttas: [],
           volume: "35",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -1006,10 +867,6 @@ const TipitakaData = readable({
           sections: ["Ekaka Nipāta (Canto I. Single Verses)", "Duka Nipāta (Canto II. Psalms of Two Verses)", "Tika Nipāta (Canto III. Psalms of Three Verses)", "Catukka Nipāta (Canto VI. Psalms of Four Verses)", "Pañcaka Nipāta (Canto V. Psalms of Five Verses)", "Chakka Nipāta (Canto VI. Psalms of Six Verses)", "Sattaka Nipāta (Canto VII. Psalms of Seven Verses)", "Aṭṭhaka Nipāta (Canto VIII. Psalms of Eight Verses)", "Navaka Nipāta (Canto IX. Psalms of Nine Verses)", "Ekādasaka Nīpata (Canto X. Psalms of Eleven Verses)", "Dvādasaka Nipāta (Canto XI. Psalms of Twelve Verses)", "Soḷasaka Nipāta (Canto XII. Psalms of Sixteen Verses)", "Vīsati Nipāta (Canto XIII. Psalms of about Twenty Verses)", "Tiṃsa Nipāta (Canto XIV. Psalms of about Thirty Verses)", "Cattālīsa Nipāta (Canto XV. Psalms of over Forty Verses)", "Mahā Nipāta (Canto XVI. 'The Great Canto')"],
           suttas: [],
           volume: "36",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -1035,10 +892,6 @@ const TipitakaData = readable({
           sections: ["Ekanipāta (Apaṇṇakavagga, Sīlavagga, Kuruñgavagga, Kulāvakavagga, Atthakā,avagga, Āsiṃsavagga, Itthivagga, Varaṇavagga, Apāyimhavagga, Littavagga, Parosattavagga, Haṃsivagga, Kusanāḷivagga, Asampadānavagga, Kakaṇṭakavagga)", "Dukanipāta (Daḷhavagga, Santhavagga, Kalyāṇadhammavagga, Asadisavagga, Ruhakavagga, Nataṃdaḷhavagga, Bīraṇatthambhakavagga, Kāsāvavagga, Upāhanavagga, Sigālavagga)", "Tikanipāta (Saṃkappavagga, Kosiyavagga, Araññavagga, Abbhantaravagga, Kumbhavagga) ", "Catukknipāta (Vivaravagga, Pucimandavagga, Kuṭidūsakavagga, Kokilavagga, Cullakuṇāvagga) ", "Pañcanipāta (Maṇikuṇḍalavagga, Vaṇṇārohaavagga, Aḍḍhavagga)", "Chanipāta (Avāriyavagga, Senakavagga)", "Sattanipāta (Kukkuvagga, Gamdjāravagga)", "Aṭṭhanipāta (Kaccānivagga)", "Navanipāta", "Dasanipāta", "Ekadasanipāta", "Dvādasanipāta", "Terasanipāta", "Pakiṇṇakanipāta", "Vīsatinipāta", "Tiṃsanipāta", "Cattālīsanipāta", "Paṇṇāsanipāta", "Chaṭṭhinipāta", "Sattatinipāta", "Asītinipāta", "Mahānipāta"],
           suttas: [],
           volume: "37",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -1061,10 +914,6 @@ const TipitakaData = readable({
           sections: ["Mahā Niddesa (Kāmasutta Niddesa, Guhaṭṭhakasutta Niddesa, Duṭṭhaṭṭhakasutta Niddesa, Suddhaṭṭhakasutta Niddesa, Paramaṭṭhakasutta Niddesa, Jarāsutta Niddesa, Tissametteyyasutta Niddesa, Pasūrasutta Niddesa, Māgaṇḍiyasutta Niddesa, Purābhedasutta Niddesa, Kalahavivādasutta Niddesa, Cūḷaviyūhasutta Niddesa, Mahāviyūhasutta Niddesa, Tuvaṭṭakasutta Niddesa, Attadaṇḍasutta Niddesa, Sāriputtasutta Niddesa)", "Cūḷa Niddesa (Pārāyana Vagga, Pārāyana Vagga Niddesa, Khaggavisāṇa Sutta)"],
           suttas: [],
           volume: "38",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -1086,10 +935,6 @@ const TipitakaData = readable({
           sections: ["Mahā Vagga (Great Division - enumeration, or mātikā, of 73 types of knowledge, or ñāṇa, which are then elaborated upon in detail)", "Yuganaddha Vagga (Coupling Division - poses a series of questions)", "Paññā Vagga (Wisdom Division - answers the prior division's questions)"],
           suttas: [],
           volume: "39",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -1112,10 +957,6 @@ const TipitakaData = readable({
           sections: ["Therāpadāna (life stories—past and present—of the Buddha's monk arahat disciples)", "Therīpadāna (life stories—past and present—of the Buddha's nun arahat disciples)"],
           suttas: [],
           volume: "40",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -1138,10 +979,6 @@ const TipitakaData = readable({
           sections: ["Ratanacaṅkamanakaṇḍaṃ", "Sumedhapatthanākathā", "Dīpaṅkarabuddhavaṃso (Buddha Dipankara)", "Koṇḍaññabuddhavaṃso (Buddha Kondanna)", "Maṅgalabuddhavaṃso (Buddha Mangala)", "Sumanabuddhavaṃso (Buddha Sumana)", "Revatabuddhavaṃso (Buddha Revata)", "Sobhitabuddhavaṃso (Buddha Sobhita)", "Anomadassībuddhavaṃso (Buddha Anomadassi)", "Padumabuddhavaṃso (Buddha Paduma)", "Nāradabuddhavaṃso (Buddha Narada)", "Padumuttarabuddhavaṃso (Buddha Padumuttara)", "Sumedhabuddhavaṃso (Buddha Sumedha)", "Sujātabuddhavaṃso (Buddha Sujata)", "Piyadassībuddhavaṃso (Buddha Piyadassi)", "Atthadassībuddhavaṃso (Buddha Atthadassi)", "Dhammadassībuddhavaṃso (Buddha Dhammadassi)", "Siddhatthabuddhavaṃso (Buddha Siddhattha)", "Tissabuddhavaṃso (BuddhaTissa)", "Phussabuddhavaṃso (Buddha Phussa)", "Vipassībuddhavaṃso (Buddha Vipassi)", "Sikhībuddhavaṃso (Buddha Sikhi)", "Vessabhūbuddhavaṃso (Buddha Vessabhu)", "Kakusandhabuddhavaṃso (Buddha Kakusandha)", "Koṇāgamanabuddhavaṃso (Buddha Konagamana)", "Kassapabuddhavaṃso (Buddha Kassapa)", "Gotamabuddhavaṃso (Buddha Gotama)", "Buddhapakiṇṇakakaṇḍaṃ", "Dhātubhājanīyakathā"],
           suttas: [],
           volume: "41",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -1164,10 +1001,6 @@ const TipitakaData = readable({
           sections: ["Akitti Vagga  (10 stories for the perfection of offering or dāna)", "Hatthināga Vagga (10 stories for the perfection of conduct or sīla)", "Yudhañjaya Vagga (15 stories distributed among five other perfections: renunciation or nekkhamma,resolute determination or adhiṭṭhāna, truth or sacca, loving-kindness or mettā, equanimity or upekkhā)"],
           suttas: [],
           volume: "42",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -1191,10 +1024,6 @@ const TipitakaData = readable({
           sections: ["Saṅgahavāro (a short section consisting of only five verses that identifies its author as 'Mahakaccāna')", "Vibhāgavāra (Explanations', which is divided into three sub-sections: Uddesavāro - 'Specification Section', Niddesavāro - 'Demonstrative Section', Paṭiniddesavāro - 'Counter-demonstrative Section')"],
           suttas: [],
           volume: "43",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -1216,10 +1045,6 @@ const TipitakaData = readable({
           sections: ["Ariyasacca Pakāsana (display of the Noble Truths)", "Sāsana Paṭṭhāna (pattern of the dispensation)", "Suttādhiṭṭhāna (terms of expression in the thread)", "Suttavicayaca (investigation of threads)", "Hãravibhanga (modes of conveying in separate treatment)", "Suttatthasamuccaya (compendium of the thread's meaning)", "Hārasampāta (modes of conveying in combined treatment)", "Sutta Vibhaṅgiya (Analyses of Suttas)"],
           suttas: [],
           volume: "44",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -1241,10 +1066,6 @@ const TipitakaData = readable({
           sections: ["Milindapañhapāḷi", "Milindapañho", "Meṇḍakapañho", "Anumānapañho", "Opammakathāpañho"],
           suttas: [],
           volume: "45",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           commentary: [],
           subcommentary: [],
           links: [
@@ -1277,10 +1098,6 @@ const TipitakaData = readable({
           translation: "Buddhist Psychological Ethics",
           description: "The Dhammasaṅgiṇī, the first book of the Abhidhamma, and the Paṭṭhāna, the last book, are the most important of the seven treatises of Abhidhamma, providing as they do the quintessence of the entire Abhidhamma. The Dhammasaṅgaṇī enumerates all the dhammas (phenomena) i.e., all categories of nāma, namely, consciousness and mental concomitants; and rūpa, (corporeality). Having enumerated the phenomena, they are arranged into various categories to bring out their exact nature, function and mutual relationship both internally (in our own being) and with the outside world.",
           volume: "46",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           sections: ["The Mātikā (serves as a classified table of mental constituents relevant not only to the Dhammasaṅgaṇī but also to the entire system of the Abhidhamma.)",
             "Cittuppāda Kaṇḍa (division on the arising of consciousness and mental concomitants).",
             "Rūpa Kaṇḍa (division concerning corporeality).",
@@ -1303,10 +1120,6 @@ const TipitakaData = readable({
           translation: "Book of Analysis",
           description: "The second book of the Abhidhamma Piṭaka, Vibhaṅga, together with the first book of the Dhammasaṅgaṇī and the third book of the Dhātukathā, forms a closely related foundation for the proper and deep understanding of the Buddha’s Dhamma. Whereas Dhammasaṅgaṇī provides a bird’s eye view of the whole Tika and Duka groups with further systematic arrangements under classified heads, Vibhaṅga and Dhātukathā give a closer view of selected portions of those groups bringing out minute details.",
           volume: "47",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           sections: ["Khandha", "Āyatana", "Dhātu", "Sacca", "Indriya", "Paṭiccasamuppāda", "Satipaṭṭhāna", "Sammappadhāna", "Iddhipāda", "Bojjhaṅga", "Magga", "Jhāna", "Appammaññā", "Sikkhāpada", "Paṭisambhidā", "ñāṇa", "Khuddhaka vatthu", "Dhammadhaya"],
           commentary: ["Sammohavinodani"],
           subcommentary: [],
@@ -1324,10 +1137,6 @@ const TipitakaData = readable({
           translation: "Discourse on Elements",
           description: "Although this third book of Abhidhamma Piṭaka is a small treatise, it ranks with the first two books forming an important trilogy, which must be completely digested for the complete understanding of the Abhidhamma. Vibhaṅga, the second book, has one complete chapter devoted to the analysis of dhātus, but the subject matter of dhātu is so important that this treatise is devoted to it for a thorough consideration. The method of analysis here is different from that employed in the Vibhaṅga.",
           volume: "48",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           sections: ["Paṭhamanayo", "Dutiyanayo", "Tatiyanayo", "Catutthanayo", "Pañcamanayo", "Chaṭṭhanayo", "Sattamanayo", "Aṭṭhamanayo", "Navamanayo", "Dasamanayo", "Ekādasamanayo", "Dvādasamanayo", "Terasamanayo", "Cuddasamanayo"],
           commentary: ["Pañcappakaranatthakatha"],
           subcommentary: [],
@@ -1345,10 +1154,6 @@ const TipitakaData = readable({
           translation: "A Designation of Human Types",
           description: "Abhidhamma is mainly concerned with the study of abstract truths in absolute terms. But in describing the dhammas in their various aspects, it is not possible to keep to absolute terms only. Inevitably, conventional terms of every day language have to be employed in order to keep the lines of communication open at all. Abhidhamma states that there are two main types of conventional usage; the first type is concerned with terms which describe things that actually exist in reality and the second type describes things which have no existence in reality.",
           volume: "49",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           sections: ["List Of All The Human Types In The Book", "Chapter 1 - Division Of Human Types By One", "Chapter 2 - Division Of Human Types By Two", "Chapter 3 - Division Of Human Types By Three", "Chapter 4 - Division Of Human Types By Four", "Chapter 5 - Division Of Human Types By Five", "Chapter 6 - Division Of Human Types By Six", "Chapter 7 - Division Of Human Types By Seven", "Chapter 8 - Division Of Human Types By Eight", "Chapter 9 - Division Of Human Types By Nine", "Chapter 10 - Division Of Human Types By Ten"],
           commentary: ["Pañcappakaranatthakatha"],
           subcommentary: [],
@@ -1366,10 +1171,6 @@ const TipitakaData = readable({
           translation: "Points of Controversy",
           description: 'Kathāvatthu, like Puggalapaññatti, falls outside the regular system of the Abhidhamma. It does not directly deal with the complex nature of the Dhamma. It is mainly concerned with wrong views such as "person exists; self exists; jīva exists" which were prevalent even in the Buddha’s time; or wrong views such as "arahat falls away from arahatship" which arose after the parinibbāna of the Buddha.',
           volume: "50",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           sections: ["Puggalakathā (Of the Existence of a Personal Entity)", "Parihānikathā (Of Falling Away)", "Brahmacariyakathā (Of the Higher Life)", "Jahatikathā (Of Renouncing Evil)", "Sabbamatthītikathā (Of Everything as persistently existing)", "Atītakkhandhādikathā (Of what does my “Past” Consist?)", "Ekaccaṃatthītikathā (Of Some of the Past and Future as still Existing)", "Satipaṭṭhānakathā (Of Applications in Mindfulness)", "Hevatthikathā (Of Existence in Immutable Modes)", "Dutiyavaggo", "Tatiyavaggo", "Catutthavaggo", "Pañcamavaggo", "Chaṭṭhavaggo", "Sattamavaggo", "Aṭṭhamavaggo", "Navamavaggo", "Dasamavaggo", "Ekādasamavaggo", "Dvādasamavaggo", "Terasamavaggo", "Cuddasamavaggo", "Pannarasamavaggo", "Soḷasamavaggo", "Sattarasamavaggo", "Aṭṭhārasamavaggo", "Ekūnavīsatimavaggo", "Vīsatimavaggo", "Ekavīsatimavaggo", "Bāvīsatimavaggo", "Tevīsatimavaggo"],
           commentary: ["Pañcappakaranatthakatha"],
           subcommentary: [],
@@ -1387,10 +1188,6 @@ const TipitakaData = readable({
           translation: "",
           description: "Yamaka sets out to define and analyse the interrelationship of dhammas and puggalas as they exist in these three worlds. This is accomplished in the form of pairs of questions, which gives it the title of Yamaka. The logical processes of conversion (anuloma) and complete inversion (paṭiloma) are applied to determine the full implications and limitations of a term in its relationship with the others. Any equivocal elements of a term (saṃsaya) are avoided by showing, through such arrangement of questions, how other meanings of the term do not fit in a particular context.",
           volume: "51",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           sections: ["Mūla Yamaka (Pairs on Roots)", "Khandha Yamaka (Pairs on Aggregates)", "Āyatana Yamaka (Pairs on Bases)", "Dhātu Yamaka (Pairs on Elements)", "Sacca Yamaka (Pairs on Truths)", "Saṅkhāra Yamaka (Pairs on Conditioned Things)", "Anusaya Yamaka (Pairs on Latent Dispositions)", "Citta Yamaka (Pairs on Consciousness)", "Dhamma Yamaka (Pairs on Phenomena)", "Indriya Yamaka (Pairs on Controlling Faculties)"],
           commentary: ["Pañcappakaranatthakatha"],
           subcommentary: [],
@@ -1408,10 +1205,6 @@ const TipitakaData = readable({
           translation: "Conditional Relations",
           description: 'Paṭṭhāna Pāḷi, the seventh and last book of the Abhidhamma, is called the Mahā Pakāraṇa, the "Great Book" announcing the supreme position it occupies and the height of excellence it has reached in its investigations into the ultimate nature of all the dhammas in the universe.',
           volume: "52",
-          editions: {
-            pts: { bookqty: null },
-            vri: { bookqty: null }
-          },
           sections: ["Anuloma Paṭṭhāna which studies the instance in which the Paccanīya relations do exist between the dhammas;",
             "Paccanīya Paṭṭhāna which studies the instances in which Paccanīya relations do not exist between the dhammasPaccanīya;",
             "Anuloma Paccanīya Paṭṭhāna which studies the instances in which some of the Paccanīya relations exist between the dhammasPaccanīya while the others do not;",

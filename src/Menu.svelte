@@ -47,7 +47,7 @@
         Medium-length Discourses (Majjhima Nikāya)
       </option>
       <option value="samyutta-nikaya" data-basket="suttanta">
-        Short Discourses (Samyutta Nikāya)
+        Short Discourses/Connected Discourses or Kindred Sayings (Samyutta Nikāya)
       </option>
       <option value="anguttara-nikaya" data-basket="suttanta">
         Numerical Discourses or Gradual Sayings (Aṅguttara Nikāya)
