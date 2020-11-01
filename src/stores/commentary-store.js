@@ -1,8 +1,7 @@
 // sources ...
 
-import { readable } from 'svelte/store';
 
-const CommentaryData = readable({
+const CommentaryData = {
   information: {
     name: 'Commentary (Aṭṭhakathā)',
     description: "Aṭṭhakathā (Pali for explanation, commentary) refers to Pali-language Theravadin Buddhist commentaries to the canonical Theravadin Tipitaka. These commentaries give the traditional interpretations of the scriptures. The major commentaries were based on earlier ones, now lost, in Prakrit and Sinhala, which were written down at the same time as the Canon, in the last century BCE. Some material in the commentaries is found in canonical texts of other schools of Buddhism, suggesting an early common source. &emdash;wikipedia",
@@ -286,7 +285,7 @@ const CommentaryData = readable({
     },
   ]
 
-});
+};
 
 export default CommentaryData;
 

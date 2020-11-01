@@ -1,6 +1,5 @@
 <script lang="ts">
-  import { onDestroy } from "svelte";
-  import TipitakaData from "./stores/tipitaka-store.js";
+  import TipitakaData from "./stores/tipitaka_data.js";
 
   import Header from "./Header.svelte";
   import SearchInput from "./SearchInput.svelte";
@@ -10,14 +9,9 @@
   import InfoModal from "./InfoModal.svelte";
   import Button from "./Button.svelte";
 
-  /* DATA STORE */
-  let tipitakaData;
-  const unsubscribe = TipitakaData.subscribe((items) => (tipitakaData = items));
+  /* Tipitaka DATA */
+  let tipitakaData = TipitakaData;
   $: console.log(tipitakaData);
-
-  onDestroy(() => {
-    if (unsubscribe) unsubscribe();
-  });
 
   let bookshelfHeading = tipitakaData.information.name;
   // let selectHeading;

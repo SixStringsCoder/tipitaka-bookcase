@@ -1,8 +1,7 @@
 // source for data https://tipitaka.org/eot#2 from the book "Essence of Tipiṭaka"
 
-import { readable } from 'svelte/store';
 
-const TipitakaData = readable({
+const TipitakaPTSEngData = {
   information: {
     name: 'Tipiṭaka',
     description: '<p id="intro-info" class="info">All that the Buddha taught forms the subject matter and substance of the Pāḷi Canon, which is divided into these three divisions called <span class="emphasis">Piṭakas</span> — literally baskets. Hence <span class="emphasis">Tipiṭaka</span> means three baskets or three separate divisions of the Buddha\'s Teaching. Here the metaphor \'basket\' signifies not so much the function of \'storing up\' anything put into it as its use as a receptacle in which things are handed on or passed on from one to another like carrying away of earth from an excavation site by a line of workers.</p> <p class="info"><span class="emphasis indent">The Tipiṭaka</span> into which the P&#x101;&#7735;i Canon is systematically divided and handed down from generation to generation together with Commentaries forms the huge collection of literary works which the bhikkhus of the Order have to learn, study and memorize in discharge of their <span class="emphasis">gantha dhura</span>, the duty of studying.</p>',
@@ -1195,6 +1194,6 @@ const TipitakaData = readable({
       subcommentary: [],
     }
   }
-});
+};
 
-export default TipitakaData;
+export default TipitakaPTSEngData;
