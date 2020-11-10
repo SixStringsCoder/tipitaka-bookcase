@@ -18,14 +18,20 @@
 <style>
   #search-cont {
     width: 91%;
-    position: relative;
+    /* position: relative; */
+    /* display: flex;
+    justify-content: center; */
+  }
+
+  form {
     display: flex;
     justify-content: center;
   }
 
   input#search {
-    width: 100%;
-    height: 35px;
+    width: 80%;
+    height: 40px;
+    border: 1px solid grey;
     font-size: 1.2rem;
     font-family: Muli, sans-serif;
     font-weight: 100;
@@ -33,14 +39,36 @@
     position: relative;
   }
 
-  .fa-search {
+  /* Style the search field */
+/* form input[type=text] {
+  padding: 10px;
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 80%;
+  background: #f1f1f1;
+} */
+
+/* Style the submit button */
+form button {
+  width: 20%;
+  /* background: hsl(204, 60%, 43%); */
+  background: hsl(59, 70%, 25%);
+  color: white;
+  font-size: 1.3rem;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+}
+
+  /* .fa-search {
     position: absolute;
     z-index: 1;
     top: 12px;
     right: 15px;
     width: 10px;
     height: 10px;
-  }
+  } */
 
   dl#results-list {
     background-color: hsla(41, 30%, 85%, 1);
@@ -99,16 +127,20 @@
   /* Large devices (laptops/desktops, 992px and up) */
   @media only screen and (min-width: 992px) {
     input#search {
-      width: 64%;
+      width: 48%;
       height: 50px;
       font-size: 1.5rem;
     }
 
-    .fa-search {
+    form button {
+      width: 15%;
+    }
+
+    /* .fa-search {
       top: 15px;
       right: 20%;
       font-size: 1.5rem;
-    }
+    } */
 
     dl#results-list {
       width: 50%;
@@ -117,17 +149,29 @@
 
   /* Extra large devices (large laptops and desktops, 1200px and up) */
   @media only screen and (min-width: 1200px) {
+    input#search {
+      width: 49%;
+      height: 50px;
+      font-size: 1.5rem;
+    }
+
+    form button {
+      width: 15%;
+    }
   }
 </style>
 
 <div id="search-cont">
-  <i class="fas fa-search" />
-  <input
-    id="search"
-    type="text"
-    bind:value={searchQuery}
-    placeholder="Search..."
-    on:input />
+  
+  <form on:submit|preventDefault={() => console.log(searchQuery)}>
+    <input
+      id="search"
+      type="text"
+      bind:value={searchQuery}
+      placeholder="Search..."
+      on:input />
+      <button type="submit"><i class="fas fa-search" /></button>
+    </form>  
 
   {#if searchResults.length > 0}
     <dl id="results-list" class:hide={resultsHidden}>
@@ -141,7 +185,7 @@
         </span>
       </dt>
 
-      <!-- Search results go here as li tags-->
+      <!-- Search results go here as dd tags-->
       {#each searchResults as searchResult}
         <dd
           data-vol={searchResult.volume}
