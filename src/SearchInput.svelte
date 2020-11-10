@@ -73,11 +73,11 @@ form button {
   dl#results-list {
     background-color: hsla(41, 30%, 85%, 1);
     box-shadow: 0 0 5px black;
-    width: 90%;
+    width: 81%;
     padding: 3%;
     list-style: none;
     position: absolute;
-    top: 65%;
+    top: 87%;
   }
 
   dt {
@@ -122,6 +122,10 @@ form button {
     #results-list dd {
       font-size: 1.3rem;
     }
+
+    dl#results-list {
+      width: 83%;
+    }
   }
 
   /* Large devices (laptops/desktops, 992px and up) */
@@ -143,7 +147,8 @@ form button {
     } */
 
     dl#results-list {
-      width: 50%;
+      width: 52%;
+      left: 21%;
     }
   }
 
@@ -157,6 +162,12 @@ form button {
 
     form button {
       width: 15%;
+    }
+
+    dl#results-list {
+      width: 53%;
+      left: 20.5%;
+      top: 89%;
     }
   }
 </style>
