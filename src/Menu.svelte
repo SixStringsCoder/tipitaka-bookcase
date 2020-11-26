@@ -32,11 +32,11 @@
 <div id="menu-container">
   <!-- svelte-ignore a11y-no-onchange -->
   <select name="menu" id="menu" bind:value={selectedBooks} on:change>
-    <option value="reset" disabled>Learn More</option>
+    <option value="reset" disabled selected>Learn More</option>
     <optgroup label="Tipitaka">
-      <option value="tipitaka" data-bookcase="bookcase" selected>
+      <!-- <option value="tipitaka" data-bookcase="bookcase" selected>
         Tipi&#7789;aka bookcase
-      </option>
+      </option> -->
       <option value="vinaya">Vinaya Pi&#7789;aka</option>
       <option value="suttanta">Suttanta Pi&#7789;aka</option>
       <option value="abhidhamma">Abhidhamma Pi&#7789;aka</option>
@@ -55,25 +55,44 @@
       <option value="khuddaka-nikaya" data-basket="suttanta">
         Minor Collection (Khuddaka Nikāya)
       </option>
-      <option value="dhammapada" data-basket="suttanta">Dhammapada</option>
-      <option value="jataka" data-basket="suttanta">Jataka Tales</option>
-      <option value="patthana" data-basket="abhidhamma">Patthana Matrix</option>
-      <option value="udana" data-basket="suttanta">Udāna</option>
-      <option value="itivuttaka" data-basket="suttanta">Itivuttaka</option>
-      <option value="khuddakapatha" data-basket="suttanta">
-        Khuddakapāṭha
-      </option>
-      <option value="maha-vagga-digha" data-basket="suttanta">
-        Wheel of Dependent Origination
-      </option>
-      <option value="maha-vagga-digha" data-basket="suttanta">
-        Mahāsatipaṭṭhāna Sutta (Digha)
-      </option>
-      <option value="mulapannasa" data-basket="suttanta">
-        Mahāsatipaṭṭhāna Sutta (Majjhima)
-      </option>
-      <option value="mahavagga" data-basket="vinaya">Pāṭimokkha</option>
-    </optgroup>
+      </optgroup>
+
+      <optgroup label="Well-known sections">
+        <option value="dhammapada" data-basket="suttanta">Dhammapada</option>
+        <option value="jataka" data-basket="suttanta">Jataka Tales</option>
+        <option value="patthana" data-basket="abhidhamma">Patthana Matrix</option>
+        <option value="udana" data-basket="suttanta">Udāna</option>
+        <option value="itivuttaka" data-basket="suttanta">Itivuttaka</option>
+        <option value="khuddakapatha" data-basket="suttanta">
+          Khuddakapāṭha
+        </option>
+        <option value="maha-vagga-digha" data-basket="suttanta">
+          Wheel of Dependent Origination
+        </option>
+        <option value="maha-vagga-digha" data-basket="suttanta">
+          Mahāsatipaṭṭhāna Sutta (Digha)
+        </option>
+        <option value="mulapannasa" data-basket="suttanta">
+          Mahāsatipaṭṭhāna Sutta (Majjhima)
+        </option>
+        <option value="mahavagga" data-basket="vinaya">Pāṭimokkha</option>
+      </optgroup>
+
+      <optgroup label="From a 10-day course by S.N. Goenka">
+        <option value="sattaka" data-basket="suttanta">
+          Namo tassa bhagavato...
+        </option>
+        <option value="khuddakapatha" data-basket="suttanta">
+          Triple Gem and Precepts
+        </option>
+        <option value="pathika-vagga" data-basket="suttanta">
+          Day One - Āṭānāṭiya Sutta
+        </option>
+        <option value="khuddakapatha" data-basket="suttanta">
+          Day Two - Ratana Sutta
+        </option>
+      </optgroup>
+
     <optgroup label="Commentaries">
       <option value="commentaries" data-bookcase="bookcase">
         Aṭṭhakathā (Commentaries) bookcase
@@ -87,6 +106,7 @@
       <option value="Manorathapurani">Manorathapurani</option>
       <option value="Paramatthajotika">Paramatthajotika</option>
     </optgroup>
+
     <optgroup label="Sub-Commentaries">
       <option value="sub-commentaries" data-bookcase="bookcase">
         Tika (Sub-commentaries) bookcase
@@ -99,5 +119,6 @@
       <option value="Dighanikaya-tika">Dighanikaya-tika</option>
       <option value="Majjhimanikaya-tika">Majjhimanikaya-tika</option>
     </optgroup>
+
   </select>
 </div>

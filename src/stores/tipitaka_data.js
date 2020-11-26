@@ -686,7 +686,7 @@ const TipitakaData = {
           name: "Khuddakapāṭha Pāḷi",
           translation: "",
           description: "First of the treatises in this nikāya, Khuddakapāṭha contains 'readings of minor passages' most of which are also found in other parts of the Tipiṭaka. It is a collection of nine short formulae and the suttas used as a manual for novices under training, namely: (a) The Three Refuges; (b) The ten precepts; (c) The thirty-two parts of the body; (d) simple Dhamma for novices in the form of a catechism; (e) Maṅgala Sutta; (f) Ratana Sutta; (g) Tirokuṭṭa Sutta; (h) Nidhikaṇḍa Sutta; (i) Mettā Sutta.",
-          sections: ["Saraṇattayaṃ (The Three Refuges)", "Dasasikkhāpadaṃ (The Ten Training Precepts)", "Dvattiṃsākāraṃ (The Thirty-Two-Fold Aspect)", "Kumārapañhaṃ (The Boy's Questions)", "Maŋgalasuttaṃ (The Good Omen Discourse)", "Ratanasuttaṃ (The Jewel Discourse)", "Tirokuḍasuttaṃ (The Without-the-Walls Discourse)", "Nidhikaṇḍasuttam (The Treasure-Store Discourse)", "Mettasuttaṃ (The Lovingkindness Discourse)"],
+          sections: ["Saraṇattayaṃ (The Three Refuges)", "Dasasikkhāpadaṃ (The Ten Training Precepts)", "Dvattiṃsākāraṃ (The Thirty-Two-Fold Aspect)", "Kumārapañhaṃ (The Boy's Questions)", "Maṅgalasuttaṃ (The Good Omen Discourse)", "Ratanasuttaṃ (The Jewel Discourse)", "Tirokuḍasuttaṃ (The Without-the-Walls Discourse)", "Nidhikaṇḍasuttam (The Treasure-Store Discourse)", "Mettasuttaṃ (The Lovingkindness Discourse)"],
           suttas: [],
           volume: "28",
           commentary: [],
