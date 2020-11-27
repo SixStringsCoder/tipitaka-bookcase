@@ -60,14 +60,14 @@
       <optgroup label="Well-known sections">
         <option value="dhammapada" data-basket="suttanta">Dhammapada</option>
         <option value="jataka" data-basket="suttanta">Jataka Tales</option>
-        <option value="patthana" data-basket="abhidhamma">Patthana Matrix</option>
+        <option value="patthana" data-basket="abhidhamma">Paṭṭhāna Matrix</option>
         <option value="udana" data-basket="suttanta">Udāna</option>
         <option value="itivuttaka" data-basket="suttanta">Itivuttaka</option>
         <option value="khuddakapatha" data-basket="suttanta">
           Khuddakapāṭha
         </option>
         <option value="maha-vagga-digha" data-basket="suttanta">
-          Wheel of Dependent Origination
+          Wheel of Dependent Origination (Paṭiccasamuppāda)
         </option>
         <option value="maha-vagga-digha" data-basket="suttanta">
           Mahāsatipaṭṭhāna Sutta (Digha)
@@ -90,6 +90,33 @@
         </option>
         <option value="khuddakapatha" data-basket="suttanta">
           Day Two - Ratana Sutta
+        </option>
+        <option value="khuddakapatha" data-basket="suttanta">
+          Day Three - Karaṇīyametta Sutta (Mettasuttaṃ)
+        </option>
+        <option value="patthana" data-basket="suttanta">
+          Day Five - Tikapaṭṭhāna
+        </option>
+        <option value="maha-vagga-digha" data-basket="suttanta">
+          Day Six - Paṭiccasamuppāda (Chain of Conditioned Arising)
+        </option>
+        <option value="udana" data-basket="suttanta">
+          Day Six - Udāna - Buddhi Vagga (Enlightenment)
+        </option>
+        <option value="maha-vagga-samyutta" data-basket="suttanta">
+          Day Seven - Bojjhaṅgaparitta
+        </option>
+        <option value="jataka" data-basket="suttanta">
+          Day Eight - Mittānisaṃsa
+        </option>
+        <option value="khuddakapatha" data-basket="suttanta">
+          Day Nine - Maṅgala Suttaṃ
+        </option>
+        <option value="khuddakapatha" data-basket="suttanta">
+          Day Ten - Mettā-Bhāvanā
+        </option>
+        <option value="thera-gatha" data-basket="suttanta">
+          Aniccā vata saṅkhārā...  (Saṭṭhi Nipāta)
         </option>
       </optgroup>
 

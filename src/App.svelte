@@ -125,7 +125,7 @@
 
   const findQueryItem = () => {
     // console.log(searchQuery);
-    if (searchQuery.length >= 3) {
+    if (searchQuery.length >= 4) {
       searchObject(searchQuery, tipitakaData.baskets);
       searchObject(searchQuery, tipitakaData.baskets.suttanta.collections);
       searchArr(searchQuery, tipitakaData.baskets.vinaya.books);

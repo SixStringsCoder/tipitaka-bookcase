@@ -180,6 +180,7 @@ form button {
       type="text"
       bind:value={searchQuery}
       placeholder="Search..."
+      autocomplete="off"
       on:input />
       <button type="submit"><i class="fas fa-search" /></button>
     </form>  
