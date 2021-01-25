@@ -1,40 +1,39 @@
-*Looking for a shareable component template? Go here --> [sveltejs/component-template](https://github.com/sveltejs/component-template)*
 
----
+# Tipitaka Shelves (aka Tipitaka Bookcase) app
 
-# svelte app
+This is app is built using Svelte 3.0.  You will use NPM (Node Package Manager) to install the dependencies so you'll need [Node](https://nodejs.org/en/download/) installed first.
 
-This is a project template for [Svelte](https://svelte.dev) apps. It lives at https://github.com/sveltejs/template.
-
-To create a new project based on this template using [degit](https://github.com/Rich-Harris/degit):
+After you're sure you have Node installed, download this repo using the Code button on this webpage.  Once downloaded, unzip and open the "tipitaka-bookcase" in a text editor.  Within a Terminal window, install the dependencies with these commands:
 
 ```bash
-npx degit sveltejs/template svelte-app
-cd svelte-app
-```
-
-*Note that you will need to have [Node.js](https://nodejs.org) installed.*
-
-
-## Get started
-
-Install the dependencies...
-
-```bash
-cd svelte-app
+cd tipitaka-bookcase
 npm install
 ```
 
-...then start [Rollup](https://rollupjs.org):
+...then to view the Tipitaka app in your browser, type this in the Terminal.  
 
 ```bash
 npm run dev
 ```
 
-Navigate to [localhost:5000](http://localhost:5000). You should see your app running. Edit a component file in `src`, save it, and reload the page to see your changes.
+Once started, navigate to [localhost:5000](http://localhost:5000). You should see the Tipitaka app in the browser. 
 
 By default, the server will only respond to requests from localhost. To allow connections from other computers, edit the `sirv` commands in package.json to include the option `--host 0.0.0.0`.
 
+
+## Using TypeScript
+
+This app comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
+
+```bash
+node scripts/setupTypeScript.js
+```
+
+Or remove the script via:
+
+```bash
+rm scripts/setupTypeScript.js
+```
 
 ## Building and running in production mode
 
@@ -55,20 +54,6 @@ If you're building a single-page app (SPA) with multiple routes, sirv needs to b
 
 ```js
 "start": "sirv public --single"
-```
-
-## Using TypeScript
-
-This template comes with a script to set up a TypeScript development environment, you can run it immediately after cloning the template with:
-
-```bash
-node scripts/setupTypeScript.js
-```
-
-Or remove the script via:
-
-```bash
-rm scripts/setupTypeScript.js
 ```
 
 ## Deploying to the web

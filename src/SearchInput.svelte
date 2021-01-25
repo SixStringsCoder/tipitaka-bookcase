@@ -87,6 +87,7 @@ form button {
 
   #results-list dd {
     font-size: 1.08rem;
+    height: auto;
     border-bottom: 1px solid black;
     margin: 10px 0;
     cursor: pointer;
@@ -113,7 +114,7 @@ form button {
   }
 
   .hide {
-    height: 0px;
+    height: 15px;
     overflow: hidden;
   }
 
@@ -174,7 +175,7 @@ form button {
 
 <div id="search-cont">
   
-  <form on:submit|preventDefault={() => console.log(searchQuery)}>
+  <form on:submit|preventDefault>
     <input
       id="search"
       type="text"

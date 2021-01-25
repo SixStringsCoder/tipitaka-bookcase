@@ -125,7 +125,7 @@
 
   const findQueryItem = () => {
     // console.log(searchQuery);
-    if (searchQuery.length >= 4) {
+    if (searchQuery.length >= 3) {
       searchObject(searchQuery, tipitakaData.baskets);
       searchObject(searchQuery, tipitakaData.baskets.suttanta.collections);
       searchArr(searchQuery, tipitakaData.baskets.vinaya.books);
@@ -282,7 +282,7 @@
   <SearchInput
     bind:searchQuery
     {searchResults}
-    on:input={findQueryItem}
+    on:submit={findQueryItem}
     on:searchResultClick={(e) => findSearchedVol(e)}
     bind:resultsHidden
     on:hideResultsList={() => (resultsHidden = !resultsHidden)} />
