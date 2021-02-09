@@ -5,7 +5,7 @@
 <style>
   #menu-container {
     width: 91%;
-    margin: 0 auto 15px;
+    margin: 0 auto 20px;
     display: flex;
     justify-content: center;
   }
@@ -34,27 +34,27 @@
   <select name="menu" id="menu" bind:value={selectedBooks} on:change>
     <option value="reset" disabled selected>Learn More</option>
     <optgroup label="Tipitaka">
-      <!-- <option value="tipitaka" data-bookcase="bookcase" selected>
-        Tipi&#7789;aka bookcase
-      </option> -->
-      <option value="vinaya">Vinaya Pi&#7789;aka</option>
-      <option value="suttanta">Suttanta Pi&#7789;aka</option>
-      <option value="abhidhamma">Abhidhamma Pi&#7789;aka</option>
-      <option value="digha-nikaya" data-basket="suttanta">
-        Long Discourses (Digha Nikāya)
-      </option>
-      <option value="majjhima-nikaya" data-basket="suttanta">
-        Medium-length Discourses (Majjhima Nikāya)
-      </option>
-      <option value="samyutta-nikaya" data-basket="suttanta">
-        Short Discourses/Connected Discourses or Kindred Sayings (Samyutta Nikāya)
-      </option>
-      <option value="anguttara-nikaya" data-basket="suttanta">
-        Numerical Discourses or Gradual Sayings (Aṅguttara Nikāya)
-      </option>
-      <option value="khuddaka-nikaya" data-basket="suttanta">
-        Minor Collection (Khuddaka Nikāya)
-      </option>
+        <!-- <option value="tipitaka" data-bookcase="bookcase" selected>
+          Tipi&#7789;aka bookcase
+        </option> -->
+        <option value="vinaya">Vinaya Pi&#7789;aka</option>
+        <option value="suttanta">Suttanta Pi&#7789;aka</option>
+        <option value="abhidhamma">Abhidhamma Pi&#7789;aka</option>
+        <option value="digha-nikaya" data-basket="suttanta">
+          Long Discourses (Digha Nikāya)
+        </option>
+        <option value="majjhima-nikaya" data-basket="suttanta">
+          Medium-length Discourses (Majjhima Nikāya)
+        </option>
+        <option value="samyutta-nikaya" data-basket="suttanta">
+          Short Discourses/Connected Discourses or Kindred Sayings (Samyutta Nikāya)
+        </option>
+        <option value="anguttara-nikaya" data-basket="suttanta">
+          Numerical Discourses or Gradual Sayings (Aṅguttara Nikāya)
+        </option>
+        <option value="khuddaka-nikaya" data-basket="suttanta">
+          Minor Collection (Khuddaka Nikāya)
+        </option>
       </optgroup>
 
       <optgroup label="Well-known sections">
@@ -63,9 +63,7 @@
         <option value="patthana" data-basket="abhidhamma">Paṭṭhāna Matrix</option>
         <option value="udana" data-basket="suttanta">Udāna</option>
         <option value="itivuttaka" data-basket="suttanta">Itivuttaka</option>
-        <option value="khuddakapatha" data-basket="suttanta">
-          Khuddakapāṭha
-        </option>
+        <option value="khuddakapatha" data-basket="suttanta">Khuddakapāṭha</option>
         <option value="maha-vagga-digha" data-basket="suttanta">
           Wheel of Dependent Origination (Paṭiccasamuppāda)
         </option>

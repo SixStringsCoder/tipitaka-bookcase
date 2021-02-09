@@ -201,8 +201,7 @@
 
   const findSearchedVol = (e) => {
     console.log(e.detail.target.dataset.id);
-    selectedBooks =
-      e.detail.target.dataset.id || e.detail.target.dataset.basket;
+    selectedBooks = e.detail.target.dataset.id || e.detail.target.dataset.basket;
     modalInfoObj = searchResults.find((book) => book.id === selectedBooks);
     toggleModal();
   };
@@ -216,7 +215,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: fixed;
     z-index: 10000;
     margin-top: 3.9rem;
@@ -276,8 +275,6 @@
 <!-- Learn More Select Menu -->
 <section id="info-bar">
   <Menu {selectedBooks} on:change={getSelectionObj} />
-
-  <SelectEditionLang {edition} />
 
   <SearchInput
     bind:searchQuery
@@ -340,8 +337,8 @@
 <!-- Book Case -->
 <main id="library">
   <BookcasePitaka
-    {selectedBooks}
     {tipitakaData}
+    {selectedBooks}
     {bookshelfHeading}
     {selectionHeading}
     on:showShelfInfo={tipitakaInfoModal}

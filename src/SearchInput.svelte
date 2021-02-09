@@ -162,7 +162,7 @@ form button {
     }
 
     form button {
-      width: 15%;
+      width: 14.5%;
     }
 
     dl#results-list {
@@ -173,6 +173,7 @@ form button {
   }
 </style>
 
+
 <div id="search-cont">
   
   <form on:submit|preventDefault>
@@ -182,9 +183,9 @@ form button {
       bind:value={searchQuery}
       placeholder="Search..."
       autocomplete="off"
-      on:input />
+      on:submit />
       <button type="submit"><i class="fas fa-search" /></button>
-    </form>  
+  </form>  
 
   {#if searchResults.length > 0}
     <dl id="results-list" class:hide={resultsHidden}>
@@ -212,6 +213,7 @@ form button {
           {/if}
         </dd>
       {/each}
-    </dl>
+      
+    </dl>   
   {/if}
 </div>
