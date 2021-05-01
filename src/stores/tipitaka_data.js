@@ -119,8 +119,129 @@ const TipitakaData = {
           ]
         },
       ],
-      commentary: ["Samantapasadika", "Kankhavitarani"],
-      subcommentary: [],
+      commentary: [
+          {
+            id: "samantapasadika",
+            basket: "Vinaya Piṭaka",
+            division: "",
+            name: "Samantapāsādikā Atthakatha",
+            authors: ["Buddhaghosa"],
+            translation: "The Inception of Discipline",
+            translators: ["N.A. Jayawickrama"],
+            description: "Commentary (atthakatha) on the Vinaya-piṭaka by Buddhaghosa to which is prefixed an introduction, the Bāhiranidāna. The Bāhiranidāna is an introduction to the Vinaya-piṭaka Commentary relating the history of Buddhism up to the establishment of the Vinaya-piṭaka in Sri Lanka.",
+            volume: "",
+            sections: [],
+            links: [
+              { id: "info", link: "", label: "Learn More" },
+              { id: "engbookurl", link: "https://store.pariyatti.org/Inception-of-Discipline_p_2151.html", label: "English" },
+              { id: "palibookurl", link: "https://store.pariyatti.org/Samantapasadika-8-Volume-Set_p_2150.html", label: "Pali" },
+            ]
+          },
+          {
+            id: "kankhavitarani",
+            basket: "Vinaya Piṭaka",
+            division: "",
+            name: "Kaṅkhāvitaraṇī Atthakatha",
+            authors: ["Buddhaghosa"],
+            translation: "Overcoming Doubts",
+            translators: ["N.A. Jayawickrama"],
+            description: "A commentary (atthakatha) on the Patimokkha of the Vinaya Pitaka, by Buddhaghosa . The colophon also contains a summary, a kind of uddana, of the contents. It is stated that the work was written at the request of a thera named Sona, and Buddhaghosa declares most emphatically that there is not even a single word in the book which is not in conformity with the Canon or the Commentaries of the Mahavihara (p.204, ed. Hewavitarane Bequest Series; Gv.59, 69.). The Gandhavamsa (61f, 71; also Svd.1212) mentions a tika on the Kankhavitarani named Vinayatthamanjusa, written by Buddhanaga at the request of Sumedha.",
+            volume: "",
+            sections: [],
+            links: [
+              { id: "info", link: "", label: "Learn More" },
+              { id: "engbookurl", link: "https://store.pariyatti.org/Overcoming-Doubts-Kankhavitarani-Vol-I_p_5145.html", label: "English" },
+              { id: "palibookurl", link: "https://store.pariyatti.org/Kankhavitarani-New-Edition_p_2387.html", label: "Pali" },
+            ]
+          },
+          {
+            id: "parajikakanda",
+            basket: "Vinaya Piṭaka",
+            division: "",
+            name: "Parajikakanda Atthakatha",
+            authors: [],
+            translation: "",
+            translators: [],
+            description: "",
+            volume: "",
+            sections: [],
+            links: [
+              { id: "info", link: "", label: "Learn More" },
+              { id: "engbookurl", link: "", label: "English" },
+              { id: "palibookurl", link: "", label: "Pali" },
+            ]
+          },
+          {
+            id: "pacityadi",
+            basket: "Vinaya Piṭaka",
+            division: "",
+            name: "Pacityadi Atthakatha",
+            authors: [],
+            translation: "",
+            translators: [],
+            description: "",
+            volume: "",
+            sections: [],
+            links: [
+              { id: "info", link: "", label: "Learn More" },
+              { id: "engbookurl", link: "", label: "English" },
+              { id: "palibookurl", link: "", label: "Pali" },
+            ]
+          },
+          {
+            id: "vinaya-sangaha",
+            basket: "Vinaya Piṭaka",
+            division: "",
+            name: "Vinaya Sangaha Atthakatha",
+            authors: [],
+            translation: "",
+            translators: [],
+            description: "",
+            volume: "",
+            sections: [],
+            links: [
+              { id: "info", link: "", label: "Learn More" },
+              { id: "engbookurl", link: "", label: "English" },
+              { id: "palibookurl", link: "", label: "Pali" },
+            ]
+          },
+        ],
+      subcommentary: [
+        {
+          id: "kankhavitarani-purana-abhinava",
+          basket: "Vinaya Piṭaka",
+          division: "",
+          name: "Kankhavitarani Purana and Abhinava Tika",
+          authors: [],
+          translation: "",
+          translators: [],
+          description: "",
+          volume: "",
+          sections: [],
+          links: [
+            { id: "info", link: "", label: "Learn More" },
+            { id: "engbookurl", link: "", label: "English" },
+            { id: "palibookurl", link: "", label: "Pali" },
+          ]
+        },
+        {
+          id: "vinayalankara-tika",
+          basket: "Vinaya Piṭaka",
+          division: "",
+          name: "Vinayalankara Tika",
+          authors: [],
+          translation: "",
+          translators: [],
+          description: "",
+          volume: "",
+          sections: [],
+          links: [
+            { id: "info", link: "", label: "Learn More" },
+            { id: "engbookurl", link: "", label: "English" },
+            { id: "palibookurl", link: "", label: "Pali" },
+          ]
+        },
+      ],
     },
     suttanta: {
       id: "suttanta",
