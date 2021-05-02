@@ -10,7 +10,44 @@ const TipitakaData = {
       { id: "palibookurl", link: "https://store.pariyatti.org/Tipitaka-PTS-Pali-Canon-in-Pali-text--55-Books_p_2224.html", label: "Pali Set" },
       { id: "vri", link: "https://www.vridhamma.org/Tipitaka-Propject", label: "VRI" }
     ],
-    sections: ["Vinaya Piṭaka", "Suttanta Piṭaka", "Abhidhamma Piṭaka"]
+    sections: ["Vinaya Piṭaka", "Suttanta Piṭaka", "Abhidhamma Piṭaka"],
+    commentary: [
+      {
+        id: "vimuttimagga",
+        basket: "",
+        division: "",
+        name: "Vimuttimagga",
+        authors: [],
+        translation: "The Path of Freedom",
+        translators: [],
+        description: "",
+        volume: "",
+        sections: [],
+        links: [
+          { id: "info", link: "", label: "Learn More" },
+          { id: "engbookurl", link: "https://store.pariyatti.org/Path-of-Freedom-Vimuttimagga_p_1467.html", label: "English" },
+          { id: "palibookurl", link: "", label: "Pali" },
+        ]
+      },
+      {
+        id: "visuddhimagga",
+        basket: "",
+        division: "",
+        name: "Visuddhimagga",
+        authors: ["Buddhaghosa"],
+        translation: "The Path of Purification",
+        translators: [],
+        description: 'The Visuddhimagga is the "great treatise" of Theravada Buddhism, an encyclopedic manual of doctrine and meditation written in the fifth century by the great Buddhist commentator, Buddhaghosa. The most esteemed commentary in all of Pali literature, The Path of Purification, or Visuddhimagga, is a systematic examination and condensation of Buddhist doctrine and meditation technique. The various teachings of the Buddha, found throughout the Pali Canon, are organized in a clear, comprehensive manner. In the course of his treatise Buddhaghosa gives full and detailed instructions on the forty subjects of meditation aimed at concentration, an elaborate account of the Buddhist Abhidhamma philosophy, and explicit descriptions of the stages of insight culminating in final liberation. The author, Bhadantacaryia Buddhaghosa, composed the Visuddhimagga in the early part of the 5th century A.D. The India-born monk-scholar traveled to Sri Lanka to translate into Pali the extensive Sinhalese commentaries preserved there. His crystallization of the entire Pali Canon reinvigorated Theravada Buddhism in India and Sri Lanka. It still shines as clearly today, in this brilliant 1956 translation by the British-born monk, Bhikkhu Nanamoli, that in itself is considered an outstanding achievement of Pali scholarship of the 20th century.',
+        volume: "",
+        sections: [],
+        links: [
+          { id: "info", link: "", label: "Learn More" },
+          { id: "engbookurl", link: "https://store.pariyatti.org/Path-of-Purity-three-vols-as-one_p_2127.html", label: "English" },
+          { id: "palibookurl", link: "https://store.pariyatti.org/Visuddhimagga_p_2205.html", label: "Pali" },
+        ]
+      },
+    ],
+    subcommentary: []
   },
   baskets: {
     vinaya: {
@@ -124,7 +161,7 @@ const TipitakaData = {
             id: "samantapasadika",
             basket: "Vinaya Piṭaka",
             division: "",
-            name: "Samantapāsādikā Atthakatha",
+            name: "Samantapāsādikā",
             authors: ["Buddhaghosa"],
             translation: "The Inception of Discipline",
             translators: ["N.A. Jayawickrama"],
@@ -132,7 +169,7 @@ const TipitakaData = {
             volume: "",
             sections: [],
             links: [
-              { id: "info", link: "", label: "Learn More" },
+              { id: "info", link: "https://en.wikipedia.org/wiki/Samantapasadika", label: "Learn More" },
               { id: "engbookurl", link: "https://store.pariyatti.org/Inception-of-Discipline_p_2151.html", label: "English" },
               { id: "palibookurl", link: "https://store.pariyatti.org/Samantapasadika-8-Volume-Set_p_2150.html", label: "Pali" },
             ]
@@ -141,7 +178,7 @@ const TipitakaData = {
             id: "kankhavitarani",
             basket: "Vinaya Piṭaka",
             division: "",
-            name: "Kaṅkhāvitaraṇī Atthakatha",
+            name: "Kaṅkhāvitaraṇī",
             authors: ["Buddhaghosa"],
             translation: "Overcoming Doubts",
             translators: ["N.A. Jayawickrama"],
@@ -260,7 +297,25 @@ const TipitakaData = {
           qty: 34,
           description: "This collection in the Suttanta Pitaka, named Dīgha Nikāya as it is made up of thirty-four long discourses of the Buddha, is divided into three divisions (a) Sīlakkhanda Vagga, Division Concerning Morality (b) Mahā Vagga, the Large Division (c) Pāthika Vagga, the Division beginning with the discourse on Pathika, the naked ascetic.",
           sections: ["Sīlakkhanda Vagga, Division Concerning Morality", "Mahā Vagga, the Large Division", "Pāthika Vagga, the Division beginning with the discourse on Pathika, the naked ascetic."],
-          commentary: ["Sumangalavilasini"],
+          commentary: [
+            {
+              id: "sumangalavilasini",
+              basket: "Suttanta Piṭaka",
+              division: "",
+              name: "Sumangalavilasini",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentary (atthakatha) on the Suttanta's Digha Nikaya by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+          ],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#10", label: "Learn More" },
@@ -275,7 +330,25 @@ const TipitakaData = {
           qty: 152,
           description: "This collection of medium length discourses is made up of one hundred and fifty-two suttas in three books known as paṇṇāsa. The first book, Mūlapaṇṇāsa, deals with the first fifty suttas in five vaggas; the second book, Majjhimapaṇṇāsa consists of the second fifty suttas, also in five vaggas; and the last fifty-two suttas are dealt with in five vaggas of the third book, Uparipaṇṇāsa, which means more than fifty. The suttas in this nikāya throw much light on the social ideas and institutions of those days, and also provide general information on the economic and political life.",
           sections: ["Mūlapaṇṇāsa", "Majjhimapaṇṇāsa", "Uparipaṇṇāsa"],
-          commentary: ["Papañcasudani"],
+          commentary: [
+            {
+              id: "papancasudani",
+              basket: "Suttanta Piṭaka",
+              division: "",
+              name: "Papañcasudani",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentary (atthakatha) on the Suttanta's Majjhima Nikaya by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+          ],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#14", label: "Learn More" },
@@ -290,7 +363,25 @@ const TipitakaData = {
           qty: 7762,
           description: "This collection of discourses in the Suttanta Piṭaka known as Saṃyutta Nikāya has 7762 suttas of varied length, generally short, arranged in a special order according to subject matter into five major divisions: (1) Sagāthā Vagga (2) Nidāna Vagga (3) Khandha Vagga (4) Saḷāyatana Vagga and (5) Mahā Vagga. Each major vagga is divided into fifty-six groups known as saṃyuttas-related subjects grouped together. The saṃyuttas are named after the subjects they deal with, for example, Bojjhaṅga Saṃyutta on the seven factors of enlightenment, or after some principal personalities such as the Venerable Sāriputta, King Pasenadi of Kosala, or Sakka. Kosala Saṃyutta is a group of discourses concerning King Pasenadi of Kosala, and Devatā Saṃyutta deals with devas like Sakka, Indra, Brahmā, etc. Each saṃyutta is further divided into sections which are made up of individual suttas. Thus the well-known Dhammacakkappavattana Sutta is the first discourse (sutta) in the second section of Sacca Saṃyutta which comes under the Mahāvagga division of Saṃyutta Nikāya. In the following excerpts from Saṃyutta Nikāya, only a few suttas representing each major division are given.",
           sections: ["Sagāthā Vagga Saṃyutta Pāḷi", "Nidāna Vagga Saṃyutta Pāḷi", "Khandha Vagga Saṃyutta Pāḷi", "Saḷāyatana Vagga Saṃyutta Pāḷi", "Mahā Vagga Saṃyutta Pāḷi"],
-          commentary: ["Saratthappakasini"],
+          commentary: [
+            {
+              id: "saratthappakasini",
+              basket: "Suttanta Piṭaka",
+              division: "",
+              name: "Saratthappakasini",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentary (atthakatha) on the Suttanta's Samyutta Nikaya by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+          ],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#33", label: "Learn More" },
@@ -305,7 +396,25 @@ const TipitakaData = {
           qty: 9557,
           description: '<p>This Collection of Discourses, Aṅguttara Nikāya, containing 9557 short suttas is divided into eleven divisions known as nipātas. Each nipāta is divided again into groups called vaggas which usually contain ten suttas. The discourses are arranged in progressive numerical order, each nipāta containing suttas with items of Dhamma, beginning with one item and moving up by units of one until there are eleven items of Dhamma in each sutta of the last nipāta. Hence the name Aṅguttara meaning "increasing by one item". The first nipāta, Ekaka Nipāta, provides in each sutta single items of Dhamma called the Ones; the second nipāta, Duka Nipāta, contains in each sutta two items of Dhamma called the Twos, the last nipāta, Ekādasaka Nipāta, is made up of suttas with eleven items of Dhamma in each, called the Elevens.</p><p>Aṅguttara Nikāya constitutes an important source book on Buddhist psychology and ethics, which provides an enumerated summary of all the essential features concerning the theory and practice of the Dhamma. A unique chapter entitled Etadagga Vagga of Ekaka Nipāta enumerates the names of the foremost disciples amongst the bhikkhus, bhikkhunis, upāsakas, upāsikās, who had achieved pre-eminence in one sphere of attainment or meritorious activity, e.g., the Venerable Sāriputta in intuitive wisdom and knowledge (paññā); the Venerable Mahā Moggallāna in supernormal powers (iddhi); Bhikkhunī Khemā in paññā; Bhikkhuni Uppalavanna in iddhi; the Upāsaka Anāthapiṇḍika and the Upāsikā Visākhā in alms-giving (dāna) and so on.</p>',
           sections: ["Ekaka Nipāta Pāḷi", "Duka Nipāta Pāḷi", "Tika Nipāta Pāḷi", "Catukka Nipāta Pāḷi", "Pañcaka Nipāta Pāḷi", "Chakka Nipāta Pāḷi", "Sattaka Nipāta Pāḷi", "Aṭṭhaka Nipāta Pāḷi", "Navaka Nipāta Pāḷi", "Dasaka Nipāta Pāḷi", "Ekādasaka Nīpata Pāḷi"],
-          commentary: ["Manorathapurani"],
+          commentary: [
+            {
+              id: "manorathapurani",
+              basket: "Suttanta Piṭaka",
+              division: "",
+              name: "Manorathapurani",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentary (atthakatha) on the Suttanta's Anguttara Nikaya by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+          ],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#39", label: "Learn More" },
@@ -320,7 +429,110 @@ const TipitakaData = {
           qty: null,
           description: "Of all the five nikāyas Khuddaka Nikāya contains the largest number of treatises (as listed below) and the most numerous categories of Dhamma. Although the word khuddaka literally means minor or small, the actual content of this collection can by no means be regarded as minor, including as it does the two major divisions of the Piṭaka, namely, the Vinaya Piṭaka and the Abhidhamma Piṭaka according to one system of classification. The miscellaneous nature of this collection, containing not only the discourses by the Buddha but compilations of brief doctrinal notes mostly in verse, accounts of personal struggles and achievements by theras and therīs also in verse, the birth stories, the history of the Buddha, etc., may account for its title.",
           sections: ["Khuddakapāṭha Pāḷi", "The Dhammapada Pāḷi", "Udāna Pāḷi", "Itivuttaka Pāḷi", "Suttanipāta Pāḷi", "Vimāna Vatthu Pāḷi", "Peta Vatthu Pāḷi", "The Thera Gāthā Pāḷi", "The Therī Gāthā Pāḷi", "Jātaka Pāḷi", "Niddesa Pāḷi", "Paṭisambhidā Magga Pāḷi", "Apadāna Pāḷi", "Buddhavaṃsa Pāḷi", "Cariyā Piṭaka", "Netti", "Peṭakopadesa", "Milindapañha Pāḷi"],
-          commentary: ["Paramatthajotika I", "Paramatthajotika II", "Dhammapada-atthakatha", "Suttanipata-atthakatha", "Jatakatthavannana", "Jātaka-atthakatha"],
+          commentary: [
+            {
+              id: "paramatthajotika1",
+              basket: "Suttanta Piṭaka",
+              division: "",
+              name: "Paramatthajotika I",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentary (atthakatha) on the Khuddakapatha (Suttanta Khuddaka Nikaya) by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "https://store.pariyatti.org/The-Khuddakapatha-with-its-commentary-Paramatthajotika-I_p_2054.html", label: "Pali" },
+              ]
+            },
+            {
+              id: "paramatthajotika2",
+              basket: "Suttanta Piṭaka",
+              division: "",
+              name: "Paramatthajotika II",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentary (atthakatha) on the Sutta Nipata (Suttanta Khuddaka Nikaya) by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+            {
+              id: "dhammapada-atthakatha",
+              basket: "Suttanta Piṭaka",
+              division: "",
+              name: "Dhammapada-atthakatha",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentary (atthakatha) on the Dhammapada (Suttanta Khuddaka Nikaya) by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+            {
+              id: "suttanipata-atthakatha",
+              basket: "Suttanta Piṭaka",
+              division: "",
+              name: "Suttanipata-atthakatha",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentary (atthakatha) on the Sutta Nipata (Suttanta Khuddaka Nikaya) by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+            {
+              id: "jatakatthavannana",
+              basket: "Suttanta Piṭaka",
+              division: "",
+              name: "Jatakatthavannana",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentary (atthakatha) on the Jātaka (Suttanta Khuddaka Nikaya) by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+            {
+              id: "jataka-atthakatha",
+              basket: "Suttanta Piṭaka",
+              division: "",
+              name: "Jātaka-atthakatha",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentary (atthakatha) on the Jātaka (Suttanta Khuddaka Nikaya) by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+          ],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#51", label: "Learn More" },
@@ -1223,7 +1435,25 @@ const TipitakaData = {
             "Nikkhepa Kaṇḍa (division that avoids elaboration).",
             "Aṭṭhakathā Kaṇḍa (supplementary digest)."
           ],
-          commentary: ["Atthasālinī"],
+          commentary: [
+            {
+              id: "atthasalini",
+              basket: "Abhidhamma Piṭaka",
+              division: "",
+              name: "Atthasalini",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentary on the Abhidhamma's Dhammasangani by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+          ],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#72", label: "Learn More" },
@@ -1240,7 +1470,25 @@ const TipitakaData = {
           description: "The second book of the Abhidhamma Piṭaka, Vibhaṅga, together with the first book of the Dhammasaṅgaṇī and the third book of the Dhātukathā, forms a closely related foundation for the proper and deep understanding of the Buddha’s Dhamma. Whereas Dhammasaṅgaṇī provides a bird’s eye view of the whole Tika and Duka groups with further systematic arrangements under classified heads, Vibhaṅga and Dhātukathā give a closer view of selected portions of those groups bringing out minute details.",
           volume: "47",
           sections: ["Khandha", "Āyatana", "Dhātu", "Sacca", "Indriya", "Paṭiccasamuppāda", "Satipaṭṭhāna", "Sammappadhāna", "Iddhipāda", "Bojjhaṅga", "Magga", "Jhāna", "Appammaññā", "Sikkhāpada", "Paṭisambhidā", "ñāṇa", "Khuddhaka vatthu", "Dhammadhaya"],
-          commentary: ["Sammohavinodani"],
+          commentary: [
+            {
+              id: "sammohavinodani",
+              basket: "Abhidhamma Piṭaka",
+              division: "",
+              name: "Sammohavinodani",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentary on the Abhidhamma's Vibhanga by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+          ],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#73", label: "Learn More" },
@@ -1257,7 +1505,25 @@ const TipitakaData = {
           description: "Although this third book of Abhidhamma Piṭaka is a small treatise, it ranks with the first two books forming an important trilogy, which must be completely digested for the complete understanding of the Abhidhamma. Vibhaṅga, the second book, has one complete chapter devoted to the analysis of dhātus, but the subject matter of dhātu is so important that this treatise is devoted to it for a thorough consideration. The method of analysis here is different from that employed in the Vibhaṅga.",
           volume: "48",
           sections: ["Paṭhamanayo", "Dutiyanayo", "Tatiyanayo", "Catutthanayo", "Pañcamanayo", "Chaṭṭhanayo", "Sattamanayo", "Aṭṭhamanayo", "Navamanayo", "Dasamanayo", "Ekādasamanayo", "Dvādasamanayo", "Terasamanayo", "Cuddasamanayo"],
-          commentary: ["Pañcappakaranatthakatha"],
+          commentary: [
+            {
+              id: "pancappakaranatthakatha",
+              basket: "Abhidhamma Piṭaka",
+              division: "",
+              name: "Pañcappakaranatthakatha",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentaries on the Abhidhamma's Dhatukatha, Puggalapaññatti, Kathavatthu, Yamaka, and Patthana by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+          ],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#74", label: "Learn More" },
@@ -1274,7 +1540,25 @@ const TipitakaData = {
           description: "Abhidhamma is mainly concerned with the study of abstract truths in absolute terms. But in describing the dhammas in their various aspects, it is not possible to keep to absolute terms only. Inevitably, conventional terms of every day language have to be employed in order to keep the lines of communication open at all. Abhidhamma states that there are two main types of conventional usage; the first type is concerned with terms which describe things that actually exist in reality and the second type describes things which have no existence in reality.",
           volume: "49",
           sections: ["List Of All The Human Types In The Book", "Chapter 1 - Division Of Human Types By One", "Chapter 2 - Division Of Human Types By Two", "Chapter 3 - Division Of Human Types By Three", "Chapter 4 - Division Of Human Types By Four", "Chapter 5 - Division Of Human Types By Five", "Chapter 6 - Division Of Human Types By Six", "Chapter 7 - Division Of Human Types By Seven", "Chapter 8 - Division Of Human Types By Eight", "Chapter 9 - Division Of Human Types By Nine", "Chapter 10 - Division Of Human Types By Ten"],
-          commentary: ["Pañcappakaranatthakatha"],
+          commentary: [
+            {
+              id: "pancappakaranatthakatha",
+              basket: "Abhidhamma Piṭaka",
+              division: "",
+              name: "Pañcappakaranatthakatha",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentaries on the Abhidhamma's Dhatukatha, Puggalapaññatti, Kathavatthu, Yamaka, and Patthana by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+          ],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#75", label: "Learn More" },
@@ -1291,7 +1575,25 @@ const TipitakaData = {
           description: 'Kathāvatthu, like Puggalapaññatti, falls outside the regular system of the Abhidhamma. It does not directly deal with the complex nature of the Dhamma. It is mainly concerned with wrong views such as "person exists; self exists; jīva exists" which were prevalent even in the Buddha’s time; or wrong views such as "arahat falls away from arahatship" which arose after the parinibbāna of the Buddha.',
           volume: "50",
           sections: ["Puggalakathā (Of the Existence of a Personal Entity)", "Parihānikathā (Of Falling Away)", "Brahmacariyakathā (Of the Higher Life)", "Jahatikathā (Of Renouncing Evil)", "Sabbamatthītikathā (Of Everything as persistently existing)", "Atītakkhandhādikathā (Of what does my “Past” Consist?)", "Ekaccaṃatthītikathā (Of Some of the Past and Future as still Existing)", "Satipaṭṭhānakathā (Of Applications in Mindfulness)", "Hevatthikathā (Of Existence in Immutable Modes)", "Dutiyavaggo", "Tatiyavaggo", "Catutthavaggo", "Pañcamavaggo", "Chaṭṭhavaggo", "Sattamavaggo", "Aṭṭhamavaggo", "Navamavaggo", "Dasamavaggo", "Ekādasamavaggo", "Dvādasamavaggo", "Terasamavaggo", "Cuddasamavaggo", "Pannarasamavaggo", "Soḷasamavaggo", "Sattarasamavaggo", "Aṭṭhārasamavaggo", "Ekūnavīsatimavaggo", "Vīsatimavaggo", "Ekavīsatimavaggo", "Bāvīsatimavaggo", "Tevīsatimavaggo"],
-          commentary: ["Pañcappakaranatthakatha"],
+          commentary: [
+            {
+              id: "pancappakaranatthakatha",
+              basket: "Abhidhamma Piṭaka",
+              division: "",
+              name: "Pañcappakaranatthakatha",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentaries on the Abhidhamma's Dhatukatha, Puggalapaññatti, Kathavatthu, Yamaka, and Patthana by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+          ],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#76", label: "Learn More" },
@@ -1308,7 +1610,25 @@ const TipitakaData = {
           description: "Yamaka sets out to define and analyse the interrelationship of dhammas and puggalas as they exist in these three worlds. This is accomplished in the form of pairs of questions, which gives it the title of Yamaka. The logical processes of conversion (anuloma) and complete inversion (paṭiloma) are applied to determine the full implications and limitations of a term in its relationship with the others. Any equivocal elements of a term (saṃsaya) are avoided by showing, through such arrangement of questions, how other meanings of the term do not fit in a particular context.",
           volume: "51",
           sections: ["Mūla Yamaka (Pairs on Roots)", "Khandha Yamaka (Pairs on Aggregates)", "Āyatana Yamaka (Pairs on Bases)", "Dhātu Yamaka (Pairs on Elements)", "Sacca Yamaka (Pairs on Truths)", "Saṅkhāra Yamaka (Pairs on Conditioned Things)", "Anusaya Yamaka (Pairs on Latent Dispositions)", "Citta Yamaka (Pairs on Consciousness)", "Dhamma Yamaka (Pairs on Phenomena)", "Indriya Yamaka (Pairs on Controlling Faculties)"],
-          commentary: ["Pañcappakaranatthakatha"],
+          commentary: [
+            {
+              id: "pancappakaranatthakatha",
+              basket: "Abhidhamma Piṭaka",
+              division: "",
+              name: "Pañcappakaranatthakatha",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentaries on the Abhidhamma's Dhatukatha, Puggalapaññatti, Kathavatthu, Yamaka, and Patthana by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+          ],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#77", label: "Learn More" },
@@ -1328,7 +1648,25 @@ const TipitakaData = {
             "Paccanīya Paṭṭhāna which studies the instances in which Paccanīya relations do not exist between the dhammasPaccanīya;",
             "Anuloma Paccanīya Paṭṭhāna which studies the instances in which some of the Paccanīya relations exist between the dhammasPaccanīya while the others do not;",
             "Paccanīya Anuloma Paṭṭhāna which studies the instances in which some of the Paccanīya relations do not exist between the dhammasPaccanīya, while the others do exist."],
-          commentary: ["Pañcappakaranatthakatha"],
+          commentary: [
+            {
+              id: "pancappakaranatthakatha",
+              basket: "Abhidhamma Piṭaka",
+              division: "",
+              name: "Pañcappakaranatthakatha",
+              authors: ["Buddhaghosa"],
+              translation: "",
+              translators: [],
+              description: "Commentaries on the Abhidhamma's Dhatukatha, Puggalapaññatti, Kathavatthu, Yamaka, and Patthana by Buddhaghosa",
+              volume: "",
+              sections: [],
+              links: [
+                { id: "info", link: "", label: "Learn More" },
+                { id: "engbookurl", link: "", label: "English" },
+                { id: "palibookurl", link: "", label: "Pali" },
+              ]
+            },
+          ],
           subcommentary: [],
           links: [
             { id: "info", link: "https://tipitaka.org/eot#78", label: "Learn More" },
