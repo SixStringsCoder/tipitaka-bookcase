@@ -200,74 +200,13 @@
   $: if (searchQuery === "") clearSearch();
 
   const findSearchedVol = (e) => {
-    console.log(e.detail.target.dataset.id);
+    // console.log(e.detail.target.dataset.id);
     selectedBooks = e.detail.target.dataset.id || e.detail.target.dataset.basket;
     modalInfoObj = searchResults.find((book) => book.id === selectedBooks);
     toggleModal();
   };
 </script>
 
-<style>
-  /* Top Menu-Search Bar */
-  #info-bar {
-    width: 100%;
-    background-color: #ddd;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: fixed;
-    z-index: 10000;
-    margin-top: 3.9rem;
-    padding: 10px;
-  }
-
-  main#library {
-    flex: 1;
-    margin-top: 5rem;
-  }
-
-  /* Info Modal */
-  .link-btns-cont {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    margin: 2rem 0;
-  }
-
-  .breadcrumbs {
-    font-size: 0.9rem;
-  }
-
-  p,
-  li {
-    font-size: 1.3rem;
-  }
-
-  li {
-    line-height: 150%;
-  }
-
-  .books-summary {
-    font-weight: bold;
-    margin-bottom: 0;
-  }
-
-  /* Medium devices (landscape tablets, 768px and up) */
-  @media only screen and (min-width: 768px) {
-    p,
-    li {
-      font-size: 1.5rem;
-    }
-  }
-
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    #info-bar {
-      height: 190px;
-    }
-  }
-</style>
 
 <!-- The Tipitaka Shelves -->
 <Header />
@@ -345,3 +284,66 @@
     on:showBookInfo={(e) => bookInfoModal(e)}
     on:toggle={toggleModal} />
 </main>
+
+
+<style>
+  /* Top Menu-Search Bar */
+  #info-bar {
+    width: 100%;
+    background-color: #ddd;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 10000;
+    margin-top: 3.9rem;
+    padding: 10px;
+  }
+
+  main#library {
+    flex: 1;
+    margin-top: 5rem;
+  }
+
+  /* Info Modal */
+  .link-btns-cont {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 2rem 0;
+  }
+
+  .breadcrumbs {
+    font-size: 0.9rem;
+  }
+
+  p,
+  li {
+    font-size: 1.3rem;
+  }
+
+  li {
+    line-height: 150%;
+  }
+
+  .books-summary {
+    font-weight: bold;
+    margin-bottom: 0;
+  }
+
+  /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    p,
+    li {
+      font-size: 1.5rem;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    #info-bar {
+      height: 190px;
+    }
+  }
+</style>

@@ -15,6 +15,52 @@
   }
 </script>
 
+
+<div id="search-cont">
+  
+  <form on:submit|preventDefault>
+    <input
+      id="search"
+      type="text"
+      bind:value={searchQuery}
+      placeholder="Search..."
+      autocomplete="off"
+      on:submit />
+      <button type="submit"><i class="fas fa-search" /></button>
+  </form>  
+
+  {#if searchResults.length > 0}
+    <dl id="results-list" class:hide={resultsHidden}>
+
+      <dt>
+        <span
+          class:caret-up={resultsHidden}
+          class="caret"
+          on:click={() => dispatch('hideResultsList')}>
+          RESULTS:
+        </span>
+      </dt>
+
+      <!-- Search results go here as dd tags-->
+      {#each searchResults as searchResult}
+        <dd
+          data-vol={searchResult.volume}
+          data-id={searchResult.id}
+          data-basket={searchResult.basket}
+          on:click={(e) => dispatch('searchResultClick', e)}>
+          {#if !searchResult.id}
+            {searchResult.name} (Suttanta Piṭaka)
+          {:else}
+            {searchResult.name} ({searchResult.basket} - Vol. {searchResult.volume})
+          {/if}
+        </dd>
+      {/each}
+      
+    </dl>   
+  {/if}
+</div>
+
+
 <style>
   #search-cont {
     width: 91%;
@@ -172,48 +218,3 @@ form button {
     }
   }
 </style>
-
-
-<div id="search-cont">
-  
-  <form on:submit|preventDefault>
-    <input
-      id="search"
-      type="text"
-      bind:value={searchQuery}
-      placeholder="Search..."
-      autocomplete="off"
-      on:submit />
-      <button type="submit"><i class="fas fa-search" /></button>
-  </form>  
-
-  {#if searchResults.length > 0}
-    <dl id="results-list" class:hide={resultsHidden}>
-
-      <dt>
-        <span
-          class:caret-up={resultsHidden}
-          class="caret"
-          on:click={() => dispatch('hideResultsList')}>
-          RESULTS:
-        </span>
-      </dt>
-
-      <!-- Search results go here as dd tags-->
-      {#each searchResults as searchResult}
-        <dd
-          data-vol={searchResult.volume}
-          data-id={searchResult.id}
-          data-basket={searchResult.basket}
-          on:click={(e) => dispatch('searchResultClick', e)}>
-          {#if !searchResult.id}
-            {searchResult.name} (Suttanta Piṭaka)
-          {:else}
-            {searchResult.name} ({searchResult.basket} - Vol. {searchResult.volume})
-          {/if}
-        </dd>
-      {/each}
-      
-    </dl>   
-  {/if}
-</div>

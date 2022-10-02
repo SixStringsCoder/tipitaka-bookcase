@@ -8,27 +8,32 @@
   $: console.log(topic, topics)
 </script>
 
+<!-- CATEGORIES MENU -->
 <div class="menu-container">
   <!-- svelte-ignore a11y-no-onchange -->
   <select name="menu-1" class="menu" bind:value={topic}>
-    <option value="reset" disabled selected>Select Category</option>
-    {#each categories as catgegory, i}
+    <option value="reset-1" disabled selected>Select Category</option>
+    {#each categories as catgegory}
       <option value={catgegory}>{catgegory}</option> 
     {/each}  
   </select>
 </div>
 
-<div class="menu-container">
-  <!-- svelte-ignore a11y-no-onchange -->
-  <select name="menu-2" class="menu" bind:value={selectedBooks} on:change>
-    <option value="reset" disabled selected>Learn More</option>
-        {#each topics as topic}
-          <option value={topic.id}
-                  data-basket={topic.basket}>{topic.name}</option>
-        {/each}
-  </select>
-</div>
-
+<!-- TOPICS MENU -->
+{#key topic}
+  <div class="menu-container">
+    <!-- svelte-ignore a11y-no-onchange -->
+    <select name="menu-2" class="menu" bind:value={selectedBooks} on:change>
+      <option value="reset-2" selected>Learn More</option>
+          {#each topics as topic}
+            <option value={topic.id}                 
+                    data-basket={topic.basket}>
+                {topic.name}
+            </option>
+          {/each}
+    </select>
+  </div>
+{/key}
 
 <style>
   .menu-container {

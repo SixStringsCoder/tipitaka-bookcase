@@ -160,83 +160,83 @@ export const tipitakaData = {
       basket: 'suttanta',
     },
   ],
-  'Commentaries (Aṭṭhakathā)': [
-    {
-      id: 'path-of-purification',
-      name: 'Visuddhi Magga',
-      basket: '',
-    },
-    {
-      id: 'samantapasadika',
-      name: 'Samantapasadika',
-      basket: '',
-    },
-    {
-      id: 'kankhavitarani',
-      name: 'Kankhavitarani',
-      basket: '',
-    },
-    {
-      id: 'sumangalavilasini',
-      name: 'Sumangalavilasini',
-      basket: '',
-    },
-    {
-      id: 'papañcasudani',
-      name: 'Papañcasudani',
-      basket: '',
-    },
-    {
-      id: 'saratthappakasini',
-      name: 'Saratthappakasini',
-      basket: '',
-    },
-    {
-      id: 'manorathapurani',
-      name: 'Manorathapurani',
-      basket: '',
-    },
-    {
-      id: 'paramatthajotika',
-      name: 'Paramatthajotika',
-      basket: '',
-    },
-  ],
-  'Sub-Commentaries (Ṭīkā)': [
-    {
-      id: 'Paramatthamañjusa',
-      name: 'Paramatthamañjusa',
-      basket: '',
-    },
-    {
-      id: 'Vajirabuddhi-tika',
-      name: 'Vajirabuddhi-tika',
-      basket: '',
-    },
-    {
-      id: 'Saratthadipani',
-      name: 'Saratthadipani',
-      basket: '',
-    },
-    {
-      id: 'Vimativinodani',
-      name: 'Vimativinodani',
-      basket: '',
-    },
-    {
-      id: 'Vinayatthamañjusa',
-      name: 'Vinayatthamañjusa',
-      basket: '',
-    },
-    {
-      id: 'Dighanikaya-tika',
-      name: 'Dighanikaya-tika',
-      basket: '',
-    },
-    {
-      id: 'Majjhimanikaya-tika',
-      name: 'Majjhimanikaya-tika',
-      basket: '',
-    },
-  ],
+  // 'Commentaries (Aṭṭhakathā)': [
+  //   {
+  //     id: 'path-of-purification',
+  //     name: 'Visuddhi Magga',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'samantapasadika',
+  //     name: 'Samantapasadika',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'kankhavitarani',
+  //     name: 'Kankhavitarani',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'sumangalavilasini',
+  //     name: 'Sumangalavilasini',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'papañcasudani',
+  //     name: 'Papañcasudani',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'saratthappakasini',
+  //     name: 'Saratthappakasini',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'manorathapurani',
+  //     name: 'Manorathapurani',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'paramatthajotika',
+  //     name: 'Paramatthajotika',
+  //     basket: '',
+  //   },
+  // ],
+  // 'Sub-Commentaries (Ṭīkā)': [
+  //   {
+  //     id: 'Paramatthamañjusa',
+  //     name: 'Paramatthamañjusa',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'Vajirabuddhi-tika',
+  //     name: 'Vajirabuddhi-tika',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'Saratthadipani',
+  //     name: 'Saratthadipani',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'Vimativinodani',
+  //     name: 'Vimativinodani',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'Vinayatthamañjusa',
+  //     name: 'Vinayatthamañjusa',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'Dighanikaya-tika',
+  //     name: 'Dighanikaya-tika',
+  //     basket: '',
+  //   },
+  //   {
+  //     id: 'Majjhimanikaya-tika',
+  //     name: 'Majjhimanikaya-tika',
+  //     basket: '',
+  //   },
+  // ],
 };
