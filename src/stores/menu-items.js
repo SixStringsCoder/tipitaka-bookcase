@@ -1,45 +1,63 @@
-<script lang="ts">
-  import { tipitakaData } from './stores/menu-items.js';
-  export let selectedBooks: string;
+export const tipitakaData = {
+  "Tipitaka": [
+    {
+      id: "vinaya",
+      name: "Vinaya",
+      location: "vinaya"
+    },
+    {
+      id: "suttanta",
+      name: "Suttanta",
+      location: "suttanta"
+    },
+    {
+      id: "abhidhamma",
+      name: "Abhidhamma",
+      location: "abhidhamma"
+    },
+    {
+      id: "digha-nikaya",
+      name: "Long Discourses (Digha Nikāya)",
+      location: "suttanta"
+    },
+    {
+      id: "majjhima-nikaya",
+      name: "Medium-length Discourses (Majjhima Nikāya)",
+      location: "suttanta"
+    },
+    {
+      id: "samyutta-nikaya",
+      name: "Short Discourses/Connected Discourses or Kindred Sayings (Samyutta Nikāya)",
+      location: "suttanta"
+    },
+    {
+      id: "anguttara-nikaya",
+      name: "Numerical Discourses or Gradual Sayings (Aṅguttara Nikāya)",
+      location: "suttanta"
+    },
+    {
+      id: "khuddaka-nikaya",
+      name: "Minor Collection (Khuddaka Nikāya)",
+      location: "suttanta"
+    }
+  ],
+  "Well-known sections": [
 
-  const categories = Object.keys(tipitakaData)
-</script>
+  ],
+  "From a 10-day course by S.N. Goenka": [
 
-<div class="menu-container">
-  <!-- svelte-ignore a11y-no-onchange -->
-  <select name="menu-1" class="menu">
-    <option value="reset" disabled selected>Select Category</option>
-    {#each categories as catgegory, i}
-      <option value={catgegory.toLowerCase()}>{catgegory}</option> 
-    {/each}  
-  </select>
-</div>
+  ],
+  "Commentaries (Aṭṭhakathā)": [
 
-<div class="menu-container">
-  <!-- svelte-ignore a11y-no-onchange -->
-  <select name="menu" class="menu" bind:value={selectedBooks} on:change>
-    <option value="reset" disabled selected>Learn More</option>
-    <optgroup label="Tipitaka">
-        <option value="vinaya">Vinaya Pi&#7789;aka</option>
-        <option value="suttanta">Suttanta Pi&#7789;aka</option>
-        <option value="abhidhamma">Abhidhamma Pi&#7789;aka</option>
-        <option value="digha-nikaya" data-basket="suttanta">
-          Long Discourses (Digha Nikāya)
-        </option>
-        <option value="majjhima-nikaya" data-basket="suttanta">
-          Medium-length Discourses (Majjhima Nikāya)
-        </option>
-        <option value="samyutta-nikaya" data-basket="suttanta">
-          Short Discourses/Connected Discourses or Kindred Sayings (Samyutta Nikāya)
-        </option>
-        <option value="anguttara-nikaya" data-basket="suttanta">
-          Numerical Discourses or Gradual Sayings (Aṅguttara Nikāya)
-        </option>
-        <option value="khuddaka-nikaya" data-basket="suttanta">
-          Minor Collection (Khuddaka Nikāya)
-        </option>
-      </optgroup>
+  ],
+  "Sub-Commentaries (Ṭīkā)": [
 
+  ]
+}
+
+
+
+{/* 
       <optgroup label="Well-known sections">
         <option value="dhammapada" data-basket="suttanta">Dhammapada</option>
         <option value="jataka" data-basket="suttanta">Jataka Tales</option>
@@ -126,35 +144,4 @@
       <option value="Vinayatthamañjusa">Vinayatthamañjusa</option>
       <option value="Dighanikaya-tika">Dighanikaya-tika</option>
       <option value="Majjhimanikaya-tika">Majjhimanikaya-tika</option>
-    </optgroup>
-
-  </select>
-</div>
-
-
-<style>
-  .menu-container {
-    width: 91%;
-    margin: 0 auto 20px;
-    display: flex;
-    justify-content: center;
-  }
-
-  select.menu {
-    width: 100%;
-    height: 45px;
-    padding: 5px;
-    font-size: 1.3rem;
-    font-family: Muli, sans-serif;
-    font-weight: 100;
-    cursor: pointer;
-  }
-
-  /* Large devices (laptops/desktops, 992px and up) */
-  @media only screen and (min-width: 992px) {
-    select#menu {
-      width: 65%;
-      height: 55px;
-    }
-  }
-</style>
+    </optgroup> */}
