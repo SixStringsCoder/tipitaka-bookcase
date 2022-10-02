@@ -160,37 +160,83 @@ export const tipitakaData = {
       basket: 'suttanta',
     },
   ],
-  'Commentaries (Aṭṭhakathā)': [],
-  'Sub-Commentaries (Ṭīkā)': [],
+  'Commentaries (Aṭṭhakathā)': [
+    {
+      id: 'path-of-purification',
+      name: 'Visuddhi Magga',
+      basket: '',
+    },
+    {
+      id: 'samantapasadika',
+      name: 'Samantapasadika',
+      basket: '',
+    },
+    {
+      id: 'kankhavitarani',
+      name: 'Kankhavitarani',
+      basket: '',
+    },
+    {
+      id: 'sumangalavilasini',
+      name: 'Sumangalavilasini',
+      basket: '',
+    },
+    {
+      id: 'papañcasudani',
+      name: 'Papañcasudani',
+      basket: '',
+    },
+    {
+      id: 'saratthappakasini',
+      name: 'Saratthappakasini',
+      basket: '',
+    },
+    {
+      id: 'manorathapurani',
+      name: 'Manorathapurani',
+      basket: '',
+    },
+    {
+      id: 'paramatthajotika',
+      name: 'Paramatthajotika',
+      basket: '',
+    },
+  ],
+  'Sub-Commentaries (Ṭīkā)': [
+    {
+      id: 'Paramatthamañjusa',
+      name: 'Paramatthamañjusa',
+      basket: '',
+    },
+    {
+      id: 'Vajirabuddhi-tika',
+      name: 'Vajirabuddhi-tika',
+      basket: '',
+    },
+    {
+      id: 'Saratthadipani',
+      name: 'Saratthadipani',
+      basket: '',
+    },
+    {
+      id: 'Vimativinodani',
+      name: 'Vimativinodani',
+      basket: '',
+    },
+    {
+      id: 'Vinayatthamañjusa',
+      name: 'Vinayatthamañjusa',
+      basket: '',
+    },
+    {
+      id: 'Dighanikaya-tika',
+      name: 'Dighanikaya-tika',
+      basket: '',
+    },
+    {
+      id: 'Majjhimanikaya-tika',
+      name: 'Majjhimanikaya-tika',
+      basket: '',
+    },
+  ],
 };
-
-{
-  /* 
-
-    <optgroup label="Commentaries">
-      <option value="commentaries" data-bookcase="bookcase">
-        Aṭṭhakathā (Commentaries) bookcase
-      </option>
-      <option value="path-of-purification">Visuddhi Magga</option>
-      <option value="Samantapasadika">Samantapasadika</option>
-      <option value="Kankhavitarani">Kankhavitarani</option>
-      <option value="Sumangalavilasini">Sumangalavilasini</option>
-      <option value="Papañcasudani">Papañcasudani</option>
-      <option value="Saratthappakasini">Saratthappakasini</option>
-      <option value="Manorathapurani">Manorathapurani</option>
-      <option value="Paramatthajotika">Paramatthajotika</option>
-    </optgroup>
-
-    <optgroup label="Sub-Commentaries">
-      <option value="sub-commentaries" data-bookcase="bookcase">
-        Tika (Sub-commentaries) bookcase
-      </option>
-      <option value="Paramatthamañjusa">Paramatthamañjusa</option>
-      <option value="Vajirabuddhi-tika">Vajirabuddhi-tika</option>
-      <option value="Saratthadipani">Saratthadipani</option>
-      <option value="Vimativinodani">Vimativinodani</option>
-      <option value="Vinayatthamañjusa">Vinayatthamañjusa</option>
-      <option value="Dighanikaya-tika">Dighanikaya-tika</option>
-      <option value="Majjhimanikaya-tika">Majjhimanikaya-tika</option>
-    </optgroup> */
-}
