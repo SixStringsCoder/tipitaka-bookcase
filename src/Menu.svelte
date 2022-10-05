@@ -10,9 +10,8 @@
 
 <!-- CATEGORIES MENU -->
 <div class="menu-container">
-  <!-- svelte-ignore a11y-no-onchange -->
-  <select name="menu-1" class="menu" bind:value={topic}>
-    <option value="reset-1" disabled selected>Select Category</option>
+  <select name="menu-1" class="menu" bind:value={topic} on:change={() => selectedBooks = 'reset-topic'}>
+    <option value="reset-category" disabled selected>Select Category</option>
     {#each categories as catgegory}
       <option value={catgegory}>{catgegory}</option> 
     {/each}  
@@ -20,20 +19,21 @@
 </div>
 
 <!-- TOPICS MENU -->
-{#key topic}
-  <div class="menu-container">
-    <!-- svelte-ignore a11y-no-onchange -->
-    <select name="menu-2" class="menu" bind:value={selectedBooks} on:change>
-      <option value="reset-2" selected>Learn More</option>
-          {#each topics as topic}
-            <option value={topic.id}                 
-                    data-basket={topic.basket}>
-                {topic.name}
-            </option>
-          {/each}
-    </select>
-  </div>
-{/key}
+<div class="menu-container">
+  <!-- svelte-ignore a11y-no-onchange -->
+  {#key topic}
+  <select name="menu-2" class="menu" bind:value={selectedBooks} on:change>
+    <option value="reset-topic" disabled selected>View Topics</option>
+        {#each topics as topic}
+          <option value={topic.id}                 
+                  data-basket={topic.basket}>
+              {topic.name}
+          </option>
+        {/each}    
+  </select>
+  {/key}
+</div>
+
 
 <style>
   .menu-container {
