@@ -10,7 +10,7 @@
 
 <!-- CATEGORIES MENU -->
 <div class="menu-container">
-  <select name="menu-1" class="menu" bind:value={topic} on:change={() => selectedBooks = 'reset-topic'}>
+  <select name="menu-1" class="menu" bind:value={topic} on:change={() => selectedBooks = reset-topic}>
     <option value="reset-category" disabled selected>Select Category</option>
     {#each categories as catgegory}
       <option value={catgegory}>{catgegory}</option> 
