@@ -21,7 +21,6 @@
 <!-- TOPICS MENU -->
 <div class="menu-container">
   <!-- svelte-ignore a11y-no-onchange -->
-  {#key topic}
   <select name="menu-2" class="menu" bind:value={selectedBooks} on:change>
     <option value="reset-topic" disabled selected>View Topics</option>
         {#each topics as topic}
@@ -31,7 +30,6 @@
           </option>
         {/each}    
   </select>
-  {/key}
 </div>
 
 

@@ -81,7 +81,7 @@
   }
 
   header {
-    margin-top: 7rem;
+    margin-top: 11rem;
     padding: 0 0 0 3px;
     display: flex;
     justify-content: space-between;
