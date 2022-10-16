@@ -57,5 +57,12 @@
       width: 65%;
       height: 55px;
     }
+
+    .menu-container {
+      width: 59%;
+      margin: 0 auto 20px;
+      display: flex;
+      justify-content: center;
+    }
   }
 </style>
