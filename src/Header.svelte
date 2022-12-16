@@ -12,7 +12,7 @@
   }
 
   header h1 {
-    font-size: 2rem;
+    font-size: 1.4rem;
     margin: 0.8rem;
     font-weight: 100;
     /*   letter-spacing: 1px; */
@@ -22,6 +22,26 @@
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     padding: 3px 10px;
+  }
+
+  @media only screen and (min-width: 350px) {
+    header h1 {
+      font-size: 2rem;
+    }
+  }
+
+    /* Medium devices (landscape tablets, 768px and up) */
+  @media only screen and (min-width: 768px) {
+    header h1 {
+      font-size: 2.2rem;
+    }
+  }
+
+  /* Large devices (laptops/desktops, 992px and up) */
+  @media only screen and (min-width: 992px) {
+    header h1 {
+      font-size: 2.5rem;
+    }
   }
 </style>
 
